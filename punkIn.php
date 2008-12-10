@@ -47,7 +47,7 @@
     <td class="inputBGstyle">
 
 <?php
-		include('inParts/gradeRadios.php');
+		include('partsIn/gradeRadios.php');
 ?>
 
     </td>
@@ -57,7 +57,7 @@
     <td class="inputBGstyle">
  <div class="CollapsiblePanelTabFake">comment drawers</div>
 <?php
-		include("inParts/panelsPunk.php");
+		include("partsIn/panelsPunk.php");
 ?>
 
 </td>
@@ -76,7 +76,7 @@
     <td class="inputBGstyle">
 
 <?php
-		include("inParts/linkboxes.php");
+		include("partsIn/linkboxes.php");
 ?>
     
     </td>
@@ -84,14 +84,14 @@
     <tr><td class="RightHandLabels">Boxes:</td>
     <td class="inputBGstyle">
 <?php
-		include("inParts/addBoxes.php");
+		include("partsIn/addBoxes.php");
 ?>    
     </td></tr>
   <tr>
     <td class="bottomLeftLabel">LOAD:</td>
     <td class="bottomRow">          
 <?php
-		include("inParts/buttonsNoClass.php");
+		include("partsIn/buttonsNoClass.php");
 ?>
     </td>
   </tr>
