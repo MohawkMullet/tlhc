@@ -20,6 +20,9 @@
 	overflow: visible;
 	height: 80px;
 }
+body {
+	background-color: #9e9e9e;
+}
 </style>
 <script language="JavaScript" type="text/JavaScript">
 <!--
@@ -48,8 +51,7 @@ function MM_showHideLayers() { //v6.0
 }
 //-->
 </script>
-<link href="inputForm.css" rel="stylesheet" type="text/css">
-</head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head>
 <title>This is just a blank page to fill with whatever.</title>
 <body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
 		<div id="Layer1" style="position:absolute; left:76px; top:3px; width:482px; height:51px; z-index:2; visibility: visible;" onClick="MM_showHideLayers('researchLinks','','show')">
