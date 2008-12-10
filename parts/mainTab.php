@@ -8,6 +8,12 @@
 	letter-spacing: 1px;
 	vertical-align: top;
 	line-height: 20px;
+	border-left: 1px solid #666666;
+	border-right: 2px ridge #333333;
+	border-top: 2px groove #333333;
+	margin-left: 1px;
+
+
 }
 .custom {
 	font-family: Verdana, Arial, Helvetica, sans-serif;
@@ -16,37 +22,28 @@
 	color: #333333;
 	font-style: italic;
 }
-.tbl {
-	border-top-width: thick;
-	border-right-width: thick;
-	border-bottom-width: thick;
-	border-left-width: thick;
-	border-top-style: double;
-	border-right-style: none;
-	border-bottom-style: groove;
-	border-left-style: none;
-	border-top-color: #999999;
-	border-right-color: #333333;
-	border-bottom-color: #999999;
-	border-left-color: #333333;
-	background-color: #999999;
-}
-.tblOuter {
-	border: none;
+.inside {
+	border: thick ridge #333333;
 }
 -->
 </style>
-<table width="564" border="1" class="tblOuter">
+<table width="397" border="0" align="left" class="mainTabTitle">
 <tr>
-<td width="254" valign="top" bgcolor="#FFFFFF" class="tbl"><div align="left" style="float:left; "><span class="mainTabTitle">TLhC v 
-  <?php
+<td width="391" valign="top" bgcolor="#9e9e9e" class="tbl"><table width="100%"  border="0" align="center" cellpadding="15" cellspacing="15" id="inner">
+  <tr>
+    <td bgcolor="#F2CA6D" class="inside">    <div align="center">TLhC v 
+        <?php
 echo $version;
 ?>
-</span><br>
-<img src="images/TLhClogoSmaller.png" width="53" height="75" style="float:left; " align="top"><br>
-<span class="custom">Customized for:HepVinyl</span>			    
-</div><div align="center" style="float:both; ">
-<img src="images/preview_32x32.png" width="32" height="32"></div>
-<br><br></td>
+        <br>      
+        <img src="images/TLhClogoSmaller.png" width="53" height="75"><br>
+        <span class="custom">Customized for:HepVinyl</span>			    
+      </div>
+  <div align="center"><img src="images/preview_32x32.png" width="32" height="32">
+  </div></td>
+  </tr>
+</table>
+
+</td>
 </tr>
 </table>
