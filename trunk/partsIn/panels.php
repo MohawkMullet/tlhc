@@ -1,5 +1,5 @@
     <div id="CollapsiblePanel1" class="CollapsiblePanel">
-    <div class="CollapsiblePanelTab" tabindex="7">Vinyl</div>
+    <div class="CollapsiblePanelTab" tabindex="9">Vinyl</div>
     <div class="CollapsiblePanelContent">  
     
 <?php
@@ -24,7 +24,7 @@ echo "</select>\n";
   </div>
 
 <div id="CollapsiblePanel2" class="CollapsiblePanel">
-  <div class="CollapsiblePanelTab" tabindex="8">Label</div>
+  <div class="CollapsiblePanelTab" tabindex="10">Label</div>
   <div class="CollapsiblePanelContent">  
   
 <?php
@@ -49,7 +49,7 @@ echo "</select>\n";
 </div>
 
 <div id="CollapsiblePanel3" class="CollapsiblePanel">
-  <div class="CollapsiblePanelTab" tabindex="9">Promo</div>
+  <div class="CollapsiblePanelTab" tabindex="11">Promo</div>
   <div class="CollapsiblePanelContent">  
     
 <?php
@@ -73,7 +73,7 @@ echo "</select>\n";
   </div>
 </div>
 <div id="CollapsiblePanel6" class="CollapsiblePanel">
-  <div class="CollapsiblePanelTab" tabindex="9">Sleeve</div>
+  <div class="CollapsiblePanelTab" tabindex="12">Sleeve</div>
   <div class="CollapsiblePanelContent">  
     
 <?php
@@ -97,7 +97,7 @@ echo "</select>\n";
   </div>
 </div>
 <div id="CollapsiblePanel5" class="CollapsiblePanel">
-  <div class="CollapsiblePanelTab" tabindex="9">Free Styler</div>
+  <div class="CollapsiblePanelTab" tabindex="13">Free Styler</div>
   <div class="CollapsiblePanelContent" align="left">  
 <textarea name="freeStyle" cols="38" rows="2" id="freeStyle" tabindex="10"></textarea>
   </div>

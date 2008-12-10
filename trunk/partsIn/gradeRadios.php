@@ -7,16 +7,16 @@
 <tr>
 <td scope="col">
 <label> <fieldset><legend>Record Grade:</legend>
-<input type="radio" name="gradeQ[]" value="M-" id="Grade_0" tabindex="6">
+<input type="radio" name="gradeQ[]" value="M-" id="Grade_0" tabindex="8">
 M-</label>                
 <label>
-<input type="radio" name="gradeQ[]" value="EX" id="Grade_1" tabindex="6">
+<input type="radio" name="gradeQ[]" value="EX" id="Grade_1" tabindex="8">
 EX</label>
 <label>
-<input type="radio" name="gradeQ[]" value="VG+" id="Grade_2" tabindex="6">
+<input type="radio" name="gradeQ[]" value="VG+" id="Grade_2" tabindex="8">
 VG+</label>
 <label>
-<input type="radio" name="gradeQ[]" value="VG" id="Grade_3" tabindex="6" />
+<input type="radio" name="gradeQ[]" value="VG" id="Grade_3" tabindex="8" />
 VG</label>      </fieldset>      </td>
 </tr>
 </table>
