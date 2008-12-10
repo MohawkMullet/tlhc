@@ -1,0 +1,27 @@
+a {
+	color: #1c2d59;
+	font-size: 12px;
+	font-weight: bold;
+	font-style: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+td {
+	font-size: 10px;
+}
+i {
+	color: #4D4D4D;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 8px;
+}
+
+body {
+	background-repeat: repeat-x;
+	background-position: left top;
+	background-image: url(../../images/topBG3.gif);
+	background-color: #cccccc;
+}
+img {
+	height: 45px;
+	width: 45px;
+}
