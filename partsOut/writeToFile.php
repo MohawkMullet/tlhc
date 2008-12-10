@@ -88,7 +88,7 @@ if (is_writable($filename)) {
 //foreach ($theGoods as $details) {
 //	print "$details";
 //	}
-    echo "Info about this 45 has been saved to <a href=\"$filename\">$filename</a>";
+    echo "Info about this 45 has been saved to <a href=\"inventory/$dirLabel\">$dirLabel</a>";
 
     fclose($handle);
 
