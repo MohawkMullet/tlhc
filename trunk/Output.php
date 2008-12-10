@@ -85,9 +85,7 @@ include('partsOut/writeToFile.php');
 				<span class="TabbedPanelsTab"><a href="javascript:selectAll('test2.select2')">Grab the Title</a></span><br>
 						<input name="select2" type="text" value="
 								<?php
-$titler = $_POST['titler'];
-$titler = ucwords(strtolower($titler));										
-echo $titler;
+include('partsOut/formOuts/titleOut.php');
 								?>
 						" size="55">
 		</form>

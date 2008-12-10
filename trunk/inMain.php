@@ -13,7 +13,7 @@
   <tr>
     <td class="RightHandLabels">&nbsp;</td>
     <td class="inputBGstyle">  
-<input name="titler" type="text" class="someinputs" id="titler" accesskey="h" tabindex="1" onfocus="if(this.value=='TITLE')this.value='';" value="TITLE" size="45" maxlength="55" />  </td>
+<input type="text" name="performer" size="15" class="someinputs" id="performer"><input name="titler" type="text" class="someinputs" id="titler" accesskey="h" tabindex="1" onfocus="if(this.value=='TITLE')this.value='';" value="TITLE" size="30" maxlength="55" />  </td>
   </tr>
 
 <?php
