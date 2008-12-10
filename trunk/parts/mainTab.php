@@ -25,6 +25,12 @@
 .inside {
 	border: thick ridge #333333;
 }
+.copyright {
+	font-family: "Courier New", Courier, mono;
+	font-size: 9px;
+	color: #333333;
+	text-decoration: none;
+}
 -->
 </style>
 <table width="397" border="0" align="left" class="mainTabTitle">
@@ -40,6 +46,17 @@ echo $version;
         <span class="custom">Customized for:HepVinyl</span>			    
       </div>
   <div align="center"><img src="images/preview_32x32.png" width="32" height="32">
+  </div>
+  <div align="center" class="copyright"><br>
+  	      <?php
+echo "TurboLister html Cheater v";
+echo $version;
+echo "<br>";
+echo	"Copyright &copy; 2008 <a href=\"mailto:mohawkdigital@gmail.com\" style=\"text-decoration:none;\">Damian C. Kelly.</a>&nbsp;";
+echo	"TLhC is free software released under GNU GPLv3.<br>";
+?>
+  </div>
+  <div align="center"><img src="../images/gplv3-127x51.png">
   </div></td>
   </tr>
 </table>
