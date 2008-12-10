@@ -62,7 +62,7 @@ echo $version
 </div>
 <div class="TabbedPanels" id="TabbedPanels1">
 		<ul class="TabbedPanelsTabGroup">
-			<li class="TabbedPanelsTab">TLhC Start</li>
+			<li class="TabbedPanelsTab">TLhC Start Block</li>
 			<li class="TabbedPanelsTab">Basic 45</li> 
 			<li class="TabbedPanelsTab">Punk & or EP</li> 
 			<li class="TabbedPanelsTab">Update Drawers</li> 
