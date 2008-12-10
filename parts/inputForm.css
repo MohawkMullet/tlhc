@@ -15,7 +15,7 @@ body {
 	background-repeat: repeat-x;
 	background-position: left top;
 	background-image: url(../images/gradBg.gif);
-	background-color: #CCCCCC;
+	background-color: #dcdcdc;
 }
 select { background: rgb(255, 255, 255) none repeat scroll 0% 50%;
     width: 324px;

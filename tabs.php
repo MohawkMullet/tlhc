@@ -22,9 +22,6 @@ Input</title>
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 <style type="text/css">
 <!--
-body {
-	background-color: #9E9E9E;
-}
 .style2 {
 	font-size: 18px;
 	font-weight: bolder;
@@ -62,30 +59,32 @@ echo $version
 </div>
 <div class="TabbedPanels" id="TabbedPanels1">
 		<ul class="TabbedPanelsTabGroup">
-			<li class="TabbedPanelsTab">TLhC Start Block</li>
 			<li class="TabbedPanelsTab">Basic 45</li> 
 			<li class="TabbedPanelsTab">Punk & or EP</li> 
 			<li class="TabbedPanelsTab">Update Drawers</li> 
+			<li class="TabbedPanelsTab">About TLhC</li>
+
 			
 		</ul>
 		<div class="TabbedPanelsContentGroup">
 		  <div class="TabbedPanelsContent">
 			  <div align="center">
-<?php
-include('parts/mainTab.php');
-?>
-			  </div>
-		  </div> 
-			<div class="TabbedPanelsContent">
+
 			<?php
 				include('inMain.php');			
 			?>
-			</div>
-			<div class="TabbedPanelsContent"><?php include('inPunk.php');	?></div>
+			  </div>
+		  </div> 
 			<div class="TabbedPanelsContent">
-			<?php			
+<?php include('inPunk.php');	?>
+			</div>
+			<div class="TabbedPanelsContent">			<?php			
 				include('inDrawers.php');			
-			?>
+			?></div>
+			<div class="TabbedPanelsContent">
+<?php
+include('parts/mainTab.php');
+?>
 			</div> 
 			
 		</div> 

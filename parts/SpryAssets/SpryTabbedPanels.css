@@ -80,7 +80,7 @@
 	cursor: pointer;
 	border-top: 2px groove #333333;
 	border-right: 2px ridge #333333;
-	border-bottom: 0px solid #333333;
+	border-bottom: 2px double #333333;
 	border-left: 1px solid #666666;
 }
 
@@ -141,7 +141,7 @@
  */
 .TabbedPanelsContentGroup {
 	clear: both;
-	background-color: #C0C0C0;
+	background-color: #dcdcdc;
 }
 
 /* This is the selector for the Content panel. The Content panel holds the
@@ -155,6 +155,7 @@
  */
 .TabbedPanelsContent {
 	padding: 0px 0px 0px 0px;
+	border-top: 2px double #333333;
 
 }
 
