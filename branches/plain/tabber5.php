@@ -6,8 +6,8 @@
 		include('parts/tlhcVersion.php');
 		include('parts/SpryAssets/includeSpry.php');
 		include('parts/clearFields.php');
-		include('inParts/charsRemain.php');
-		include('inParts/charsRemain2.php');
+		include('partsIn/charsRemain.php');
+		include('partsIn/charsRemain2.php');
 		include('parts/unknownScriptFromInput.php');
 ?>
 <link rel="shortcut icon" href="images/favicon.ico">
