@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type" />
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type" />
 <link href="lowerCss.css" rel="stylesheet" type="text/css" />
 <title>squares.html</title>
 <style type="text/css">
@@ -91,7 +91,13 @@ function MM_showHideLayers() { //v6.0
 //require_once('parts/rss/rss_fetch.inc');
 ?>
 
-</head>
+<style type="text/css">
+<!--
+body {
+	background-color: #9e9e9e;
+}
+-->
+</style></head>
 <body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onload="MM_showHideLayers('Layer1','','show','Layer2','','show')">
 
 <div id="dragLogo" style="position:absolute; left:344px; top:187px; width:98px; height:99px; z-index:101; visibility: visible;"><img src="../images/Best.gif" width="90" height="90" class="drag" /></div>
