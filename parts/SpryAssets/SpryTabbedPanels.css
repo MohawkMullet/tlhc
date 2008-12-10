@@ -27,8 +27,8 @@
  * want to style the TabbedPanels container.
  */
 .TabbedPanels {
-	margin: 1px 0px 0px 1px;
-	padding: 1px;
+	margin: 0px 0px 0px 1px;
+	padding: 0px;
 	float: left;
 	clear: none;
 	width: 100%; /* IE Hack to force proper layout when preceded by a paragraph. (hasLayout Bug)*/
@@ -46,6 +46,7 @@
 .TabbedPanelsTabGroup {
 	margin: 0px;
 	padding: 0px;
+	border: 0px none #000000;
 }
 
 /* This is the selector for the TabbedPanelsTab. This container houses
@@ -67,16 +68,20 @@
 .TabbedPanelsTab {
 	position: relative;
 	top: 2px;
-        border: 20px;       
 	float: left;
-	padding: 4px 1px;
-	margin: 6px 2px 0px 2px;
+	padding: 4px 2px 5px 3px;
+	margin: 6px 2px 0px;
 	font: bold 0.7em sans-serif;
 	background-color: #dcdcdc;
 	list-style: none;
+
 	-moz-user-select: none;
 	-khtml-user-select: none;
 	cursor: pointer;
+	border-top: 2px groove #333333;
+	border-right: 2px ridge #333333;
+	border-bottom: 0px solid #333333;
+	border-left: 1px solid #666666;
 }
 
 /* This selector is an example of how to change the appearnce of a tab button
@@ -101,6 +106,18 @@
  */
 .TabbedPanelsTabSelected {
 	background-color: #F2CA6D;
+	border-bottom-width: 0px;
+	border-bottom-style: outset;
+	border-bottom-color: #333333;
+	border-top-width: 3px;
+	border-right-width: 3px;
+	border-top-style: groove;
+	border-right-style: ridge;
+	border-left-width: 3px;
+	border-left-style: solid;
+	border-top-color: #333333;
+	border-right-color: #333333;
+	border-left-color: #9e9e9e;
 }
 
 /* This selector is an example of how to make a link inside of a tab button
@@ -137,7 +154,8 @@
  * want to style the Content container.
  */
 .TabbedPanelsContent {
-	padding: 1px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+
 }
 
 /* This selector is an example of how to change the appearnce of the currently
@@ -146,68 +164,6 @@
  * is activated/deactivated.
  */
 .TabbedPanelsContentVisible {
-}
+	border-right: 2px ridge #333333;
 
-/* Vertical Tabbed Panels
- *
- * The following rules override some of the default rules above so that the
- * TabbedPanels widget renders with its tab buttons along the left side of
- * the currently active content panel.
- *
- * With the rules defined below, the only change that will have to be made
- * to switch a horizontal tabbed panels widget to a vertical tabbed panels
- * widget, is to use the "VTabbedPanels" class on the top-level widget
- * container element, instead of "TabbedPanels".
- */
-
-/* This selector floats the TabGroup so that the tab buttons it contains
- * render to the left of the active content panel. A border is drawn around
- * the group container to make it look like a list container.
- */
-.VTabbedPanels .TabbedPanelsTabGroup {
-	float: left;
-	width: 10em;
-	height: 20em;
-	background-color: #EEE;
-	position: relative;
-	border-top: solid 1px #999;
-	border-right: solid 1px #999;
-	border-left: solid 1px #CCC;
-	border-bottom: solid 1px #CCC;
-}
-
-/* This selector disables the float property that is placed on each tab button
- * by the default TabbedPanelsTab selector rule above. It also draws a bottom
- * border for the tab. The tab button will get its left and right border from
- * the TabGroup, and its top border from the TabGroup or tab button above it.
- */
-.VTabbedPanels .TabbedPanelsTab {
-	float: none;
-	margin: 0px;
-	border-top: none;
-	border-left: none;
-	border-right: none;
-}
-
-/* This selector disables the float property that is placed on each tab button
- * by the default TabbedPanelsTab selector rule above. It also draws a bottom
- * border for the tab. The tab button will get its left and right border from
- * the TabGroup, and its top border from the TabGroup or tab button above it.
- */
-.VTabbedPanels .TabbedPanelsTabSelected {
-	background-color: #EEE;
-	border-bottom: solid 5px #999;
-	border-left: solid 8px #999;
-
-}
-
-/* This selector floats the content panels for the widget so that they
- * render to the right of the tabbed buttons.
- */
-.VTabbedPanels .TabbedPanelsContentGroup {
-	clear: none;
-	float: left;
-	padding: 0px;
-	width: 30em;
-	height: 20em;
 }
