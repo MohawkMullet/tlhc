@@ -14,7 +14,7 @@
     <td class="inputBGstyle"> 
  <div class="CollapsiblePanelTabFake">Add reusable comments to Comment Drawers:</div>
 <?php
-		include("inParts/panelsComms.php");
+		include("partsIn/panelsComms.php");
 ?>
 
 </td>
@@ -26,7 +26,7 @@
     <td class="bottomLeftLabel">LOAD:</td>
     <td class="bottomRow">         
 <?php
-		include("inParts/buttonsNoClass.php");
+		include("partsIn/buttonsNoClass.php");
 ?>
     </td>
   </tr>
