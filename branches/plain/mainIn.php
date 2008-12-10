@@ -42,7 +42,7 @@
     <td class="inputBGstyle">
 
 <?php
-//		include('inParts/gradeRadios.php');
+//		include('partsIn/gradeRadios.php');
 ?>
 
     </td>
@@ -53,7 +53,7 @@
  <div class="CollapsiblePanelTabFake">reusable comment drawers</div>
 <?php
 // COMMENT THIS OUT IF YOU HAVE NO MYSQL DATABASE CONNECTION.  THE PANELS WILL NOT LOAD THEN.
-//		include("inParts/panels.php");
+//		include("partsIn/panels.php");
 ?>
 
 </td>
@@ -72,7 +72,7 @@
     <td class="inputBGstyle">
 
 <?php
-		include("inParts/linkboxes.php");
+		include("partsIn/linkboxes.php");
 ?>
     
     </td>
@@ -81,14 +81,14 @@
     <tr><td class="RightHandLabels">Boxes:</td>
     <td class="inputBGstyle">
 <?php
-		include("inParts/addBoxes.php");
+		include("partsIn/addBoxes.php");
 ?>    
     </td></tr>
   <tr>
     <td class="bottomLeftLabel">LOAD:</td>
     <td class="bottomRow">          
 <?php
-		include("inParts/buttonsNoClass.php");
+		include("partsIn/buttonsNoClass.php");
 ?>
     </td>
   </tr>
