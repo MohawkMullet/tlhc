@@ -12,8 +12,9 @@ echo $version;
 echo "<br>";
 echo	"Copyright &copy; 2008 <a href=\"mailto:mohawkdigital@gmail.com\" style=\"text-decoration:none;\">Damian C. Kelly.</a>&nbsp;";
 echo	"TLhC is free software released under GNU GPLv3.<br>";
+echo "<img src=\"../images/gplv3-127x51.png\">";
 ?>
-        <!-- #BeginDate format:IS1a -->2008-12-10 0:03 AM<!-- #EndDate -->
+        <!-- #BeginDate format:IS1a -->2008-11-30 9:33 AM<!-- #EndDate -->
 </strong>
         </font>
       </div></td>

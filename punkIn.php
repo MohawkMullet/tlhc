@@ -22,7 +22,10 @@
   </td>
 	<td class="inputBGstyle"><input type="text" name="artists" size="45" class="someinputs" id="artists"></td>  
   </tr>
-
+      <tr>
+    <td class="RightHandLabels">Image</td>
+    <td class="inputBGstyle"><input name="picasaImage" type="text" size="45"></td>
+  </tr>
   <tr>
     <td class="RightHandLabels">SIDE A</td>
     <td class="inputBGstyle"><input name="sideA" class="someinputs" type="text" id="sideA" accesskey="a" tabindex="2" size="45" />    </td>
@@ -33,14 +36,18 @@
   </tr>
   <tr>
     <td class="RightHandLabels">Label </td>
-    <td class="inputBGstyle"><input name="Label" type="text" class="someinputs" id="Label" accesskey="l" tabindex="4" size="20" /><input name="recNum" type="text" class="someinputs" id="recNum" accesskey="h" tabindex="5" onfocus="if(this.value=='No.')this.value='';" value="No." size="15" />		</td>
+    <td class="inputBGstyle"><input name="Label" type="text" class="someinputs" id="Label" accesskey="l" tabindex="4" size="25" />		</td>
+  </tr>
+  <tr>
+    <td class="RightHandLabels">#</td>
+    <td class="inputBGstyle"><input name="recNum" type="text" class="someinputs" id="recNum" accesskey="h" tabindex="5" onfocus="if(this.value=='Record #')this.value='';" value="Record #" size="45" />        </td>
   </tr>
   <tr>
     <td class="RightHandLabels">GRADE</td>
     <td class="inputBGstyle">
 
 <?php
-		include('partsIn/gradeRadios.php');
+		include('inParts/gradeRadios.php');
 ?>
 
     </td>
@@ -50,7 +57,7 @@
     <td class="inputBGstyle">
  <div class="CollapsiblePanelTabFake">comment drawers</div>
 <?php
-		include("partsIn/panelsPunk.php");
+		include("inParts/panelsPunk.php");
 ?>
 
 </td>
@@ -69,26 +76,22 @@
     <td class="inputBGstyle">
 
 <?php
-		include("partsIn/linkboxes.php");
+		include("inParts/linkboxes.php");
 ?>
     
     </td>
   </tr>
-        <tr>
-    <td class="RightHandLabels">Image</td>
-    <td class="inputBGstyle"><input name="picasaImage" type="text" size="45"></td>
-  </tr>
-    <tr><td class="RightHandLabels">&nbsp;</td>
+    <tr><td class="RightHandLabels">Boxes:</td>
     <td class="inputBGstyle">
 <?php
-		include("partsIn/checkBoxes.php");
+		include("inParts/addBoxes.php");
 ?>    
     </td></tr>
   <tr>
     <td class="bottomLeftLabel">LOAD:</td>
     <td class="bottomRow">          
 <?php
-		include("partsIn/buttonsNoClass.php");
+		include("inParts/buttonsNoClass.php");
 ?>
     </td>
   </tr>

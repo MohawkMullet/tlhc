@@ -8,7 +8,7 @@ session_start();
 <?php
 		include('parts/tlhcVersion.php');
 ?>
-<link href="parts/inputForm.css" rel="stylesheet" type="text/css" />
+<link href="parts/TLhCforms.css" rel="stylesheet" type="text/css" />
 <link href="parts/SpryAssets/SpryTabbedPanels.css" rel="stylesheet" type="text/css" />
 <link rel="shortcut icon" href="images/favicon.ico">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -65,7 +65,7 @@ MM_reloadPage(true);
 //-->
 </script>
 <?php
-include('partsOut/writeToFile.php');
+//include('outParts/writeToFile.php');
 ?>
 
 </head>
@@ -85,7 +85,9 @@ include('partsOut/writeToFile.php');
 				<span class="TabbedPanelsTab"><a href="javascript:selectAll('test2.select2')">Grab the Title</a></span><br>
 						<input name="select2" type="text" value="
 								<?php
-include('partsOut/formOuts/titleOut.php');
+$titler = $_POST['titler'];
+$titler = ucwords(strtolower($titler));										
+echo $titler;
 								?>
 						" size="55">
 		</form>
@@ -94,7 +96,7 @@ include('partsOut/formOuts/titleOut.php');
 				<span class="TabbedPanelsTab"><a href="javascript:selectAll('test.select1')">Grab the Code</a></span><br />
 						<textarea name="select1" cols="90" rows="4" wrap="VIRTUAL">
 							<?php
-									include("partsOut/OutPutPreview.php");
+									include("outParts/OutPutPreview.php");
 							?>
 						</textarea>
 		</form>
@@ -102,7 +104,7 @@ include('partsOut/formOuts/titleOut.php');
 
 <div id="outPrev">
 		<?php
-				include("partsOut/OutPutPreview.php");
+				include("outParts/OutPutPreview.php");
 		?>
 </div>
 </body>

@@ -15,9 +15,9 @@ echo $version;
 
 
 
-<frameset rows="70%,30%" frameborder="no" border="0" framespacing="0">
-	<frame src="parts/midTop.php" name="topOne" scrolling="no" frameborder="0" margin="0" border="0">
-	<frame src="parts/midBottom.php" name="low" scrolling="no" frameborder="0" margin="0" border="0">
+<frameset rows="70%,30%" bgcolor="#C7AC69" frameborder="yes" border="0" framespacing="0">
+	<frame src="parts/midTop.php" name="topOne" scrolling="no" frameborder="0" margin="0" border="0" noresize>
+	<frame src="parts/bottomMid.php" name="low" scrolling="no" frameborder="0" margin="0" noresize border="0">
 </frameset><noframes></noframes> 
 
 <body></body>
