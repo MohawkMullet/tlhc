@@ -68,7 +68,7 @@ echo $version
 		</ul>
 		<div class="TabbedPanelsContentGroup">
 		  <div class="TabbedPanelsContent">
-			  <div align="center">
+			  <div>
 
 			<?php
 				include('inMain.php');			
@@ -90,11 +90,11 @@ include('parts/mainTab.php');
 		</div> 
 </div>
 <!--Initialize the Tabbed Panel widget object-->
-<script type="text/javascript">
+
+<div align="left">
+  <script type="text/javascript">
 	var TabbedPanels1 = new Spry.Widget.TabbedPanels("TabbedPanels1");
 </script> 
-<div align="center">
-<?php  include('license.php'); ?>
-</div>
+  </div>
 </body>
 </html>
