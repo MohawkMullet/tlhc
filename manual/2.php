@@ -116,7 +116,7 @@ function closesubnav(event){
     <a href="#">Breadcrumb</a> / <a href="#">Breadcrumb</a> / <a href="#">Breadcrumb</a> /
   </div> 
   <div id="pageName"> 
-    <h2>TLhC version 1.7.2 -- Documentation </h2> 
+    <h2>TLhC version 1.7.9 -- Documentation </h2> 
     <img alt="small logo" src="" height="59" width="66"/> 
   </div> 
   <div id="pageNav"> 
@@ -177,12 +177,14 @@ function closesubnav(event){
           <td class="storyLeft"><?php
 		  include('formImage.php');
 		  ?></td> 
-          <td> <p>&nbsp; 
-            </p></td> 
+          <td><?php
+		  include('showRss.php');
+		  ?></td> 
         </tr> 
         <tr valign="top"> 
-          <td class="storyLeft"> <p>&nbsp; 
-            </p></td> 
+          <td class="storyLeft"> <?php
+		  include('templateDesign.php');
+		  ?></td> 
           <td> <p>&nbsp; 
             </p></td> 
         </tr> 
