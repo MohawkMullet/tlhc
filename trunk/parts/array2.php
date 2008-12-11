@@ -1,7 +1,6 @@
 <?php
-
 		$artists = $_POST['artists'];
-			$artists = ucwords(strtolower($artists));
+		$artists = ucwords(strtolower($artists));
 		$vinylSelector = $_POST["vinylSelector"];
 				foreach ( $vinylSelector as $valueVinyl ) {
 				}
@@ -18,8 +17,14 @@
 		$gradeQ = $_POST["gradeQ"];
 				foreach ( $gradeQ as $valueG ) {
 				}
+		$performer = $_POST['performer'];
+		$performer = ucwords(strtoupper($performer));
+//echo "$performer &nbsp;";
 		$titler = $_POST['titler'];
-			$titler = ucwords(strtolower($titler));	
+		$titler = ucwords(strtolower($titler));										
+//echo $titler;
+		$listingMast = "$performer $titler";
+//echo $listingMast;
 		$Label = $_POST['Label'];
 			$Label =ucwords(strtoupper($Label));
 		$recNum = $_POST['recNum'];
@@ -36,11 +41,11 @@
 
 
 	$theGoods = array(
-			"$titler", 
+			"$listingMast", 
 			"<br>$sideA<br>",
 			"$sideB<br>",
 			"$Label",
-			"$recNum<br>",
+			"<br>$recNum<br>",
 			"$valueG<br>",
 			"$valueVinyl<br>",
 			"$valueLabels<br>",
