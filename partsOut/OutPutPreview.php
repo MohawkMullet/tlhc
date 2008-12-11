@@ -17,7 +17,7 @@ include("descript3.php");
 <?php
 	$boxes200 = $_POST["boxes200"];
 	if ($boxes200 != "") {
-	include('rss5.php');
+	include('rssShowNew.php');
 	}
 ?>
 <?php
