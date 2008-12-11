@@ -126,7 +126,7 @@ function closesubnav(event){
       Link</a> 
     </div> 
     <div class="relatedLinks"> 
-      <h3>Related Link Category</h3> 
+      <h3>The Input Forms </h3> 
       <a href="#DANGER">DANGER</a> <a href="#">Related Link</a> <a href="#">Related
       Link</a> <a href="#">Related Link</a> <a href="#">Related Link</a> <a href="#">Related
       Link</a> 
@@ -174,8 +174,9 @@ function closesubnav(event){
           </td> 
         </tr> 
         <tr valign="top"> 
-          <td class="storyLeft"> <p>&nbsp; 
-            </p></td> 
+          <td class="storyLeft"><?php
+		  include('formImage.php');
+		  ?></td> 
           <td> <p>&nbsp; 
             </p></td> 
         </tr> 
