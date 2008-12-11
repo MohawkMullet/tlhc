@@ -7,14 +7,15 @@
 <table width="350" border="0" cellspacing="2" cellpadding="2">
   <tr>
     <td width="342">
-<fieldset class="style1"><legend>Remove Standard Components</legend>
+<fieldset class="style1">
+<legend>Include These Components?</legend>
 <label><input type="checkbox" name="boxes2" value="style" checked  tabindex="19">Style</label>
 <label><input type="checkbox" name="boxes6" value="relItems" tabindex="19">Punk</label>
 <label><input type="checkbox" name="boxes3" value="aboutUs" checked tabindex="19">About</label>
 <label><input type="checkbox" name="boxes4" value="gradeKey" checked tabindex="19">Key</label>
 <label><input type="checkbox" name="boxes5" value="feedBox" checked tabindex="19">Feeds</label>
-<label><input type="checkbox" name="boxes200" value="boxes200" tabindex="19">5 RSS</label>
-
+<label><input type="checkbox" name="boxes200" value="boxes200" tabindex="19"> 
+New Items</label>
 </fieldset>
 </td>
   </tr>
