@@ -1,76 +1,78 @@
 <?php
 		include("parts/db/tlhcConnect.php");
 ?>
+<?php 
+$emptyRow = "<tr><td class=\"RightHandLabels\">&nbsp;</td><td class=\"inputBGstyle\">";
+$emptyRowEnd = "</td></tr>";
+?>
 <!-- START THE FORM -->
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+//-->
+</script>
+
+
+
 
 <form action="Output.php" method="POST" name="basic" target="topOne" id="slapIt" onSubmit="MM_changeProp('slapIt','','fontCase','capitalize','FORM')">
 <table width="392" border="0" cellpadding="2" cellspacing="0" class="formTable" id="recInput">
 <tr>
     <td width="70" class="LeftLabelColTop">&nbsp;</td>
     <td width="294" class="labelTableTop" align="center">
-    <span class="versionNum">Standard 45 </span></td>
+    <span class="versionNum">Standard 45 </span><a href="#" onMouseOver="MM_showHideLayers('Layer1','','show')">Component Or No</a></td>
 </tr>
-  <tr>
-    <td class="RightHandLabels">&nbsp;</td>
-    <td class="inputBGstyle">  
-<input type="text" name="performer" size="15" class="someinputs" id="performer"  tabindex="1"><input name="titler" type="text" class="someinputs" id="titler" accesskey="h" tabindex="2" onfocus="if(this.value=='TITLE')this.value='';" value="TITLE" size="30" maxlength="55" />  </td>
-  </tr>
+
+<?php
+		echo	$emptyRow;
+		include('partsIn/performerTitle.php');
+		echo	$emptyRowEnd;
+?>
 
 <?php
 		include('partsIn/AnB.php');
 ?>
 <?php
-		include('partsIn/LblNoSlvIN.php');
+		echo	$emptyRow;
+		include('partsIn/LblNoSlvIN2.php');
+		echo	$emptyRowEnd;
 ?>
-  <tr>
-    <td class="RightHandLabels">&nbsp;</td>
-    <td class="inputBGstyle">
-
 <?php
+		echo	$emptyRow;
 		include('partsIn/gradeRadios.php');
+		echo	$emptyRowEnd;
 ?>
-
-    </td>
-  </tr>
-  <tr>
-    <td class="RightHandLabels">&nbsp;</td>
-    <td class="inputBGstyle"> 
+<?php
+		echo	$emptyRow;
+?>
  <div class="CollapsiblePanelTabFake">comment drawers</div>
 <?php
 		include("partsIn/panels.php");
+		echo	$emptyRowEnd;
 ?>
-
-</td>
-  </tr>
-  <tr>
-    <td class="RightHandLabels">Abrs.</td>
-    <td class="inputBGstyle"><input name="notes" type="text" class="someinputs" id="notes" accesskey="n" tabindex="14" size="20" maxlength="90" /></td>
-  </tr>
-  <tr>
-    <td class="RightHandLabels">bar</td>
-    <td class="inputBGstyle">
-    <textarea name="sideBar2" class="someinputs" cols="38" rows="3" wrap="physical" id="sideBar2" accesskey="s" tabindex="15"></textarea></td>
-  </tr>
-  <tr>
-    <td class="RightHandLabels">Link</td>
-    <td class="inputBGstyle">
-
+<?php
+		include("partsIn/abrvs.php");
+?>
+<?php
+		include("partsIn/sideBar.php");
+?>
 <?php
 		include("partsIn/linkboxes.php");
 ?>
-    
-    </td>
-  </tr>
-    <tr>
-    <td class="RightHandLabels">Picasa</td>
-    <td class="inputBGstyle"><input name="picasaImage" type="text" size="45"  tabindex="18"></td>
-  </tr>
-    <tr><td class="RightHandLabels">&nbsp;</td>
-    <td class="inputBGstyle">
 <?php
+		include("partsIn/picasaImage.php");
+?>
+<?php
+		echo	$emptyRow;
 		include("partsIn/checkBoxes.php");
+//		echo "&nbsp;";
+		echo	$emptyRowEnd;
 ?>    
-    </td></tr>
   <tr class="unnamed1">
     <td class="bottomLeftLabel">&nbsp;</td>
     <td class="bottomRow">          
