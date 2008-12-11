@@ -35,7 +35,7 @@ include("descript3.php");
 <?php
 	$boxes4 = $_POST["boxes4"];
 	if ($boxes4 != "") {
-	include('gradeandkeytable.php');
+	include('section3.php');
 	}
 ?>
 </td>
