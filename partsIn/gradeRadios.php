@@ -3,7 +3,7 @@
 .style1 {font-size: 10px}
 -->
 </style>
-<table width="310" border="0" cellpadding="0" cellspacing="0" class="style1">
+<table width="330" border="0" cellpadding="0" cellspacing="0" class="style1">
 <tr>
 <td scope="col">
 <label> <fieldset><legend>Record Grade:</legend>
@@ -17,6 +17,6 @@ EX</label>
 VG+</label>
 <label>
 <input type="radio" name="gradeQ[]" value="VG" id="Grade_3" tabindex="8" />
-VG</label>      </fieldset>      </td>
+VG</label></fieldset></td>
 </tr>
 </table>
