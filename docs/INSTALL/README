@@ -1,0 +1,72 @@
+ 
+    Turbo Lister HTML Cheater is Copyright 2008 Damian C. Kelly.  mohawkdigital@gmail.com
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation,  version 3 of the License, or any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+Uses:
+
+This program is designed to ouptut HTML that can be cut and pasted into popular Ebay listing software such as TurboLister2 or JAOLT.  
+
+Installing:
+
+Create a database named 'tlhc' and use the .sql file in the folder INSTALL to populate some data.
+
+Edit the file /parts/db/tlhcConnect.php with your database & user password info for your MySQL server.
+
+Upload / copy the main directory into a PHP/MYSQL based web server folder.
+
+
+CONFIGURATION:
+edit the file parts/config.php and add some of the usual variables.  You may leave any of these blank but the mpore you fill in the more options you'll have.
+
+----------------------------------------------------------------------------------------------------------
+HOW THE PROGRAM IS ORGANIZED:
+MOST All the parts of the INPUT forms are in the folder 
+inParts -- these are the pieces of the input forms
+outParts/ -- these are the pieces of the output.  
+outParts/formOuts/ -- these are the scripts that take the form data and write it into the html for output
+parts/
+parts/db -- use if you are wanting the multi select boxes.
+parts/SpryAssets  -- these control the INPUT form styles and tabs and panels
+
+OTHER IMPORTANT FILES FOR YOUR LISTINGS:
+
+outParts/styles.php --     this is the style information that is included in your auctions:  add a background image to:  control all other fonts colors of your listing here
+
+
+outParts/descript2.php -- this is the top description box.  this box takes the form output and organizes it into this table.  this file pulls its includes from the outParts/formOuts/ folder.  You may want to edit some of these files to  
+
+
+
+----------------------------THE INPUT FORMS----------------------------------------
+FEATURES FIELD: Store logo will show up on right hand side if the FEATURES text area is empty.
+you may change this behaviour in the file outParts/formOuts/rightLogoTable.php
+LINK FIELDS:  the first box must be a full URL eg: http://google.com/index.html.  The second box is what your "Click HERE" link text will say
+CHECKBOXES:  whether or not to include the styles, about us box, shipping info box, and feeds boxes.  customize outParts/relItems2.php to have a table of related items in your store
+the 
+IMAGE FIELD:
+notes on the image field:  this will not take the place of an ebay gallery image.  this is just meant for someone who wants an image of their item in the main description area instead of at the top or bottom of your listing.
+sign up for picasa through google
+2.  create a public folder.  
+3.  upload images
+4.  use the "embed this image" link and choose a thumbnail size
+5.  paste that code into the IMAGE field in TLhC input form.
+6.  the link back to the picasa website will be stripped automatically.
+EDIT picasaImageOut.php in outParts/formOuts/ to get rid of the link stripping.
+REUSABLE COMMENT DRAWERS:
+you must have MYSQL connection to use these unless you want ot hard code them all.
+COMMOUN
+
+TURBOLISTER ALTERNATIVES:
+jAOLT is a multiplatform java based app
+http://code.google.com/p/jaolt/
