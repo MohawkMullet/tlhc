@@ -1,6 +1,6 @@
-<div class="stuff">Side A:&nbsp;
+<fieldset class="insideFields"><legend>Side A & B:</legend><div class="stuff">
 <input name="sideA" class="someinputs" type="text" id="sideA" accesskey="a" tabindex="3" size="45" />
 </div>
-<div class="stuff">Side B:&nbsp;
+<div class="stuff">
 <input name="sideB" class="someinputs" type="text" id="sideB" accesskey="b" tabindex="4" size="45" />
-</div>
+</div></fieldset>

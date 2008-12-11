@@ -1,3 +1,6 @@
+<?php
+	echo	"<div class=\"CollapsiblePanelTabFake\">comment drawers</div>";
+?>
     <div id="CollapsiblePanel1" class="CollapsiblePanel">
     <div class="CollapsiblePanelTab" tabindex="9">Vinyl</div>
     <div class="CollapsiblePanelContent">  
