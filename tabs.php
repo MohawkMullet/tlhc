@@ -71,7 +71,7 @@ echo $version
 			  <div>
 
 			<?php
-				include('inMain.php');			
+				include('inMain2.php');			
 			?>
 			  </div>
 		  </div> 

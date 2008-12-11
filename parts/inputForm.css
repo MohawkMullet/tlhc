@@ -34,6 +34,10 @@ select { background: rgb(255, 255, 255) none repeat scroll 0% 50%;
 	text-align: left;
 
 }
+input {
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
 
 #floater {
 	overflow: visible;
@@ -42,7 +46,61 @@ select { background: rgb(255, 255, 255) none repeat scroll 0% 50%;
 	position: fixed;
 }
 
-
+fieldset {
+	margin: 1px;
+	padding: 1px;
+}
+.outerFields {
+	padding: 2px;
+	border-right-width: 4px; 
+	border-bottom-width: 3px; 	
+	border-top-width: 3px; 	
+	border-left-width: 3px; 
+	border-color: #4D4D4D;
+	border-bottom-style: outset; 
+	border-right-style: double; 
+	border-left-style: outset; 
+	border-top-style: inset;
+	background-color: #C1BEBE;
+	
+}
+.insideFields {
+	background-color:#dcdcdc;
+	margin-bottom:3px;
+	border-width: 3px;
+	border-style: outset;
+	margin-left: 4px;
+}
+	
+.outsideLegend {
+	color: #3F3838;
+	font-size: 15px;
+	font-weight: bold;
+	font-family: Geneva,Arial,Helvetica,sans-serif;
+	font-variant: small-caps;
+	padding-right: 4px;
+	margin-right: 4px;
+	text-indent: 4px;
+}
+legend {
+	color: #333333;
+	font-size: 16px;
+	font-weight: bold;
+	font-stretch:ultra-condensed;
+	font-family: courier;
+	padding-right: 1px;
+	margin-right: 1px;
+	text-indent: 1px;
+	margin-bottom:1px;
+	padding-bottom:3px;
+}
+label {
+	font-size: 14px;
+	font-weight: bold;
+	font-family: Geneva,Arial,Helvetica,sans-serif;
+	color: #696969;
+	font-variant: small-caps;
+}
 
 .inputBGstyle {
 	margin: 0px;
@@ -59,8 +117,6 @@ select { background: rgb(255, 255, 255) none repeat scroll 0% 50%;
 	border-right-width: thin;
 	border-right-style: solid;
 	border-right-color: #666666;
-}
-
 }
 
 .bottomTableRow{
@@ -140,13 +196,13 @@ select { background: rgb(255, 255, 255) none repeat scroll 0% 50%;
 }
 
 .someinputs { text-indent: 3px;
-    font-family: Arial,Helvetica,sans-serif;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: bolder;
-    font-size: 13px;
-    line-height: 8px;
-    color: #666666;
+	font-size: 14px;
+	font-weight: bold;
+	font-family: Geneva,Arial,Helvetica,sans-serif;
+	color: #696969;
+	font-variant: small-caps;
+	margin-left:4px;
+	margin-right: 1px;
 }
 
   .RightHandLabels { 
