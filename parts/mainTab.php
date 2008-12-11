@@ -37,14 +37,18 @@
 <tr>
 <td width="391" valign="top" bgcolor="#9e9e9e" class="tbl"><table width="100%"  border="0" align="center" cellpadding="15" cellspacing="15" id="inner">
   <tr>
-    <td bgcolor="#F2CA6D" class="inside">    <div align="center">TLhC v 
-        <?php
+    <td align="center" valign="top" bgcolor="#F2CA6D" class="inside">    <div align="center">
+      <p>TLhC v 
+          <?php
 echo $version;
 ?>
-        <br>      
-        <img src="images/TLhClogoSmaller.png" width="53" height="75"><br>
-        <span class="custom">Customized for:HepVinyl</span>			    
-      </div>
+          <br>      
+          <img src="images/TLhClogoSmaller.png" width="53" height="75"></p>
+      <p><a href="../docs/2.php" target="_right">DOCUMENTATION</a></p>
+      <p><br>
+              <span class="custom">Customized for:HepVinyl</span>			    
+      </p>
+    </div>
   <div align="center"><img src="images/preview_32x32.png" width="32" height="32">
   </div>
   <div align="center" class="copyright"><br>
