@@ -1,5 +1,8 @@
 <?php
 		include('partsIn/performerTitle2.php');
+?>
+<?php
+		include('partsIn/punkArtists.php');
 ?>	
 <?php
 		include('partsIn/AnB2.php');
