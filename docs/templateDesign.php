@@ -6,3 +6,4 @@
 <p>at the very top of your OutPutPreview.php include this code: &lt;?php include('styles.php'); ?&gt;</p>
 <p>This will insert your new style sheet you created. </p>
 
+<img src="images/exampleTemplate2.jpeg" width="470" height="464" border="0" alt="">
