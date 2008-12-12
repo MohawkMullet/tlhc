@@ -15,7 +15,7 @@ body {
 	background-repeat: repeat-x;
 	background-position: left top;
 	background-image: url(../images/gradBg.gif);
-	background-color: #dcdcdc;
+	background-color: #9e9e9e;
 }
 select { background: rgb(255, 255, 255) none repeat scroll 0% 50%;
     width: 324px;
@@ -47,6 +47,8 @@ input {
 }
 
 fieldset {
+margin-top:6px;
+padding-top:5px;
 	margin: 1px;
 	padding: 1px;
 }
@@ -66,10 +68,13 @@ fieldset {
 }
 .insideFields {
 	background-color:#dcdcdc;
+border-color:#7e7e7e;
 	margin-bottom:3px;
 	border-width: 5px;
 	border-left:0px;
-	border-style: outset;
+border-top:2px double #9e9e9e;
+	border-bottom: 3px outset #282828;
+border-right-style: ridge;
 	margin-left: 1px;
 }
 	
@@ -118,7 +123,7 @@ label {
 	font-size: 12px;
 	font-weight: bold;
 	font-family: Geneva,Arial,Helvetica,sans-serif;
-	color: #696969;
+	color: #3F3838;
 	font-variant: small-caps;
 }
 
@@ -296,7 +301,7 @@ label {
 	top: 200px;
 }
 .buttons {
-	background-color: #F2CA6D;
+	background-color: #dcdcdc;
 	border-top-width:0px;
 	border-bottom-width: 3px;
 	border-right-width: 1px;

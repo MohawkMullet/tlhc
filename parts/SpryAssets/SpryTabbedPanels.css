@@ -27,7 +27,7 @@
  * want to style the TabbedPanels container.
  */
 .TabbedPanels {
-	margin: 0px 0px 0px 1px;
+	margin: 0px 0px 0px 0px;
 	padding: 0px;
 	float: left;
 	clear: none;
@@ -71,17 +71,17 @@
 	float: left;
 	padding: 4px 2px 5px 3px;
 	margin: 6px 2px 0px;
-	font: bold 0.7em sans-serif;
+	font: bold 0.8em sans-serif;
 	background-color: #dcdcdc;
 	list-style: none;
 
 	-moz-user-select: none;
 	-khtml-user-select: none;
 	cursor: pointer;
-	border-top: 2px groove #333333;
-	border-right: 2px ridge #333333;
-	border-bottom: 2px double #333333;
-	border-left: 1px solid #666666;
+	border-top: 4px groove #333333;
+	border-right: 0px ridge #333333;
+	border-bottom: 0px double #333333;
+	border-left: 3px solid #666666;
 }
 
 /* This selector is an example of how to change the appearnce of a tab button
@@ -105,19 +105,22 @@
  * content panel so that it looks like the tab is part of the content panel.
  */
 .TabbedPanelsTabSelected {
-	background-color: #F2CA6D;
-	border-bottom-width: 0px;
-	border-bottom-style: outset;
-	border-bottom-color: #333333;
-	border-top-width: 3px;
-	border-right-width: 3px;
-	border-top-style: groove;
-	border-right-style: ridge;
-	border-left-width: 3px;
-	border-left-style: solid;
-	border-top-color: #333333;
-	border-right-color: #333333;
-	border-left-color: #9e9e9e;
+color:#eeeeee;
+font-size:16px;
+	background-color: #9e9e9e;
+	border-top-width: 4px;
+border-bottom:8px solid #9e9e9e;
+	border-right-width: 4px;
+	border-top-style: outset;
+	border-right-style: double;
+	border-left-width: 2px;
+	border-left-style: outset;
+	border-top-color: #9e9e9e;
+	border-right-color: #282828;
+	border-left-color: #cccccc;
+margin-right:3px;
+margin-left:2px;
+padding:3px;
 }
 
 /* This selector is an example of how to make a link inside of a tab button
@@ -141,7 +144,7 @@
  */
 .TabbedPanelsContentGroup {
 	clear: both;
-	background-color: #dcdcdc;
+	background-color: #cccccc;
 }
 
 /* This is the selector for the Content panel. The Content panel holds the
@@ -155,7 +158,7 @@
  */
 .TabbedPanelsContent {
 	padding: 0px 0px 0px 0px;
-	border-top: 2px double #333333;
+	border-top: 0px double #333333;
 
 }
 
