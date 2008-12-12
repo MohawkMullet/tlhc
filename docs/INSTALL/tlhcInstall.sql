@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Dec 10, 2008 at 05:58 AM
+-- Generation Time: Dec 11, 2008 at 07:44 PM
 -- Server version: 5.0.51
 -- PHP Version: 5.2.6
 
@@ -83,7 +83,7 @@ CREATE TABLE IF NOT EXISTS `commsPromo` (
   `value` varchar(200) NOT NULL,
   `name` varchar(200) default NULL,
   PRIMARY KEY  (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 ROW_FORMAT=DYNAMIC AUTO_INCREMENT=511 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 ROW_FORMAT=DYNAMIC AUTO_INCREMENT=513 ;
 
 --
 -- Dumping data for table `commsPromo`
@@ -111,7 +111,9 @@ INSERT INTO `commsPromo` (`id`, `value`, `name`) VALUES
 (16, 'promotion copy both sides', 'promotion copy both sides'),
 (79, 'd. j. copy not for sale both sides', 'd. j. copy not for sale both sides'),
 (5, 'Promotional Not For Sale both sides', 'Promotional Not For Sale both sides'),
-(510, 'audition record', 'audition record');
+(511, 'for promotional use only both sides', 'for promotional use only both sides'),
+(510, 'audition record both sides', 'audition record both sides'),
+(512, 'd.j. copy not to be sold both sides', 'd.j. copy not to be sold both sides');
 
 -- --------------------------------------------------------
 
@@ -161,20 +163,7 @@ INSERT INTO `commsVinyl` (`id`, `value`, `name`) VALUES
 (41, 'A few very light marks on either side.  Does not affect play. ', 'A few very light marks on either side.  Does not affect play. '),
 (39, 'vinyl shows a few very light marks', 'vinyl shows a few very light marks'),
 (21, 'vinyl is in very nice condition', 'vinyl is in very nice condition'),
-(61, 'plays without problems', 'plays without problems'),
-(108, 'fdadfasdfas', 'fdadfasdfas'),
-(107, 'sdfsdsf', 'sdfsdsf'),
-(106, 'asfadfs', 'asfadfs'),
-(105, 'adsfadsfadfs', 'adsfadsfadfs'),
-(104, 'asdfasdf', 'asdfasdf'),
-(103, 'wererwwererwwer', 'wererwwererwwer'),
-(102, 'werewr', 'werewr'),
-(101, 'werewr', 'werewr'),
-(100, 'mnbmbnmnb', 'mnbmbnmnb'),
-(99, 'adfsadfs', 'adfsadfs'),
-(98, 'adfsadfs', 'adfsadfs'),
-(97, 'dsfdsdsds', ''),
-(96, 'adsfaadsaa', 'adsfaadsaa');
+(61, 'plays without problems', 'plays without problems');
 
 -- --------------------------------------------------------
 
