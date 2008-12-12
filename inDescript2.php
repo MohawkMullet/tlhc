@@ -10,9 +10,11 @@
 <?php
 		include('partsIn/gradeRadios2.php');
 ?>
+<fieldset class="insideFields"><legend>Comment Drawers</legend>
 <?php
 	include("partsIn/panels.php");
 ?>
+</fieldset>
 <?php
 		include("partsIn/linkboxes2.php");
 ?>
