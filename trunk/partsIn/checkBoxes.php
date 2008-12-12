@@ -5,7 +5,7 @@
 		<label><input type="checkbox" name="boxes4" value="gradeKey" checked tabindex="19">Key</label>
 		<label><input type="checkbox" name="boxes5" value="feedBox" checked tabindex="19">Feeds</label>
 		<label><input type="checkbox" name="boxes200" value="boxes200" tabindex="19" checked>Items</label>
-<br>Add Store Categories:<br>
+<hr><label>Add Store Categories:</label>
 		<label><input type="radio" name="cats[]" value="0cats" tabindex="20">
 		 0</label>
 		<label><input type="radio" name="cats[]" value="5cats" tabindex="20">

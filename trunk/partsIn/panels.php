@@ -1,6 +1,3 @@
-<?php
-	echo	"<div class=\"phonyLegend\">Comment Drawers</div>";
-?>
     <div id="CollapsiblePanel1" class="CollapsiblePanel">
     <div class="CollapsiblePanelTab" tabindex="9">Vinyl</div>
     <div class="CollapsiblePanelContent">  
