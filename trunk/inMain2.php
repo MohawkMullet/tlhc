@@ -2,9 +2,19 @@
 		include("parts/db/tlhcConnect.php");
 ?>
 <!-- START THE FORM -->
+<style type="text/css">
+<!--
+.brow {
+	border-bottom-width: 10px;
+	border-bottom-style: double;
+	border-bottom-color: #333333;
+}
+-->
+</style>
+
 
 <form action="Output.php" method="POST" name="basic" target="topOne" id="slapIt" onSubmit="MM_changeProp('slapIt','','fontCase','capitalize','FORM')">
-<table id="recInput" bgcolor="#9e9e9e" style="margin-left:4px;">
+<table bgcolor="#9e9e9e" class="brow" id="recInput" style="margin-left:4px;">
 <tr><td>Basic 45 Input Form</td></tr>
 <tr><td>
 <?php
