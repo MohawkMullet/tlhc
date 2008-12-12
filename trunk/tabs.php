@@ -76,7 +76,7 @@ echo $version
 			  </div>
 		  </div> 
 			<div class="TabbedPanelsContent">
-<?php include('inPunk.php');	?>
+<?php include('inMainPunk.php');	?>
 			</div>
 			<div class="TabbedPanelsContent">			<?php			
 				include('inDrawers.php');			
