@@ -1,4 +1,4 @@
-<fieldset class="insideFields"><legend>Record Grade:</legend>
+<fieldset class="insideFields"><legend>Vinyl Grade & Label Abbrevs:</legend>
 <label><input type="radio" name="gradeQ[]" value="M-" id="Grade_0" tabindex="8">
 M-</label>                
 <label>
@@ -9,4 +9,5 @@ EX</label>
 VG+</label>
 <label>
 <input type="radio" name="gradeQ[]" value="VG" id="Grade_3" tabindex="8" />
-VG</label></fieldset>
+VG</label>&nbsp;&nbsp;
+<label>Abbrevs:<input name="notes" type="text" class="someinputs" id="notes" accesskey="n" tabindex="14" size="14" maxlength="90" style="padding-right:0px; margin-right:5px; padding-bottom:3px; margin-bottom:3px;" /></label></fieldset>

@@ -1,4 +1,4 @@
-<fieldset class="insideFields"><legend>Side A & B:</legend><div class="stuff">
+<fieldset class="insideFields"><legend>Sides A & B:</legend><div class="stuff">
 <input name="sideA" class="someinputs" type="text" id="sideA" accesskey="a" tabindex="3" size="45" />
 </div>
 <div class="stuff">
