@@ -85,6 +85,10 @@ if (is_writable($filename)) {
        echo "Cannot write to file ($filename)";
         exit;
     }
+            if (fwrite($handle, $theGoods[16]) === FALSE) {
+       echo "Cannot write to file ($filename)";
+        exit;
+    }
 //foreach ($theGoods as $details) {
 //	print "$details";
 //	}
