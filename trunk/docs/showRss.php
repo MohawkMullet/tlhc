@@ -18,7 +18,10 @@
 	font-weight: bold;
 	font-size: 12px;
 }
-.style5 {font-size: 12px}
+.style7 {
+	font-size: 14px;
+	font-weight: bold;
+}
 -->
 </style>
 <H1>Include store categories in listing</h1>
@@ -29,7 +32,7 @@
   <li>create your links and copy the html ouptut code to your clipboard. </li>
   <li>open up the folder <span class="style2">partsOut/cats/</span></li>
   <li>create a file called <span class="style2">5cats.php</span>, <span class="style2">10cats.php</span>, &amp; <span class="style2">20cats.php</span></li>
-  <li>Paste your code from the ebay html link builder into a blank <span class="style2">5cats.php</span> </li>
+  <li>Paste your code from the ebay html link builder into a blank <span class="style7">(don't use &lt;html&gt;&lt;head&gt; or &lt;body&gt; tags in these files)</span> <span class="style2">5cats.php</span> </li>
   <li>open up the file <span class="style2">inMain.php</span> from the root directory </li>
   <li>uncomment the line: <span class="style4">include(&quot;partsIn/checkBoxes.php&quot;);</span> This will now include a series of radio boxes in your main input form. </li>
 </ul>
