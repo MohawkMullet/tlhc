@@ -10,7 +10,7 @@ This program is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
-
+ok
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.  
 */
@@ -72,7 +72,7 @@ if ($origSleeve != "") {
 		$sleeveSelector = $_POST["sleeveSelector"];
 //		print "\n\n";
 		foreach ( $sleeveSelector as $valueSleeve ) {
-		print "<span class=\"multicomms\">$valueSleeve</span><br>\n";                                             
+		print "<span class=\"multicomms\">Sleeve $valueSleeve</span><br>\n";                                             
 		}
 		}
 ?>
