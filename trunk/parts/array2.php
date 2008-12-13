@@ -13,6 +13,9 @@
 		$miscSelector = $_POST["miscSelector"];
 				foreach ( $miscSelector as $valueMisc ) {
 				}
+		$sleeveSelector = $_POST["sleeveSelector"];
+				foreach ( $sleeveSelector as $valueSleeve ) {
+				}
 		$freeStyle = $_POST['freeStyle'];
 		$gradeQ = $_POST["gradeQ"];
 				foreach ( $gradeQ as $valueG ) {
@@ -51,6 +54,7 @@
 			"$valueLabels<br>",
 			"$valuePromo<br>",
 			"$valueMisc<br>",
+			"$valueSleeve<br>",
 			"$freeStyle<br>",
 			"$notes<br>",
 			"$info<br>",
