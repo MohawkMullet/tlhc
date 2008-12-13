@@ -173,6 +173,14 @@ function closesubnav(event){
             <a href="#" class="capsule">TurboLister Alternatives? </a> Check out jAOLT. It's pretty new and buggy and the developer pages seem to have most discussion in German, but it does work for the most basic listings and it does take straight html pastes without modifying the code on upload. Search code.google.com for jAOLT. </p>
           </td> 
         </tr> 
+        <tr valign="top">
+          <td class="storyLeft">
+		  <?php
+		  include('easyInstall.php');
+		  ?>
+		  </td>
+          <td>&nbsp;</td>
+        </tr>
         <tr valign="top"> 
           <td class="storyLeft"><?php
 		  include('formImage.php');
