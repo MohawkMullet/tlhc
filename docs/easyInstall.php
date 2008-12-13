@@ -6,16 +6,18 @@
 
 <h1>INSTALLATION
 </h1>
-<p>Requirements: </p>
+<h2>Requirements: </h2>
 <p>Apache2, MySQL, PHP5. (and of course you should run these on linux)</p>
-<p>Optional:</p>
+<h3>Optional Requirements:</h3>
 <p>Some basic knowledge of HTML and maybe a good WYSIWYG html editor like Dreamweaver</p>
 <p>A listing manager tool (TurboLister2, jOALt, etc) an eBay store, rss feed enabled for eBay store. </p>
 <h3 class="style3">DO NOT INSTALL THESE FILES ON A PRODUCTION WEBSERVER.</h3>
 <p>These scripts are meant to be run on a private webserver. </p>
+<h2>Install</h2>
 <ol>
+  <li>Download the latest version from <a href="http://tlhc.googlecode.com">thlc.googlecode.com</a></li>
   <li>copy all the files in the main directory to a new directory in your public_html folder.</li>
-  <li>edit the tlhc_config.php file with some basic information </li>
+  <li>edit the file parts/config.php </li>
   <li>create a mysql database called tlhc</li>
   <li>create a mysql user named tlhcuser with the password of tlhcpass and full permissions on the new database you created above.</li>
   <li>run the included .sql file found in the INSTALL folder.</li>

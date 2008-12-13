@@ -9,33 +9,35 @@
 <body>
 <h1>How It Works</h1>
 <h2>The Basics</h2>
-<p>You input some information about your item into a form. </p>
-<p>The data is processed into a preview and copyable html code.</p>
-<p>The output will rely on your ebay store RSS feed.</p>
-<p>If you havent already you should enable your RSS feed in your ebay store</p>
-<ol>
-  <li>sign in to ebay </li>
-  <li>click Manage My Store.</li>
-  <li>Then click Listing Distribution</li>
-  <li>Choose the option: Activate your Store Inventory listings via RSS. </li>
-  <li>Click Apply</li>
-</ol>
-<p>The default install of these scripts outputs a sample listing file consisting of 4 parts (see figure 1.1)</p>
-<p><img src="images/exampleTemplate2.jpeg" width="235" height="232"> </p>
-<p>You can make up to 4 main parts of your store listing. The defaults are: </p>
-<p>The default template consists of 4 main parts: </p>
+<ul>
+  <li>You add some basic information about your ebay store to the file parts/config.php</li>
+  <li>You input some information about your item into the main form </li>
+  <li>You select whether to include some component boxes in your listing</li>
+  <li>Add an image from an external host </li>
+  <li>you submit the form </li>
+</ul>
+<p>RESULT: The data is processed into a preview and copyable html code.</p>
+<h2>The Details </h2>
+<p>TLhC can output a sample listing file consisting of 1 or more parts (see figure 1.1)</p>
+<p><img src="images/exampleTemplate2.jpeg" width="235" height="232" style="float:right; "> </p>
+<p>The default template consists of 2 main parts: <a name="components"></a></p>
 <ul>
   <li>The Main Description</li>
+  <li>A CSS Style Sheet: partsOut/styles.php</li>
 </ul>
-<p>And 3 removable components </p>
+<p>And 5 removable components </p>
 <ul>
   <li>About</li>
   <li>Shipping</li>
   <li>Feeds</li>
+  <li>Promotion Boxes </li>
+  <li>Store Category Boxes </li>
 </ul>
-<p>Any of these components may be included or excluded at the time of your acutal listing generation </p>
-<p>Desiging a sample About file:</p>
-<p>You should be comfortable designing your default description in an html editor. TurboLister's description builder will work fine. </p>
+<p>Any of these components may be included or excluded at the time of your acutal listing generation</p>
+<p>Some of the components  will rely on your<a href="storeRss.php"> ebay store RSS feed</a>. You should <a href="storeRss.php">setup</a> one now. </p>
+<h1>&nbsp;</h1>
+<blockquote>&nbsp;</blockquote>
+<p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 </body>
