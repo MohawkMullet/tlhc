@@ -6,8 +6,11 @@
 
 <h1>INSTALLATION
 </h1>
+<p>Requirements: </p>
+<p>Apache2, MySQL, PHP5. (and of course you should run these on linux)</p>
+<p>Optional:</p>
 <p>Some basic knowledge of HTML and maybe a good WYSIWYG html editor like Dreamweaver</p>
-<p>Requirements: Apache2, MySQL, PHP5. (and of course you should run these on linux) </p>
+<p>A listing manager tool (TurboLister2, jOALt, etc) an eBay store, rss feed enabled for eBay store. </p>
 <h3 class="style3">DO NOT INSTALL THESE FILES ON A PRODUCTION WEBSERVER.</h3>
 <p>These scripts are meant to be run on a private webserver. </p>
 <ol>
