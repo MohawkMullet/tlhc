@@ -1,59 +1,61 @@
 <?php
-//these seem to be most of the form variables that i'm using right now.
-  $artists = $_POST['artists'];
-    $artists = ucwords(strtolower($artists));
-  $vinylSelector = $_POST["vinylSelector"];
-		  foreach ( $vinylSelector as $valueVinyl ) {
-		  }
-  $labelSelector = $_POST["labelSelector"];
-		  foreach ( $labelSelector as $valueLabels ) {
-		  }
-  $promoSelector = $_POST["promoSelector"];
-		  foreach ( $promoSelector as $valuePromo ) {
-		  }
-  $miscSelector = $_POST["miscSelector"];
-		  foreach ( $miscSelector as $valueMisc ) {
-		  }
-  $freeStyle = $_POST['freeStyle'];
-  $gradeQ = $_POST["gradeQ"];
-		  foreach ( $gradeQ as $valueG ) {
-		  }
-  $performer = $_POST['performer'];
-    $performer = ucwords(strtoupper($performer));
-  $titler = $_POST['titler'];
-    $titler = ucwords(strtolower($titler));										
-  $listingMast = "$performer $titler";
-  $Label = $_POST['Label'];
-      $Label =ucwords(strtoupper($Label));
-  $recNum = $_POST['recNum'];
-    $recNum =ucwords(strtoupper($recNum));
-  $notes = $_POST['notes'];
-  $sideA = $_POST['sideA'];
-    $sideA = ucwords(strtolower($sideA));
-  $sideB = $_POST['sideB'];
-    $sideB = ucwords(strtolower($sideB));
-  $info = $_POST['sideBar2'];
-  $link =  $_POST['link'];		  
-  $linkText =  $_POST['linkText'];
-  $picasaImage = $_POST['picasaImage'];
+		$artists = $_POST['artists'];
+		$artists = ucwords(strtolower($artists));
+		$vinylSelector = $_POST["vinylSelector"];
+				foreach ( $vinylSelector as $valueVinyl ) {
+				}
+		$labelSelector = $_POST["labelSelector"];
+				foreach ( $labelSelector as $valueLabels ) {
+				}
+		$promoSelector = $_POST["promoSelector"];
+				foreach ( $promoSelector as $valuePromo ) {
+				}
+		$miscSelector = $_POST["miscSelector"];
+				foreach ( $miscSelector as $valueMisc ) {
+				}
+		$freeStyle = $_POST['freeStyle'];
+		$gradeQ = $_POST["gradeQ"];
+				foreach ( $gradeQ as $valueG ) {
+				}
+		$performer = $_POST['performer'];
+		$performer = ucwords(strtoupper($performer));
+//echo "$performer &nbsp;";
+		$titler = $_POST['titler'];
+		$titler = ucwords(strtolower($titler));										
+//echo $titler;
+		$listingMast = "$performer $titler";
+//echo $listingMast;
+		$Label = $_POST['Label'];
+			$Label =ucwords(strtoupper($Label));
+		$recNum = $_POST['recNum'];
+			$recNum =ucwords(strtoupper($recNum));
+		$notes = $_POST['notes'];
+		$sideA = $_POST['sideA'];
+			$sideA = ucwords(strtolower($sideA));
+		$sideB = $_POST['sideB'];
+			$sideB = ucwords(strtolower($sideB));
+		$info = $_POST['sideBar2'];
+		$link = 	  $_POST['link'];		  
+		$linkText = 	  $_POST['linkText'];
+		$picasaImage = $_POST['picasaImage'];
 
 
-$theGoods = array(
-	  "$listingMast", 
-	  "<br>$sideA<br>",
-	  "$sideB<br>",
-	  "$Label",
-	  "<br>$recNum<br>",
-	  "$valueG<br>",
-	  "$valueVinyl<br>",
-	  "$valueLabels<br>",
-	  "$valuePromo<br>",
-	  "$valueMisc<br>",
-	  "$freeStyle<br>",
-	  "$notes<br>",
-	  "$info<br>",
-	  "$link<br>",
-	  "$linkText<br>",
-	  "$picasaImage<br>",
-);
+	$theGoods = array(
+			"$listingMast", 
+			"<br>$sideA<br>",
+			"$sideB<br>",
+			"$Label",
+			"<br>$recNum<br>",
+			"$valueG<br>",
+			"$valueVinyl<br>",
+			"$valueLabels<br>",
+			"$valuePromo<br>",
+			"$valueMisc<br>",
+			"$freeStyle<br>",
+			"$notes<br>",
+			"$info<br>",
+			"$link<br>",
+			"$linkText<br>",
+			"$picasaImage<br>",
+	);
 ?>
