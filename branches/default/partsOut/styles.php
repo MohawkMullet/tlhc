@@ -3,7 +3,7 @@
 	border: 4px groove #1C2D59;
 	background-position: 4px 4px;
 	background-repeat: repeat;
-	background-image: url(http://i23.ebayimg.com/03/i/001/12/f9/ad90_1_b.GIF);
+	background-image: url(http://127.0.0.2/TLhC/v1.6.9plain/images/333.jpg);
 }
 .greyFontLarge {
 	font: bold 12px Arial, Helvetica, sans-serif;
@@ -25,7 +25,10 @@
 	text-transform: capitalize;
 	color: #282828;
 	padding-left: 45px;
+	position: relative;
 	width: 350px;
+	overflow: scroll;
+	clear: both;
 	top: 10px;
 }
 .greyFontSmaller {
@@ -38,6 +41,12 @@
 	color: #1c2d59;
 	text-align: center;
 	}
+img.double-border {
+	border:4px solid #333333;
+	padding:2px;
+	background:#eeeeee;
+	background-color: #333333;
+}  
 .imgB {
 	padding: 2px;
 	background-color: #999999;

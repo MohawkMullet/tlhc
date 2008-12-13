@@ -8,7 +8,7 @@
 		include('partsIn/LblNoSlvIN2.php');
 ?>
 <?php
-		include('partsIn/gradeRadios2.php');
+//		include('partsIn/gradeRadios2.php');
 ?>
 <fieldset class="insideFields"><legend>Comment Drawers</legend>
 <?php

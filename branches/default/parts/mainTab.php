@@ -44,7 +44,7 @@ echo $version;
 ?>
           <br>      
           <img src="images/TLhClogoSmaller.png" width="53" height="75"></p>
-      <p><a href="../docs/2.php" target="mainFrame">DOCUMENTATION</a></p>
+      <p><a href="../docs/index.php" target="mainFrame">DOCUMENTATION</a></p>
       <p><br>
               <span class="custom">Customized for:HepVinyl</span>			    
       </p>
