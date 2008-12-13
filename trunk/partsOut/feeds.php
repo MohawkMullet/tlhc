@@ -4,13 +4,16 @@
                <table width="731" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#d9d9d9">
                   <tr>
                       <td style="width:20%" scope="col" align="center">
+<!-- ADD YOUR GOOGLE FEED CODE HERE -->
                       		<a href="http://fusion.google.com/add?source=atgs&amp;feedurl=http%3A//rss.api.ebay.com/ws/rssapi%3FFeedName%3DStoreItems%26siteId%3D0%26language%3Den-US%26output%3DRSS20%26storeId%3D480498590">
                       		<img alt="Add to Google" src="http://buttons.googlesyndication.com/fusion/add.gif" style="border:0" /></a>
-                      </td>
+ <!-- END GOOGLE FEED CODE -->                 
+					  </td>
                       <td style="width:20%" scope="col" align="center">
-                      		<a href="http://us.rd.yahoo.com/my/atm/Record%20Reunion/HepVinyl%20Vintage%2045%27s/*http://add.my.yahoo.com/rss?url=http%3A//rss.api.ebay.com/ws/rssapi%3FFeedName%3DStoreItems%26siteId%3D0%26language%3Den-US%26output%3DRSS20%26storeId%3D480498590">
-                      		<img height="17" alt="Add to My Yahoo!" src="http://us.i1.yimg.com/us.yimg.com/i/us/my/addtomyyahoo4.gif" width="91" align="middle" style="border:0" /></a>
-                      </td>
+<!-- ADD YOUR YAHOO FEED CODE HERE -->
+                      		<a href=<a href="http://us.rd.yahoo.com/my/atm/HepVinyl/Vintage%20Vinyl/*http://add.my.yahoo.com/rss?url=http%3A//rss.api.ebay.com/ws/rssapi%3FFeedName%3DStoreItems%26siteId%3D0%26language%3Den-US%26output%3DRSS20%26storeId%3D480498590"><img src="http://us.i1.yimg.com/us.yimg.com/i/us/my/addtomyyahoo6.gif" width="89" height="33" border="0" align="middle" alt="Add to My Yahoo!"></a>
+ <!-- END YAHOO FEED CODE -->
+					  </td>
                       <td style="width:20%" scope="col" align="center">
                       		<a href="http://rss.api.ebay.com/ws/rssapi?FeedName=StoreItems&amp;siteId=0&amp;language=en-US&amp;output=RSS20&amp;storeId=480498590">
                       		<img height="16" alt="RSS Feed" src="http://graphics8.nytimes.com/images/global/icons/rss.gif" width="44" style="border:0" /></a>
