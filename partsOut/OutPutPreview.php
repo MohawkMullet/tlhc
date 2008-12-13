@@ -48,7 +48,7 @@ include("formOuts/catBoxes.php");
 <?php
 	$boxes5 = $_POST["boxes5"];
 	if ($boxes5 != "") {
-	include('feeds.php');
+	include('feedButtons.php');
 	}
 ?>
   </td>
