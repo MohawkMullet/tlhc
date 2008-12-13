@@ -64,10 +64,6 @@ function MM_reloadPage(init) {  //reloads the window if Nav4 resized
 MM_reloadPage(true);
 //-->
 </script>
-<?php
-include('partsOut/writeToFile.php');
-?>
-
 </head>
 <body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgcolor="#cccccc">
 		<div id="Layer1" style="position:absolute; left:226px; top:578px; width:305px; height:63px; z-index:3">

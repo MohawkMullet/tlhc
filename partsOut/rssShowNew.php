@@ -1,7 +1,9 @@
 <?php
 require_once('magpierss/rss_fetch.inc');
 ?>
-
+<?php
+require_once('parts/config.php');
+?>
 <!-- THIS STYLE IS MEANT TO MAKE THE DEFAULT RSS VIEW MUCH MUCH SMALLER FONT -->
 <style type="text/css">
 	td {
@@ -15,7 +17,7 @@ a:link {
 
 <?php
 // PUT YOUR EBAY RSS FEED LINK HERE
-$url = "http://rss.api.ebay.com/ws/rssapi?FeedName=StoreItems&siteId=0&language=en-US&output=RSS20&storeId=480498590";
+$url = $rssFeed;
 $rss = fetch_rss($url);
 	echo "<table style=\"font-size: 9px;\" align=\"center\"><tr>";
 // REMOVE THESE TD TAGS.  THIS IS A CUSTOM IMAGE FOR THE AUTHOR

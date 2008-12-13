@@ -23,7 +23,7 @@ include("descript3.php");
 <?php
 	$boxes6 = $_POST["boxes6"];
 	if ($boxes6 != "") {
-	include('relItems2.php');
+	include('promoBoxes.php');
 	}
 ?>
 <?php

@@ -1,10 +1,11 @@
 <fieldset class="insideFields"><legend>Components:</legend>
 		<label><input type="checkbox" name="boxes2" value="style" checked  tabindex="19">Style</label>
-		<label><input type="checkbox" name="boxes6" value="relItems" tabindex="19">Punk</label>
-		<label><input type="checkbox" name="boxes3" value="aboutUs" checked tabindex="19">About</label>
-		<label><input type="checkbox" name="boxes4" value="gradeKey" checked tabindex="19">Key</label>
+		<label><input type="checkbox" name="boxes3" value="aboutUs" tabindex="19">About</label>
+		<label><input type="checkbox" name="boxes4" value="gradeKey" tabindex="19">Key</label>
 		<label><input type="checkbox" name="boxes5" value="feedBox" checked tabindex="19">Feeds</label>
-		<label><input type="checkbox" name="boxes200" value="boxes200" tabindex="19" checked>Items</label>
+		<label><input type="checkbox" name="boxes200" value="boxes200" tabindex="19">Items</label>
+		<label><input type="checkbox" name="boxes6" value="relItems" tabindex="19">Promo</label>
+
 <hr><label>Add Store Categories:</label>
 		<label><input type="radio" name="cats[]" value="0cats" tabindex="20">
 		 0</label>

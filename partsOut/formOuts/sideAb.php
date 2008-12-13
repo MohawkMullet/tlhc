@@ -3,7 +3,7 @@
 		$sideA = $_POST['sideA'];
 		$sideA = ucwords(strtolower($sideA));
 		if ($sideA != "") {
-				echo "<span class=\"greyFont\">Side A:&nbsp;&nbsp;</span>";		
+				echo "<span class=\"greyFont\">Main Features&nbsp;&nbsp;</span>";		
 				echo "<span class=\"blueFontBold\"><strong>$sideA</strong></span>";
 			}
 ?>
@@ -17,7 +17,7 @@
 			}
 		else if ($sideB != "") {
 				echo "<br>";
-				echo "<span class=\"greyFont\">Side B:&nbsp;&nbsp;</span>";		
+				echo "<span class=\"greyFont\">Highlights:&nbsp;&nbsp;</span>";		
 				echo "<span class=\"blueFontBold\"><strong>$sideB</strong></span>";
 			}
 ?>

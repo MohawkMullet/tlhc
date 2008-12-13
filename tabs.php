@@ -59,8 +59,8 @@ echo $version
 </div>
 <div class="TabbedPanels" id="TabbedPanels1">
 		<ul class="TabbedPanelsTabGroup">
-			<li class="TabbedPanelsTab">Basic 45</li> 
-			<li class="TabbedPanelsTab">Punk & or EP</li> 
+			<li class="TabbedPanelsTab">Basic Listing</li> 
+			<li class="TabbedPanelsTab">Advanced</li> 
 			<li class="TabbedPanelsTab">Update Drawers</li> 
 			<li class="TabbedPanelsTab">About TLhC</li>
 
@@ -76,7 +76,9 @@ echo $version
 			  </div>
 		  </div> 
 			<div class="TabbedPanelsContent">
-<?php include('inMainPunk.php');	?>
+<?php
+ //include('inMainPunk.php');	
+ ?>
 			</div>
 			<div class="TabbedPanelsContent">			<?php			
 				include('inDrawers.php');			
