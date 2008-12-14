@@ -21,7 +21,7 @@ include('parts/config.php');
 		  </th>
   </tr>
 		<tr>
-			<td align="left" valign="top" bgcolor="#d9d9d9" style="border-color:#666666; border-left-width:1px; border-left-style:solid; border-top-width:0px; border-right-width:4px;">
+			<td align="left" valign="top" style="border-color:#666666; border-left-width:1px; border-left-style:solid; border-top-width:0px; border-right-width:4px;">
 					<?php
 						include('formOuts/picasaImageOut2.php');
 					?>

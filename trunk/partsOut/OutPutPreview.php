@@ -11,7 +11,7 @@ include('styles.php');
 include("descript3.php");
 ?>
 <br>
-<table cellpadding="0" cellspacing="0" align="center" width="100%" id="blockOutBG" style="border-width:medium; border-color:#282828; border-style:groove;>
+<table cellpadding="0" cellspacing="0" align="center" width="100%" id="blockOutBG" style="border-width:thin; border-color:#282828; border-style:groove;>
 <tr align="center">
 <td width="100%" bgcolor="#cccccc">
 <?php
