@@ -1,5 +1,5 @@
 <?php
-$storeName = "put your store name here"; 
+$storeName = "HepVinyl's Vintage Records"; 
 //this variable is added to the partsOut/descript.php file
 $storeLink = "http://hepvinyl.com"; // just start wiht http://mystore.ebay.whatever/store
 $storeLogo = "<img src=\"http://i93.photobucket.com/albums/l57/texastoys/toys/ebaylogo.gif\">";

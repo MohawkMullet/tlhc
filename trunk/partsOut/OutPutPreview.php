@@ -4,7 +4,7 @@ if ($boxes2 != "") {
 include('styles.php');
 }
 ?>
-<table width="100%" cellspacing="6" id="whole" class="whole">
+<table width="760px" cellspacing="6" id="whole" class="whole">
   <tr>
 	<td bordercolor="#1C2C53"><a name="top"></a>
 <?php
