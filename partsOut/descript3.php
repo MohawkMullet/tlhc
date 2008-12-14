@@ -2,14 +2,19 @@
 //include_once( ../parts/db/tlhcConnect.php);
 include('parts/config.php');
 ?>
-<table cellpadding="4" cellspacing="0" border="4" bgcolor="#d9d9d9" width="100%" style="border-bottom-width: 0px; border-top-width: 0px; border-right-width:0px;"  id="descript">
-  <caption class="blueFontBold" style="font-size-adjust:0.7;"><em><strong>
+<style type="text/css">
+<!--
+-->
+</style>
+
+<table cellpadding="4" cellspacing="0" border="4" bgcolor="#d9d9d9" width="100%" style="border-bottom-width: 0px; border-top-width: 0px; border-right-width:0px;"  id="descript" align="center">
+  <caption class="blueFontBold" style="font-size-adjust:0.8;":><strong>
   <?php
   echo	$storeName;
   ?>
-  </strong></em></caption>
+  </strong></caption>
 		<tr bgcolor="#1C2D59">
-			<th  bgcolor="#1C2C53" style="font:bolder; color:#ffffff; font-size:16px; border-style:groove; border-top-width:0px; border-bottom-width:2px; border-right-width:0px; border-top-width:2px; border-left-width:0px; border-color:#dcdcdc; border: 1px none #000000;" scope="col">
+			<th background="http://i17.ebayimg.com/03/i/001/24/73/95d1_1_b.GIF"  bgcolor="#1C2C53" style="font:bolder; color:#ffffff; font-size:16px; border-style:groove; border-top-width:0px; border-bottom-width:2px; border-right-width:0px; border-top-width:2px; border-left-width:0px; border-color:#dcdcdc; border: 1px none #000000;">
 					<?php
 						include('formOuts/titleOut.php');
 					?>  
