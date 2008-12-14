@@ -33,7 +33,7 @@ Output</title>
 	position:absolute;
 	left:10px;
 	top:180px;
-	width:785px;
+	width:799px;
 	height:363px;
 	z-index:2;
 	overflow: auto;
@@ -92,7 +92,7 @@ include('partsOut/formOuts/titleOut.php');
 		
 		<form name="test">
 				<span class="TabbedPanelsTab"><a href="javascript:selectAll('test.select1')">Grab the Code</a></span><br />
-						<textarea name="select1" cols="90" rows="4" wrap="VIRTUAL">
+						<textarea name="select1" cols="100" rows="4" wrap="VIRTUAL">
 							<?php
 									include("partsOut/OutPutPreview.php");
 							?>
