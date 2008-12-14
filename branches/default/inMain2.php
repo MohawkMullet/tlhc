@@ -1,5 +1,5 @@
 <?php
-		include("parts/db/tlhcConnect.php");
+//		include("parts/db/tlhcConnect.php");
 ?>
 <!-- START THE FORM -->
 <style type="text/css">

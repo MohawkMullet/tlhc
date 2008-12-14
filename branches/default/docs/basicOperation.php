@@ -17,7 +17,7 @@
   <li>you submit the form </li>
 </ul>
 <p>RESULT: The data is processed into a preview and copyable html code.</p>
-<h2>The Details </h2>
+<h2>Template Structure</h2>
 <p>TLhC can output a sample listing file consisting of 1 or more parts (see figure 1.1)</p>
 <p><img src="images/exampleTemplate2.jpeg" width="235" height="232" style="float:right; "> </p>
 <p>The default template consists of 2 main parts: <a name="components"></a></p>
