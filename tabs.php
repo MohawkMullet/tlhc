@@ -76,6 +76,7 @@ echo $version
 			  </div>
 		  </div> 
 			<div class="TabbedPanelsContent">
+			Setup MySQL for using stored Comments.
 <?php
  //include('inMainPunk.php');	
  ?>

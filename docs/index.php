@@ -8,6 +8,7 @@
 <body>
 <h1>TLhC Getting Started </h1>
 <h4><a href="../license.php">License</a></h4>
+<p>Features</p>
 <h3><a href="why.php">Why</a></h3>
 <h3><a href="basicOperation.php">How It Works</a></h3>
 <h2><a href="easyInstall.php">Install</a></h2>
@@ -33,9 +34,6 @@
     <h4><a href="feedButtons.php">The Feeds Box   </a></h4>
   </li>
   <li>
-    <h4>&nbsp;</h4>
-  </li>
-  <li>
     <h4><a href="storeCategories.php">Including Store Categories </a></h4>
   </li>
   <li>
@@ -45,6 +43,7 @@
 </ul>
 <h2>Advanced Topics </h2>
 <blockquote>
+  <h3>Using Stored Comments </h3>
   <h3>Important Files</h3>
   <h3>Form Fields and </h3>
 </blockquote>

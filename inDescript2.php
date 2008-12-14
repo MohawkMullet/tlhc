@@ -12,7 +12,7 @@
 ?>
 <fieldset class="insideFields"><legend>Comment Drawers</legend>
 <?php
-	include("partsIn/panels.php");
+//	include("partsIn/panels.php");
 ?>
 </fieldset>
 <?php
