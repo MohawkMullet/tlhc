@@ -9,13 +9,18 @@
 	border-bottom-style: double;
 	border-bottom-color: #333333;
 }
+.style1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+	color: #00FF00;
+}
 -->
 </style>
 
 
 <form action="Output.php" method="POST" name="basic" target="topOne" id="slapIt" onSubmit="MM_changeProp('slapIt','','fontCase','capitalize','FORM')">
 <table bgcolor="#9e9e9e" class="brow" id="recInput" style="margin-left:4px;">
-<tr><td>Basic 45 Input Form</td></tr>
 <tr><td>
 <?php
 	include('inDescript2.php'); 

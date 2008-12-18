@@ -2,7 +2,7 @@
 #bombButtons {
 	position:absolute;
 	left:364px;
-	top:87px;
+	top:107px;
 	width:27px;
 	height:25px;
 	z-index:5;
@@ -29,7 +29,7 @@ select { background: rgb(255, 255, 255) none repeat scroll 0% 50%;
 }
 
 .greyFontSmaller {
-	font: 9px Arial, Helvetica, sans-serif;
+	font: 12px Arial, Helvetica, sans-serif;
 	color: #282828;
 	text-align: left;
 
@@ -63,7 +63,8 @@ border-top: 17px solid #dcdcdc;
 	border-bottom: 3px outset #282828;
 border-right-style: ridge;
 	margin-left: 1px;
-}
+}
+
 legend {
 	color: #333333;
 	font-size: 12px;

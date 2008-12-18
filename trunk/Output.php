@@ -93,9 +93,9 @@ include('partsOut/formOuts/titleOut.php');
 		<form name="test">
 				<span class="TabbedPanelsTab"><a href="javascript:selectAll('test.select1')">Grab the Code</a></span><br />
 						<textarea name="select1" cols="100" rows="4" wrap="VIRTUAL">
-							<?php
-									include("partsOut/OutPutPreview.php");
-							?>
+<?php
+include("partsOut/OutPutPreview.php");
+?>
 						</textarea>
 		</form>
 </div>
