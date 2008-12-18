@@ -33,3 +33,6 @@ include('formOuts/picasaImageOut2.php');<br>
 <p>Other notes on the image field:    </p>
 <p>EDIT picasaImageOut.php in partsOut/formOuts/ to get rid of the link stripping. </p>
 </p></div>
+<?php
+include('footer.php');
+?>
