@@ -1,5 +1,5 @@
 
 <?php
-$version = "1.8.0";
-/* Dec 10th 2008 */
+$version = "1.8.1";
+/* Dec 15th 2008 */
 ?>

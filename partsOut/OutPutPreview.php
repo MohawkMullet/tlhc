@@ -4,22 +4,20 @@ if ($boxes2 != "") {
 include('styles.php');
 }
 ?>
-<table width="760px" cellspacing="6" id="whole" class="whole">
+<table cellspacing="6" id="whole" class="whole">
   <tr>
-	<td bordercolor="#1C2C53"><a name="top"></a>
+	<td><a name="top"></a>
 <?php
 include("descript3.php");
 ?>
 <br>
-<table cellpadding="0" cellspacing="0" align="center" width="100%" id="blockOutBG" style="border-width:thin; border-color:#282828; border-style:groove;>
-<tr align="center">
-<td width="100%" bgcolor="#cccccc">
 <?php
 	$boxes200 = $_POST["boxes200"];
 	if ($boxes200 != "") {
 	include('rssShowNew.php');
 	}
 ?>
+
 <?php
 	$boxes6 = $_POST["boxes6"];
 	if ($boxes6 != "") {
@@ -38,9 +36,6 @@ include("descript3.php");
 	include('section3.php');
 	}
 ?>
-</td>
-</tr>
-</table>
 <br><div align="center"><a href="#top" style="text-decoration:none;">Back to Top</a></div>
 <?php
 include("formOuts/catBoxes.php");

@@ -16,7 +16,7 @@ echo $version;
 <link rel="shortcut icon" href="images/favicon.ico">
 </head>
 
-<frameset rows="*" cols="400,*" frameborder="yes" border="0" framespacing="0">
+<frameset rows="*" cols="405,*" frameborder="yes" border="0" framespacing="0">
 <frame src="tabs.php" name="leftFrame" scrolling="no" noresize="noresize" bordercolor="#cccccc" id="leftFrame" title="leftFrame" border="0" framespacing="0" />
     <frame src="midFrame.php" name="mainFrame" id="mainFrame" title="mainFrame" border="0" framespacing="0" />
   </frameset>

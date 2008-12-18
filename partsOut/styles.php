@@ -1,6 +1,6 @@
 <style type="text/css">
 .whole {
-	border: 4px groove #1C2D59;
+	border: 6px groove #1C2D59;
 	background-position: 4px 4px;
 	background-repeat: repeat;
 	background-image: url(http://i23.ebayimg.com/03/i/001/12/f9/ad90_1_b.GIF);
