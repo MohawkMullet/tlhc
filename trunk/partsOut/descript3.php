@@ -14,7 +14,7 @@ include('parts/config.php');
   ?>
   </strong></caption>
 		<tr bgcolor="#1C2D59">
-			<td background="http://i17.ebayimg.com/03/i/001/24/73/95d1_1_b.GIF"  bgcolor="#1C2C53" style="font:bolder; color:#ffffff; font-size:16px;" height="28px">
+			<td background="http://i2.ebayimg.com/06/i/001/24/73/95f7_1_b.GIF"  bgcolor="#1C2C53" style="font:bolder; color:#ffffff; font-size:16px;" height="28px">
 					<div align="center"><strong><?php
 						include('formOuts/titleOut.php');
 					?>  </strong></div>
