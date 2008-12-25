@@ -20,7 +20,7 @@ $rss = fetch_rss($url);
 	echo "<table style=\"font-size: 9px;\" align=\"center\" bgcolor='#cccccc' cellpadding='0' cellspacing='0' width='100%'><tr>";
 // REMOVE THESE TD TAGS.  THIS IS A CUSTOM IMAGE FOR THE AUTHOR
 //	echo "<td><img src=\"http://lh4.ggpht.com/_W_e1PG0tXUk/ST9luwR54sI/AAAAAAAAAQ0/nVTnXiR3vro/s144/more45s.png\" /></td>";
-echo	"<tr><td colspan='3' style='color: #ffffff; font-size: 16px;' background='http://i17.ebayimg.com/03/i/001/24/73/95d1_1_b.GIF' height='28'><div align='center'><strong>Newly Listed 45's<strong></div></td></tr>";
+echo	"<tr><td colspan='3' style='color: #ffffff; font-size: 16px;' background='http://i2.ebayimg.com/06/i/001/24/73/95f7_1_b.GIF' height='28'><div align='center'><strong>Newly Listed 45's<strong></div></td></tr>";
 	$count=1;
 	foreach ($rss->items as $item) {
 		$href = $item['link'];

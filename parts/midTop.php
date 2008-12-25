@@ -96,11 +96,14 @@ function MM_showHideLayers() { //v6.0
 body {
 	background-color: #9e9e9e;
 }
+textarea {
+	background-color: #FFFFFF;
+}
 -->
 </style></head>
 <body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onload="MM_showHideLayers('Layer1','','show','Layer2','','show')">
 
-<div id="dragLogo" style="position:absolute; left:344px; top:187px; width:98px; height:99px; z-index:101; visibility: visible;"><img src="../images/Best.gif" width="90" height="90" class="drag" /></div>
+<div id="dragLogo" style="position:absolute; left:519px; top:190px; width:98px; height:99px; z-index:101; visibility: visible;"><img src="../images/Best.gif" width="90" height="90" class="drag" /></div>
 <div id="floater"><table cellpadding="2" cellspacing="0" style="text-align: left; width: 100%;">
 <tr>
 <td rowspan="1">

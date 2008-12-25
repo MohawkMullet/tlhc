@@ -1,9 +1,17 @@
+<?php
+//include_once( ../parts/db/tlhcConnect.php);
+include('parts/config.php');
+?>
 <table width="90" border="0" cellpadding="0" cellspacing="0" id="rightHanderDescBox" summary="righthand">
 <tr>
 <td align="left" valign="top">
 <div align="center"><br />
 <span class="blueFontBold">
-<a href="http://stores.ebay.com/HepVinyl/About-Us-Hep-Vinyl.html" style="text-decoration:none;">About Us!</a>
+<a href="
+<?php
+echo $storeLink;
+?>
+/About-Us-Hep-Vinyl.html" style="text-decoration:none;">About Us!</a>
 </span>
 <br><br />
 <span class="blueFontBold">
@@ -15,11 +23,14 @@
 </a>
 <br>
 <span class="blueFontBold">
-<a href="http://hepvinyl.com" style="text-decoration:none;">Store Home</a>
+<a href="
+<?php
+echo $storeLink;
+?>
+" style="text-decoration:none;">Store Home</a>
 </span>
 <br>
 </div>
 </td>
-<td>&nbsp;</td>
 </tr>
 </table>
