@@ -1,26 +1,27 @@
 <?php
 $boxes2 = $_POST["boxes2"];
 if ($boxes2 != "") {
-include('styles.php');
+include('styles1.php');
 }
 ?>
 <table cellspacing="6" id="whole" class="whole">
   <tr>
 	<td><a name="top"></a>
 <?php
-include("descript3.php");
+include("descript2.php");
 ?>
 <br>
 <?php
 	$boxes200 = $_POST["boxes200"];
 	if ($boxes200 != "") {
-	include('rssShowNew.php');
+	include('newListings2.php');
 	}
 ?>
 
 <?php
 	$boxes6 = $_POST["boxes6"];
 	if ($boxes6 != "") {
+//	echo "suck some tits";
 	include('info/storelinks.php');
 	}
 ?>
@@ -33,7 +34,7 @@ include("descript3.php");
 <?php
 	$boxes4 = $_POST["boxes4"];
 	if ($boxes4 != "") {
-	include('section3.php');
+	include('grading.php');
 	}
 ?>
 <br><div align="center"><a href="#top" style="text-decoration:none;">Back to Top</a></div>

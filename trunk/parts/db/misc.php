@@ -1,10 +1,6 @@
-<form method="POST" action="db/miscOut3.php" target="low" name="miscAdd" id="miscAdd">
-<table width="356">
-<tr>
-<td width="45px" style="text-align:right;">Misc</td>
-<td width="65"><input type="text" name="miscValue"></td>
-<td><input type="submit" value="Misc">
-<input name="clearme" type="reset" id="clearme" tabindex="15" value="Clear" /></td>
-</tr>
-</table>
+<form method="POST" action="parts/db/miscOut3.php" target="mainFrame" name="miscAdd" id="miscAdd">
+<table><tr>
+<td width="25px" style="text-align:right;"><span class="style1">Miscellanious</span></td>
+<td width="144px"><input type="text" name="miscValue"></td>
+<td width="100px"><input type="submit" value="Misc">&nbsp;<input name="clearme" type="reset" id="clearme" tabindex="15" value="Cl" /></td></tr></table>
 </form>

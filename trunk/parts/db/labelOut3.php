@@ -16,17 +16,12 @@
 	<td>																											
 
 <?php
-session_start();
-if (!session_is_registered('errors'))
-	session_register('errors');
-	$errors = array();
-if (!session_is_registered("formVars"))
-     session_register("formVars");
+
 if (empty($_POST["labelValue"])) 
       // First name cannot be a null string
       $errors["labelValue"] = "Dont submit the blank form. Asshole!.";
 if ($_POST['labelValue'] == "shows blah blah")
-	$errors['labelValue'] = "fuck you";
+	$errors['labelValue'] = "Write in there something else you dozy cunt";
   if (count($errors))
   {
       // There are errors.  Relocate back to the 

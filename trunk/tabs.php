@@ -1,8 +1,7 @@
-
 <html>
 <head>
 <?php
-		include('parts/tlhcVersion.php');
+		include('parts/config.php');
 		include('parts/SpryAssets/includeSpry.php');
 		include('parts/clearFields.php');
 		include('partsIn/charsRemain.php');
@@ -15,6 +14,13 @@
 		echo $version;
 ?>
 Input</title>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+//-->
+</script>
 <!--Link the CSS style  sheet that styles the tabbed panel-->
 <link href="parts/SpryAssets/SpryTabbedPanels.css" rel="stylesheet" type="text/css" />
 <!--Link the Spry TabbedPanels JavaScript library-->
@@ -22,20 +28,12 @@ Input</title>
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 <style type="text/css">
 <!--
-.style2 {
+.appName {
 	font-size: 18px;
 	font-weight: bolder;
 	font-family: "Courier New", Courier, mono;
 	margin-top: 4px;
 	color: #333333;
-}
-.style4 {
-	font-family: Geneva, Arial, Helvetica, sans-serif;
-	font-size: 16px;
-	font-weight: bold;
-	color: #333333;
-	font-style: italic;
-	font-variant: small-caps;
 }
 -->
 </style>
@@ -51,9 +49,11 @@ MM_reloadPage(true);
 </script>
 </head> 
 <body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
-<div align="center" class="style2">TurboLister &lt;html&gt; Cheater v
+<div align="center" class="appName">TurboLister &lt;html&gt; Cheater v
   <?php
-echo $version
+echo $version;
+echo "<br>";
+include('partsIn/menu.php');
 ?>
 	<!--Create the Tabbed Panel widget and assign classes to each element-->
 </div>
@@ -71,19 +71,20 @@ echo $version
 			  <div>
 
 			<?php
-				include('inMain2.php');			
+				include('tabMain.php');			
 			?>
 			  </div>
 		  </div> 
 			<div class="TabbedPanelsContent">
-<?php include('inMainPunk.php');	?>
+<?php include('tabPunk.php');	?>
 			</div>
-			<div class="TabbedPanelsContent">			<?php			
-				include('inDrawers.php');			
+			<div class="TabbedPanelsContent">			
+			<?php			
+				include('tabAddComms.php');			
 			?></div>
 			<div class="TabbedPanelsContent">
 <?php
-include('parts/mainTab.php');
+include('parts/aboutTLhC.php');
 ?>
 			</div> 
 			

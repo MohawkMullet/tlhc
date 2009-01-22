@@ -2,7 +2,7 @@
 //include_once( ../parts/db/tlhcConnect.php);
 include('parts/config.php');
 ?>
-<table width="90" border="0" cellpadding="0" cellspacing="0" id="rightHanderDescBox" summary="righthand">
+<table width="90" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#CCCCCC" id="rightHanderDescBox" summary="righthand">
 <tr>
 <td align="left" valign="top">
 <div align="center"><br />

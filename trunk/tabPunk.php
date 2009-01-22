@@ -1,10 +1,11 @@
 <?php
 		include("parts/db/tlhcConnect.php");
+		$tabName = "punkTab";
 ?>
 <!-- START THE FORM -->
 
 <form action="Output.php" method="POST" name="basic" target="topOne" id="slapIt" onSubmit="MM_changeProp('slapIt','','fontCase','capitalize','FORM')">
-<table id="recInput" bgcolor="#B69A67" style="margin-left:-2px;">
+<table id="recInput" bgcolor="#CC3300" style="margin-left:-2px;">
 <tr><td>
 <?php
 	include('inDescriptPunk.php'); 
@@ -24,4 +25,4 @@
 		displaylimit("Input.slapIt.titler","titler",55)
 </script>
 </div>
-</form>ss
+</form>

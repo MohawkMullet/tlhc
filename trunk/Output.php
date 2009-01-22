@@ -3,20 +3,16 @@
 <?php
 
 // initialize a session
-session_start();
+//session_start();
 ?>
 <?php
-		include('parts/tlhcVersion.php');
+		include('parts/config.php');
 ?>
 <link href="parts/inputForm.css" rel="stylesheet" type="text/css" />
 <link href="parts/SpryAssets/SpryTabbedPanels.css" rel="stylesheet" type="text/css" />
-<link rel="shortcut icon" href="images/favicon.ico">
+
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>TLHC v
-<?php
-		echo $version;
-?>
-Output</title>
+<title>TLHC v<?php		echo $version;?>Output</title>
 <style type="text/css">
 
 #codeGrabbers {
@@ -33,8 +29,8 @@ Output</title>
 	position:absolute;
 	left:10px;
 	top:180px;
-	width:799px;
-	height:363px;
+	width:1000px;
+	height:463px;
 	z-index:2;
 	overflow: auto;
 }
@@ -70,10 +66,10 @@ include('partsOut/writeToFile.php');
 
 </head>
 <body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
-		<div id="Layer1" style="position:absolute; left:226px; top:578px; width:305px; height:63px; z-index:3">
+		<div id="Layer1" style="position:absolute; left:226px; top:578px; width:305px; height:63px; z-index:3; overflow: scroll; visibility: hidden;">
 		  <?php  include('license.php'); ?>
 </div>
-		<script language="Javascript">
+<script language="Javascript">
 						function selectAll(theField) {
 						var tempval=eval("document."+theField)
 						tempval.focus()
@@ -94,16 +90,18 @@ include('partsOut/formOuts/titleOut.php');
 				<span class="TabbedPanelsTab"><a href="javascript:selectAll('test.select1')">Grab the Code</a></span><br />
 						<textarea name="select1" cols="100" rows="4" wrap="VIRTUAL">
 <?php
-include("partsOut/OutPutPreview.php");
+	include("partsOut/OutPutPreview0.php");
+//	include("partsOut/OutPutPreview2.php");
 ?>
 						</textarea>
 		</form>
 </div>
 
 <div id="outPrev">
-		<?php
-				include("partsOut/OutPutPreview.php");
-		?>
+<?php
+	include("partsOut/OutPutPreview0.php");
+//	include("partsOut/OutPutPreview2.php");
+?>
 </div>
 </body>
 </html>

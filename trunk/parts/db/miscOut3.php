@@ -16,12 +16,7 @@
 	<td>																											
 
 <?php
-session_start();
-if (!session_is_registered('errors'))
-	session_register('errors');
-	$errors = array();
-if (!session_is_registered("formVars"))
-     session_register("formVars");
+
 if (empty($_POST["miscValue"])) 
       // First name cannot be a null string
       $errors["miscValue"] = "Dont submit the blank form. Asshole!.";

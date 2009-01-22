@@ -14,7 +14,7 @@
 		include('partsIn/gradeRadios2.php');
 ?>
 <?php
-	include("partsIn/panelsPunk.php");
+	include("partsIn/drawersPunk.php");
 ?>
 <?php
 		include("partsIn/linkboxes2.php");
