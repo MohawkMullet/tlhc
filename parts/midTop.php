@@ -116,7 +116,7 @@ include("../partsOut/info/commentkey.php");
 </div>
 <div align="left" id="rss">
 <?php
-include('../partsOut/rss5.php');
+//include('../partsOut/rss5.php');
 ?>
 </div>
 </body>

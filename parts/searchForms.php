@@ -1,3 +1,4 @@
+<link href="inputForm.css" rel="stylesheet" type="text/css" />
 <form name="search" action="http://www.musicstack.com/show.cgi" method="post" target="_blank" id="searchForm" autocomplete="off" style="margin-bottom: 0pt;" onsubmit="return ck(this)">
 
 &nbsp;<input id="searchText" class="boxtext" name="find" value="" size="20" maxlength="30" onfocus="flip(1)" onblur="flip(0)" type="text">
@@ -6,8 +7,7 @@
 
 &nbsp;
 <select id="boxt" class="boxtext" name="search_type">
-<option value="artist">Artist Search
-</option><option value="title">Title Search
+<option value="artist">Artist Search</option><option value="title">Title Search
 </option><option value="label">Label Search
 </option><option value="genre">Genre Search
 </option><option value="seller">Seller Search
@@ -17,8 +17,7 @@
 &nbsp;
 
 <select id="box1" class="boxtext" name="media">
-<option value="All">All Formats
-</option><option value="CDs">CDs only
+<option value="All">All Formats</option><option value="CDs">CDs only
 
 </option><option value="CDsVinyl">CDs &amp; Vinyl
 </option><option value="Vinyl">Vinyl only

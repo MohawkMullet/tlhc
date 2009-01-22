@@ -1,5 +1,5 @@
 <?php 
-include('parts/tlhcVersion.php');
+include('parts/config.php');
 ?>
 
 <table width=435 border="0" cellspacing="2" cellpadding="2" align="center">

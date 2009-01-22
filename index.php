@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <?php
-include('parts/tlhcVersion.php');
+include('parts/config.php');
 ?>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Turbo Lister HTML Cheater v 
@@ -18,7 +18,7 @@ echo $version;
 
 <frameset rows="*" cols="405,*" frameborder="yes" border="0" framespacing="0">
 <frame src="tabs.php" name="leftFrame" scrolling="no" noresize="noresize" bordercolor="#cccccc" id="leftFrame" title="leftFrame" border="0" framespacing="0" />
-    <frame src="midFrame.php" name="mainFrame" id="mainFrame" title="mainFrame" border="0" framespacing="0" />
+    <frame src="parts/start.php" name="mainFrame" id="mainFrame" title="mainFrame" border="0" framespacing="0" />
   </frameset>
 </frameset>
 <noframes>

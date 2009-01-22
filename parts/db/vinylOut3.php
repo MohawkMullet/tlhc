@@ -16,15 +16,15 @@
 	<td>																											
 <?php
 
-session_start();
-if (!session_is_registered('errors'))
-	session_register('errors');
-	$errors = array();
-if (!session_is_registered("formVars"))
-     session_register("formVars");
+//session_start();
+//if (!session_is_registered('errors'))
+//	session_register('errors');
+//	$errors = array();
+//if (!session_is_registered("formVars"))
+//     session_register("formVars");
 if (empty($_POST["vinylValue"])) 
       // First name cannot be a null string
-      $errors["vinylValue"] = "The vinyl value name field cannot be blank.";
+      $errors["vinylValue"] = "The vinyl value name field cannot be blank. fill it in and try again";
   if (count($errors))
   {
       // There are errors.  Relocate back to the 

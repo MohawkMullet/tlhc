@@ -16,17 +16,12 @@
 	<td>																											
 
 <?php
-session_start();
-if (!session_is_registered('errors'))
-	session_register('errors');
-	$errors = array();
-if (!session_is_registered("formVars"))
-     session_register("formVars");
+
 if (empty($_POST["sleeveValue"])) 
       // First name cannot be a null string
       $errors["sleeveValue"] = "Dont submit the blank form. Asshole!.";
 if ($_POST['sleeveValue'] == "")
-	$errors['sleeveValue'] = "there is an error";
+	$errors['sleeveValue'] = "Say something about the condition of the sleeve and try again";
   if (count($errors))
   {
       // There are errors.  Relocate back to the 

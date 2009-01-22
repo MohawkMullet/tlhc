@@ -6,7 +6,7 @@
 		$result = $myFilter->process($_POST["picasaImage"]);	
 			if ($result != "") {
 		echo "<div align=\"left\" style=\"float:right;\">";
-		echo "<span class=\"imgB\" align=\"right\">$result</span>";
+		echo "<span class=\"imgB\" align=\"right\" title=\"$listingMast\">$result</span>";
 		echo "</div>";
 		}
 ?>

@@ -2,7 +2,7 @@
 #bombButtons {
 	position:absolute;
 	left:364px;
-	top:107px;
+	top:77px;
 	width:27px;
 	height:25px;
 	z-index:5;
@@ -15,7 +15,7 @@ body {
 	background-repeat: repeat-x;
 	background-position: left top;
 	background-image: url(../images/gradBg.gif);
-	background-color: #9e9e9e;
+	background-color: #8BABB0;
 }
 select { background: rgb(255, 255, 255) none repeat scroll 0% 50%;
     width: 324px;
@@ -27,7 +27,23 @@ select { background: rgb(255, 255, 255) none repeat scroll 0% 50%;
     line-height: 12px;
     overflow: hidden;
 }
-
+.this {
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: thin;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: solid;
+	background-color: #CCCCCC;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333333;
+	font-variant: small-caps;
+	text-decoration: none;
+	border-left-color: #000099;
+}
 .greyFontSmaller {
 	font: 12px Arial, Helvetica, sans-serif;
 	color: #282828;
@@ -54,15 +70,16 @@ padding-top:5px;
 }
 
 .insideFields {
-	background-color:#dcdcdc;
-border-color:#7e7e7e;
+	background-color:#8FA3C8;
+	border-color:#7e7e7e;
 	margin-bottom:3px;
 	border-width: 5px;
 	border-left:0px;
-border-top: 17px solid #dcdcdc;
+	border-top: 17px solid;
 	border-bottom: 3px outset #282828;
-border-right-style: ridge;
+	border-right-style: ridge;
 	margin-left: 1px;
+	border-top-color: #8FA3C8;
 }
 
 legend {
@@ -108,7 +125,6 @@ label {
 	font-size: 12px;
 	line-height: 12px;
 	font-stretch: ultra-condensed;
-	background: #cccccc;
 	border-left-style: groove;
 	border-left-color: #666666;
 	border-left-width: 5px;

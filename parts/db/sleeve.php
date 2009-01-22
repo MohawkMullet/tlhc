@@ -1,4 +1,4 @@
-<form method="POST" action="parts/db/NewSleeveOut.php" target="low" name="sleeveAdd" id="sleeveAdd">
+<form method="POST" action="parts/db/NewSleeveOut.php" target="mainFrame" name="sleeveAdd" id="sleeveAdd">
 <table width="356">
 <tr>
 <td width="45px" style="text-align:right;">Sleeve</td>
