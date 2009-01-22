@@ -15,6 +15,10 @@
 <blockquote>
   <h3><a href="easyInstall.php">Requirements</a></h3>
 </blockquote>
+<h2>Configuring</h2>
+<blockquote>
+  <h3><a href="configFile.php">Changing the Config File </a></h3>
+</blockquote>
 <h2><a href="basicOperation.php">Using</a></h2>
 <h2>Modifying the default Template</h2>
 <h4>Main Description</h4>
