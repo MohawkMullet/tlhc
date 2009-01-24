@@ -90,7 +90,16 @@ include('partsOut/formOuts/titleOut.php');
 				<span class="TabbedPanelsTab"><a href="javascript:selectAll('test.select1')">Grab the Code</a></span><br />
 						<textarea name="select1" cols="100" rows="4" wrap="VIRTUAL">
 <?php
-	include("partsOut/previewDefault.php");
+$templateName = $_POST['templateName'];
+if ($templateName == "default") {
+include('partsOut/previewDefault.php');
+}
+	if ($templateName == "blue") {
+		include('partsOut/previewBlue.php');
+	}
+if ($templateName == "orange") {
+	include('partsOut/previewOrange.php');
+}
 //	include("partsOut/previewBlue.php");
 //	include("partsOut/previewOrange.php");
 
@@ -101,7 +110,16 @@ include('partsOut/formOuts/titleOut.php');
 
 <div id="outPrev">
 <?php
-	include("partsOut/previewDefault.php");
+if ($templateName == "default") {
+include('partsOut/previewDefault.php');
+}
+	if ($templateName == "blue") {
+		include('partsOut/previewBlue.php');
+	}
+if ($templateName == "orange") {
+	include('partsOut/previewOrange.php');
+}
+//	include("partsOut/previewDefault.php");
 //	include("partsOut/previewBlue.php");
 //	include("partsOut/previewOrange.php");
 

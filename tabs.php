@@ -33,7 +33,7 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
 	font-weight: bolder;
 	font-family: "Courier New", Courier, mono;
 	margin-top: 4px;
-	color: #333333;
+	color: #FFFFFF;
 }
 -->
 </style>
@@ -53,19 +53,19 @@ MM_reloadPage(true);
   <?php
 echo $version;
 echo "<br>";
-include('partsIn/menu.php');
+//include('partsIn/menu.php');
 ?>
 	<!--Create the Tabbed Panel widget and assign classes to each element-->
 </div>
 <div class="TabbedPanels" id="TabbedPanels1">
 		<ul class="TabbedPanelsTabGroup">
 			<li class="TabbedPanelsTab">Basic 45</li> 
-			<li class="TabbedPanelsTab">Punk & or EP</li> 
-			<li class="TabbedPanelsTab">Update Drawers</li> 
-			<li class="TabbedPanelsTab">About TLhC</li>
+		  <li class="TabbedPanelsTab">Punk & or EP</li> 
+		  <li class="TabbedPanelsTab">Update Drawers</li> 
+		  <li class="TabbedPanelsTab">About TLhC</li>
 
 			
-		</ul>
+  </ul>
 		<div class="TabbedPanelsContentGroup">
 		  <div class="TabbedPanelsContent">
 			  <div>

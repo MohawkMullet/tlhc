@@ -1,26 +1,23 @@
 <?php
-		include("parts/db/tlhcConnect.php");
+	include("parts/db/tlhcConnect.php");
+	$tabName ="mainTab";
 ?>
-<!-- START THE FORM -->
-<form action="Output.php" method="POST" name="basic" target="mainFrame" id="slapIt" onSubmit="MM_changeProp('slapIt','','fontCase','capitalize','FORM')">
-<table bgcolor="#006699" class="brow" id="recInput" style="margin-left:4px;">
-<tr><td>
-<?php
-	include('inDescript2.php'); 
-?>
-<?php
-		include("partsIn/checkBoxes.php");
-?>    
-<?php
-		include("partsIn/buttonsNoClass.php");
-?>
-    </td>
-  </tr>
+<form action="OutputT.php" method="POST" name="basic" target="mainFrame" id="slapIt" onSubmit="MM_changeProp('slapIt','','fontCase','capitalize','FORM')">
+<table class="brow" id="recInput" style="margin-left:4px;">
+	<tr>
+		<td>
+			<?php
+				include('partsIn/template.php');
+				include('inDescript2.php'); 
+				include("partsIn/checkBoxes.php");
+				include("partsIn/buttonsNoClass.php");
+			?>
+		</td>
+	</tr>
 </table>
-<!-- SHOW THE COUNTDOWN LAYER -->
 <div id="bombButtons" title="this shows how many characters you have left.  warning broken">
-<script>
+	<script>
 		displaylimit("Input.slapIt.titler","titler",55)
-</script>
+	</script>
 </div>
 </form>

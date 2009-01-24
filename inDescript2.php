@@ -15,9 +15,7 @@
 	include("partsIn/drawersMain.php");
 ?>
 </fieldset>
-<?php
-		include("partsIn/linkboxes2.php");
-?>
+
 <?php
 		include("partsIn/picasaImage2.php");
 ?>
