@@ -2,7 +2,7 @@
 #bombButtons {
 	position:absolute;
 	left:364px;
-	top:77px;
+	top:125px;
 	width:27px;
 	height:25px;
 	z-index:5;
@@ -14,7 +14,7 @@
 body {
 	background-repeat: repeat-x;
 	background-position: left top;
-	background-image: url(../images/gradBg.gif);
+	background-image: url(../images/tgrad3.gif);
 	background-color: #8BABB0;
 }
 select { background: rgb(255, 255, 255) none repeat scroll 0% 50%;

@@ -45,6 +45,20 @@
  * accordion panel tab container.
  */
 .AccordionPanelTab {
+ 	text-indent: 15px;
+	text-transform: uppercase;
+	font: bold 11px Arial, Helvetica, sans-serif;
+	border-bottom: 1px solid #282828;
+	border-right: 6px solid #cccccc;
+	margin: 0px;
+	padding: 1px;
+	cursor: pointer;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	background: #7F7F7F;
+	color: #FFFFFF;
+}	
+.AccordionPanelTab2 {
 	background-color: #CCCCCC;
 	border-top: solid 1px black;
 	border-bottom: solid 1px gray;
@@ -71,7 +85,7 @@
 	overflow: auto;
 	margin: 0px;
 	padding: 0px;
-	height: 200px;
+	height: 100%;
 }
 
 /* This is an example of how to change the appearance of the panel tab that is
@@ -80,6 +94,7 @@
  */
 .AccordionPanelOpen .AccordionPanelTab {
 	background-color: #EEEEEE;
+	color: #333333;
 }
 
 /* This is an example of how to change the appearance of the panel tab as the
