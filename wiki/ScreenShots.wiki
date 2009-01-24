@@ -1,0 +1,15 @@
+#summary One-sentence summary of this page.
+
+= Screen Shots of TLhC 1.9.5 =
+
+----
+*Reusable comments are key to creating your listings quickly*
+
+<a href="http://picasaweb.google.com/lh/photo/Tp-3R6Gok2111MqJpeLnVQ?feat=embedwebsite"><img src="http://lh6.ggpht.com/_WM3TG9hL37k/SXrE-yewunI/AAAAAAAAAV4/QEGWoJ_ZsYU/s400/reusableComms.thumb.jpg" /></a>
+
+= Details =
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
