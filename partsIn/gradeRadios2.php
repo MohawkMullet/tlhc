@@ -10,6 +10,6 @@ VG+</label>
 <label>
 <input type="radio" name="gradeQ[]" value="VG" id="Grade_3" tabindex="8"  title="VG"/>
 VG</label>&nbsp;&nbsp;
-<input name="Button" type="button" class="this" onClick="MM_openBrWindow('../partsOut/info/commentkey.php','CommentKey','width=907,height=351')" value="Abbrs">
+<input name="Button" type="button" class="this" onClick="MM_openBrWindow('../partsOut/info/commentkeyDefault.php','CommentKey','width=907,height=351')" value="Abbrs">
 <label>
 <input name="notes" type="text" class="someinputs" id="notes" accesskey="n" tabindex="14" size="14" maxlength="90" style="padding-right:0px; margin-right:5px; padding-bottom:3px; margin-bottom:3px;" /></label></fieldset>
