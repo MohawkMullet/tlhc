@@ -2,60 +2,11 @@
 //include_once( ../parts/db/tlhcConnect.php);
 include('parts/config.php');
 ?>
-<style type="text/css">
-<!--
-.unnamed1 {
-	background-image: url(../images/Untitled-1.gif);
-	background-repeat: no-repeat;
-	background-position: left top;
-}
-.rightImg {
-	background-image: url(../images/right_02.png);
-	background-repeat: no-repeat;
-	background-position: right top;
-}
-.leftImg {
-	background-image: url(../images/t2/54_03.png);
-	background-position: right top;
-	background-repeat: no-repeat;
-}
-.r4 {
-	background-image: url(../images/t2/54_07.png);
-	background-repeat: repeat-x;
-	background-position: right top;
-}
-.desc {
-	background-image: url(../images/t2/descript_02.png);
-	background-repeat: repeat-x;
-	background-position: center top;
-}
-.rthj {
-	background-image: url(../images/t2/54-copy_09.png);
-	background-position: left 289px;
-}
--->
-</style>
-
-<link href="styles1.php" rel="stylesheet" type="text/css" />
-<style type="text/css">
-<!--
-#apDiv1 {
-	position:static;
-	left:315px;
-	top:317px;
-	width:440px;
-	height:32px;
-	z-index:1;
-}
-body {
-	background-repeat: no-repeat;
-}
--->
-</style>
 <table width="844" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
     <td height="43" colspan="5" align="left" valign="bottom" background="../images/t2/54_02.png"><strong>
       <span class="blueFontBold" style="font-size-adjust:0.6; text-align:left;"><strong>
+      <a href="http://hepvinyl.com"><img src="http://lh6.ggpht.com/_W_e1PG0tXUk/STT6iOiFxsI/AAAAAAAAAH4/mJEonzm0ob0/s144/preview_32x32.png" alt="HEPVINYL.COM" hspace="5" vspace="0" border="0" align="absbottom" title="Check out More 45's at HEPVINYL.COM"></a>
       <?php
   echo	$storeName;
   ?>
@@ -66,11 +17,14 @@ body {
   </tr>
   <tr>
     <td width="37" valign="top" background="../images/t2/54_03.png" class="leftImg"><img src="../images/t2/54_03.png" width="37" height="286" /></td>
-    <td width="441" valign="top" background="../images/t2/54-copy_09.png" class="desc" style="padding-top:4px">     <span class="greyFontLarge">      
+    <td width="441" valign="top" background="../images/t2/54-copy_09.png" class="desc" style="padding-top:4px">     <span class="greyFontLarge">
+    <br>      
       <?php
                     include('formOuts/titleOut.php');
                 ?>    </span>  
+
 <?php
+
 include('formOuts/artistsOut.php');
 include('formOuts/sideAb.php');
 ?>     

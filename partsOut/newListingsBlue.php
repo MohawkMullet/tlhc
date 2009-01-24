@@ -31,13 +31,21 @@ a:link {
 	margin-left: 20px;
 }
 </style>
-<link href="styles1.php" rel="stylesheet" type="text/css" />
+<link href="stylesBlue.php" rel="stylesheet" type="text/css" />
 <table width="205" height="453" border="0" cellpadding="0" cellspacing="0" class="hhhhh" id="Table_01">
 	<tr>
 		<td width="10" valign="bottom">
 		  <img src="../images/t2/up_01.png" width="10" height="419" alt=""></td>
 		<td width="183" class="lists">
 <?php
+/**
+* DECLARE A VARIABLE HERE FO THE KEYS COMPONENT CAN TELL IF THIS PAGE IS LOADED
+*/
+$imHere = "1";
+
+/**
+* 	START PARSING THE RSS FEED TO SHOW NEW LISTINGS
+*/
 $url = "$rssFeed";
 $rss = fetch_rss($url);
 	echo "<table style=\"overflow: hidden;\" align=\"center\">";
@@ -53,8 +61,7 @@ if($count==5){ break;}
 }
 	echo "</table>";
 ?></td>
-  <td width="12" valign="bottom">
-	  <img src="../images/t2/up_03.png" width="12" height="419" alt=""></td>
+  <td width="12" valign="bottom">&nbsp;</td>
   </tr>
 	
 	<tr>

@@ -1,20 +1,20 @@
 <?php
 $boxes2 = $_POST["boxes2"];
 if ($boxes2 != "") {
-include('styles1.php');
+include('stylesBlue.php');
 }
 ?>
-<table cellspacing="6" id="whole" class="whole">
+<table align="center" cellspacing="6" class="whole" id="whole">
   <tr>
 	<td><a name="top"></a>
 <?php
-include("descript2.php");
+include("descriptOrange.php");
 ?>
 <br>
 <?php
 	$boxes200 = $_POST["boxes200"];
 	if ($boxes200 != "") {
-	include('newListings2.php');
+	include('newListingsDefault.php');
 	}
 ?>
 
@@ -44,7 +44,7 @@ include("formOuts/catBoxes.php");
 <?php
 	$boxes5 = $_POST["boxes5"];
 	if ($boxes5 != "") {
-	include('feeds.php');
+	include('feedLinksDefault.php');
 	}
 ?>
   </td>
