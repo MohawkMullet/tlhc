@@ -7,13 +7,13 @@
               <tr>
                 <td align="left" valign="top" bgcolor="#cccccc" style="width:25%">
 <?php
-include("info/gradeinfo.php");
+include("info/gradesDefault.php");
 ?>
                   </td>
                 <td align="left" valign="top" style="width:75%">
 <!-- GraderKey Went HERE -->
 <?php
-include("info/commentkey.php");
+include("info/commentkeyDefault.php");
 ?>
            		</td>
               </tr> 

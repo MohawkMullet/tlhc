@@ -3,13 +3,8 @@
 	padding-left: 3px;
 	margin-left: 2px;
 }
-.poo {
-	border-left-width: 4px;
-	border-left-style: ridge;
-	border-left-color: #33FFFF;
-}
 </style>
-<table width="175" border="0" align="left" cellpadding="1" cellspacing="1" class="poo" id="commentkey" style="font:small;">
+<table width="175" border="0" align="right" cellpadding="1" cellspacing="1" class="poo" id="commentkey" style="font:small;">
 <tbody>
                       <tr valign="top" align="left">
                         <td width="171"><a name="comments" id="comments"></a> <span class="greyFontSmaller"><strong>7&quot;</strong> - standard 45</span></td>
@@ -65,6 +60,7 @@
                       <tr>
                         <td><span class="greyFontSmaller"><strong>promo</strong> - promotional copy</span></td>
                       </tr>
+
                       <tr>
                         <td align="left" valign="top"><span class="greyFontSmaller"><strong>ps</strong> - picture sleeve (45)</span></td>
                       </tr>
@@ -112,12 +108,6 @@
                       </tr>
                       <tr>
                         <td><span class="greyFontSmaller"><strong>xol</strong> - &quot;x&quot; on label</span></td>
-                      </tr>
-                      <tr>
-                        <td>&nbsp;</td>
-                      </tr>
-                      <tr>
-                        <td>&nbsp;</td>
                       </tr>
                     </tbody>
 </table>

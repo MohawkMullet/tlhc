@@ -13,6 +13,10 @@ include('parts/config.php');
 	color: #663333;
 	text-align: left;
 }
+.shipping {
+	background-color: #E9E9E9;
+
+}
 .greyFontSmall {
 	font: 12px Arial, Helvetica, sans-serif;
 	color: #282828;
@@ -47,11 +51,6 @@ include('parts/config.php');
 	display: table;
 }
 
-.unnamed1 {
-	background-image: url(../images/Untitled-1.gif);
-	background-repeat: no-repeat;
-	background-position: left top;
-}
 .rightImg {
 	background-image: url(../images/right_02.png);
 	background-repeat: no-repeat;
@@ -77,5 +76,27 @@ include('parts/config.php');
 	background-image: url(../images/t2/54_05.png);
 	background-repeat: no-repeat;
 	background-position: left top;
+}
+.grd {
+	width: 324px;
+}
+.leftImg {
+	background-image: url(../images/t2/54_03.png);
+	background-position: right top;
+	background-repeat: no-repeat;
+}
+.r4 {
+	background-image: url(../images/t2/54_07.png);
+	background-repeat: repeat-x;
+	background-position: right top;
+}
+.desc {
+	background-image: url(../images/t2/descript_02.png);
+	background-repeat: repeat-x;
+	background-position: center top;
+}
+.rthj {
+	background-image: url(../images/t2/54-copy_09.png);
+	background-position: left 289px;
 }
 </STYLE>
