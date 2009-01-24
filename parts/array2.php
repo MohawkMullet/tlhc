@@ -29,14 +29,14 @@
 		$listingMast = "$performer $titler";
 //echo $listingMast;
 		$Label = $_POST['Label'];
-			$Label =ucwords(strtoupper($Label));
+		$Label =ucwords(strtoupper($Label));
 		$recNum = $_POST['recNum'];
-			$recNum =ucwords(strtoupper($recNum));
+		$recNum =ucwords(strtoupper($recNum));
 		$notes = $_POST['notes'];
 		$sideA = $_POST['sideA'];
-			$sideA = ucwords(strtolower($sideA));
+		$sideA = ucwords(strtolower($sideA));
 		$sideB = $_POST['sideB'];
-			$sideB = ucwords(strtolower($sideB));
+		$sideB = ucwords(strtolower($sideB));
 		$info = $_POST['sideBar2'];
 		$link = 	  $_POST['link'];		  
 		$linkText = 	  $_POST['linkText'];

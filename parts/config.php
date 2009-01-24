@@ -40,5 +40,5 @@ $storeURL = "<a href='$storeLink'>$storeName</a>";
 $favico = "<link rel='shortcut icon' href='images/favicon.ico'>";
 $storeLogo = "<img src='$logo'>";
 $ebayRSS = "<a href=\"$rssFeed\">"; // encloses feed in tags to be used in html
-$version = "1.9.2"; // this is actuall the version of TLhC that The Creator Made.  Go Ahead and change this value when you change the code
+$version = "1.9.5"; // this is actuall the version of TLhC that The Creator Made.  Go Ahead and change this value when you change the code
 ?>
