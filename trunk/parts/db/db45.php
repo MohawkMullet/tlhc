@@ -1,6 +1,6 @@
 <?php
-$user = "root";
-$pass = "fuckyou";
+$user = "tlhcuser";
+$pass = "tlhcpass;
 $db = "fortyfives";
 $link = mysql_connect( "localhost", $user, $pass );
 if ( !$link )
