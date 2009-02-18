@@ -27,7 +27,7 @@ include("descriptDefault.php");
 <?php
 	$boxes3 = $_POST["boxes3"];
 	if ($boxes3 != "") {
-	include('about.php');
+	include('info/about.php');
 	}
 ?>
 <?php
@@ -52,5 +52,5 @@ include("formOuts/catBoxes.php");
 <div align="center"><a href="#top" style="text-decoration:none;">Back to Top</a></div>
 <!-- INCLUDE OR NOT TLHC TAG -->
 <?php
-//include('cheaterTag.php');
+//echo $cheaterTag;
 ?>

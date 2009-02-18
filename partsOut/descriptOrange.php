@@ -2,80 +2,69 @@
 //include_once( ../parts/db/tlhcConnect.php);
 include('parts/config.php');
 ?>
-<style type="text/css">
-<!--
-.unnamed1 {
-	background-image: url(../images/Untitled-1.gif);
-	background-repeat: no-repeat;
-	background-position: left top;
-}
-.rightImg {
-	background-image: url(../images/right_02.png);
-	background-repeat: no-repeat;
-	background-position: right top;
-}
-.leftImg {
-	background-image: url(../images/left_01.png);
-	background-position: right top;
-}
-.r4 {
-	background-image: url(../images/t2/54_07.png);
-	background-repeat: repeat-x;
-	background-position: right top;
-}
--->
-</style>
-
-<table cellpadding="0" cellspacing="0" border="0" width="752" style="border-bottom-width: 0px; border-top-width: 0px; border-right-width:0px;"  id="descript" align="center">
-  <caption class="blueFontBold" style="font-size-adjust:0.4; text-align:left;"><strong>
-  <?php
-  echo	$storeName;
-  ?>
-  </strong></caption>
-		<tr>
-		  <td width="28" rowspan="2" class="leftImg" style="font:bolder; font-size:16px;">&nbsp;</td>
-			<td width="697" height="60"  class="unnamed1" style="font:bolder; font-size:16px;">
-					<div align="center" class="blueFontBold"><strong>
-				    <?php
-						include('formOuts/titleOut.php');
-					?>
-</strong></div>
-		  </td>
-            <td width="26" rowspan="2" background="../images/Untitled-1.gif" class="rightImg" style="font:bolder; font-size:16px;"><p>&nbsp;</p>
-            <p>&nbsp;</p></td>
-  </tr>
-		<tr>
-		  <td align="left" valign="top" style="padding:4px;">
-				  <?php
+<table width="840" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td align="center" valign="top" class="greyFontLarge" style="padding-top:5px">
+    				  <div align="center">
+    				    <?php
 						include('formOuts/picasaImageOut2.php');
-					?>
-<?php
-						include('formOuts/artistsOut.php');
-					?>  					
-				  <?php
-						include('formOuts/sideAb.php');
-					?>     
-				  <?php
-						include('formOuts/labelNnum.php');
-					?>        
-				  <?php
-						include('formOuts/gradeOut.php');
-					?>         
-				  <?php
-						include('formOuts/commsOut.php');
-					?>
-				  <?php
-						include('formOuts/notesOut.php');
-					?>
-				  <br>
-				  <?php
-						include("formOuts/songInfo2.php");
-					?>
-				  <font color="#cccccc" size="1">
-				  <?php 
+					?></div>
+    				    <br>
+    				    <font color="#ffffff" size="1">
+		                <?php 
 					echo date('m/d/Y h:i:s A');
- 					?></font>
-			</td>
-	    </tr>
+ 					?>
+			      </font></td>
+    <td width="500" align="center" valign="top">
+    <table width="490" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="490" height="20"><img src="http://lh5.ggpht.com/_W_e1PG0tXUk/SYBSEwThpWI/AAAAAAAAArc/41Qiu2x_O-Y/s800/greenT.jpg" width="489" height="20"></td>
+  </tr>
+  <tr>
+    <td height="106" valign="top" bgcolor="#4BA614" class="bldG">
+    <span class="blueFontBold"><?php
+//$listingMast = substr($listingMast, 0, 42);
+echo "$performer";
+?></span>
+      <?php
+include('formOuts/artistsOut.php');
+?>
+      <?php
+include('formOuts/sideAb.php');
+?>
+      <?php
+include('formOuts/labelNnum.php');
+?></td>
+  </tr>
+  <tr>
+    <td height="20"><img src="http://lh5.ggpht.com/_W_e1PG0tXUk/SYBSFMBI7NI/AAAAAAAAArk/OlyrCl-Jb7s/s800/greenB.jpg" width="490" height="20"></td>
+  </tr>
 </table>
-<p>&nbsp;</p>
+<br>
+<table width="490" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="490" height="20"><img src="http://lh4.ggpht.com/_W_e1PG0tXUk/SYBSJAhD-UI/AAAAAAAAAs8/xb2JovsCFWI/s800/box1_03.jpg" width="489" height="20"></td>
+  </tr>
+  <tr>
+    <td height="98" class="bld" bgcolor="#4C81B7"><?php
+include('formOuts/gradeOut.php');
+?>
+      <?php
+include('formOuts/notesOut.php');
+?>
+<?php
+echo "<span class='greyFont'>Comments:</span><br>";
+include('formOuts/commsOut.php');
+?>
+      <br>
+      <?php
+include("formOuts/songInfo2.php");
+?></td>
+  </tr>
+  <tr>
+    <td><img src="http://lh4.ggpht.com/_W_e1PG0tXUk/SYBSJqfNeFI/AAAAAAAAAtE/inUmC6g-fcc/s800/box1_06.jpg" width="489" height="19"></td>
+  </tr>
+</table>
+    </td>
+  </tr>
+</table>

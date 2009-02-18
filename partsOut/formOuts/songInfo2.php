@@ -3,7 +3,7 @@
 $info = $_POST['sideBar2'];
 if ($info == "")
 {
-echo "<div style=\"float:left;\" align=\"center\"><img alt=\"Hep Vinyl\" title=\"$storeName\" src=\"$logo\" align=top height=\"32\" width=\"32\"></div>";
+echo "<div style=\"float:left;\" align=\"center\"><img alt=\"Hep Vinyl\" title=\"$storeName\" src=\"$logo\" align=top height=\"32\" width=\"48\"></div>";
 }
 else 
 

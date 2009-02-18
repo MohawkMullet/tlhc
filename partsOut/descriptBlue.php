@@ -5,8 +5,7 @@ include('parts/config.php');
 <table width="844" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
     <td height="43" colspan="5" align="left" valign="bottom" background="../images/t2/54_02.png"><strong>
-      <span class="blueFontBold" style="font-size-adjust:0.6; text-align:left;"><strong>
-      <a href="http://hepvinyl.com"><img src="http://lh6.ggpht.com/_W_e1PG0tXUk/STT6iOiFxsI/AAAAAAAAAH4/mJEonzm0ob0/s144/preview_32x32.png" alt="HEPVINYL.COM" hspace="5" vspace="0" border="0" align="absbottom" title="Check out More 45's at HEPVINYL.COM"></a>
+      <span class="blueFontBold" style="font-size-adjust:0.6; text-align:left;"><strong><img src="../images/t3/ra32pxA.png" alt="" width="45" height="32" align="left">
       <?php
   echo	$storeName;
   ?>
