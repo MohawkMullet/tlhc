@@ -15,14 +15,14 @@ $storeName = "HepVinyl's Vintage Records";
 $storeLink = "http://www.stores.ebay.com/id=480498590"; // just start with http://mystore.ebay.whatever/store
 
 // STORE LOGO
-$logo = "http://lh6.ggpht.com/_W_e1PG0tXUk/STT6iOiFxsI/AAAAAAAAAH4/mJEonzm0ob0/s144/preview_32x32.png";
+$logo = "http://lh5.ggpht.com/_W_e1PG0tXUk/SYB93ykBnjI/AAAAAAAAAt8/scccZb1zCTg/s144/s2a.jpg";
 
 // RSS FEED FOR EBAY STORE.  See docs for help.
 $rssFeed = "http://rss.api.ebay.com/ws/rssapi?FeedName=StoreItems&siteId=0&language=en-US&output=RSS20&storeId=480498590"; 
 
 // PICASA IMAGES LOGIN INFO
 $picasaUser = "hepvinyl";
-$picasaPass	= "recordsales";
+$picasaPass	= "";
 
 // ********************************************************
 // STUFF TO CUSTOMIZE YOUR OWN VERSION OF TLhC
@@ -40,5 +40,6 @@ $storeURL = "<a href='$storeLink'>$storeName</a>";
 $favico = "<link rel='shortcut icon' href='images/favicon.ico'>";
 $storeLogo = "<img src='$logo'>";
 $ebayRSS = "<a href=\"$rssFeed\">"; // encloses feed in tags to be used in html
-$version = "1.9.5"; // this is actuall the version of TLhC that The Creator Made.  Go Ahead and change this value when you change the code
+$version = "1.9.8"; // this is actuall the version of TLhC that The Creator Made.  Go Ahead and change this value when you change the code<div align="center"><img src=" http://i5.ebayimg.com/03/i/001/21/72/d5b0_1_bo.JPG"><br>
+$cheaterTag = "<div align=\"center\"><img src=\" http://i5.ebayimg.com/03/i/001/21/72/d5b0_1_bo.JPG\"><br><font face=\"Arial,Helvetica\" size=\"2\">Powered by <a href=\"http://code.google.com/p/tlhc/\">TL html Cheater</a>.<br>The Free as in Freedom (GPLv3) HTML tool.  List your items fast and easy and manage your active items.</font></div><hr>";
 ?>
