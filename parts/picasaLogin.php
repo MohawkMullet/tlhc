@@ -1,6 +1,7 @@
 <?php
 require_once('Picasa.php');
 ?>
+<?php include('head.php'); ?>
 <?php
 include('config.php');
 ?>

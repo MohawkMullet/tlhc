@@ -1,3 +1,4 @@
+<?php include('head.php'); ?>
 <?php
 		include("db/tlhcConnect.php");
 ?>
@@ -9,6 +10,9 @@
 </head>
 
 <body>
+<br>
+<br>
+<br>
 <?php
 $query = mysql_query(
     "SELECT `id`, 
