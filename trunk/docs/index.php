@@ -1,12 +1,17 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-<head>
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 <title>Start Here</title>
+<link href="../parts/inputForm.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+<!--
+.style1 {color: #FFFFFF}
+-->
+</style>
 </head>
 
 <body>
-<h1>TLhC Getting Started </h1>
+<h1 class="style1">TLhC Getting Started </h1>
 <h4><a href="../license.php">License</a></h4>
 <p>Features</p>
 <h3><a href="why.php">Why</a></h3>
@@ -51,7 +56,7 @@
   <h3>Important Files</h3>
   <h3>Form Fields and </h3>
 </blockquote>
-<h2>Contact </h2>
+<h2><a href="contact.php">Contact</a> </h2>
 <?php
 include_once('../license.php');
 ?>
