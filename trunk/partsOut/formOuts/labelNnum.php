@@ -4,7 +4,7 @@
 			$Label = $_POST['Label'];
 			$Label =ucwords(strtoupper($Label));
 				if ($Label != "") {
-				echo "<span class=\"greyFont\">Label:&nbsp;</span>";
+				echo "<span class=\"greyFont\">Label:</span>";
 				echo "<span class=\"blueFontBold\"><strong>$Label</strong></span>";
 				}
 ?>
@@ -12,7 +12,7 @@
 			$recNum = $_POST['recNum'];
 			$recNum =ucwords(strtoupper($recNum));
 				if ($recNum != "NO.") {
-					echo "<span class=\"greyFont\">&nbsp;&nbsp;No.&nbsp;</span>";
+					echo "<span class=\"greyFont\">&nbsp;No.</span>";
 					echo "<span class=\"blueFontBold\"><strong>$recNum</strong></span>";
 				}
 ?>

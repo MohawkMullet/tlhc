@@ -45,7 +45,7 @@ include("descriptBlue.php");
               <?php
 	$boxes3 = $_POST["boxes3"];
 	if ($boxes3 != "") {
-	include('aboutBlue.php');
+	include('info/aboutBlue.php');
 	}
 ?>              </td>
             </tr>
@@ -66,7 +66,7 @@ include("descriptBlue.php");
 <?php
 	$boxes6 = $_POST["boxes6"];
 	if ($boxes6 != "") {
-	include('grading.php');
+	include('info/grading.php');
 	}
 ?>
 <?php
@@ -80,5 +80,5 @@ include("formOuts/catBoxes.php");
 
 
 <?php
-include('cheaterTag.php');
+//echo $cheaterTag;
 ?>

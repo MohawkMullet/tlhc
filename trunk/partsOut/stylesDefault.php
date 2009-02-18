@@ -46,5 +46,6 @@
 	border-width: 4px;
 	height: auto;
 	display: table;
+	float: left;
 }
 </style>
