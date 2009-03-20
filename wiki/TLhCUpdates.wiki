@@ -1,9 +1,14 @@
 #summary One-sentence summary of this page.
 
-= Introduction =
+= What's New In TLhC =
 
 TLhC updates.
 
+
+= 2009-03-19 =
+
+Not really sure why anyone would want these scripts, but if you do please drop me an email.  let me know what you are looking for and how you found this.
+  * Removed all non-gpl'd code and updated all javascript functions to jquery
 
 = Details =
 
