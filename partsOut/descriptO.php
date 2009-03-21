@@ -7,7 +7,7 @@ include('parts/config.php');
     <td align="center" valign="top" class="greyFontLarge" style="padding-top:5px">
     				  <div align="center">
     				    <?php
-						include('formOuts/picasaImageOut2.php');
+						include('formOuts/imagePicasaOut.php');
 					?></div>
     				    <br>
     				    <font color="#ffffff" size="1">
@@ -24,16 +24,18 @@ include('parts/config.php');
     <td height="106" valign="top" bgcolor="#4BA614" class="bldG">
     <span class="blueFontBold"><?php
 //$listingMast = substr($listingMast, 0, 42);
+if ($performer != "ARTIST OR BAND") {
 echo "$performer";
+}
 ?></span>
       <?php
 include('formOuts/artistsOut.php');
 ?>
       <?php
-include('formOuts/sideAb.php');
+include('formOuts/sideAbOut.php');
 ?>
       <?php
-include('formOuts/labelNnum.php');
+include('formOuts/labelNnumOut.php');
 ?></td>
   </tr>
   <tr>
@@ -46,19 +48,14 @@ include('formOuts/labelNnum.php');
     <td width="490" height="20"><img src="http://lh4.ggpht.com/_W_e1PG0tXUk/SYBSJAhD-UI/AAAAAAAAAs8/xb2JovsCFWI/s800/box1_03.jpg" width="489" height="20"></td>
   </tr>
   <tr>
-    <td height="98" class="bld" bgcolor="#4C81B7"><?php
-include('formOuts/gradeOut.php');
-?>
-      <?php
-include('formOuts/notesOut.php');
-?>
+    <td height="98" class="bld" bgcolor="#4C81B7">
 <?php
-echo "<span class='greyFont'>Comments:</span><br>";
-include('formOuts/commsOut.php');
-?>
-      <br>
-      <?php
-include("formOuts/songInfo2.php");
+	include('formOuts/gradeOut2.php');
+	include('formOuts/abbrevsOut.php');
+	echo "<span class='greyFont'>Comments:</span><br>";
+	include('formOuts/reusableOut.php');
+	echo "<br>";
+	include("formOuts/songInfoOut.php");
 ?></td>
   </tr>
   <tr>

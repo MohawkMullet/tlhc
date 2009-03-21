@@ -95,4 +95,13 @@ include('parts/config.php');
 
 }
 
+.up {
+	padding-left: 3px;
+	margin-left: 2px;
+}
+.plug {
+	background-image: url(http://lh3.ggpht.com/_W_e1PG0tXUk/SZiMGDaGcKI/AAAAAAAAAxI/Ii8bjrSn3rw/s800/wfFont1-E132nh.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
 </style>

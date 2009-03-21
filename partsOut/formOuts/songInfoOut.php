@@ -8,15 +8,17 @@ echo "<div style=\"float:left;\" align=\"center\"><img alt=\"Hep Vinyl\" title=\
 else 
 
 {
+if ($info != "Paste extra song or artist info here and provide link below") 
+{
 	echo "<span class=\"greyFontSmaller\">Artist or Song Info:<br /> $info</span>";
-	
+}	
 	}
 ?>
 
 <?php
 $link = 	  $_POST['link'];		  
 $linkText = 	  $_POST['linkText'];
-	if ($link != "") {		  	  
+	if ($link != "http:// address here") {		  	  
 	print "<br /><br /><a href=\"$link\">$linkText</a>";
 	}
 ?>
