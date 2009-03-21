@@ -1,3 +1,4 @@
 <fieldset class="insideFields"><legend>Artist & Title:</legend><div class="stuff" id="titles">
-<input type="text" name="performer" size="12" class="someinputs" id="performer"  tabindex="1" onfocus="if(this.value=='Artist')this.value='';" value="Artist" title="Band, Singer or Artist Name ONLY">
-<input name="titler" type="text" class="someinputs" id="titler" accesskey="h" tabindex="2" onfocus="if(this.value=='Title')this.value='';" value="Title" size="26" maxlength="55" title="THE TITLE OF THE EBAY LISTING" /></div></fieldset>
+<input type="text" name="performer" size="18" class="ui-widget input defaultText" id="performer"  tabindex="1"  title="Artist or Band">
+<input name="titler" type="text" id="titler" accesskey="h" class="ui-widget input defaultText" tabindex="2" size="32" maxlength="55" title="title of 45" /></div></fieldset>
+
