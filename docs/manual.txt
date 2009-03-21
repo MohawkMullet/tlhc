@@ -1,5 +1,5 @@
  
-    Turbo Lister HTML Cheater is Copyright 2008 Damian C. Kelly.  mohawkdigital@gmail.com
+    TL HTML Cheater is Copyright 2008 Damian C. Kelly.  mohawkdigital@gmail.com
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -18,7 +18,7 @@ DO NOT USE THIS PROGRAM ON AN INTERNET FACING WEB SERVER.  This program was desi
 
 Uses:
 
-This program is designed to ouptut HTML that can be cut and pasted into popular Ebay listing software such as TurboLister2 or JAOLT.  
+This program is designed to ouptut HTML that can be cut and pasted into popular Ebay listing software such as TL2 or JAOLT.  
 
 Installing:
 

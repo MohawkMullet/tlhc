@@ -11,7 +11,7 @@
  <p>What does it do?</p>
  <p>Generates HTML code to be used in eBay item listings.</p>
  <p>Description: </p>
- <p>TLhC is a fully customizable  browser based html generator for ebay listings. Uses an advanced listing template. Allows for use of free form and groups of stored comments. Outputs a listing preview and html code for use in TurboLister. </p>
+ <p>TLhC is a fully customizable  browser based html generator for ebay listings. Uses an advanced listing template. Allows for use of free form and groups of stored comments. Outputs a listing preview and html code for use in TL. </p>
  <p>Using a web based form you input information about your listing and the scripts return a preview of your listing and the html code to be copied into your listing manager or ebays add item forms. </p>
  <p>Features </p>
  <p>Structured, Free Form &amp; Reusable Comments </p>
