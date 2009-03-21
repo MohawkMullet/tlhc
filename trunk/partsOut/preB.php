@@ -1,7 +1,7 @@
 <?php
 $boxes2 = $_POST["boxes2"];
 if ($boxes2 != "") {
-include('stylesBlue.php');
+include('styleB.php');
 }
 ?>
 
@@ -9,7 +9,7 @@ include('stylesBlue.php');
   <tr >
 	<td width="644" colspan="3"><a name="top"></a>
 <?php
-include("descriptBlue.php");
+include("descriptB.php");
 ?>
   
   <tr valign="top">
@@ -70,7 +70,7 @@ include("descriptBlue.php");
 	}
 ?>
 <?php
-include("formOuts/catBoxes.php");
+include("formOuts/componentsOut.php");
 ?>
 
   

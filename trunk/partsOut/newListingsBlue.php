@@ -31,7 +31,7 @@ a:link {
 	margin-left: 20px;
 }
 </style>
-<link href="stylesBlue.php" rel="stylesheet" type="text/css" />
+<link href="styleB.php" rel="stylesheet" type="text/css" />
 <table width="205" height="453" border="0" cellpadding="0" cellspacing="0" class="hhhhh" id="Table_01">
 	<tr>
 		<td width="10" valign="bottom">

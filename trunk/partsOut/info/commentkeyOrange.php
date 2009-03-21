@@ -1,9 +1,3 @@
-<style type="text/css">
-.up {
-	padding-left: 3px;
-	margin-left: 2px;
-}
-</style>
 <table width="175" border="0" align="left" cellpadding="1" cellspacing="1" id="commentkey" style="font:small;">
 <tbody>
                       

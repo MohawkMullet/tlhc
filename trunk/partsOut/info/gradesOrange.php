@@ -1,13 +1,4 @@
-<style type="text/css">
-<!--
-.plug {
-	background-image: url(../../images/t3/raF32x45.png);
-	background-repeat: no-repeat;
-	background-position: right top;
-}
--->
-</style>
-<table width="340" border="0" align="center" cellpadding="0" cellspacing="0" class="plug" id="grades">
+<table width="340" border="0" align="center" cellpadding="0" cellspacing="0" id="grades">
   <tr>
     <td>      
       <span class="greyFont"><strong>Record Grading</strong></span>

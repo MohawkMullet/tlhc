@@ -1,14 +1,14 @@
 <?php
 $boxes2 = $_POST["boxes2"];
 if ($boxes2 != "") {
-include('stylesDefault.php');
+include('styleD.php');
 }
 ?>
 <table cellspacing="6" id="whole" class="whole">
   <tr>
 	<td><a name="top"></a>
 <?php
-include("descriptDefault.php");
+include("descriptD.php");
 ?>
 <br>
 <?php
@@ -38,12 +38,12 @@ include("descriptDefault.php");
 ?>
 <br><div align="center"><a href="#top" style="text-decoration:none;">Back to Top</a></div>
 <?php
-include("formOuts/catBoxes.php");
+include("formOuts/componentsOut.php");
 ?>
 <?php
 	$boxes5 = $_POST["boxes5"];
 	if ($boxes5 != "") {
-	include('feedLinksDefault.php');
+	include('footD.php');
 	}
 ?>
   </td>

@@ -1,14 +1,14 @@
 <?php
 $boxes2 = $_POST["boxes2"];
 if ($boxes2 != "") {
-include('stylesOrange.php');
+include('styleO.php');
 }
 ?>
 <table align="center" cellspacing="6" class="whole" id="whole">
   <tr>
 	<td><table width="100%" border="0" cellpadding="0" cellspacing="0" id="header">
         <tr>
-          <td width="35%"><img src="../images/t3/ta128c.png" width="205" height="128"></td>
+          <td width="35%"><img src="http://lh3.ggpht.com/_W_e1PG0tXUk/SYBSHgvoG0I/AAAAAAAAAsc/Usqa091OFfg/s800/wfFont1.jpg" width="287" height="120" title="HepVinyl.com Rare 45's, LP's & Plenty of Common Onese Too!"></td>
           <td width="65%" align="right" valign="bottom" bgcolor="#FFFFFF"> <div></div>          
             <table border="0" align="right" cellpadding="0" cellspacing="0">
           <tr><td><table cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" align="center" style="border: #FFFFFF 1px solid;" width="100%"><tr><td width="100%"><table cellspacing="0" cellpadding="0" border="0" align="right" width="100%">
@@ -22,7 +22,7 @@ include('stylesOrange.php');
       </table>
 	  <br>
 	<?php
-include("descriptOrange.php");
+include("descriptO.php");
 ?>
 <table width="840" border="0" cellpadding="0" cellspacing="0" id="components">
   <tr>
@@ -30,7 +30,7 @@ include("descriptOrange.php");
 	$boxes4 = $_POST["boxes4"];
 	if ($boxes4 != "") {
 	include('info/gradesOrange.php');
-	echo "<br";
+	echo "<br>";
 	include('info/commentkeyOrange.php');
 	}
 ?></td>
@@ -57,12 +57,12 @@ include("descriptOrange.php");
 	}
 ?><br>
 <?php
-include("formOuts/catBoxes.php");
+include("formOuts/componentsOut.php");
 ?>
 <?php
 	$boxes5 = $_POST["boxes5"];
 	if ($boxes5 != "") {
-	include('feedLinksOrange.php');
+	include('footO.php');
 	}
 ?>  </td>
   </tr>

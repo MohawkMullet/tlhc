@@ -18,40 +18,28 @@ include('parts/config.php');
     <td width="37" valign="top" background="../images/t2/54_03.png" class="leftImg"><img src="../images/t2/54_03.png" width="37" height="286" /></td>
     <td width="441" valign="top" background="../images/t2/54-copy_09.png" class="desc" style="padding-top:4px">     <span class="greyFontLarge">
     <br>      
-      <?php
-                    include('formOuts/titleOut.php');
-                ?>    </span>  
-
 <?php
-
-include('formOuts/artistsOut.php');
-include('formOuts/sideAb.php');
-?>     
-    <?php
-						include('formOuts/labelNnum.php');
-					?>
-                    
-		  <?php
-						include('formOuts/gradeOut.php');
-					?>         
-				  <?php
-						include('formOuts/commsOut.php');
-					?>
-				  <?php
-						include('formOuts/notesOut.php');
-					?>
-				  <br>
-				  <?php
-						include("formOuts/songInfo2.php");
-					?>
-				  <font color="#cccccc" size="1">
-    <?php 
-					echo date('m/d/Y h:i:s A');
- 					?></font></td>
+    include('formOuts/titleOut.php');
+?>
+</span>  
+<?php
+	include('formOuts/artistsOut.php');
+	include('formOuts/sideAbOut.php');
+	include('formOuts/labelNnumOut.php');
+	include('formOuts/gradeOut2.php');
+	include('formOuts/reusableOut.php');
+	include('formOuts/abbrevsOut.php');
+	echo "<br>";
+	include("formOuts/songInfoOut.php");
+	echo "<font color=\"#cccccc\" size=\"1\">";
+	echo date('m/d/Y h:i:s A');
+	echo "</font>";
+?>
+</td>
     <td width="30" valign="top" class="MI">&nbsp;      </td>
 <td width="297" align="center" valign="top">
     				  <?php
-						include('formOuts/picasaImageOut2.php');
+						include('formOuts/imagePicasaOut.php');
 					?>    </td>
     <td width="39" valign="bottom" background="../images/t2/54_07.png" class="r4"><img src="../images/t2/678_07.png" width="39" height="286" align="bottom" /></td>
   </tr>

@@ -36,12 +36,12 @@ if($count==4){ break;}
 }
 ?>
 
-<?php
+<!--<?php
 echo "</tr><tr><td colspan='6' bgcolor='#dcdcdc'>&nbsp;</td></tr></table><table bgcolor=\"#cccccc\"><tr>";
 	$count = 5;
 	foreach ($rss->items as $item) {
 		$href = $item['link'];
-		$title = substr( $item['title'], 0, 30);
+		$title = substr( $item['title'], 0, 20);
 		echo "\n";
 // SKIP THE PICTURES AND DESCRIPTION AND JUST SHOW SOME TITLES
 	$count ++;
@@ -52,4 +52,4 @@ if($count > 11){
 if($count==17){ break;}
 }
 	echo "</tr></table><hr>";
-?>
+?> -->
