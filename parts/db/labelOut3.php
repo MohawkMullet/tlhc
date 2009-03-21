@@ -1,22 +1,20 @@
 <html>
 <head>
 <title>fetch me a brew will ya</title>
-
-<?php include_once("tlhcConnect.php");
+<?php 
+include("../config.php");
 ?> 
-<link href="../lowerCss.css" rel="stylesheet" type="text/css" />
+<link type="text/css" rel="stylesheet" href="../jquery/theme/ui.all.css" />
+<script type="text/javascript" src="../jquery/jquery-1.3.2.js"></script>
+<script type="text/javascript" src="../jquery/jquery-ui-personalized-1.6rc6.js"></script>
+  
   </head>     
-  
-  
-<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgcolor="#cccccc">
-  
+<body leftmargin="0" topmargin="20" marginwidth="0" marginheight="0">
   <div id="commentOut">
   <table width="680">
 <tr>
 	<td>																											
-
 <?php
-
 if (empty($_POST["labelValue"])) 
       // First name cannot be a null string
       $errors["labelValue"] = "Dont submit the blank form. Asshole!.";
@@ -26,7 +24,9 @@ if ($_POST['labelValue'] == "shows blah blah")
   {
       // There are errors.  Relocate back to the 
       // client form
+	  echo $errorIcon;
       echo "$errors[labelValue]<br>";
+	  echo $errorIconEnd;
       print_r ($_SESSION);
       exit;
   }
