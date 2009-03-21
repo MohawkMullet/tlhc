@@ -1,0 +1,5 @@
+<fieldset class="insideFields"><legend>Record Label, Number, & Sleeve:&nbsp;<a href="docs/index.php" target="mainFrame" class="fg-button fg-button-icon-solo ui-state-default ui-corner-all"><span class="ui-icon ui-icon-help"></span>&nbsp;</a></legend>
+<input name="Label" type="text" class="ui-widget input defaultText" id="Label" accesskey="l" tabindex="5" size="20" title="Record Company Name" />
+&nbsp;<input name="recNum" type="text" class="ui-widget input defaultText" id="recNum" accesskey="h" tabindex="6" size="6" title="No." />
+<Label title="Does this 45 still have the Original Record Company Paper Sleeve?  If yes check this box.  this is not for picture sleeves."><input name="origSleeve" type="checkbox" value="origSleeve"  tabindex="7" class="ui-widget input">Orig Sleeve?</label>
+</fieldset>
