@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-<title>TurboLister HTML Cheater Manual</title>
+<title>TL HTML Cheater Manual</title>
 <link rel="stylesheet" href="images/emx_nav_left.css" type="text/css">
 <script type="text/javascript">
 <!--
@@ -43,7 +43,7 @@ function closesubnav(event){
 <body onmousemove="closesubnav(event);"> 
 <div class="skipLinks">skip to: <a href="#content">page content</a> | <a href="pageNav">links on this page</a> | <a href="#globalNav">site navigation</a> | <a href="#siteInfo">footer (site information)</a> </div>
 <div id="masthead"> 
-  <h1 id="siteName">TurboLister &lt;html&gt; Cheater v </h1> 
+  <h1 id="siteName">TL &lt;html&gt; Cheater v </h1> 
   <div id="utility"> 
     <a href="#">Utility Link</a> | <a href="#">Utility Link</a> | <a href="#">Utility
     Link</a> 
@@ -147,12 +147,12 @@ function closesubnav(event){
       <img src="images/2.png" alt="" width="201" height="286"> 
       <h3>TLhC? Whats it for? </h3> 
       <p>
-       TLhC is designed for ebay sellers who list lots of similar items and want all their listings to look professional and the same. TLhC allows a seller to use a simple web form to input their item specifics quickly and easily. It then generates a preview along with the html code to be pasted into TurboLister. Anyone who's spent much time working with TL knows that editing your listings via it's internal Description Builder leaves room for sloppy html code and uneven results.  I've tried to put together most of the basic scripts I use in a generic package that can be customized. Knowledge of HTML is probably needed. PHP knowledge is probably not critical. I've setup some pretty complex forms with plenty of output variables that have plenty of options. You can find us on ebay at http://hepvinyl.com . We sell 45's. </p>
+       TLhC is designed for ebay sellers who list lots of similar items and want all their listings to look professional and the same. TLhC allows a seller to use a simple web form to input their item specifics quickly and easily. It then generates a preview along with the html code to be pasted into TL. Anyone who's spent much time working with TL knows that editing your listings via it's internal Description Builder leaves room for sloppy html code and uneven results.  I've tried to put together most of the basic scripts I use in a generic package that can be customized. Knowledge of HTML is probably needed. PHP knowledge is probably not critical. I've setup some pretty complex forms with plenty of output variables that have plenty of options. You can find us on ebay at http://hepvinyl.com . We sell 45's. </p>
     </div> 
     <div class="story"> 
       <h2>Now lets get the License Out Of The Way </h2> 
       <p>
-       Turbo Lister HTML Cheater versions 0 -&gt; 1.7.2 is Copyright&copy; 2008 Damian C. Kelly.  mohawk digital @ gmail.com</p> 
+       TL HTML Cheater versions 0 -&gt; 1.7.2 is Copyright&copy; 2008 Damian C. Kelly.  mohawk digital @ gmail.com</p> 
       <p> This program is free software: you can redistribute it and/or modify<br>
   it under the terms of the GNU General Public License as published by<br>
   the Free Software Foundation, version 3 of the License, or any later version.</p>
@@ -170,7 +170,7 @@ function closesubnav(event){
             <a href="#DANGER" class="capsule">NO WARRANTY</a> DO NOT USE THIS PROGRAM ON AN INTERNET FACING WEB SERVER.  This program was designed and built to be run on a webserver that does not face the outside world.  This software is not safe and should be considered dangerous.  Absolutely DO NOT place these scripts on a production machine.  Run this on your local box, but do not expose this outside of your lan.<br>
           </p></td> 
           <td> <p> 
-            <a href="#" class="capsule">TurboLister Alternatives? </a> Check out jAOLT. It's pretty new and buggy and the developer pages seem to have most discussion in German, but it does work for the most basic listings and it does take straight html pastes without modifying the code on upload. Search code.google.com for jAOLT. </p>
+            <a href="#" class="capsule">TL Alternatives? </a> Check out jAOLT. It's pretty new and buggy and the developer pages seem to have most discussion in German, but it does work for the most basic listings and it does take straight html pastes without modifying the code on upload. Search code.google.com for jAOLT. </p>
           </td> 
         </tr> 
         <tr valign="top">
@@ -183,7 +183,7 @@ function closesubnav(event){
         </tr>
         <tr valign="top"> 
           <td class="storyLeft"><?php
-		  include('formImage.php');
+		  include('picasa.php');
 		  ?></td> 
           <td><?php
 		  include('showRss.php');
