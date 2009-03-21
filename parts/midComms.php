@@ -1,18 +1,19 @@
-<?php include('head.php'); ?>
 <?php
-		include("db/tlhcConnect.php");
+		include("config.php");
 ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 <title>The Stored Comments</title>
+<link type="text/css" rel="stylesheet" href="jquery/theme/ui.all.css" />
+<script type="text/javascript" src="jquery/jquery-1.3.2.js"></script>
+<script type="text/javascript" src="jquery/jquery.maxlength-1.0.2.js"></script>
+<script type="text/javascript" src="jquery/jquery-ui-personalized-1.6rc6.js"></script></head>
 </head>
 
 <body>
-<br>
-<br>
-<br>
+<div class="ui-widget-content"><div class="ui-state-highlight">Comments in the database:</div>
 <?php
 $query = mysql_query(
     "SELECT `id`, 
@@ -22,7 +23,7 @@ $query = mysql_query(
    ORDER BY `id` ASC"
 );
 
-echo "<select name='vinylSelector[]' size='8' multiple id='vinylSelector'>\n";
+echo "<select class='ui-widget input' name='vinylSelector[]' size='8' multiple id='vinylSelector'>\n";
 
 while ($data = mysql_fetch_array($query, MYSQL_ASSOC))
 {
@@ -41,7 +42,7 @@ $query = mysql_query(
    ORDER BY `id` ASC"
 );
 
-echo "<select name='labelSelector[]' size='7' multiple id='labelSelector'>\n";
+echo "<select class='ui-widget input' name='labelSelector[]' size='7' multiple id='labelSelector'>\n";
 
 while ($data = mysql_fetch_array($query, MYSQL_ASSOC))
 {
@@ -60,7 +61,7 @@ echo "</select>\n";
 	   ORDER BY `id` ASC"
 	);
 	
-	echo "<select name='promoSelector[]' size='10' multiple scrolling='no' id='promoSelector'>\n";
+	echo "<select class='ui-widget input' name='promoSelector[]' size='10' multiple scrolling='no' id='promoSelector'>\n";
 	
 	while ($data = mysql_fetch_array($query, MYSQL_ASSOC))
 	{
@@ -80,7 +81,7 @@ echo "</select>\n";
 	   ORDER BY `id` ASC"
 	);
 	
-	echo "<select name='sleeveSelector[]' size='4' multiple scrolling='no' id='sleeveSelector'>\n";
+	echo "<select class='ui-widget input' name='sleeveSelector[]' size='4' multiple scrolling='no' id='sleeveSelector'>\n";
 	
 	while ($data = mysql_fetch_array($query, MYSQL_ASSOC))
 	{
@@ -91,7 +92,8 @@ echo "</select>\n";
 ?>
 <hr>
 
-<?php
+<p>
+  <?php
 	$query = mysql_query(
 	    "SELECT `id`, 
 	            `value`,
@@ -100,7 +102,7 @@ echo "</select>\n";
 	   ORDER BY `id` ASC"
 	);
 	
-	echo "<select name='miscSelector[]' size='6' multiple scrolling='no' id='miscSelector'>\n";
+	echo "<select class='ui-widget input' name='miscSelector[]' size='6' multiple scrolling='no' id='miscSelector'>\n";
 	
 	while ($data = mysql_fetch_array($query, MYSQL_ASSOC))
 	{
@@ -109,5 +111,13 @@ echo "</select>\n";
 	
 	echo "</select>\n";
 ?>
+</p>
+<p>
+  <label><span class="ui-state-highlight">ass</span>
+  <select name="ass" size="6" multiple id="ass">
+  </select>
+  </label>
+</p>
+</div>
 </body>
 </html>

@@ -1,16 +1,11 @@
-
-<br>
-<label>phrase
-<input type="text" name="phrase" id="phrase">
-</label>
-<table width="1108" border="1">
+<p>hide <a href="#" onClick="MM_showHideLayers('searchLayer','','show');MM_showHideLayers('searchLayer','','hide')">me</a></p>
+<table width="100%" border="0" cellpadding="2" cellspacing="2" class="ui-widget-content" id="searchers">
   <tr>
-    <td width="33" bgcolor="#FFFFFF"><span style="margin-bottom: 0pt;"><img src="../images/MusicStackfavicon.ico"></span></td>
-    <td width="1059"><form name="search" action="http://www.musicstack.com/show.cgi" method="post" target="_blank" id="searchForm" autocomplete="off" style="margin-bottom: 0pt;" onSubmit="return ck(this)">
-  <input id="searchText" class="boxtext" name="find" value="" size="20" maxlength="30" onFocus="flip(1)" onBlur="flip(0)" type="text">
+    <td width="33" align="right" valign="top"><span style="margin-bottom: 0pt;"><img src="../images/MusicStackfavicon.ico" title="Search MusicStack"></span></td>
+    <td><form name="search" action="http://www.musicstack.com/show.cgi" method="post" target="_blank" id="searchForm" autocomplete="off" style="margin-bottom: 0pt;" onSubmit="return ck(this)">
+  <input id="searchText" class="ui-widget input ui-corner-all" name="find" value="" size="20" maxlength="30" onFocus="flip(1)" onBlur="flip(0)" type="text">
   <input name="find_focus" value="0" type="hidden">
-  &nbsp;
-  <select id="boxt" class="boxtext" name="search_type">
+  <select id="boxt" name="search_type" class="ui-widget select ui-corner-all">
     <option value="artist">Artist Search</option>
     <option value="title">Title Search </option>
     <option value="label">Label Search </option>
@@ -18,8 +13,7 @@
     <option value="seller">Seller Search </option>
     <option value="email">E-mail Search </option>
   </select>
-  &nbsp;
-  <select id="box1" class="boxtext" name="media">
+  <select id="box1" name="media" class="ui-widget select">
     <option value="All">All Formats</option>
     <option value="CDs">CDs only </option>
     <option value="CDsVinyl">CDs &amp; Vinyl </option>
@@ -105,30 +99,47 @@
     <option value="8">Any/All&nbsp;&nbsp; </option>
     <option value="27">Other&nbsp;&nbsp; </option>
   </select>
-  &nbsp;
-  <input class="boxb" name="submit" value="MusicStack" type="submit">
-    </form></td>
+  <button type='submit' target='_blank' class='fg-button fg-button-icon-right ui-state-default ui-corner-all'>MusicStack<span class='ui-icon ui-icon-circle-zoomin'></span></button> 
+    </form>    </td>
   </tr>
-  <tr>
-    <td bgcolor="#FFFFFF"><img src="../images/WikIfavicon.ico"></td>
-    <td><form action="search-redirect.php" id="searchform" target="_blank">
-      <input name="search" type="text" id="searchInput" size="20" />
-      <input type='submit' name="go" class="searchButton" id="searchGoButton" value="WikiPedia" />
-    </form></td>
+    <tr>
+    <td align="right" valign="top">
+    <img src="../images/EBAYfavicon.ico" title="Search Ebay">    </td>
+    <td>
+    <form method="get" action="http://search.ebay.com/search/search.dll" target="_blank" style="margin-bottom: 0pt;"><input type="text" maxlength="300" name="satitle" size="20" class="ui-widget input">
+    <button type='submit' target='_blank' class='fg-button fg-button-icon-right ui-state-default ui-corner-all'>Search Ebay<span class='ui-icon ui-icon-comment'></span></button> </form>    </td>
   </tr>
-  <tr>
-    <td bgcolor="#FFFFFF"><img src="../images/EBAYfavicon.ico"></td>
-    <td><form method="get"
-  action="http://search.ebay.com/search/search.dll" target="_blank">
-      <input type="text" maxlength="300" name="satitle" size="20">
-      <input type="submit" value="Ebay">
-    </form></td>
+    <tr>
+      <td align="right" valign="top">
+    <img src="../images/RbMfavicon.ico" title="Search Records by Mail">    </td>
+    <td align="left">
+    <table>
+<tr>
+				  <td width="510">
+			    <table>
+						  <form method=post action="http://www.recordsbymail.com/search.php" target="_blank">
+							<tr>
+								<td width="140">
+								<select class="ui-widget select">
+                                <option value="artist">Artist
+								<option value="keyword">Keyword(s)
+								<option value="title">Title
+								<option value="label">Record Label
+								</select>
+								<input type="hidden" name="quickSearch" value="true">                                </td>
+							  <td width="120"><input type="text" size="20" name="keywords" class="ui-widget input">                                </td>
+							  <td width="217"><button type='submit' target='_blank' class='fg-button fg-button-icon-right ui-state-default ui-corner-all'>Craig Moeor<span class='ui-icon ui-icon-calculator'></span></button>                                </td>
+							</tr>
+						  </form>
+		  </table>		  </td>
+		</tr>
+		</table>  </td>
   </tr>
-</table>
-<br>
-<br>
-<link href="inputForm.css" rel="stylesheet" type="text/css" />
-<br>
-<br>
-<!-- you can remove the below line if you wish, although it's appreciated if you leave it;) --><br>
-<script src="http://www.gmodules.com/ig/ifr?url=http://blog.outer-court.com/homepage/miniweb.xml&amp;synd=open&amp;w=320&amp;h=190&amp;title=Mini+Web&amp;border=%23ffffff%7C3px%2C1px+solid+%23999999&amp;output=js"></script>
+    <tr>
+    <td align="right" valign="top">
+    <img src="../images/WikIfavicon.ico" title="Search Wikipedia" align="top">    </td>
+    <td>
+    <script src="http://www.gmodules.com/ig/ifr?url=http://www.labpixies.com/campaigns/wiki/wiki.xml&amp;up_language=en&amp;up_source=wikipedia&amp;up_last_searches=none&amp;synd=open&amp;w=320&amp;h=148&amp;title=&amp;lang=all&amp;country=ALL&amp;border=%23ffffff%7C0px%2C1px+solid+%23595959%7C0px%2C1px+solid+%23797979%7C0px%2C2px+solid+%23898989&amp;output=js"></script>	
+    <a href="http://code.google.com/p/tlhc/" target="mainFrame">TLhC</a> version  &copy; 2008, 2009 <a href="../docs/contact.php">Damian C. Kelly</a>. <a href="http://code.google.com/p/tlhc/">TLhC</a> is <a href="http://fsf.org">Free Software</a> released under the <a href="http://www.gnu.org/licenses/gpl.txt" target="_blank">GPLv3</a>.</td>
+  </tr>
+  </table>

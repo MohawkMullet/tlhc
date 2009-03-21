@@ -1,0 +1,161 @@
+.defaultText {
+	width: auto;
+	line-height: 100%;
+}
+.defaultTextActive {
+	color: #666666;
+	font-style: italic;
+	font-variant: small-caps;
+}
+#searchLayer {
+	position:absolute;
+	left:225px;
+	top:37px;
+	width:919px;
+	height:397px;
+	z-index:1;
+	visibility: hidden;
+}
+#docs {
+	position:absolute;
+	left:226px;
+	top:48px;
+	width:528px;
+	height:609px;
+	z-index:2;
+	visibility: hidden;
+}
+#codeGrabbers {
+	position:absolute;
+	left:12px;
+	top:47px;
+	width:300px;
+	height:255px;
+	z-index:1;
+	overflow: visible;
+	visibility: visible;
+}
+#outPrev {
+	position:absolute;
+	left:9px;
+	top:222px;
+	width:1000px;
+	height:463px;
+	z-index:2;
+	overflow: auto;
+}
+
+			ul#icons {margin: 0; padding: 0;}
+			ul#icons li {margin: 2px; position: relative; padding: 4px 0; cursor: pointer; float: left;  list-style: none;}
+			ul#icons span.ui-icon {float: left; margin: 0 4px;}
+
+
+
+.versionNum {
+	text-align: center;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-variant: normal;
+	font-weight: bolder;
+	font-size: 18px;
+	font-size-adjust: none;
+	font-stretch: normal;
+	color: #333333;
+	text-decoration: none;
+    }
+
+fieldset {
+	margin: 0px;
+	padding: 4px;
+	background-image: url(jquery/theme/images/ui-bg_highlight-soft_75_cccccc_1x100.png);
+	background-repeat: repeat-x;
+	background-position: 50% 50%;
+	width: 405px;
+}
+.status {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #CC3300;
+	text-align: justify;
+	text-indent: 132px;
+	font-size: smaller;
+}
+.demo55 {
+	font-size: smaller;
+}
+body {
+}
+legend {
+	font-weight: bolder;
+	color: #555555;
+	outline: none;
+	text-decoration: none;
+	padding-top: 0.2em;
+	padding-right: 0.5em;
+	padding-bottom: 0.2em;
+	padding-left: 0.5em;
+	height: 18px;
+	margin: 2px;
+	font-size: smaller;
+}
+.fg-button {
+	outline: 0;
+	text-decoration:none !important;
+	cursor:pointer;
+	position: relative;
+	text-align: center;
+	zoom: 1;
+	padding-top: 0.2em;
+	padding-right: 0.5em;
+	padding-bottom: 0.2em;
+	padding-left: 0.5em;
+	font-size: smaller;
+	margin: 2px;
+}
+.fg-button .ui-icon {
+	position: absolute;
+	top: 50%;
+	margin-top: -8px;
+	left: 50%;
+	margin-left: -8px;
+}
+	
+a.fg-button {
+	outline: 0;
+	text-decoration:none !important;
+	cursor:pointer;
+	position: relative;
+	text-align: left;
+	zoom: 1;
+	padding-top: 0.3em;
+	padding-bottom: 0.3em;
+	font-size: smaller;
+	margin-top: 2px;
+}
+	
+.fg-button-icon-left { padding-left: .8em; }
+.fg-button-icon-right {
+	left: auto;
+	padding-right: 0.8em;
+	margin-left: 0;
+
+}
+.fg-button-icon-left .ui-icon { right: auto; left: .6em; margin-left: 0; }
+.fg-button-icon-right .ui-icon {
+	left: auto;
+	right: 0.6em;
+	margin-left: 0;
+	clear: right;
+	float: right;
+	position: absolute;
+	padding-right: -4px;
+}
+	
+.fg-button-icon-solo {
+	width:8px;
+	text-indent: -1px;
+}	 /* solo icon buttons must have block properties for the text-indent to work */	
+label {
+	font-weight: bold;
+	color: #333333;
+	font-size: .2em;
+}
