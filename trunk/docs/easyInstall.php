@@ -11,6 +11,7 @@
 -->
 </style>
 
+<link href="manual.css" rel="stylesheet" type="text/css">
 <h1>INSTALLATION
 </h1>
 <h2>Requirements: </h2>
