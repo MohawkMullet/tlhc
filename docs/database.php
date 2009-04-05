@@ -18,13 +18,18 @@
 <h3>Easiest:</h3>
 <ol>
   <li>create a mysql database called tlhc</li>
-  <li>create a mysql user named tlhcuser with the password of tlhcpass and full permissions on the new database you created above.</li>
-  <li>run the included .sql file found in the INSTALL folder.</li>
+  <li>create a mysql user named tlhcuser with the password of tlhcpass and  permissions on the new database you created above.</li>
+  <li>run the included .sql file found in the INSTALL folder.
+    <ul>
+      <li>this will populate your database with some sample comments</li>
+    </ul>
+  </li>
 </ol>
 <h3>Custom:</h3>
-<p>Edit the file:<span class="style1"> parts/db/tlhcConnect.php</span> with the appropriate information. </p>
+<p>Edit the file:<span class="style1"> parts/config.php</span> with the appropriate information. </p>
 <p>Need help with MySQL?</p>
 <p>try using <a href="http://www.phpmyadmin.net">phpMyAdmin</a>  </p>
+<p>Customizing Database Tables</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>

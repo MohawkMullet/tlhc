@@ -1,6 +1,8 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<link href="manual.css" rel="stylesheet" type="text/css">
+<head>
 <?php
 include('../parts/config.php');
 ?>
@@ -9,10 +11,12 @@ include('../parts/config.php');
 </head>
 
 <body>
-<h1>Welcome to TLhC 
+<h2>Welcome to TLhC 
 <?php
 echo "$version";
-?> Getting Started </h1>
+?> 
+</h2>
+<h4>Getting Started Guide </h4>
 <blockquote>
   <h4><a href="../license.php">License</a></h4>
   <p>Features</p>
@@ -22,7 +26,7 @@ echo "$version";
 </blockquote>
 <h2><a href="easyInstall.php">Install</a></h2>
 <blockquote>
-  <h3><a href="easyInstall.php">Requirements</a></h3>
+  <h3><a href="easyInstall.php">System Requirements</a></h3>
   <h4>Configuring</h4>
   <h3><a href="configFile.php">Changing the Config File </a></h3>
 </blockquote>

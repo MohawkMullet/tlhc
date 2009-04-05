@@ -8,6 +8,7 @@
 .style2 {color: #0000FF; font-weight: bold; }
 -->
 </style>
+<link href="manual.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>

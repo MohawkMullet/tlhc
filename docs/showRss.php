@@ -24,17 +24,17 @@
 }
 -->
 </style>
+<link href="manual.css" rel="stylesheet" type="text/css">
 <H1><a name="ebayRSS"></a>Show some new items in your listing via your ebay RSS feed</h1>
 <h3>Simple:</h3>
-<h4>Just include your <a href="storeRss.php">ebay store rss feed</a> in parts/config.php </h4>
+<h4>Add your <a href="storeRss.php">ebay store rss feed</a> in <span class="style3">parts/config.php</span> </h4>
 <h4>Select the Checkbox Items in the main form</h4>
 <p>Submit the form </p>
 <h3>Advanced:</h3>
 <ol>
-  <li> grab your rss link to your clipboard.  open up the file <span class="style2">partsOut/rssShowNew.php</span>.</li>
+  <li> grab your rss link to your clipboard.  open up the file <span class="style3">partsOut/.newListingsDefault.php</span></li>
   <li>scroll down and decide how many items you want to display by changing the number </li>
-  <li>open up the file<span class="style2"> partsOut/OutPutPreview.php</span>
-          include the following code: </li>
+  <li>open up the file<span class="style3"> partsOut/preD.php</span>    include the following code: </li>
 </ol>
 <p class="style1">&lt;?php<br>
  	 	$boxes200 = $_POST[&quot;boxes200&quot;];<br>

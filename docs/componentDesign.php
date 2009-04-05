@@ -11,9 +11,9 @@
     <li>Save outParts/about.php and preview by selecting the box in the main form and submitting it.</li>
   </ul>
 </blockquote>
-<h2>Designing a Shipping Info Box (advanced)</h2>
-<h2>Setting up the Subscribe to Feeds file</h2>
-<h2>Outputting Recently Listed Items in yor Listing </h2>
+<h2><s>Designing a Shipping Info Box (advanced)</s></h2>
+<h2><s>Setting up the Subscribe to Feeds file</s></h2>
+<h2><s>Outputting Recently Listed Items in yor Listing </s></h2>
 <?php
 include('footer.php');
 ?>

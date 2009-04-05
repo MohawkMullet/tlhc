@@ -25,11 +25,11 @@
   <li>The Main Description</li>
   <li>A CSS Style Sheet: partsOut/styles.php</li>
 </ul>
-<p>And 5 removable components </p>
+<p>And some removable components that may or may not consist of:</p>
 <ul>
-  <li>About</li>
-  <li>Shipping</li>
-  <li>Feeds</li>
+  <li>About Us</li>
+  <li>Shipping Info</li>
+  <li>Footer</li>
   <li>Promotion Boxes </li>
   <li>Store Category Boxes </li>
 </ul>
