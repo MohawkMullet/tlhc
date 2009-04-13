@@ -18,13 +18,13 @@
 <h2><a name="adding"></a>Adding Stored Comments</h2>
 <blockquote>
   <p>Click the Plus Icon near the top of the Store Comments form</p>
-  <p><img src="images/addComm1.png" width="351" height="96" border="2"></p>
+  <p><img src="images/addComm1.png" width="351" height="96" border="2" style="border-color:#FF3300;"></p>
   <p>Choose a category and enter your comment</p>
-  <p><img src="images/addComm.png" width="415" height="177" border="2"></p>
+  <p><img src="images/addComm.png" width="415" height="177" border="2" style="border-color:#FF3300;"></p>
   <p>You're result will be displayed</p>
   <p>&nbsp;</p>
   <p>Refresh the main form</p>
-  <p><img src="images/refresh.png" width="192" height="96" border="2"></p>
+  <p><img src="images/refresh.png" width="192" height="96" border="2" style="border-color:#FF3300;"></p>
 </blockquote>
 <p>Deleting &amp; Reordering</p>
 <blockquote>
