@@ -12,7 +12,7 @@ echo $version;
           <img src="images/TLhClogoSmaller.png" width="53" height="75"></p>
       <p><a href="../docs/index.php" target="mainFrame">DOCUMENTATION</a></p>
       <p>Check for <a href="http://code.google.com/p/tlhc/" target="_blank">Updates</a></p>
-      <p><a href="parts/start.php" target="mainFrame">Searches</a><br>
+      <p><a href="parts/start2.php" target="mainFrame">Searches</a><br>
               <span class="custom">Customized for:HepVinyl</span>      </p>
     </div>
   <div align="center"><img src="images/preview_32x32.png" width="32" height="32">  </div>
