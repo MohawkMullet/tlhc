@@ -10,7 +10,7 @@ $tabName = "assTab";
 <title>Updater In One</title>
 		<link type="text/css" href="../parts/style.css" rel="Stylesheet" />	
 
-		<link type="text/css" href="../parts/jquery/theme/ui.all.css" rel="Stylesheet" />	
+		<link type="text/css" href="../parts/jquery/jquery-ui/css/theme/jquery-ui-1.7.1.custom.css" rel="Stylesheet" />	
 		<script type="text/javascript" src="../parts/jquery/jquery-1.3.2.js"></script>
 		<script type="text/javascript" src="../parts/jquery/jquery-ui-1.7.1.js"></script>
         <style type="text/css">
@@ -60,57 +60,78 @@ $tabName = "assTab";
 </script>
 </head>
 
-<body class="ui-widget-content" style="margin-top:85px;">
+<body style="margin-top:85px; margin-left: 25px; margin-right: 25px; padding-right: 45px;">
 <?php
+/**
+*
+* 	THE FUNCTION FOR THE FIRST INPUT FORM
+*
+*/
 $soldierDB = $_GET['soldierDB'];
-echo "$soldierDB";
-function drawForm() {
+function draw45form() {
 //global $tabAdd;
 	global $soldierDB;
 	global $subButton;
 	global $clearButton;
-	echo "<form method='POST' name='comAdd' id='comAdd'>";
-	echo "<fieldset><legend title='Choose the comment category'>Choose a Comment Category:</legend>";
+	echo "<div class='ui-state-default ui-widget-header ui-corner-all' style='padding: 6px; width: 450px;'> Add Comments to the 45 Databases</div>";	
+	echo "<div class=\"ui-widget-content\" style='width: 450px;'>";	
+	echo "<div><form method='POST' name='comAdd' id='comAdd'>";
+	echo "<fieldset><legend title='Choose the comment category'><span class='ui-icon ui-icon-info' style='float: left;'></span>&nbsp;Choose a Comment Category:</legend>";
 	echo "<label><input class='ui-widget input' name='tabAdd' type='radio' value='Vinyl' checked/>Vinyl</label>";
 	echo "<label><input class='ui-widget input' name='tabAdd' type='radio' value='Label' />Label</label>";
 	echo "<label><input class='ui-widget input' name='tabAdd' type='radio' value='Sleeve' />Sleeve</label>";
 	echo "<label><input class='ui-widget input' name='tabAdd' type='radio' value='Promo' />Promo</label>";
 	echo "<label><input class='ui-widget input' name='tabAdd' type='radio' value='Misc' />EP & Punk</label>";	
-	echo "<br /></fieldset><table><tr><td>";
-	echo "<fieldset><legend>Enter your New Comment:</legend><input name='comValue' type='text' size='28' onfocus=\"if(this.value=='Enter A New Comment')this.value='';\" value=\"Enter A New Comment\" class='ui-widget input'></fieldset></td></tr>";
-	echo "<tr><td><fieldset><legend>Submit</legend>";
+	echo "<br /></fieldset><table width='300'><tr width='300'><td>";
+	echo "<fieldset><legend><span class='ui-icon ui-icon-comment' style='float: left;'></span>&nbsp;Enter your New Comment:</legend><input name='comValue' type='text' size='28' onfocus=\"if(this.value=='Enter A New Comment')this.value='';\" value=\"Enter A New Comment\" class='ui-widget input'></fieldset></td></tr>";
+	echo "<tr><td><fieldset><legend>Submit Comment to Database:&nbsp;</legend>";
 	echo "$subButton";
 	echo "$clearButton";
-	echo "</fieldset><a href='docs/reusableComms.php' target='mainFrame' class='fg-button fg-button-icon-solo ui-state-default ui-corner-all'><span class='ui-icon ui-icon-help'></span>&nbsp;</a></td>";
-	echo "</tr></table></form>";
+	echo "</fieldset></td>";
+	echo "</tr></table></form></div></div>";
 }
-function drawForm2() {
+function drawSoldierForm() {
 //global $tabAdd;
 	global $soldierDB;
 	global $subButton;
 	global $clearButton;
+	echo "<div class='ui-state-default ui-widget-header ui-corner-all' style='padding: 6px; width: 450px;'> Add Comments to the Soldier Databases</div>";		
+	echo "<div class=\"ui-widget-content\" style='width: 450px; padding: 6px;'>";
 	echo "<form method='POST' name='comAdd' id='comAdd'>";
-	echo "<fieldset><legend title='Choose the comment category'>Choose a Comment Category:</legend>";
+	echo "<fieldset><legend title='Choose the comment category'><span class='ui-icon ui-icon-info' style='float: left;'></span>&nbsp;Choose a Comment Category:</legend>";
 	echo "<label><input class='ui-widget input' name='tabAdd' type='radio' value='SolPaint' checked/>Paint</label>";
 	echo "<label><input class='ui-widget input' name='tabAdd' type='radio' value='SolMisc' />Soldier Misc</label>";	
-	echo "<br /></fieldset><table><tr><td>";
-	echo "<fieldset><legend>Enter your New Comment:</legend><input name='comValue' type='text' size='28' onfocus=\"if(this.value=='Enter A New Comment')this.value='';\" value=\"Enter A New Comment\" class='ui-widget input'></fieldset></td></tr>";
-	echo "<tr><td><fieldset><legend>Submit</legend>";
+	echo "<br /></fieldset><table width='300'><tr width='300'><td width='300'>";
+	echo "<fieldset><legend><span class='ui-icon ui-icon-comment' style='float: left;'></span>&nbsp;Enter your New Comment:</legend><input name='comValue' type='text' size='28' onfocus=\"if(this.value=='Enter A New Comment')this.value='';\" value=\"Enter A New Comment\" class='ui-widget input'></fieldset></td></tr>";
+	echo "<tr><td><fieldset><legend>Submit Comment to Database:&nbsp;</legend>";
 	echo "$subButton";
 	echo "$clearButton";
-	echo "</fieldset><a href='docs/reusableComms.php' target='mainFrame' class='fg-button fg-button-icon-solo ui-state-default ui-corner-all'><span class='ui-icon ui-icon-help'></span>&nbsp;</a></td>";
-	echo "</tr></table></form>";
+	echo "</fieldset></td>";
+	echo "</tr></table></form></div>";
 }
+/**
+*
+* 	CHECK THE NAME OF THE LINK AND DRAW THE APPROPRIATE FORM
+*
+*/
 if ( $soldierDB != "soldierAdd" ) {
-drawForm();
-include('submit.php');
+draw45form();
 }
+/**
+*
+* 	CHECK THE NAME OF THE LINK AND DRAW THE APPROPRIATE FORM
+*
+*/
 if ( $soldierDB == "soldierAdd" ) {
-drawForm2();
-include('submit.php');
+drawSoldierForm();
 }
 ?>
 <?php
+/**
+*
+* 	BUILD THE OUTPUT INDICATORS
+*
+*/
 function buildBox() {
 	global $tabAdd;
 	$selectorName = "$tabAdd"."Selector"."[]";
@@ -141,15 +162,16 @@ if (empty($_POST["comValue"]))
       $infos = "$highBeg Add an Entry $highEnd2";
 
 if ($_POST['comValue'] == "Enter A New Comment")
-	$errors['comValue'] = "Write in there something else you dozy cunt";
+	$errors['comValue'] = "You've Got To Type In A Comment";
   if (count($errors))
   {
       // There are errors.  Relocate back to the 
       // client form
+	  echo "<div class=\"ui-widget-content\" style='width: 450px; padding: 6px;'>";	  
 	  echo $infos;
 	  echo $errorIcon;
       echo "$errors[comValue]<br>";
-	  echo $errorIconEnd;
+	  echo "$errorIconEnd<br></div>";
       print_r ($_SESSION);
       exit;
   }
