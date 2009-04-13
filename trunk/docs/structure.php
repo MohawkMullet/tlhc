@@ -29,8 +29,6 @@
     <p class="style2">style.css</p>
     <p>controls the look and feel of TLhC. this css stylesheet has nothing to do with the the style of your output.</p>
   </blockquote>
-  <h2>	DB</h2>
-  <p>essential for using stored comments and reusable comments. Only needed for MySQL connected TLhC.</p>
   <h2>JQUERY</h2>
   <p>this is where our javascript libraries live.</p>
 </blockquote>

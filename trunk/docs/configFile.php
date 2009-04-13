@@ -17,25 +17,34 @@ a {
 -->
 </style>
 <link href="manual.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+<!--
+.style5 {color: #FF3300}
+.style7 {color: #99CC00}
+-->
+</style>
 </head>
 
 <body>
  <h1>Editing the TLhC Config File</h1>
- <p> The config file is located at <span class="style4">parts/config.php</span></p>
+ <p> The config file is located at <span class="style4 style5">parts/config.php</span></p>
 <blockquote>
    <p>Required:</p>
-   <p>Ebay store name, store RSS feed link, ebay store URL, &amp; possibly a store logo.</p>
-   <p>Optional:</p>
+   <p>Ebay store, store RSS<img src="../images/rss28.png" width="28" height="28"> feed link, ebay store URL,  store logo.</p>
+  <p>Optional:</p>
    <p>MySQL database info, </p>
    <p><a href="#anchor1">Picasa Images </a>info, </p>
    <p>customizations to the look &amp; feel of TLhC.</p>
 </blockquote>
- <h3>.Ebay RSS Feed</h3>
+ <h3>Ebay RSS Feed<a name="ebRss"></a></h3>
  <blockquote>
-   <p><a href="storeRss.php">Setup (at ebay)</a></p>
-   <p>Config File Options</p>
+   <p><img src="../images/rss.png" width="32" height="32"></p>
+   <p><a href="storeRss.php">Setup Instructions</a></p>
+   <p>Config File Options:</p>
+   <p>Find the lines below and paste your link in between the quotes.</p>
  </blockquote>
- <p>&nbsp;</p>
+<p><span class="style7">// RSS FEED FOR EBAY STORE.  </span><br>
+  <span class="style2">$rssFeed = &quot; &quot;; </span></p>
 <p>&nbsp;</p>
  <h3><a name="anchor1" id="anchor1"></a>Picasa Info (<a href="picasa.php">setup</a>):</h3>
  <p>Edit the following lines:</p>
@@ -52,6 +61,6 @@ a {
 include('footer.php');
 ?>
  </p>
- <p>&nbsp; </p>
+<p>&nbsp; </p>
 </body>
 </html>
