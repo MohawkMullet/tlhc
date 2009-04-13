@@ -1,4 +1,4 @@
-<table border="0" cellspacing="0" cellpadding="0" align="center">
+<div align="center"><table border="0" cellspacing="0" cellpadding="0" align="center" class="fg-toolbar" style="font-size: smaller;" align="center">
   <tr>
  <?php
  if ( $tabName == "assTab") {
@@ -16,4 +16,4 @@
   }
   ?>
   </tr>
-</table>
+</table></div>
