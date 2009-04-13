@@ -1,29 +1,57 @@
+.fg-button { outline: 0; margin:0 1px 0 0; padding: .2em .5em; text-decoration:none !important; cursor:pointer; position: relative; text-align: center; zoom: 1; }
+	.fg-button .ui-icon { position: absolute; top: 50%; margin-top: -8px; left: 50%; margin-left: -8px; }
+	
+	a.fg-button {
+}
+	
+	/* remove extra button width in IE */
+	button.fg-button {
+	display: inline-block;
+}
+	
+	.fg-button-icon-left { padding-left: 1.6em; }
+	.fg-button-icon-left .ui-icon { right: auto; left: .1em; margin-left: 0; }
+	.fg-button-icon-right { left: auto; padding-right: 0.6em; }	
+	.fg-button-icon-right .ui-icon { left: auto; right: 0.2em; margin-left: 0; padding-right: -8px; float: right; }
+	
+	.fg-button-icon-solo {
+	display:inline-block;
+	width:12px;
+	text-indent: -1px;
+	margin: 3px;
+}	 /* solo icon buttons must have block properties for the text-indent to work */	
+	
+	.fg-buttonset { float:left; }
+	.fg-buttonset .fg-button { float: left; }
+	.fg-buttonset-single .fg-button, 
+	.fg-buttonset-multi .fg-button { margin-right: -1px;}
+	
+	.fg-toolbar { padding: .5em; margin: 0;  }
+	.fg-toolbar .fg-buttonset { margin-right: 1.5em; padding-left: 1px; }
+	.fg-toolbar .fg-button { font-size: 1em;  }
+
+	/*demo page css*/
+.fg-button-icon-right2 {
+	left: auto;
+	padding-right: 1.8em;
+	margin-left: 0;
+	font-size: small;
+}
+.fg-button-icon-right2 .ui-icon {
+	left: auto;
+	right: 1.1em;
+	margin-left: 0;
+	float: right;
+	padding-right: -8px;
+}
+
 .defaultText {
-	width: auto;
-	line-height: 100%;
+	font-family: Arial,sans-serif;
 }
 .defaultTextActive {
 	color: #666666;
+	font-family: Arial,sans-serif;
 	font-style: italic;
-	font-variant: small-caps;
-}
-#searchLayer {
-	position:absolute;
-	left:225px;
-	top:37px;
-	width:919px;
-	height:397px;
-	z-index:1;
-	visibility: hidden;
-}
-#docs {
-	position:absolute;
-	left:226px;
-	top:48px;
-	width:528px;
-	height:609px;
-	z-index:2;
-	visibility: hidden;
 }
 #codeGrabbers {
 	position:absolute;
@@ -67,9 +95,10 @@ fieldset {
 	margin: 0px;
 	padding: 4px;
 	background-image: url(jquery/theme/images/ui-bg_highlight-soft_75_cccccc_1x100.png);
-	background-repeat: repeat-x;
+	background-repeat: repeat;
 	background-position: 50% 50%;
-	width: 405px;
+	width: 385px;
+	border: outset thin;
 }
 .status {
 	font-family: Geneva, Arial, Helvetica, sans-serif;
@@ -85,77 +114,49 @@ fieldset {
 body {
 }
 legend {
-	font-weight: bolder;
+	font-weight: bold;
 	color: #555555;
-	outline: none;
 	text-decoration: none;
-	padding-top: 0.2em;
-	padding-right: 0.5em;
-	padding-bottom: 0.2em;
-	padding-left: 0.5em;
-	height: 18px;
-	margin: 2px;
-	font-size: smaller;
-}
-.fg-button {
-	outline: 0;
-	text-decoration:none !important;
-	cursor:pointer;
-	position: relative;
-	text-align: center;
-	zoom: 1;
-	padding-top: 0.2em;
-	padding-right: 0.5em;
-	padding-bottom: 0.2em;
-	padding-left: 0.5em;
-	font-size: smaller;
-	margin: 2px;
-}
-.fg-button .ui-icon {
-	position: absolute;
-	top: 50%;
-	margin-top: -8px;
-	left: 50%;
-	margin-left: -8px;
-}
-	
-a.fg-button {
-	outline: 0;
-	text-decoration:none !important;
-	cursor:pointer;
-	position: relative;
-	text-align: left;
-	zoom: 1;
 	padding-top: 0.3em;
-	padding-bottom: 0.3em;
-	font-size: smaller;
-	margin-top: 2px;
+	padding-right: 0.5em;
+	padding-bottom: 0.1em;
+	padding-left: 0.5em;
+	margin: 3px;
+	font-size: 12px;
+	vertical-align: bottom;
+	outline: 2;
 }
-	
-.fg-button-icon-left { padding-left: .8em; }
-.fg-button-icon-right {
-	left: auto;
-	padding-right: 0.8em;
-	margin-left: 0;
-
+legend a {
+	text-decoration: none;
 }
-.fg-button-icon-left .ui-icon { right: auto; left: .6em; margin-left: 0; }
-.fg-button-icon-right .ui-icon {
-	left: auto;
-	right: 0.6em;
-	margin-left: 0;
-	clear: right;
-	float: right;
-	position: absolute;
-	padding-right: -4px;
-}
-	
-.fg-button-icon-solo {
-	width:8px;
-	text-indent: -1px;
-}	 /* solo icon buttons must have block properties for the text-indent to work */	
 label {
 	font-weight: bold;
 	color: #333333;
-	font-size: .2em;
+	font-size: 0.2em;
+}
+#tabs {
+	width: 410px;
+}
+#tabs2 {
+	width: 380px;
+	vertical-align: top;
+}
+#dialog_link {padding: .4em 1em .4em 20px;text-decoration: none;position: relative;}
+#dialog_link span.ui-icon {margin: 0 5px 0 0;position: absolute;left: .2em;top: 50%;margin-top: -8px;}
+.style1 {
+	color: #CC0000;
+	font-size: 30px;
+	font-weight: bold;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+}
+.style2 {
+	font-size: 20px;
+	color: #0000FF;
+	font-weight: bold;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.style3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
 }

@@ -1,44 +1,9 @@
 <?php
-require_once('Picasa.php');
-?>
-<?php include('head.php'); ?>
-<?php
 include('config.php');
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Login To Picasa</title>
-</head>
 
-<body>
-<?php
-$pic = new Picasa();
-$account = $pic->getAlbumsByUsername($picasaUser);
-$albums = $account->getAlbums();
-foreach ($albums as $album) {
-  print('<a   href="http://192.168.10.80/parts/pic/Picasa/Album.php?
-  albumid='.$album->getIdnum().'">
-  <img src="'.$album->getIcon().'" />');
-  print('<div>'.$album->getTitle().'</div>');
-}
-//$albumid = $_GET["albumid"];
-//$pic = new Picasa();
-//$album = $pic->getAlbumById($picasaUser, $albumid);
-//$images = $album->getImages();
-//foreach ($images as $image) {
- //print('<a href="http://www.your_web_site.com/image.php?
-//     albumid='.$albumid.'&imageid='.$image->getIdnum().'">
-//     <img src="'.$image->getMediumThumb().'"/>');
-// print('<div>'.$image->getTitle().'</div>');
-//}
-//$pic = new Picasa();
-//$albums = $pic->getAlbumsByUsername("hepvinyl");
-//print $albums;
-//echo "whats up!";
-echo $picasaUser;
-?>
+
+<div class="ui-widget-content">
 <form id="gaia_loginform" action="https://www.google.com/accounts/ServiceLoginAuth?service=lh2" method="post" onsubmit="return(gaia_onLoginSubmit());">
 <div id="gaia_loginbox">
 <table class="form-noindent" border="0" cellpadding="5" cellspacing="3" width="100%">
@@ -49,12 +14,11 @@ echo $picasaUser;
 
   <table id="gaia_table" align="center" border="0" cellpadding="1" cellspacing="0">
   <tbody><tr>
-<td colspan="2" align="center">
-  <font size="-1">
+<td colspan="2" align="center"><div id="info8" align="center" class="ui-widget-content ui-corner-all">
+<div class="ui-state-default ui-widget-header" style="padding: 10px;">
   Sign in to
   Picasa Web Albums
-  with your
-  </font>
+  with your</div></div>
   <table>
   <tbody><tr>
   <td valign="top">
@@ -110,7 +74,7 @@ echo $picasaUser;
   <input name="Email" id="Email" size="18" value="
   <?php
   echo $picasaUser;
-  ?>" class="gaia le val" type="text">
+  ?>" class="ui-widget input" type="text">
   </td>
 
 </tr>
@@ -127,7 +91,7 @@ echo $picasaUser;
 
   </td>
   <td>
-  <input name="Passwd" type="password" class="gaia le val" id="Passwd" value="<?php echo $picasaPass; ?>" size="18">
+  <input name="Passwd" type="password" class="ui-widget input" id="Passwd" value="<?php echo $picasaPass; ?>" size="18">
   </td>
 </tr>
 <tr>
@@ -139,7 +103,7 @@ echo $picasaUser;
 </tr>
   <tr>
   <td align="right" valign="top">
-  <input name="PersistentCookie" id="PersistentCookie" value="yes" checked="checked" type="checkbox">
+  <input name="PersistentCookie" id="PersistentCookie" value="yes" checked="checked" type="checkbox" class="ui-widget input">
   <input name="rmShown" value="1" type="hidden">
   </td>
   <td>
@@ -150,7 +114,7 @@ echo $picasaUser;
   <td>
   </td>
   <td align="left">
-  <input class="gaia le button" name="signIn" value="Sign in" type="submit">
+  <input class="ui-widget input" name="signIn" value="Sign in" type="submit">
   </td>
 </tr>
 <tr id="ga-fprow">
@@ -174,6 +138,4 @@ echo $picasaUser;
   <input name="ltmpl" id="ltmpl" value="gp" type="hidden">
 </form>
 
-
-</body>
-</html>
+</div>
