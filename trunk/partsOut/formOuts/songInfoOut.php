@@ -3,18 +3,32 @@
 $info = $_POST['sideBar2'];
 if ($info == "")
 {
-echo "<div style=\"float:left;\" align=\"center\"><img alt=\"Hep Vinyl\" title=\"$storeName\" src=\"$logo\" align=top height=\"32\" width=\"48\"></div>";
+echo "\n";
 }
 else 
 
 {
-if ($info != "Paste extra song or artist info here and provide link below") 
+if ($info != "Paste extra info here and provide link below") 
 {
 	echo "<span class=\"greyFontSmaller\">Artist or Song Info:<br /> $info</span>";
 }	
 	}
 ?>
+<?php
+$info3 = $_POST['sideBar3'];
+if ($info3 == "")
+{
+echo "\n";
+}
+else 
 
+{
+if ($info3 != "Paste extra info here and provide link below") 
+{
+	echo "<span class=\"greyFontSmaller\">Item Information:<br /> $info3</span>";
+}	
+	}
+?>
 <?php
 $link = 	  $_POST['link'];		  
 $linkText = 	  $_POST['linkText'];

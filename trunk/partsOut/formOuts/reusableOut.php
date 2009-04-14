@@ -19,38 +19,73 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
 <?php
-		if ( ! empty( $_POST["vinylSelector"])) {
-		$vinylSelector = $_POST["vinylSelector"];
+		if ( ! empty( $_POST["VinylSelector"])) {
+		$VinylSelector = $_POST["VinylSelector"];
 //		print "\n\n";
-		foreach ( $vinylSelector as $valueVinyl ) {
+		foreach ( $VinylSelector as $valueVinyl ) {
 		print "<span class=\"multicomms\">$valueVinyl</span><br>\n";                                             
 		}
 		}
 ?>
 <?php
-		if ( ! empty( $_POST["labelSelector"])) {
-		$labelSelector = $_POST["labelSelector"];
+		if ( ! empty( $_POST["LabelSelector"])) {
+		$LabelSelector = $_POST["LabelSelector"];
 //		print "\n\n";
-		foreach ( $labelSelector as $valueLabels ) {
+		foreach ( $LabelSelector as $valueLabels ) {
 		print "<span class=\"multicomms\">Label $valueLabels</span><br>\n";                                             
 		}
 		}
 ?> 
 <?php
-		if ( ! empty( $_POST["promoSelector"])) {
-		$promoSelector = $_POST["promoSelector"];
+		if ( ! empty( $_POST["PromoSelector"])) {
+		$PromoSelector = $_POST["PromoSelector"];
 //		print "\n\n";
-		foreach ( $promoSelector as $valuePromo ) {
+		foreach ( $PromoSelector as $valuePromo ) {
 		print "<span class=\"multicomms\">Labeled $valuePromo</span><br>\n";                                             
 		}
 		}
 ?>
 <?php
-		if ( ! empty( $_POST["miscSelector"])) {
-		$miscSelector = $_POST["miscSelector"];
+		if ( ! empty( $_POST["SleeveSelector"])) {
+		$SleeveSelector = $_POST["SleeveSelector"];
 //		print "\n\n";
-		foreach ( $miscSelector as $valueMisc ) {
+		foreach ( $SleeveSelector as $valueSleeve ) {
+		print "<span class=\"multicomms\">Sleeve $valueSleeve</span><br>\n";                                             
+		}
+		}
+?>
+<?php
+		if ( ! empty( $_POST["MiscSelector"])) {
+		$MiscSelector = $_POST["MiscSelector"];
+//		print "\n\n";
+		foreach ( $MiscSelector as $valueMisc ) {
 		print "<span class=\"multicomms\">$valueMisc</span><br>\n";                                             
+		}
+		}
+?>
+<?php
+/**
+*
+* 	PRINT OUT THE COMMENTS FROM THE commsSolPaint table
+*
+*/
+		if ( ! empty( $_POST["SolPaintSelector"])) {
+		$SolPaintSelector = $_POST["SolPaintSelector"];
+		foreach ( $SolPaintSelector as $valueSolPaint ) {
+		print "<span class=\"multicomms\">$valueSolPaint</span><br>\n";                                             
+		}
+		}
+?>
+<?php
+/**
+*
+* 	PRINT OUT THE COMMENTS FROM THE commsSolMisc table
+*
+*/
+		if ( ! empty( $_POST["SolMiscSelector"])) {
+		$SolMiscSelector = $_POST["SolMiscSelector"];
+		foreach ( $SolMiscSelector as $valueSolMisc ) {
+		print "<span class=\"multicomms\">$valueSolMisc</span><br>\n";                                             
 		}
 		}
 ?>
@@ -66,13 +101,4 @@ $origSleeve = $_POST['origSleeve'];
 if ($origSleeve != "") {
 	echo "<span class=\"multicomms\">Complete with original $Label paper sleeve</span><br>\n";
 	}
-?>
-<?php
-		if ( ! empty( $_POST["sleeveSelector"])) {
-		$sleeveSelector = $_POST["sleeveSelector"];
-//		print "\n\n";
-		foreach ( $sleeveSelector as $valueSleeve ) {
-		print "<span class=\"multicomms\">Sleeve $valueSleeve</span><br>\n";                                             
-		}
-		}
 ?>
