@@ -3,9 +3,17 @@
 <?php
 			$Label = $_POST['Label'];
 			$Label =ucwords(strtoupper($Label));
-				if ($Label != "RECORD COMPANY NAME") {
+				if ($Label != "") {
 				echo "<span class=\"greyFont\">Label:</span>";
 				echo "<span class=\"blueFontBold\"><strong>$Label</strong></span>";
+				}
+?>
+<?php
+			$Brand = $_POST['Brand'];
+			$Brand =ucwords(strtoupper($Brand));
+				if ($Brand != "") {
+				echo "<span class=\"greyFont\">Brand:</span>";
+				echo "<span class=\"blueFontBold\"><strong>$Brand</strong></span>";
 				}
 ?>
 <?php
