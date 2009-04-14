@@ -27,12 +27,12 @@ include("descriptY.php");
 ?>
 <table width="840" border="0" cellpadding="0" cellspacing="0" id="components">
   <tr>
-    <td align="center" valign="top" class="plug"><?php
+    <td align="center" valign="top"><?php
 	$boxes4 = $_POST["boxes4"];
 	if ($boxes4 != "") {
-	include('info/gradesOrange.php');
+	include('staticPages/gradesOrange.php');
 	echo "<br>";
-	include('info/commentkeyOrange.php');
+	include('staticPages/commentkeyOrange.php');
 	}
 ?></td>
     <td width="500" valign="top"><?php
@@ -44,7 +44,7 @@ include("descriptY.php");
       <?php
 	$boxes3 = $_POST["boxes3"];
 	if ($boxes3 != "") {
-	include('info/aboutOrange.php');
+	include('staticPages/aboutOrange.php');
 	}
 ?></td>
   </tr>
@@ -54,7 +54,7 @@ include("descriptY.php");
 	$boxes6 = $_POST["boxes6"];
 	if ($boxes6 != "") {
 //	echo "suck some tits";
-	include('info/storelinks.php');
+	include('staticPages/storelinks.php');
 	}
 ?><br>
 <?php

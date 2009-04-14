@@ -23,13 +23,15 @@ include('parts/config.php');
   <tr>
     <td height="106" valign="top" bgcolor="#4BA614" class="bldG">
     <span class="blueFontBold"><?php
+//include('formOuts/titleOut.php');
 //$listingMast = substr($listingMast, 0, 42);
+//echo $listingMast;
 if ($performer != "ARTIST OR BAND") {
 echo "$performer";
 }
 ?></span>
       <?php
-include('formOuts/artistsOut.php');
+include('formOuts/titleOut.php');
 ?>
       <?php
 include('formOuts/sideAbOut.php');

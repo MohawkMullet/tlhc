@@ -1,3 +1,4 @@
+
 <?php
 $boxes2 = $_POST["boxes2"];
 if ($boxes2 != "") {
@@ -18,6 +19,7 @@ include("descriptB.php");
         <td width="200" align="left" valign="top"><?php
 	$boxes200 = $_POST["boxes200"];
 	if ($boxes200 != "") {
+	echo "suck some tits";	
 	include('newListingsBlue.php');
 	}
 ?></td>
@@ -25,7 +27,7 @@ include("descriptB.php");
 	$boxes4 = $_POST["boxes4"];
 	if ($boxes4 != "") {
 //	echo "suck some tits";
-	include('info/commentkeyBlue.php');
+	include('staticPages/commentkeyBlue.php');
 	}
 ?></td>
         <td width="423" align="right" valign="top">
@@ -34,7 +36,7 @@ include("descriptB.php");
           <?php
 	$boxes3 = $_POST["boxes4"];
 	if ($boxes4 != "") {
-	include('info/gradesBlue.php');
+	include('staticPages/gradesBlue.php');
 	}
 ?>
           </span>
@@ -45,7 +47,7 @@ include("descriptB.php");
               <?php
 	$boxes3 = $_POST["boxes3"];
 	if ($boxes3 != "") {
-	include('info/aboutBlue.php');
+	include('staticPages/aboutBlue.php');
 	}
 ?>              </td>
             </tr>
@@ -66,7 +68,7 @@ include("descriptB.php");
 <?php
 	$boxes6 = $_POST["boxes6"];
 	if ($boxes6 != "") {
-	include('info/grading.php');
+	include('staticPages/grading.php');
 	}
 ?>
 <?php
