@@ -5,7 +5,7 @@
 include('parts/config.php');
 ?>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Turbo Lister HTML Cheater v 
+<title>TLhC v 
 
 <?php
 echo $version;
@@ -13,12 +13,14 @@ echo $version;
 
 
 </title>
-<link rel="shortcut icon" href="images/favicon.ico">
+<script type="text/javascript" src="parts/jquery/jquery-1.3.2.js"></script>
+
+
 </head>
 
-<frameset rows="*" cols="405,*" frameborder="yes" border="0" framespacing="0">
-<frame src="tabs.php" name="leftFrame" scrolling="no" noresize="noresize" bordercolor="#cccccc" id="leftFrame" title="leftFrame" border="0" framespacing="0" />
-    <frame src="parts/start.php" name="mainFrame" id="mainFrame" title="mainFrame" border="0" framespacing="0" />
+<frameset rows="*" cols="425,*" frameborder="yes" border="0" framespacing="0">
+<frame src="tabs.php" name="leftFrame" scrolling="auto" noresize="noresize" bordercolor="#cccccc" id="leftFrame" title="leftFrame" border="0" framespacing="0" />
+    <frame src="right.php" name="mainFrame" id="mainFrame" title="mainFrame" border="0" framespacing="0" />
   </frameset>
 </frameset>
 <noframes>
