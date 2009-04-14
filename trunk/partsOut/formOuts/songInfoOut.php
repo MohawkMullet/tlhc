@@ -1,3 +1,9 @@
+<?php
+if (isset($_POST['sideBar2'])) {
+
+	echo "<span class=\"greyFontSmaller\">Artist or Song Info:<br /> $info</span>";
+} else {
+if (isset($_POST['sideBar3'])) {
 
 <?php
 $info = $_POST['sideBar2'];

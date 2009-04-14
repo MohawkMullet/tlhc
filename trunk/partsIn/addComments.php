@@ -69,13 +69,17 @@ $tabName = "assTab";
 */
 $soldierDB = $_GET['soldierDB'];
 function draw45form() {
-//global $tabAdd;
 	global $soldierDB;
 	global $subButton;
 	global $clearButton;
 	echo "<div class='ui-state-default ui-widget-header ui-corner-all' style='padding: 6px; width: 450px;'> Add Comments to the 45 Databases</div>";	
 	echo "<div class=\"ui-widget-content\" style='width: 450px;'>";	
 	echo "<div><form method='POST' name='comAdd' id='comAdd'>";
+	/**
+	*
+	*	after reading a nicely newbie oriented php article from Linux Format Magazine I can now see I should simplify these forms with a simple array
+	*
+	*/
 	echo "<fieldset><legend title='Choose the comment category'><span class='ui-icon ui-icon-info' style='float: left;'></span>&nbsp;Choose a Comment Category:</legend>";
 	echo "<label><input class='ui-widget input' name='tabAdd' type='radio' value='Vinyl' checked/>Vinyl</label>";
 	echo "<label><input class='ui-widget input' name='tabAdd' type='radio' value='Label' />Label</label>";
@@ -91,7 +95,6 @@ function draw45form() {
 	echo "</tr></table></form></div></div>";
 }
 function drawSoldierForm() {
-//global $tabAdd;
 	global $soldierDB;
 	global $subButton;
 	global $clearButton;
@@ -110,26 +113,29 @@ function drawSoldierForm() {
 	echo "</tr></table></form></div>";
 }
 /**
-*
-* 	CHECK THE NAME OF THE LINK AND DRAW THE APPROPRIATE FORM
-*
+*	alright.  we're done drawing these incredibly dumb forms.  fuck you jquery UI.  i wasted hours trying to stylize these scripts
 */
-if ( $soldierDB != "soldierAdd" ) {
-draw45form();
-}
+?>
+<?php
 /**
 *
-* 	CHECK THE NAME OF THE LINK AND DRAW THE APPROPRIATE FORM
+* 	DECIDE WHICH FUCKING FORM TO DRAW BASED ON THE INPUT
+*	WE EITHER DRAW THE SOLDIER FORM OR THE 45 FORM
+*	SO IF WE CATCH THE VARIABLE $SOLDIERDB COMING ACROSS THE PAGE WE KNOW WHAT TO DO
 *
 */
-if ( $soldierDB == "soldierAdd" ) {
-drawSoldierForm();
+if (isset ($soldierDB)) {
+drawSoldierForm(); 
+} else {
+draw45form();
 }
 ?>
 <?php
 /**
 *
 * 	BUILD THE OUTPUT INDICATORS
+*	there needs to be some indication that the input was successful 
+*	and how to proceed after 
 *
 */
 function buildBox() {
