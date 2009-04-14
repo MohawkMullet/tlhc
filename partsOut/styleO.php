@@ -38,6 +38,8 @@ include('parts/config.php');
 	background-image: url(http://lh6.ggpht.com/_W_e1PG0tXUk/SYCB9V4U-1I/AAAAAAAAAus/O6D3J1PgNQc/s800/greyHead.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
+	font: 600 18px Verdana, Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
 }
 .greyFontSmall {
 	font: 12px Arial, Helvetica, sans-serif;

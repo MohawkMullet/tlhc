@@ -21,13 +21,13 @@ include("descriptD.php");
 <?php
 	$boxes6 = $_POST["boxes6"];
 	if ($boxes6 != "") {
-	include('info/storelinks.php');
+	include('staticPages/storelinks.php');
 	}
 ?>
 <?php
 	$boxes3 = $_POST["boxes3"];
 	if ($boxes3 != "") {
-	include('info/about.php');
+	include('staticPages/about.php');
 	}
 ?>
 <?php

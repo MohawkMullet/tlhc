@@ -1,8 +1,6 @@
 <?php 
 //include('parts/config.php'); 
 ?>
-<LINK REL="alternate" TYPE="application/rss+xml" HREF="
-<?php echo "$rssFeed"; ?>" />
 <style type="text/css">
 .itemHead {
 	font: bold 16px Arial, Helvetica, sans-serif;

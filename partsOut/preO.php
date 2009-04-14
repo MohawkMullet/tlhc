@@ -4,9 +4,7 @@ if ($boxes2 != "") {
 include('styleO.php');
 }
 ?>
-<table align="center" cellspacing="6" class="whole" id="whole">
-  <tr>
-	<td><table width="100%" border="0" cellpadding="0" cellspacing="0" id="header">
+<table width="840px" align="center" border="0" cellpadding="0" cellspacing="0" id="header">
         <tr>
           <td width="35%"><img src="http://lh3.ggpht.com/_W_e1PG0tXUk/SYBSHgvoG0I/AAAAAAAAAsc/Usqa091OFfg/s800/wfFont1.jpg" width="287" height="120" title="HepVinyl.com Rare 45's, LP's & Plenty of Common Onese Too!"></td>
           <td width="65%" align="right" valign="bottom" bgcolor="#FFFFFF"> <div></div>          
@@ -20,18 +18,20 @@ include('styleO.php');
           </tr></table></td></tr></table></td></tr></table></td></tr></table></td><td width="19" nowrap valign="top"></td></tr><tr><td height="19" valign="top" colspan="7"></td></tr></table></td></tr></table></td></tr></table></td>
         </tr>
       </table>
-	  <br>
+<table align="center" cellspacing="6" class="whole" id="whole">
+  <tr>
+	<td>
 	<?php
 include("descriptO.php");
 ?>
-<table width="840" border="0" cellpadding="0" cellspacing="0" id="components">
+<table width="840" border="0" align="center" cellpadding="0" cellspacing="0" id="components">
   <tr>
     <td align="center" valign="top"><?php
 	$boxes4 = $_POST["boxes4"];
 	if ($boxes4 != "") {
-	include('info/gradesOrange.php');
+	include('staticPages/gradesOrange.php');
 	echo "<br>";
-	include('info/commentkeyOrange.php');
+	include('staticPages/commentkeyOrange.php');
 	}
 ?></td>
     <td width="500" valign="top"><?php
@@ -43,7 +43,7 @@ include("descriptO.php");
       <?php
 	$boxes3 = $_POST["boxes3"];
 	if ($boxes3 != "") {
-	include('info/aboutOrange.php');
+	include('staticPages/aboutOrange.php');
 	}
 ?></td>
   </tr>
@@ -53,18 +53,20 @@ include("descriptO.php");
 	$boxes6 = $_POST["boxes6"];
 	if ($boxes6 != "") {
 //	echo "suck some tits";
-	include('info/storelinks.php');
+	include('staticPages/storelinks.php');
 	}
 ?><br>
 <?php
 include("formOuts/componentsOut.php");
 ?>
+<div align="center" style="width: 500px; position:relative; float:none;">            
 <?php
 	$boxes5 = $_POST["boxes5"];
 	if ($boxes5 != "") {
 	include('footO.php');
 	}
-?>  </td>
+?>  
+</div></td>
   </tr>
 </table>
 <div align="center">
