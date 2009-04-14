@@ -1,73 +1,38 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<?php
-
-// initialize a session
-//session_start();
-?>
-<?php
-		include('parts/config.php');
-?>
-<link href="parts/inputForm.css" rel="stylesheet" type="text/css" />
-<link href="parts/SpryAssets/SpryTabbedPanels.css" rel="stylesheet" type="text/css" />
-
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>TLHC v<?php		echo $version;?>Output</title>
-<style type="text/css">
-
-#codeGrabbers {
-	position:absolute;
-	left:12px;
-	top:47px;
-	width:300px;
-	height:255px;
-	z-index:1;
-	overflow: visible;
-	visibility: visible;
-}
-#outPrev {
-	position:absolute;
-	left:10px;
-	top:180px;
-	width:1000px;
-	height:463px;
-	z-index:2;
-	overflow: auto;
-}
-a {
-	color: #282828;
-	font-stretch: wider;
-	font-size: 12px;
-	font-family: fantasy;
-	font-weight: bold;
-	text-align: center;
-}
-textarea {
-	line-height: 12px;
-	font-size: 12px;
-	font-family: arial, helvetica, sans-serif;
-	overflow: auto;
-}
-
-</style>
-<script language="JavaScript" type="text/JavaScript">
-<!--
-function MM_reloadPage(init) {  //reloads the window if Nav4 resized
-  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
-    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
-  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
-}
-MM_reloadPage(true);
-//-->
+<?php include('parts/config.php'); ?>
+<link href="parts/style.css" rel="stylesheet" type="text/css" />
+<title>TLHC v<?php	echo $version; ?>Output Page</title>
+<link type="text/css" rel="stylesheet" href="parts/jquery/theme/ui.all.css" />
+<script type="text/javascript" src="parts/jquery/jquery-1.3.2.js"></script>
+<script type="text/javascript" src="parts/jquery/jquery-ui-1.7.1.js"></script>
+ <script type="text/javascript">
+	$(function(){
+		//all hover and click logic for buttons
+		$(".fg-button:not(.ui-state-disabled)")
+		.hover(
+			function(){ 
+				$(this).addClass("ui-state-hover"); 
+			},
+			function(){ 
+				$(this).removeClass("ui-state-hover"); 
+			}
+		)
+		.mousedown(function(){
+				$(this).parents('.fg-buttonset-single:first').find(".fg-button.ui-state-active").removeClass("ui-state-active");
+				if( $(this).is('.ui-state-active.fg-button-toggleable, .fg-buttonset-multi .ui-state-active') ){ $(this).removeClass("ui-state-active"); }
+				else { $(this).addClass("ui-state-active"); }	
+		})
+		.mouseup(function(){
+			if(! $(this).is('.fg-button-toggleable, .fg-buttonset-single .fg-button,  .fg-buttonset-multi .fg-button') ){
+				$(this).removeClass("ui-state-active");
+			}
+		});
+	});
 </script>
-<?php
-//include('partsOut/writeToFile.php');
-?>
-
 </head>
-<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
-		<div id="Layer1" style="position:absolute; left:226px; top:578px; width:305px; height:63px; z-index:3; overflow: scroll; visibility: hidden;">
-		  <?php  include('license.php'); ?>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" style="margin-top: 25;">
+<div id="Layer1" style="position:absolute; left:226px; top:578px; width:305px; height:63px; z-index:3; overflow: scroll; visibility: hidden;">
 </div>
 <script language="Javascript">
 						function selectAll(theField) {
@@ -75,36 +40,61 @@ MM_reloadPage(true);
 						tempval.focus()
 						tempval.select()
 						}
-		</script>
-<div id="codeGrabbers">
+</script>
+<div class="ui-state-highlight style="width:750px">
 <form name="test2">
-				<span class="TabbedPanelsTab"><a href="javascript:selectAll('test2.select2')">Grab the Title</a></span><br>
-						<input name="select2" type="text" value="
-								<?php
-include('partsOut/formOuts/titleOut.php');
-								?>
-						" size="55">
-		</form>
-		
-		<form name="test">
-				<span class="TabbedPanelsTab"><a href="javascript:selectAll('test.select1')">Grab the Code</a></span><br />
-						<textarea name="select1" cols="100" rows="4" wrap="VIRTUAL">
+<a href="javascript:selectAll('test2.select2')" class="fg-button fg-button-icon-left ui-state-default ui-corner-all"><span class="ui-icon ui-icon-scissors"></span>Copy the Title</a><br />
+<input class="ui-widget input" name="select2" type="text" value="<?php include('partsOut/formOuts/titleOut.php'); ?>" size="55">
+</form>
+<form name="test">
+<a href="javascript:selectAll('test.select1')" class="fg-button fg-button-icon-right ui-state-default ui-corner-all"><span class="ui-icon ui-icon-copy"></span>Copy the Code&nbsp;&nbsp;</a><br />
+<textarea class="ui-widget input" name="select1" cols="100" rows="4" wrap="VIRTUAL">
 <?php
-	include("partsOut/previewDefault.php");
-//	include("partsOut/previewBlue.php");
-//	include("partsOut/previewOrange.php");
-
+$templateName = $_POST['templateName'];
+	if ($templateName == "default") {
+		include('partsOut/preD.php');
+	}
+	if ($templateName == "blue") {
+		include('partsOut/preB.php');
+	}
+	if ($templateName == "orange") {
+		include('partsOut/preO.php');
+	}
+	if ($templateName == "yellow") {
+		include('partsOut/preY.php');
+	}	
+	if ($templateName == "soldier") {
+		include('partsOut/preS.php');
+	}		
 ?>
-						</textarea>
-		</form>
+</textarea>
+</form>
 </div>
-
-<div id="outPrev">
+<span class="fg-toolbar">
 <?php
-	include("partsOut/previewDefault.php");
-//	include("partsOut/previewBlue.php");
-//	include("partsOut/previewOrange.php");
-
+echo $loadRight;
+echo $searchButton;
+echo $picButton;
+echo $helpButton;
+?>
+</span>
+<div class="ui-state-active" style="width: 880;">
+<?php
+	if ($templateName == "default") {
+		include('partsOut/preD.php');
+	}
+	if ($templateName == "blue") {
+		include('partsOut/preB.php');
+	}
+	if ($templateName == "orange") {
+		include('partsOut/preO.php');
+	}
+	if ($templateName == "yellow") {
+		include('partsOut/preY.php');
+	}	
+	if ($templateName == "soldier") {
+		include('partsOut/preS.php');
+	}		
 ?>
 </div>
 </body>
