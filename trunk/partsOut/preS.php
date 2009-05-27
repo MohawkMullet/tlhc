@@ -10,11 +10,13 @@ include('styleS.php');
 <?php
 include("descriptY.php");
 ?>
-<hr></td>
-  </tr>
-</table>
+<hr>
 <div align="center">
 <?php
 echo $cheaterTag;
 ?>
 </div>
+</td>
+  </tr>
+</table>
+

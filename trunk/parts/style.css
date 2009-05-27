@@ -7,12 +7,14 @@
 	/* remove extra button width in IE */
 	button.fg-button {
 	display: inline-block;
+	font-size:.8em;
+	font-weight:600;
 }
 	
-	.fg-button-icon-left { padding-left: 1.6em; }
-	.fg-button-icon-left .ui-icon { right: auto; left: .1em; margin-left: 0; }
+	.fg-button-icon-left { padding-left: 1.6em; padding-right:3px; }
+	.fg-button-icon-left .ui-icon { right: auto; left: .1em; margin-left: 0; padding-left:3px; }
 	.fg-button-icon-right { left: auto; padding-right: 0.6em; }	
-	.fg-button-icon-right .ui-icon { left: auto; right: 0.2em; margin-left: 0; padding-right: -8px; float: right; }
+	.fg-button-icon-right .ui-icon { left: auto; right: 0.2em; margin-left: 0; padding-right: -6px; float: right; }
 	
 	.fg-button-icon-solo {
 	display:inline-block;
@@ -26,16 +28,19 @@
 	.fg-buttonset-single .fg-button, 
 	.fg-buttonset-multi .fg-button { margin-right: -1px;}
 	
-	.fg-toolbar { padding: .5em; margin: 0;  }
-	.fg-toolbar .fg-buttonset { margin-right: 1.5em; padding-left: 1px; }
-	.fg-toolbar .fg-button { font-size: 1em;  }
+	.fg-toolbar {
+	padding: 8px;
+	margin: 1px;
+}
+	.fg-toolbar .fg-buttonset { margin-right: .2em; padding-left: 1px; }
+	.fg-toolbar .fg-button { font-size: inherit; padding-top:3px; padding-bottom:3px; border: thin groove #333333; }
 
 	/*demo page css*/
 .fg-button-icon-right2 {
 	left: auto;
 	padding-right: 1.8em;
 	margin-left: 0;
-	font-size: small;
+	font-size: .8em;
 }
 .fg-button-icon-right2 .ui-icon {
 	left: auto;
@@ -53,29 +58,7 @@
 	font-family: Arial,sans-serif;
 	font-style: italic;
 }
-#codeGrabbers {
-	position:absolute;
-	left:12px;
-	top:47px;
-	width:300px;
-	height:255px;
-	z-index:1;
-	overflow: visible;
-	visibility: visible;
-}
-#outPrev {
-	position:absolute;
-	left:9px;
-	top:222px;
-	width:1000px;
-	height:463px;
-	z-index:2;
-	overflow: auto;
-}
 
-			ul#icons {margin: 0; padding: 0;}
-			ul#icons li {margin: 2px; position: relative; padding: 4px 0; cursor: pointer; float: left;  list-style: none;}
-			ul#icons span.ui-icon {float: left; margin: 0 4px;}
 
 
 
@@ -93,12 +76,13 @@
 
 fieldset {
 	margin: 0px;
-	padding: 4px;
-	background-image: url(jquery/theme/images/ui-bg_highlight-soft_75_cccccc_1x100.png);
+	padding: 2px;
+	background-image: url(jquery/jquery-ui/css/theme/images/ui-bg_diagonals-medium_95_ffedad_40x40.png);
 	background-repeat: repeat;
 	background-position: 50% 50%;
-	width: 385px;
-	border: outset thin;
+	border: groove thin;
+	-moz-border-radius: 6px; 
+	-webkit-border-radius: 6px;	
 }
 .status {
 	font-family: Geneva, Arial, Helvetica, sans-serif;
@@ -159,4 +143,127 @@ label {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 20px;
 	font-weight: bold;
+}
+h3 {
+	font-size: largest;
+	font-weight: bolder;
+}
+h3 a {
+	font-size: larger;
+	font-weight: bolder;
+}
+#showTheme2 {
+	position:absolute;
+	left:160px;
+	top:50px;
+	width:100%;
+	height:30px;
+	z-index:2;
+}
+h4 {
+	text-decoration: none;
+	position: relative;
+	top: 5px;
+	left:10px;
+	height: 20px;
+
+}
+.diagComms {
+	text-decoration: none;
+	position: fixed;
+	top: 130px;
+	left:130px;
+	clear:both;
+	height: 20px;
+}
+#meButon {
+	position: absolute;
+	left: 430px;
+	top: 125px;
+}
+.ajaxtooltip{
+position: absolute; /*leave this alone*/
+display: none; /*leave this alone*/
+width: 300px;
+left: 0; /*leave this alone*/
+top: 0; /*leave this alone*/
+background: lightyellow;
+border: 2px solid gray;
+border-width: 1px 2px 2px 1px;
+padding: 5px;
+}
+/* ---------->>> jtip <<<---------------------------------------------------------------*/
+
+#JT_arrow_left{
+	background-image: url(../images/arrow_left.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+	position: absolute;
+	z-index:101;
+	left:-12px;
+	height:23px;
+	width:10px;
+    top:-3px;
+}
+
+#JT_arrow_right{
+	background-image: url(../images/arrow_right.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+	position: absolute;
+	z-index:101;
+	height:23px;
+	width:11px;
+    top:-2px;
+}
+
+#JT {
+	position: absolute;
+	z-index:100;
+	border: 2px solid #CCCCCC;
+	background-color: #fff;
+}
+
+#JT_copy{
+	padding:10px 10px 10px 10px;
+	color:#333333;
+}
+
+.JT_loader{
+	background-image: url(../images/loader.gif);
+	background-repeat: no-repeat;
+	background-position: center center;
+	width:100%;
+	height:12px;
+}
+
+#JT_close_left{
+	background-color: #CCCCCC;
+	text-align: left;
+	padding-left: 8px;
+	padding-bottom: 5px;
+	padding-top: 2px;
+	font-weight:bold;
+}
+
+#JT_close_right{
+	background-color: #CCCCCC;
+	text-align: left;
+	padding-left: 8px;
+	padding-bottom: 5px;
+	padding-top: 2px;
+	font-weight:bold;
+}
+
+#JT_copy p{
+margin:3px 0;
+}
+
+#JT_copy img{
+	padding: 1px;
+	border: 1px solid #CCCCCC;
+}
+
+.jTip{
+cursor:help;
 }

@@ -18,10 +18,10 @@ echo $version;
 
 </head>
 
-<frameset rows="*" cols="425,*" frameborder="yes" border="0" framespacing="0">
-<frame src="tabs.php" name="leftFrame" scrolling="auto" noresize="noresize" bordercolor="#cccccc" id="leftFrame" title="leftFrame" border="0" framespacing="0" />
+<frameset rows="*" cols="430,*" frameborder="no" border="0" framespacing="0">
+<frame src="tabs.php" name="leftFrame" scrolling="auto" noresize="noresize" bordercolor="#cccccc" id="leftFrame" title="leftFrame" border="0" framespacing="0" style="overflow-x:hidden; overflow-y:auto;" />
     <frame src="right.php" name="mainFrame" id="mainFrame" title="mainFrame" border="0" framespacing="0" />
-  </frameset>
+  <frame src="UntitledFrame-1"><frame src="UntitledFrame-2"></frameset>
 </frameset>
 <noframes>
 <body>
