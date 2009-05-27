@@ -1,29 +1,30 @@
 <?php 
 include('parts/config.php');
 ?>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
 <title>This is the Right Hand Page</title>
-<link type="text/css" rel="stylesheet" href="parts/jquery/jquery-ui/css/theme/jquery-ui-1.7.1.custom.css" />
-<link type="text/css" rel="stylesheet" href="parts/style.css" />
+<link type="text/css" rel="stylesheet" href="parts/jquery/jquery-ui/css/right/jquery-ui-1.7.1.custom.css">
+<link type="text/css" rel="stylesheet" href="parts/style.css">
 <script type="text/javascript" src="parts/jquery/jquery-1.3.2.js"></script>
 <script type="text/javascript" src="parts/jquery/animatedcollapse.js"></script>
 <script type="text/javascript" src="parts/jquery/jquery-ui-1.7.1.js"></script>
 <script type="text/javascript">
 
-animatedcollapse.addDiv('searchWeb', 'fade=1,speed=400,height=140px,persist=0,hide=0')
-animatedcollapse.addDiv('picasaImages', 'fade=1,height=280px')
-animatedcollapse.addDiv('licensegpl', 'fade=1,height=330px')
-animatedcollapse.addDiv('licensegpl2', 'fade=1,height=180px')
-animatedcollapse.addDiv('abbrevs', 'fade=1,height=180px')
-animatedcollapse.addDiv('search2', 'fade=1,height=180px')
-animatedcollapse.addDiv('midComms', 'fade=1,height=180px,persist=1')
-animatedcollapse.addDiv('midComms2', 'fade=1,height=265px,')
-animatedcollapse.addDiv('showNotes', 'fade=1,height=180px')
-animatedcollapse.addDiv('search', 'fade=1,height=180px')
-animatedcollapse.addDiv('helpDocs', 'fade=0,speed=400,group=pets')
-animatedcollapse.addDiv('outPutter', 'fade=1,speed=400,group=pets,persist=1,hide=1')
-animatedcollapse.addDiv('lastOne', 'fade=1,speed=400,group=pets')
+animatedcollapse.addDiv('picasaImages', 'fade=1,height=280px,persist=0')
+animatedcollapse.addDiv('licensegpl', 'fade=1,height=330px,persist=0')
+animatedcollapse.addDiv('search2', 'fade=1,height=220px,persist=0')
+animatedcollapse.addDiv('midComms2', 'fade=1,height=295px,persist=0')
+animatedcollapse.addDiv('helpDocs', 'fade=0,speed=400,persist=0')
+animatedcollapse.addDiv('outPutter', 'fade=1,speed=400,persist=0,hide=0')
+animatedcollapse.addDiv('inComs', 'fade=1,speed=400,persist=0')
+animatedcollapse.addDiv('inComs2', 'fade=1,speed=400,persist=0')
+animatedcollapse.addDiv('showComms', 'fade=1,height=595px,persist=0')
+animatedcollapse.addDiv('showComms2', 'fade=1,height=595px,persist=0')
+
 
 animatedcollapse.ontoggle=function($, divobj, state){ //fires each time a DIV is expanded/contracted
 	//$: Access to jQuery
@@ -34,7 +35,27 @@ animatedcollapse.ontoggle=function($, divobj, state){ //fires each time a DIV is
 animatedcollapse.init()
 
 </script>
- <script type="text/javascript">
+<script type="text/javascript">
+			$(function(){
+				// Accordion
+				$("#accordion").accordion({ 
+				header: "h3",
+				autoHeight: true,
+				collapsible: true
+				 });
+			});
+		</script>
+<script type="text/javascript">
+			$(function(){
+				// Accordion
+				$("#accordion2").accordion({ 
+				header: "h3",
+				autoHeight: false,
+				collapsible: true
+				 });
+			});
+		</script>        
+<script type="text/javascript">
 	$(function(){
 		//all hover and click logic for buttons
 		$(".fg-button:not(.ui-state-disabled)")
@@ -58,51 +79,98 @@ animatedcollapse.init()
 		});
 	});
 </script>
-
-
+<style type="text/css">
+<!--
+#rightBody {
+	position:static;
+	left:8px;
+	top:8px;
+	width:100%;
+	height:740px;
+	z-index:2;
+	overflow-x:hidden;
+	overflow-y:auto;
+}
+h3 {
+	font-size: 12px;
+}
+-->
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 </head>
+
 <body>
-<span id="rightBody" class="ui-widget-content ui-corner-all" style="height:600; display: block; padding:25;">
 
-
-<div id="helpDocs" style="width: 800px; height:600; overflow:scroll;">
-	<?php 
-	include('docs/index.php');
-	echo "<br>"; 
+<div class="ui-widget ui-widget-content ui-corner-all">
+<span class="ui-widget-header ui-helper-reset ui-corner-all" style="padding:6px 6px 6px 25px; display:block; font-size:16px; margin-right:15pz;">Welcome to TLhC
+<?php
+echo $version;
+?>
+<span class="fg-toolbar ui-corner-all" style="font-size:14px; background: url(parts/jquery/jquery-ui/css/theme/images/ui-bg_highlight-hard_30_383838_1x100.png); display: inline; padding:.6em; position: relative; right: -150px; border: medium double #cccccc;">
+<?php
+echo $loadRight;
+echo "<span class='fg-toolbar fg-buttonset-multi' style='display: inline;'>";
+echo "$searchButton $picButton $search2 $abbrevsButton";
+echo "</span>";
+echo $previewButton;
+echo "<span class='fg-toolbar fg-buttonset-multi' style='display: inline;'>";
+echo "$addCommsButton $showCommsButton $addCommsButton2 $showCommsButton2";
+echo "</span>";
+echo "$gplButton $helpButton";
+?>
+</span></span>
+<?php
+//include('outs2.php');
+?>
+<div id="outPutter" style="display: inherit;">
+  <?php
+$showOut = $_GET['showOut'];
+echo $showOut;
+if ( $showOut == "True" ){ 	
+	include('outs2.php');
+	} 
 	?>
-    <br>
 </div>
-<br />
-<div id="licensegpl" style="width: 500px; background: #FFFFFF; display:none; float:none; clear:both; position: relative;">
+
+<div id="modules">
+<div id="licensegpl" class="ui-corner-all ui-widget" style="width: 500px; background: #FFFFFF; padding: 10px; margin:25px; display: none;" align="center">
   <?php 
 	include('license.php'); 
 	?>
 </div>
-
-<div id="midComms2" style="width: 600; float:left; clear:left; display:none;">
+<div id="helpDocs" class="ui-corner-all ui-widget" style="width: 500px; background: #FFFFFF; padding: 10px; margin:25px; display: none;" align="center">
+  <?php 
+//	include('docs/index.php'); 
+	?>
+</div>
+<div id="midComms2" class="ui-corner-all" style="width: 425px; display:none; margin:10px; position: relative; background:#ffffff;">
   <?php 	
 	include('partsOut/staticPages/commentkeyDefault.php'); 
 	?>
 </div>    
-
-<div id="search2" style="width: 600; display:none; float:left; clear:both;">
-	<?php 
-	include('parts/research.php'); 
-	?>
-</div>       
-<div id="picasaImages" style="width: 300px; display:none;">
-<div id="tabs3333" class="ui-widget-header ui-corner-all" style="padding:5px; margin:5px; float:left; clear:right;">Login 2 Picasa<a href="javascript:animatedcollapse.toggle('picasaImages')" class="fg-button" title="Close this section"><span class="ui-icon ui-icon-close"></span>&nbsp;</a></div>
+      
+<div id="picasaImages" style="width: 425px; display: none; float:left; margin:10px;" class="ui-corner-all">
 	<?php 
 	include('parts/picasaLogin.php'); 
 	?>
 </div>
-<span style="display: block;">
-<div id="midComms" style="width: 300px; display: none;">
+<div id="search2" style="width: 425px; display: none; float:left; margin:10px; background:#ffffff;" class="ui-corner-all">
 	<?php 
-	include('partsIn/addComments2.php'); 
+	include('parts/research.php'); 
 	?>
-</div></span>
-</span>
-
-</body>
-</html>
+</div>
+<div id="inComs" style="display: none; float:left; margin:10px;" class="ui-corner-all">
+<iframe src='partsIn/addCommentsEX.php' height='230' width='425' scrolling="Auto" title='AddcommentsInside' name='addEm1' class="ui-widget ui-widget-content ui-corner-all" frameborder="0"></iframe>
+</div>
+<div id="inComs2" style="display: none; float:left; margin:10px;" class="ui-corner-all">
+<iframe src='partsIn/addCommentsEX.php?soldierDB=soldierAdd' height='230' width='425' scrolling="Auto" title='AddcommentsInside' name='addEm12' class="ui-widget ui-widget-content ui-corner-all" frameborder="0"></iframe>
+</div>
+<div id="showComms2" style="display: none; float:left; margin:10px;" class="ui-corner-all">
+<iframe src='parts/midComms.php?soldierDB=soldierShow' height='425' width='425' scrolling="Auto" title='AddcommentsInside' name='addEm13' class="ui-widget ui-widget-content ui-corner-all" frameborder="0"></iframe>
+</div>
+<div id="showComms" style="display: none; float: left; margin:10px;" class="ui-corner-all">
+<iframe src='parts/midComms.php' height='580' width='425' scrolling="Auto" title='AddcommentsInside' name='addEm14' class="ui-widget ui-widget-content ui-corner-all" frameborder="0"></iframe>
+</div>
+</div>
+</div>
+</div>

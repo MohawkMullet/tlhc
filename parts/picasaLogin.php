@@ -3,10 +3,10 @@ include('config.php');
 ?>
 
 
-<div class="ui-widget-content">
-<form id="gaia_loginform" action="https://www.google.com/accounts/ServiceLoginAuth?service=lh2" method="post" onsubmit="return(gaia_onLoginSubmit());">
+<div class="ui-widget ui-widget-content ui-corner-all">
+<a href="javascript:animatedcollapse.toggle('picasaImages')" class="fg-button fg-button-icon-solo delete" title="Close this section"><span class="ui-icon ui-icon-close"></span>&nbsp;</a><form id="gaia_loginform" action="https://www.google.com/accounts/ServiceLoginAuth?service=lh2" method="post" onsubmit="return(gaia_onLoginSubmit());">
 <div id="gaia_loginbox">
-<table class="form-noindent" border="0" cellpadding="5" cellspacing="3" width="100%">
+<table class="form-noindent ui-corner-a;;" border="0" cellpadding="5" cellspacing="3" width="100%">
   <tbody><tr>
   <td style="text-align: center;" bgcolor="#e8eefa" valign="top" nowrap="nowrap">
   <input name="ltmpl" value="gp" type="hidden">
@@ -114,7 +114,7 @@ include('config.php');
   <td>
   </td>
   <td align="left">
-  <input class="ui-widget input" name="signIn" value="Sign in" type="submit">
+  <input class='fg-button fg-button-icon-right2 ui-state-default ui-corner-all' name="signIn" value="Sign in" type="submit">
   </td>
 </tr>
 <tr id="ga-fprow">

@@ -43,7 +43,7 @@ echo "<base href=\"docs/\">";
 echo "$version";
 ?> 
 </h2></div>
-<h4><span class="ui-widget-header ui-state-disabled ui-corner-all">Getting Started Guide </h4></span>
+<div class="ui-widget-header ui-state-disabled ui-corner-all"><h1>Getting Started Guide </h1></div>
 <blockquote>
   <h4><a href="../license.php">License</a></h4>
   <p>Features</p>

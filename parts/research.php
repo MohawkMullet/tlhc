@@ -1,5 +1,6 @@
-<div id="tabs" class="ui-widget-header ui-corner-all" style="padding:10px; margin:10px; vertical-align:middle;">Search 45 Prices<a href="javascript:animatedcollapse.toggle('search2')" class="fg-button fg-button-icon-solo delete" title="Close this section"><span class="ui-icon ui-icon-close"></span>&nbsp;</a></div>
-<table width="100%" border="0" cellpadding="2" cellspacing="2" class="ui-widget-content" id="searchers">
+<div class="ui-widget ui-widget-content ui-corner-all" style="position:relative;">
+<div id="tabs" class="ui-widget ui-widget-header ui-corner-all ui-state-default" style="padding:10px; margin:10px; vertical-align:middle;">Search 45 Prices<a href="javascript:animatedcollapse.toggle('search2')" class="fg-button fg-button-icon-solo delete" title="Close this section" style="float:right; clear:none; display:inline;"><span class="ui-icon ui-icon-close"></span>&nbsp;</a></div>
+<table width="100%" border="0" cellpadding="2" cellspacing="2" class="ui-corner-all" id="searchers" style="background:#ffffff">
   <tr>
     <td width="33" align="right" valign="top"><span style="margin-bottom: 0pt;"><img src="../images/MusicStackfavicon.ico" title="Search MusicStack"></span></td>
     <td>&nbsp;</td>
@@ -133,3 +134,4 @@
 <?php
 echo $search2;
 ?>
+</div>
