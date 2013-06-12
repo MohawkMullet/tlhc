@@ -3,7 +3,7 @@
 = TLhC Features =
 
 Features 
-
+ * Config file & Documentation
  * Custom CSS styles included in your listing
  * Show Latest Listings in Description
  * Show store categories
@@ -12,6 +12,8 @@ Features
  * Reusable comments easily included in listings
  * Offsite images can be included in listings
  * Multiple templates for different looks to your auctions
+ * Add jQuery plugins
+ * Uses jQuery UI
 
 [ProjectHome]
 = Details =
