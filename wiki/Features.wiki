@@ -9,6 +9,7 @@ Features
  * Custom CSS styles included in your listing
  * Show Latest Listings in item Description
  * AJAX functions hold form data while switching tabs
+ * modules easily turned off or on for listings
  * Show store categories
  * Include Store Promotion Boxes
  * Include subscription links (add to my yahoo, rss button, G+, etc) 
@@ -17,6 +18,7 @@ Features
  * Multiple templates for different looks to your auctions
  * Add jQuery plugins. [http://jQuery.com]
  * Uses jQuery UI
+ * Creates archive of each image and item details
 
 [ProjectHome]
 
