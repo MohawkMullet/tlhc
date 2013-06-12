@@ -1,0 +1,22 @@
+#summary of application features
+
+= TLhC Features =
+
+Features 
+
+ * Custom CSS styles included in your listing
+ * Show Latest Listings in Description
+ * Show store categories
+ * Include Store Promotion Boxes
+ * Include subscription links (add to my yahoo, rss button, etc) 
+ * Reusable comments easily included in listings
+ * Offsite images can be included in listings
+ * Multiple templates for different looks to your auctions
+
+= Details =
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
+Home
