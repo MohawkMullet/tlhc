@@ -12,7 +12,7 @@ Features
  * Reusable comments easily included in listings
  * Offsite images can be included in listings
  * Multiple templates for different looks to your auctions
- * Add jQuery plugins
+ * Add jQuery plugins. [http://jQuery.com]
  * Uses jQuery UI
 
 [ProjectHome]
