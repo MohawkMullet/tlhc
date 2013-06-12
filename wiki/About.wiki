@@ -1,5 +1,5 @@
 #summary About the project.
-
+#sidebar Pages
 = About TLhC =
 Add your content here.
 
