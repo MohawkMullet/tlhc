@@ -1,0 +1,58 @@
+#summary One-sentence summary of this page.
+
+= Introduction =
+
+I'm not much of a programmer.  I just wrote a few scripts that do something useful for me.  You might want them if you were also getting familiar with php and wanted some scripts that already do the thing I set out to do.  Which is making selling similar collectible items on eaby easier to maintain the same look and feel and very simple to put in information.  
+
+
+
+
+==FOR SCREEN SHOTS OF VERSIONS LOOK HERE : https://picasaweb.google.com/117984535952369497366/TLhC#==
+
+
+TL HTML Cheater
+
+What is It?
+A set of php scripts that run on apache with mysql (optional).
+
+What does it do?
+Generates HTML code to be used in eBay item listings.
+
+Description: 
+
+TLhC is a fully customizable browser based html generator for ebay listings. Uses an advanced listing template. Allows for use of free form and groups of stored comments. Outputs a listing preview and html code for use in TurboLister. 
+
+Using a web based form you input information about your listing and the scripts return a preview of your listing and the html code to be copied into your listing manager or ebays add item forms. 
+
+Features 
+
+ * Custom CSS styles included in your listing
+ * Show Latest Listings in Description
+ * Show store categories
+ * Include Store Promotion Boxes
+ * Include subscription links (add to my yahoo, rss button, etc) 
+ * Reusable comments easily included in listings
+ * Offsite images can be included in listings
+ * Multiple templates for different looks to your auctions
+
+Download from /branches/default to get started.
+
+----
+*Screen Shot of the Input form and it's output*
+
+<img src="http://lh3.ggpht.com/_WM3TG9hL37k/SXrFCerzYkI/AAAAAAAAAWA/S_eZtgguT6A/s800/ouput1.thumb.jpg" />
+
+
+This is for people who hate editing their templates in turbo lister.  if you have a standard listing style and sell items often in the same categories, etc these php scripts will run on an apache server and take form input and then generate html code that can be cut and pasted into turblolister or joalt or whatever listing tool you use.
+
+
+REQUIREMENTS:
+DO NOT INSTALL THESE FILES ON A PRODUCTION WEBSERVER.
+Local machine running Apache2, with PHP & Mysql.
+
+= Details =
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
