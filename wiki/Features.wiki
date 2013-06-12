@@ -1,4 +1,4 @@
-#summary of application features
+#summary Brief list of application features
 
 = TLhC Features =
 
@@ -13,8 +13,10 @@ Features
  * Offsite images can be included in listings
  * Multiple templates for different looks to your auctions
 
+[ProjectHome]
 = Details =
-
+WikiWordLink
+[http://code.Google.com/p/tlhc]
 Add your content here.  Format your content with:
   * Text in *bold* or _italic_
   * Headings, paragraphs, and lists
