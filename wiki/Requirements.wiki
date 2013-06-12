@@ -1,20 +1,13 @@
 #summary Requirements to run TLhC
 #labels Phase-Requirements
-= Requirements  =
 
-  * Knowledge of PHP would be helpful
+===DO NOT INSTALL ON A PRODUCTION WEBSERVER===
+----
+= Requirements  =
   * Apache server configured with PHP & MySQL
+  * Gmail Account (Picasa for item images)
+----
+
+==Optional== 
   * Photoshop for designing custom templates
   * HTML, jQuery, XML, PHP, MySQL experience would be helpful.
-
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to
- other wiki pages
-WikiFeaturesLink
-eatures
-Requirements
-[Features]
