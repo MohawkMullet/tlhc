@@ -1,4 +1,4 @@
-#labels Featured,Phase-Implementation
+#labels Featured,Phase-Implementation,View-ScreenShots
 #Latest Screen Shots w query UI
 
 = Screen Shots of TLhC 1.9.5 =
