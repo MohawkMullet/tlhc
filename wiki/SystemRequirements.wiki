@@ -1,4 +1,4 @@
-#labels System-Requirements
+#labels System-Requirements,Deprecated
 #Requirements needed to run this software.
 
 = System Requirements =
