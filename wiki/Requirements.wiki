@@ -1,10 +1,11 @@
 #summary Requirements to run TLhC
-#labels Phase-Requirements
+#labels Phase-Requirements,App-Update
 
 ===DO NOT INSTALL ON A PRODUCTION WEBSERVER===
 ----
 = Requirements  =
-  * Apache server configured with PHP & MySQL
+  * Linux, or Windows
+  * Apache server configured with PHP & MariaDB
   * Gmail Account (Picasa for item images)
 ----
 
