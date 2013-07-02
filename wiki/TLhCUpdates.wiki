@@ -5,6 +5,9 @@
 
 TLhC updates.
 
+= 2013-07-02 =
+
+Switching TLhC to be tuned for MariaDB.  We will no longer be promoting MySQL as a suggested backend to TLhC
 
 = 2009-03-19 =
 
