@@ -2,6 +2,8 @@
 #labels Links,TLhC
 
 = Links =
+[WhatsNew]
+
 [Features]
 
 [About]
