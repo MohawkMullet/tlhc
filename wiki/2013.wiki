@@ -1,4 +1,4 @@
-#labels tlhc,Phase-Implementation,Phase-Support
+#labels tlhc,Deprecated
 #Planning on updates this summer
 
 = Introduction =
