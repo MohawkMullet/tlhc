@@ -1,0 +1,54 @@
+#summary TLhC updates
+#labels App-Update
+
+= What's New In TLhC =
+
+TLhC updates.
+
+= 2013-07-02 =
+
+Switching TLhC to be tuned for MariaDB.  We will no longer be promoting MySQL as a suggested backend to TLhC
+
+= 2009-03-19 =
+
+Not really sure why anyone would want these scripts, but if you do please drop me an email.  let me know what you are looking for and how you found this.
+  * Removed all non-gpl'd code and updated all javascript functions to jquery
+
+= Details =
+
+Not really sure why anyone would want these scripts, but if you do please drop me an email.  let me know what you are looking for and how you found this.
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
+
+Pueblo Latino Chamber of Commerce website circa
+
+TogetherFest website circa 2002
+
+TogetherFest website circa 2003
+
+thisi s the start screen with none of the hidden form
+
+TogetherFest website circa 2002
+
+
+TogetherFest website circa 2002
+
+SCA Insurance website circa 2001
+	
+ 	
+Damian Kelly
+photos
+	Mar 25, 2009
+80524
+photos: 18 – 4 MB
+Public on the web (edit)
+Various screen shots of a few projects I've worked on.
+Shared with
+Eric Damian Kelly
+ 
+Share
+Notify these people when photos are uploaded to this album.
+Post on:	
+Link to this album
+Paste link in email or IM
