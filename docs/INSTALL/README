@@ -1,5 +1,5 @@
  
-    TL HTML Cheater is Copyright 2008 Damian C. Kelly.  mohawkdigital@gmail.com
+    TurboLister HTML Cheater is Copyright 2008 -2013 Damian C. Kelly.  mohawkdigital@gmail.com
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -14,14 +14,21 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 Uses:
-
+https://picasaweb.google.com/lh/photo/Z4CYOToJY5khEcq34jyun9MTjNZETYmyPJy0liipFm0?feat=directlink
 This program is designed to ouptut HTML that can be cut and pasted into popular Ebay listing software such as TL2 or JAOLT.  
 
 Installing:
 
-Create a database named 'tlhc' and use the .sql file in the folder INSTALL to populate some data.
+1.  Setup MySQL database
+Create a database named 'tlhc' 
 
-Edit the file /parts/db/tlhcConnect.php with your database & user password info for your MySQL server.
+Create a username and password for your mysql connection
+
+Add this user name and password to the config file in the parts folder
+
+and use the .sql file in the folder INSTALL to populate some data.
+
+
 
 Upload / copy the main directory into a PHP/MYSQL based web server folder.
 
