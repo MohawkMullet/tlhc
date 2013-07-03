@@ -1,5 +1,5 @@
 #summary TLhC updates
-#labels App-Update
+#labels App-Update,Code-Contribution
 
 = What's New In TLhC =
 
@@ -7,8 +7,8 @@ TLhC updates.
 
 = 2013-07-02 =
 
-Switching TLhC to be tuned for MariaDB.  We will no longer be promoting MySQL as a suggested backend to TLhC
-
+Switching TLhC to be tuned for MariaDB.  We will no longer be promoting MySQL as a suggested backend to TLhC.
+Added furthur instructions to the readme file about how to setup the database
 = 2009-03-19 =
 
 Not really sure why anyone would want these scripts, but if you do please drop me an email.  let me know what you are looking for and how you found this.
