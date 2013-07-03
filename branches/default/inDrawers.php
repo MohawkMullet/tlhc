@@ -8,7 +8,7 @@ include("parts/db/tlhcConnect.php");
 <td width="294" class="labelTableTop" align="center">Add to Drawers</td>
 </tr>
 <tr>
-<td class="RightHandLabels">Open:</td>
+<td class="RightHandLabels">Open Sesame:</td>
 <td class="inputBGstyle"> 
 <div class="CollapsiblePanelTabFake">Add reusable comments to Comment Drawers:</div>
 <?php
