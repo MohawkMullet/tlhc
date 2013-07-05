@@ -7,7 +7,8 @@ include('parts/config.php');
     <td align="center" valign="top" class="greyFontLarge" style="padding-top:5px">
     				  <div align="center">
     				    <?php
-						include('formOuts/imagePicasaOut.php');
+    				    // Heres the fucking image again
+						include('formOuts/imagePicasaOut2.php');
 					?></div>
     				    <br>
     				    <font color="#ffffff" size="1">

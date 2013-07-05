@@ -10,13 +10,6 @@
 <script type="text/javascript" src="parts/jquery/jquery-1.3.2.js"></script>
 <script type="text/javascript" src="parts/jquery/jquery.maxlength-1.0.2.js"></script>
 <script type="text/javascript" src="parts/jquery/jquery-ui-1.7.1.js"></script>
-<script type="text/javascript" src="parts/jquery/jquery.form.js"></script>
-<script language="JavaScript" type="text/javascript" src="parts/jquery/jqDnR.js"></script>
-<script language="javascript" type="text/javascript" src="parts/jquery/jqDialogForms.js"></script>
-<script language="JavaScript" type="text/javascript" src="parts/jquery/jquery.hijack.js"></script>
-<script language="JavaScript" type="text/javascript" src="parts/jquery/jqalert.js"></script>
-<script type="text/javascript" src="parts/jquery/jtip.js"></script>
-
 
   <script>
   $(document).ready(function(){
@@ -28,6 +21,16 @@
     $('#titler').maxlength();
   });
   
+</script>
+<script type="text/javascript">
+	$(function() {
+		$("#tabs2").tabs({
+			deselectable: true,
+			selected: -1			
+		});
+	});
+		
+</script>
 </script>
 <script type="text/javascript">
 	$(function() {
@@ -101,104 +104,61 @@ $(document).ready(function(){
 
 });
 </script>
-<script type="text/javascript">
-$(function() {
+		<script type="text/javascript">
+			$(function(){
 
-    // with hijack()
-    $("#tabsJax").tabs({ // start jQuery UI tabs
-		deselectable: true,
-//		selected: -1,		
-		selected: null,
-		unselect: true,
-		collapsible: true,
-// 		fx: { opacity: 'toggle' } 
-        load: function(event, ui) { // load callback, hijacking every loaded panel
-            $(ui.panel).hijack();	
-		}
-    });
-    // without hijack()
-    $("#tabs2").tabs({
-		deselectable: true,
-		selected: -1			
-		}
-	); // standard jQuery UI tabs
-	
-    $(".opendialog").click(function() {
-	var $tabs = $('#tabsJax').tabs(); // first tab selected 
-		    $tabs.tabs('select', -1); // switch to third tab
-				$(this).parents(".tabs").animate({ opacity: 'hide' }, "slow");
-//  			return false;
 
-//	});
-	 // when clicking on a button
-        $("#dialog").load($(this).attr('rel'), function() { // load remote content from its 'rel' attribute into hidden div
-            $(this)
-              .dialog('destroy') // destroy dialog widget (if exists)
-//			  .tabs('destroy')
-              .dialog({ // and recreate it with following options
-			    buttons: { "Close": function() { $(this).dialog("close"); } },
-				minHeight: 235,
-			  	modal: "true",
-				width: 380,
-                title: "Add A New Phrase",
-                open: function() { $(this).hijack()}
-              });
-        });
-        $("#dialogoo").load($(this).attr('rel'), function() { // load remote content from its 'rel' attribute into hidden div
-            $(this)
-              .dialog('destroy') // destroy dialog widget (if exists)
-//			  .tabs('destroy')
-              .dialog({ // and recreate it with following options
-			    buttons: { "Close": function() { $(this).dialog("close"); } },
-				minHeight: 235,
-			  	modal: "true",
-				width: 380,
-                title: "Add A New Phrase",
-                open: function() { $(this).hijack()}
-              });
-        });		
-    });
-    $(".opendialognohijack").click(function() {
-        $("#dialog").load($(this).attr('rel'), function() {
-            $(this)
-                    .dialog('destroy')
-                    .dialog({ // same, but without hijacking on open
-                title: "Add Stored Comments"
-                });
-        });
-    });
 
-});
-</script>
+				// Dialog			
+				$('#dialog').dialog({
+					autoOpen: false,
+					width: 300,
+					show: "slide",
+					buttons: {
+						"Done": function() { 
+							$(this).dialog("close"); 
+						}, 
+						"Close": function() { 
+							$(this).dialog("close"); 
+						} 
+					}
+				});
+				
+				// Dialog Link
+				$('#dialog_link').click(function(){
+					$('#dialog').dialog('open');
+					return false;
+				});
+
+
+				//hover states on the static widgets
+				$('#dialog_link, ul#icons li').hover(
+					function() { $(this).addClass('ui-state-hover'); }, 
+					function() { $(this).removeClass('ui-state-hover'); }
+				);
+				
+			});
+		</script>
 </head>
 <body>
 <div id="tabs">
     <ul>        
+        <li><a href="#toolsTab" class="fg-button fg-button-icon-right">TLhC&nbsp;&nbsp;<span class="ui-icon ui-icon-wrench"></span></a></li>    
+        <li><a href="#soldierInput" class="fg-button fg-button-icon-right">Tester&nbsp;&nbsp;<span class="ui-icon ui-icon-person"></span></a></li>    
+
         <li><a href="#45input" class="fg-button fg-button-icon-right">45 Form&nbsp;&nbsp;<span class="ui-icon ui-icon-volume-on"></span></a>&nbsp;</li>
-        <li><a href="#soldierInput" class="fg-button fg-button-icon-right">Soldiers&nbsp;&nbsp;<span class="ui-icon ui-icon-person"></span></a></li>    
-        <li><a href="#toolsTab" class="fg-button fg-button-icon-right">Tools&nbsp;&nbsp;<span class="ui-icon ui-icon-wrench"></span></a></li>           
-        <li><a href="#lastTab" class="fg-button fg-button-icon-right">Help&nbsp;&nbsp;<span class="ui-icon ui-icon-help"></span></a></li>
-        <li><a href="#goRight" class="fg-button fg-button-icon-right ui-state-disabled">--->&nbsp;&nbsp;<span class="ui-icon ui-icon-help"></span></a></li>
-        
+        <li><a href="#lastTab" class="fg-button fg-button-icon-right">About&nbsp;&nbsp;<span class="ui-icon ui-icon-help"></span></a></li>
   </ul>
     <div id="soldierInput">
 		<?php
             include('soldierForm.php'); 
         ?>
-        <?php
- echo $copyRight;
- echo "<div align='center'>$gplButton</div>";
-?>
     </div>  
 
     <div id="45input">
 		<?php
-            include('45form.php'); 
+            include('45form3.php'); 
         ?>
-        <?php
- echo $copyRight;
- echo "<div align='center'>$gplButton $flagButton</div>";
-?>
     </div>
     <div id="toolsTab">
             <div id="infobox" align="center" class="ui-widget-content ui-corner-all" style="width: 100%; float: left; clear: right;">
@@ -208,7 +168,7 @@ $(function() {
                         echo $version;
                     ?>!</p>
                 </div>
-                <p><img src="../images/TLhClogo70x100.png" width="70" height="100"></p>
+                <p><img src="images/TLhClogo70x100.png" width="70" height="100"></p>
                 <p><img src="images/t4/wfFont1-E164nh.png" width="93" height="64"></p>
 <span class="fg-toolbar">
 <?php
@@ -217,9 +177,7 @@ echo $searchButton;
 echo $picButton;
 echo $helpButton;
 echo $abbrevsButton;
-echo $previewButton;
 echo $addCommsButton;
-echo $addCommsButton2;
 echo $search2;
 ?>
 </span>
@@ -233,6 +191,10 @@ echo $search2;
 	</div>
 
 </div>
+<?php
+ echo $copyRight;
+ echo "<div align='center'>$gplButton</div>";
+?>
 </body>
 </html>
 

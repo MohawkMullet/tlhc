@@ -2,7 +2,7 @@
 <div id="tabs" class="ui-widget ui-widget-header ui-corner-all ui-state-default" style="padding:10px; margin:10px; vertical-align:middle;">Search 45 Prices<a href="javascript:animatedcollapse.toggle('search2')" class="fg-button fg-button-icon-solo delete" title="Close this section" style="float:right; clear:none; display:inline;"><span class="ui-icon ui-icon-close"></span>&nbsp;</a></div>
 <table width="100%" border="0" cellpadding="2" cellspacing="2" class="ui-corner-all" id="searchers" style="background:#ffffff">
   <tr>
-    <td width="33" align="right" valign="top"><span style="margin-bottom: 0pt;"><img src="../images/MusicStackfavicon.ico" title="Search MusicStack"></span></td>
+    <td width="33" align="right" valign="top"><span style="margin-bottom: 0pt;"><img src="images/MusicStackfavicon.ico" title="Search MusicStack"></span></td>
     <td>&nbsp;</td>
     <td><form name="search" action="http://www.musicstack.com/show.cgi" method="post" target="_blank" id="searchForm" autocomplete="off" style="margin-bottom: 0pt;" onSubmit="return ck(this)">
         <input id="searchText" class="ui-widget input ui-corner-all" name="find" value="" size="20" maxlength="30" onFocus="flip(1)" onBlur="flip(0)" type="text">
@@ -105,7 +105,7 @@
       </form></td>
   </tr>
   <tr>
-    <td align="right" valign="top"><img src="../images/EBAYfavicon.ico" title="Search Ebay"></td>
+    <td align="right" valign="top"><img src="images/EBAYfavicon.ico" title="Search Ebay"></td>
     <td>&nbsp;</td>
     <td><form method="get" action="http://search.ebay.com/search/search.dll" target="_blank" style="margin-bottom: 0pt;">
         <input type="text" maxlength="300" name="satitle" size="20" class="ui-widget input">
@@ -113,7 +113,7 @@
       </form></td>
   </tr>
   <tr>
-    <td align="right" valign="top"><img src="../images/RbMfavicon.ico" title="Search Records by Mail"></td>
+    <td align="right" valign="top"><img src="images/RbMfavicon.ico" title="Search Records by Mail"></td>
     <td align="left">&nbsp;</td>
     <td align="left"><form method=post action="http://www.recordsbymail.com/search.php" target="_blank">
         <select class="ui-widget select" style="width: 140;">

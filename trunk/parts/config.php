@@ -1,4 +1,5 @@
  <?php
+ $version = "2.4.1"; // this is actuall the version of TLhC that The Creator Made.  Go Ahead and change this value when you change the code<div align="center"><img src=" http://i5.ebayimg.com/03/i/001/21/72/d5b0_1_bo.JPG"><br>
 /**
 * *******************************************************
 * STUFF FOR YOUR LISTINGS
@@ -21,9 +22,15 @@ $logo = "http://lh3.ggpht.com/_W_e1PG0tXUk/SZiMGDaGcKI/AAAAAAAAAxI/Ii8bjrSn3rw/s
 // RSS FEED FOR EBAY STORE.  See docs for help.
 $rssFeed = "http://rss.api.ebay.com/ws/rssapi?FeedName=StoreItems&siteId=0&language=en-US&output=RSS20&storeId=480498590"; 
 
+/**
+*
+* WE ARE GOING TO TRY THIS WITH FLICKR NOW
+* Ill post results.  Picasa is working again
+*/
+
 // PICASA IMAGES LOGIN INFO
-$picasaUser = "hepvinyl";
-$picasaPass	= "";
+//$picasaUser = "mohawkdigital";
+//$picasaPass	= "";
 
 /**
 *   MySQL DATABASE INFO
@@ -36,7 +43,7 @@ $pass = "tlhcpass";
 $db = "tlhc";
 $link = mysql_connect( "localhost", $user, $pass );
 if ( !$link )
-	die( "couldnt connect bioch" );
+	die( "couldnt connect to the data base bioch" );
 mysql_select_db( $db )
 	or die ( "couldng grab $db: ".mysql_error() );
 
@@ -60,7 +67,7 @@ $storeURL = "<a href='$storeLink'>$storeName</a>";
 $favico = "<link rel='shortcut icon' href='images/favicon.ico'>";
 $storeLogo = "<img src='$logo'>";
 $ebayRSS = "<a href=\"$rssFeed\">"; // encloses feed in tags to be used in html
-$version = "2.3.1"; // this is actuall the version of TLhC that The Creator Made.  Go Ahead and change this value when you change the code<div align="center"><img src=" http://i5.ebayimg.com/03/i/001/21/72/d5b0_1_bo.JPG"><br>
+
 $cheaterTag = "<div align=\"center\"><img src=\" http://i5.ebayimg.com/03/i/001/21/72/d5b0_1_bo.JPG\" title='TLhC Download It Now!'><br><font face=\"Arial,Helvetica\" size=\"2\">Powered by <a href=\"http://code.google.com/p/tlhc/\">TL html Cheater</a>.<br>The Free as in Freedom (GPLv3) HTML tool.  List your items fast and easy and manage your active items.</font></div><hr>";
 $errorIcon = "<div class=\"ui-widget\" style='padding:0 5px 0 5px;'><div class=\"ui-state-error ui-corner-all\" style=\"padding: 0 .7em;\"><p><span class=\"ui-icon ui-icon-alert\" style=\"float: left; margin-right: .3em;\"></span>";
 $errorIconEnd = "</p></div></div>";

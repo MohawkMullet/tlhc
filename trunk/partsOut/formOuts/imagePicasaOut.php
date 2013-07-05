@@ -1,3 +1,6 @@
+//This page is being depricated as of July 2013.
+// See imagePicasaOut2.php for more help
+// Peace bitches
 <?php
 	require_once("class.inputfilter_clean.php");
 		$tags = array("a", "link");
