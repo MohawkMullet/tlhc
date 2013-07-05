@@ -6,7 +6,7 @@
 </head>
 
 <body>
-<form name="form1" method="post" action="artistsOut2.php">
+<form name="form1" method="post" action="artistsOut.php">
 <fieldset class="insideFields"><legend>Artist & Title:</legend><div class="stuff" id="titles">
 <input type="text" name="performer" size="12" class="someinputs" id="performer"  tabindex="1" onfocus="if(this.value=='Artist')this.value='';" value="Artist" title="Band, Singer or Artist Name ONLY">
 <input name="titler" type="text" class="someinputs" id="titler" accesskey="h" tabindex="2" onfocus="if(this.value=='Title')this.value='';" value="Title" size="26" maxlength="55" title="THE TITLE OF THE EBAY LISTING" /></div></fieldset>

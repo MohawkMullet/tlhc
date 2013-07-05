@@ -2,6 +2,8 @@
 //include_once( ../parts/db/tlhcConnect.php);
 include('parts/config.php');
 ?>
+<!-- This is the description section of your template.  most of your form info is going to be displayed here -->
+
 <table width="844" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
     <td height="43" colspan="5" align="left" valign="bottom" background="../images/t2/54_02.png"><strong>
@@ -39,7 +41,8 @@ include('parts/config.php');
     <td width="30" valign="top" class="MI">&nbsp;      </td>
 <td width="297" align="center" valign="top">
     				  <?php
-						include('formOuts/imagePicasaOut.php');
+    				  // Image shows up here
+						include('formOuts/imagePicasaOut2.php');
 					?>    </td>
     <td width="39" valign="bottom" background="../images/t2/54_07.png" class="r4"><img src="../images/t2/678_07.png" width="39" height="286" align="bottom" /></td>
   </tr>

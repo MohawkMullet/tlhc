@@ -8,13 +8,14 @@
 <?php
 echo $themeChooser;
 ?>
-<form action="right.php?showOut=True" method="POST" name="basic" target="mainFrame" id="iSaidMarch2">
+<!-- IT LOOKS LIKE THERE IS A PROBLEM WITH THE FORM OUTPUT -->
+<form action="right.php?showOut=True" method="POST" name="basic" target="mainFrame" id="slapIt">
 <table width="410" id="recInput" style="margin-left:1px;">
 <tr>
 		<td>
 <div id="showTheme2">
 		<?php
-//			echo $themeChooser;
+			echo $themeChooser;
 			include('partsOut/formOuts/themeOut.php'); 
 		?>
 </div>
@@ -38,9 +39,9 @@ echo $themeChooser;
 ?>
 </fieldset>
 <?php
-//	include('partsIn/songInfo.php');
+	include('partsIn/songInfo.php');
 	include("partsIn/imagePicasa2.php");
-//	include("partsIn/components2.php");
+	include("partsIn/components2.php");
 	include("partsIn/submit.php");
 ?>
 		</td>
