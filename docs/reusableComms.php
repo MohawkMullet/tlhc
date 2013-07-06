@@ -26,6 +26,16 @@
   <p>Refresh the main form</p>
   <p><img src="images/refresh.png" width="192" height="96" border="2" style="border-color:#FF3300;"></p>
 </blockquote>
+<p>Example Code:</p>
+<textarea>&lt;?php
+		if ( ! empty( $_POST["LabelSelector"])) {
+		$LabelSelector = $_POST["LabelSelector"];
+//		print "\n\n";
+		foreach ( $LabelSelector as $valueLabels ) {
+		print "<span class=\"multicomms\">Label $valueLabels</span><br>\n";                                             
+		}
+		}
+?&gt;</textarea>
 <p>Deleting &amp; Reordering</p>
 <blockquote>
   <p>See <a href="http://phpmyadmin.net">phpMyAdmin.net</a></p>
