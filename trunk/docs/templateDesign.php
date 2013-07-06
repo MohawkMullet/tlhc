@@ -1,3 +1,8 @@
+<p>The default template consists of 2 main parts: <a name="components"></a></p>
+<ul>
+  <li>The Main Description</li>
+  <li>A CSS Style Sheet: partsOut/styles.php</li>
+</ul>
 <link href="manual.css" rel="stylesheet" type="text/css">
 <h1>Setting up a template</h1>
 <h2>We are going to work with 2 main files to start. We'll need to create a stylesheet for our css and a preview file that displays our listing.</h2>

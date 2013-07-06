@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta http-equiv="content-type" content="text/html; charset=WINDOWS-1252" >
 <link href="manual.css" rel="stylesheet" type="text/css">
 <style type="text/css">
 <!--
@@ -93,6 +93,13 @@ echo "$version";
   <h3>Form Fields and </h3>
 </blockquote>
 <a href="contact.php" class="ui-icon ui-icon-alert"><h2 class="ui-state-error ui-corner-all">Contact</h2></a> 
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="LTSGSFCL8HVJG">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+
 <?php
 include_once('../license.php');
 ?>
