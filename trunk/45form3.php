@@ -5,22 +5,26 @@
 	* this document and all included in this package are licensed under the GPL
 	**/
 ?>
-<form action="preview.php" method="POST" name="basic" target="mainFrame" id="slapIt">
+<form action="Output.php" method="POST" name="basic" target="mainFrame" id="slapIt">
 <table width="410" id="recInput" style="margin-left:1px;">
 <tr>
 		<td>
+
 <?php
 //	include('parts/menuBar.php');
+include('partsIn/themeIn3.php');
 ?>
-<fieldset class="pane">
+<!-- THIS IS THE OLD FUCKING THEME SELECTOR -->
+<!-- <fieldset class="pane">
 <div align="left">
   <legend title="Choose a theme for the new listing"><a href="#" class="fg-button fg-button-icon-solo delete" title="Close this section"><span class="ui-icon ui-icon-close"></span>&nbsp;</a>Listing Theme&nbsp;<a href="docs/templateDesign.php" target="mainFrame" class="fg-button fg-button-icon-solo ui-state-default ui-corner-all" title="Change the Listing Design and Style"><span class="ui-icon ui-icon-key"></span>&nbsp;</a></legend>
 </div>
-<label><input class="ui-widget input" name="templateName" type="radio" value="default"/>Old</label>
+<!-- Not Really sure what the fuck this shit is diong on the main form anyway.  Lets try to get rid of it -->
+<!--  <label><input class="ui-widget input" name="templateName" type="radio" value="default"/>Old</label>
     <label><input class="ui-widget input" name="templateName" type="radio" value="yellow" checked/>Yellow & Orange</label>   
 <label><input class="ui-widget input" name="templateName" type="radio" value="blue" />Blue</label>
-    <label><input class="ui-widget input" name="templateName" type="radio" value="orange" />Green & Blue</label>
-</fieldset>
+    <label><input class="ui-widget input" name="templateName" type="radio" value="orange" />Green & Blue</label> 
+</fieldset> -->
 <?php
 	include('partsIn/performerTitle2.php');
 	include('partsIn/sideAb2.php');

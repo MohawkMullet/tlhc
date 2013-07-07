@@ -3,13 +3,17 @@
 <?php
 	include('parts/config.php');
 ?>
-<link rel="shortcut icon" href="images/favicon.ico">
+<link rel="shortcut icon" href="https://docs.google.com/file/d/0B75zYbbqQ4W4ZzNyR2dnZ1Ffb3c/edit?usp=sharing">
 <link href="parts/style.css" rel="stylesheet" type="text/css" />
 
 <link type="text/css" rel="stylesheet" href="parts/jquery/jquery-ui/css/theme/jquery-ui-1.7.1.custom.css" />
 <script type="text/javascript" src="parts/jquery/jquery-1.3.2.js"></script>
 <script type="text/javascript" src="parts/jquery/jquery.maxlength-1.0.2.js"></script>
 <script type="text/javascript" src="parts/jquery/jquery-ui-1.7.1.js"></script>
+<!-- THESE ARE THE LATEST JQUERY FILES -->
+<!-- 	<script src="docs/jquery-ui-1.10.3.custom/js/jquery-1.9.1.js"></script> -->
+<!-- 	<script src="docs/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.js"></script> -->
+<!-- 	<link href="docs/jquery-ui-1.10.3.custom/css/july12/jquery-ui-1.10.3.custom.css" rel="stylesheet"> -->
 
   <script>
   $(document).ready(function(){
@@ -139,6 +143,7 @@ $(document).ready(function(){
 				
 			});
 		</script>
+
 </head>
 <body>
 <div id="tabs">
@@ -170,7 +175,7 @@ $(document).ready(function(){
                 </div>
                 <p><img src="images/TLhClogo70x100.png" width="70" height="100"></p>
                 <p><img src="images/t4/wfFont1-E164nh.png" width="93" height="64"></p>
-<span class="fg-toolbar">
+<span class="fg-toolbar ui-corner-all">
 <?php
 echo $loadRight;
 echo $searchButton;

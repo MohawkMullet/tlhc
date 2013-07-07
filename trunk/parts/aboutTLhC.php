@@ -57,7 +57,8 @@ echo $version;
 echo "<br>";
 echo	"Copyright &copy; 2008 - 2013<a href=\"mailto:mohawkdigital@gmail.com\" style=\"text-decoration:none;\">$contactButton Damian C. Kelly.</a>&nbsp;";
 echo	"TLhC is free software released under GNU GPLv3.<br>";
-?>
+?><br>
+
   </div>
   <div align="center"><img src="images/gplv3-127x51.png">  </div></td>
   </tr>

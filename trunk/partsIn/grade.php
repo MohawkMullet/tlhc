@@ -1,3 +1,4 @@
+
 <fieldset title="Grade, Record Label & abbreviated notes"><legend>Grade & Abbreviations:</legend>
 <label>
 <select class='ui-widget select' name="grade" id="grade" title="Choose the record grade here or none will be displayed" style="margin-left: 15px; margin-right: 15px; width: 80px; font-size-adjust: +.8;">

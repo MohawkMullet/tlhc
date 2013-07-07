@@ -7,7 +7,7 @@
 	<script>
 	$(function() {
 		$( "#dialog-modal" ).dialog({
-			width: 770,
+			width: 875,
 			height: 660,
 			autoOpen: true,
 			modal: true
@@ -17,7 +17,7 @@
 	});
 	</script>
 	<script>
-//			$( "#dialog-modal" ).dialog({ 
+//			$( "#diog-modal" ).dialog({ 
 //				autoOpen: true,
 //				modal: true,
 //				width: 750,
@@ -33,6 +33,9 @@ $showOut = $_GET['showOut'];
 echo $showOut;
 ?>
 
+
+<div id="dialog-modal" align="center" font-color="white" title="<?php include('partsOut/formOuts/titleOut.php'); ?>">
+	<p>
 <?php
 $templateName = $_POST['templateName'];
 	if ($templateName == "default") {
@@ -50,12 +53,11 @@ $templateName = $_POST['templateName'];
 	if ($templateName == "soldier") {
 		include('partsOut/preS.php');
 	}		
-?>
-<div id="dialog-modal" title="<?php include('partsOut/formOuts/titleOut.php'); ?>">
-	<p><?php echo $templateName; ?></p>
+?>	
+	</p>
 </div>
 
-<p>Sed vel diam id libero <a href="http://example.com">rutrum convallis</a>. Donec aliquet leo vel magna. Phasellus rhoncus faucibus ante. Etiam bibendum, enim faucibus aliquet rhoncus, arcu felis ultricies neque, sit amet auctor elit eros a lectus.</p>
+<p><?php include('right.php'); ?></p>
 
 <div class="demo-description">
 <p>A modal dialog prevents the user from interacting with the rest of the page until it is closed.</p>
