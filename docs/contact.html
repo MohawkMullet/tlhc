@@ -1,38 +1,26 @@
 <?php 
-include('../parts/config.php');
+include('parts/config.php');
 ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
   <head>
     <meta content="text/html; charset=ISO-8859-1"
       http-equiv="Content-Type">
-      <link type="text/css" rel="stylesheet" href="../parts/jquery/jquery-ui/css/right/jquery-ui-1.7.1.custom.css">
-				<link type="text/css" rel="stylesheet" href="../parts/style.css">
+      <link type="text/css" rel="stylesheet" href="parts/jquery/jquery-ui/css/right/jquery-ui-1.7.1.custom.css">
+				<link type="text/css" rel="stylesheet" href="parts/style.css">
     <title>Contact</title>
   </head>
   <body><div align="center">
-<!--Begin outer table -->
- <table border="0" align="center" class="ui-widget ui-widget-content" style="padding:4px;">
-<tbody>
-<tr>
-<td valign="top">
-<!--Begin INNER table -->
-    <table width="100%"  border="0" align="center" cellpadding="5" cellspacing="5" id="inner" bgcolor="#ffffff">
+    <table border="1" cellpadding="2" cellspacing="2" width="400px">
       <tbody>
         <tr align="center">
-          <td  colspan="2" rowspan="1" valign="top" class=".ui-widget-header">
-     <div class="ui-state-default ui-widget-header">
-                    <p>Contact: 
-                    <?php
-                        echo $version;
-                        print date('F jS, Y');
-                        setcookie(fuckyou2, $version, 10000, $home, $copyRight, '1');
-                    ?>!</p>
-                </div>
+          <td  colspan="2" rowspan="1" valign="top">
+            <h1>Contact
+            </h1>
           </td>
         </tr>
         <tr>
-          <td  colspan="2" rowspan="1" align="center" valign="top" class=".ui-widget-content">Main Developer:&nbsp; Damian
+          <td  colspan="2" rowspan="1" align="center" valign="top">Main Developer:&nbsp; Damian
             C. Kelly - Denver, CO USA<br>
           </td>
         </tr>
@@ -70,11 +58,11 @@ include('../parts/config.php');
          <td colspan="2" rowspan="1" valign="top">
          <div align="center"><a href="http://code.google.com/p/tlhc">Check for Newer Version ofTLhC</a></div>
 <div style="text-align: center"><p>You are Using: <span style="display:inline;" align="center">
-     TLhC v 
+      <p>TLhC v 
           <?php
 echo $version;
 ?>    </span>
-</div></td></tr>
+</p></div></td></tr>
  <td colspan="2" rowspan="1" valign="top"><div align="center">
  <p>Dontate to the Project;</p>
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post"
@@ -91,12 +79,6 @@ height="1"></form></div>
         </tr>
       </tbody>
     </table>
-<!-- END INNER TABLE   -->
- </td>
-</tr>
-</tbody>
-</table>
-<!-- END OUTER TABLE   -->
     </div>
     <br>
     <script type="text/javascript">
