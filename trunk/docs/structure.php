@@ -1,20 +1,156 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>Program Structure</title>
-<style type="text/css">
-<!--
-.style2 {color: #0000FF; font-weight: bold; }
--->
-</style>
-<link href="manual.css" rel="stylesheet" type="text/css">
-</head>
+	<link href="jquery-ui-1.10.3.custom/css/july12/jquery-ui-1.10.3.custom.css" rel="stylesheet">
+	<script src="jquery-ui-1.10.3.custom/js/jquery-1.9.1.js"></script>
+	<script src="jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.js"></script>
+	<script>
+	$(function() {
+		
+		$( "#accordion" ).accordion();
+		
 
-<body>
+		
+		var availableTags = [
+			"ActionScript",
+			"AppleScript",
+			"Asp",
+			"BASIC",
+			"C",
+			"C++",
+			"Clojure",
+			"COBOL",
+			"ColdFusion",
+			"Erlang",
+			"Fortran",
+			"Groovy",
+			"Haskell",
+			"Java",
+			"JavaScript",
+			"Lisp",
+			"Perl",
+			"PHP",
+			"Python",
+			"Ruby",
+			"Scala",
+			"Scheme"
+		];
+		$( "#autocomplete" ).autocomplete({
+			source: availableTags
+		});
+		
+
+		
+		$( "#button" ).button();
+		$( "#radioset" ).buttonset();
+		
+
+		
+		$( "#tabs" ).tabs();
+		
+
+		
+		$( "#dialog" ).dialog({
+			autoOpen: false,
+			width: 400,
+			buttons: [
+				{
+					text: "Ok",
+					click: function() {
+						$( this ).dialog( "close" );
+					}
+				},
+				{
+					text: "Cancel",
+					click: function() {
+						$( this ).dialog( "close" );
+					}
+				}
+			]
+		});
+
+		// Link to open the dialog
+		$( "#dialog-link" ).click(function( event ) {
+			$( "#dialog" ).dialog( "open" );
+			event.preventDefault();
+		});
+		
+
+		
+		$( "#datepicker" ).datepicker({
+			inline: true
+		});
+		
+
+		
+		$( "#slider" ).slider({
+			range: true,
+			values: [ 17, 67 ]
+		});
+		
+
+		
+		$( "#progressbar" ).progressbar({
+			value: 20
+		});
+		
+
+		// Hover states on the static widgets
+		$( "#dialog-link, #icons li" ).hover(
+			function() {
+				$( this ).addClass( "ui-state-hover" );
+			},
+			function() {
+				$( this ).removeClass( "ui-state-hover" );
+			}
+		);
+	});
+	</script>
+	<style>
+	body{
+		font: 62.5% "Trebuchet MS", sans-serif;
+		margin: 50px;
+	}
+	.demoHeaders {
+		margin-top: 2em;
+	}
+	#dialog-link {
+		padding: .4em 1em .4em 20px;
+		text-decoration: none;
+		position: relative;
+	}
+	#dialog-link span.ui-icon {
+		margin: 0 5px 0 0;
+		position: absolute;
+		left: .2em;
+		top: 50%;
+		margin-top: -8px;
+	}
+	#icons {
+		margin: 0;
+		padding: 0;
+	}
+	#icons li {
+		margin: 2px;
+		position: relative;
+		padding: 4px 0;
+		cursor: pointer;
+		float: left;
+		list-style: none;
+	}
+	#icons span.ui-icon {
+		float: left;
+		margin: 0 4px;
+	}
+	.fakewindowcontain .ui-widget-overlay {
+		position: absolute;
+	}
+	</style>
+<title></title>
+</head>
+<body class="ui-widget"><table width="80%" class="ui-widget ui-widget-content ui-corner-all"><tr><td> 
 <h1>How TLhC Works</h1>
-<h3>Program structure</h3>
-<h2>Docs</h2>
+<h2>Program structure</h2>
+<h3>Docs</h3>
 <p>this is the very limted amount of documentation I have included with this project.</p>
 <h2>Images</h2>
 <p>These are the images that I've included to make the samples work aned images included in the docs</p>
@@ -42,8 +178,9 @@
   <h2>INFO</h2>
   <p>these can be a collection of pages that you've generated through ebay's tools.</p>
 </blockquote>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+</td></tr></table>
+<a href="index.php">Back To Index</a>
 </body>
-</html>
+<?php
+//include_once('../license.php');
+?>

@@ -21,6 +21,8 @@
   		<li>THIS SEEMS TO BE SHUTTING DOWN SOON (July 2013) I will code in at least one more image service that is easy to upload to and get links from</li>
     <li>Go to <a href="http://picasaweb.google.com" class="style2">picasaweb.google.com</a> &amp; <a href="../parts/picasaLogin.php">sign in</a> or register</li>
     <li>Upload some images to a public folder. </li>
+    <li>
+ <table style="width:194px;"><tr><td align="center" style="height:194px;background:url(https://picasaweb.google.com/s/c/transparent_album_background.gif) no-repeat left"><a href="https://picasaweb.google.com/117984535952369497366/45s?authuser=0&feat=embedwebsite"><img src="https://lh3.googleusercontent.com/-9CtyZKoQmrA/SL-Hnnrm8fE/AAAAAAAAE4I/u8HHKuTrh2A/s160-c/45s.jpg" width="160" height="160" style="margin:1px 0 0 4px;"></a></td></tr><tr><td style="text-align:center;font-family:arial,sans-serif;font-size:11px"><a href="https://picasaweb.google.com/117984535952369497366/45s?authuser=0&feat=embedwebsite" style="color:#4D4D4D;font-weight:bold;text-decoration:none;">45s</a></td></tr></table></li>
   </ol>
   <blockquote>
     <p><img src="images/picUp1b.png" width="568" height="117" hspace="6" vspace="6" border="2"></p>

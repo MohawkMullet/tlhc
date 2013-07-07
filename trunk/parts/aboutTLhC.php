@@ -12,6 +12,7 @@ echo $version;
           <!-- we are having some trouble with the path -->   
           <img src="images/TLhClogoSmaller.png" width="53" height="75"></p>
       <p><a href="docs/index.php" target="mainFrame">DOCUMENTATION</a></p>
+      <p><a href="docs/contact.php" target="mainFrame">CONTACT</a></p>
       <p>Check for <a href="http://code.google.com/p/tlhc/" target="_blank">Updates</a></p>
 <span class="fg-toolbar ui-corner-all" style="font-size:14px; background:#cccccc; display: inline; padding:.6em; border: medium double #FFFFFF;">
 <?php
@@ -34,7 +35,7 @@ echo $showCommsButton2;
 echo "</span>";
 echo $gplButton;
 echo $helpButton;
-echo $contactButton;
+echo $contactButton2;
 echo $flagButton;
 echo "</span>";
 ?>
@@ -54,7 +55,7 @@ echo "</span>";
 echo "TL html Cheater v";
 echo $version;
 echo "<br>";
-echo	"Copyright &copy; 2008 <a href=\"mailto:mohawkdigital@gmail.com\" style=\"text-decoration:none;\">$contactButton Damian C. Kelly.</a>&nbsp;";
+echo	"Copyright &copy; 2008 - 2013<a href=\"mailto:mohawkdigital@gmail.com\" style=\"text-decoration:none;\">$contactButton Damian C. Kelly.</a>&nbsp;";
 echo	"TLhC is free software released under GNU GPLv3.<br>";
 ?>
   </div>

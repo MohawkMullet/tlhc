@@ -67,6 +67,9 @@ $storeURL = "<a href='$storeLink'>$storeName</a>";
 $favico = "<link rel='shortcut icon' href='images/favicon.ico'>";
 $storeLogo = "<img src='$logo'>";
 $ebayRSS = "<a href=\"$rssFeed\">"; // encloses feed in tags to be used in html
+$tlhcCode = "<a href='http://code.google.com/p/tlhc' target=\"new\" alt=\"Download TLhC\">";
+$tlhcLogo = "<img src=\"images/TLhClogo70x100.png\" width=\"70\" height=\"100\">";
+$tlhcLink = "$tlhcCode $tlhcLogo </a>";
 
 $cheaterTag = "<div align=\"center\"><img src=\" http://i5.ebayimg.com/03/i/001/21/72/d5b0_1_bo.JPG\" title='TLhC Download It Now!'><br><font face=\"Arial,Helvetica\" size=\"2\">Powered by <a href=\"http://code.google.com/p/tlhc/\">TL html Cheater</a>.<br>The Free as in Freedom (GPLv3) HTML tool.  List your items fast and easy and manage your active items.</font></div><hr>";
 $errorIcon = "<div class=\"ui-widget\" style='padding:0 5px 0 5px;'><div class=\"ui-state-error ui-corner-all\" style=\"padding: 0 .7em;\"><p><span class=\"ui-icon ui-icon-alert\" style=\"float: left; margin-right: .3em;\"></span>";
@@ -111,8 +114,9 @@ $keyButton = "<a href='#' title='Load the Help Files' class='fg-button fg-button
 $imageTTButton = "<a href='docs/tooltips/picasa.htm' class='jTip' id='four26' name='Picasa'><span class='ui-icon ui-icon-image' style='float:right; margin-top:2px;'></span></a>";
 $lockedButton = "<a href='#' title='Load the Help Files' class='fg-button fg-button-icon-solo ui-state-default ui-corner-all'><span class='ui-icon ui-icon-locked' title='Load the Help Files' ></span>&nbsp;</a>";
 $starButton = "<a href='#' title='Load the Help Files' class='fg-button fg-button-icon-solo ui-state-default ui-corner-all'><span class='ui-icon ui-icon-star' title='Load the Help Files' ></span>&nbsp;</a>";
-$newwinButton = "<a href='#' title='Load the Help Files' class='fg-button fg-button-icon-solo ui-state-default ui-corner-all'><span class='ui-icon ui-icon-newwin' title='Load the Help Files' ></span>&nbsp;</a>";
+$newwinButton = "<a href='#' title='Load the Help Files' class=\"fg-button fg-button-icon-solo ui-state-default ui-corner-all\"><span class='ui-icon ui-icon-newwin' title='Load the Help Files' ></span>&nbsp;</a>";
 $contactButton = "<a href='docs/contact.php' class='jTip' id='four26' name='Contact'><span class='ui-icon ui-icon-contact' style='float:right; margin-top:2px;'></span></a>";
+$contactButton2 = "<a href=\"docs/contact.php\" target=\"mainFrame\" class=\"fg-button fg-button-icon-solo ui-state-default ui-corner-all\" title='Contact the Developer'><span class=\"ui-icon ui-icon-contact\"></span>&nbsp;</a>";
 $flagButton = "<a href='docs/tooltips/terms.htm' class='jTip' id='four25' name='Software License'><span class='ui-icon ui-icon-flag' style='float:right; margin-top:2px;'></span></a>";
 $pinSButton = "<a href='#' title='Load the Help Files' class='fg-button fg-button-icon-solo ui-state-default ui-corner-all'><span class='ui-icon ui-icon-pin-s' title='Load the Help Files' ></span>&nbsp;</a>";
 ?>
