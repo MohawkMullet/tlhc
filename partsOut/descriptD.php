@@ -22,12 +22,12 @@ include('parts/config.php');
   </tr>
 		<tr>
 			<td align="left" valign="top" style="padding:4px;">
-			/***
+<!-- 			/***
 			*
 			* Had to do some work on the images in july 2013.  Watch for this imagePicasaOut2.php file.
 			* Its much simpler now than when I had that fucking script doing all that stripping of the input
 			*
-			*/
+			*/ -->
 					<?php
 					// Here is your pic you upload.  I will test with flickr and other services too
 						include('formOuts/imagePicasaOut2.php');

@@ -68,7 +68,7 @@ include('../parts/config.php');
             </td>
 </tr><tr>
          <td colspan="2" rowspan="1" valign="top">
-         <div align="center"><a href="http://code.google.com/p/tlhc">Check for Newer Version ofTLhC</a></div>
+         <div align="center"><a href="http://code.google.com/p/tlhc" target="_blank">Check for Newer Version ofTLhC</a></div>
 <div style="text-align: center"><p>You are Using: <span style="display:inline;" align="center">
      TLhC v 
           <?php

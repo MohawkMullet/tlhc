@@ -2,6 +2,7 @@
 Icon=kformula
 
 [Dolphin]
-Timestamp=2013,7,3,4,46,35
+SortRole=type
+Timestamp=2013,7,7,8,9,47
 Version=3
 ViewMode=1
