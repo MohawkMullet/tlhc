@@ -10,6 +10,8 @@
 <script type="text/javascript" src="parts/jquery/jquery-1.3.2.js"></script>
 <script type="text/javascript" src="parts/jquery/jquery.maxlength-1.0.2.js"></script>
 <script type="text/javascript" src="parts/jquery/jquery-ui-1.7.1.js"></script>
+<script type="text/javascript" src="parts/jquery/jquery-tooltipify.js"></script>
+<link rel="stylesheet" href="parts/jquery/tooltipify.css"></link>
 <!-- THESE ARE THE LATEST JQUERY FILES -->
 <!-- 	<script src="docs/jquery-ui-1.10.3.custom/js/jquery-1.9.1.js"></script> -->
 <!-- 	<script src="docs/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.js"></script> -->
@@ -144,6 +146,7 @@ $(document).ready(function(){
 			});
 		</script>
 
+
 </head>
 <body>
 <div id="tabs">
@@ -162,7 +165,7 @@ $(document).ready(function(){
 
     <div id="45input">
 		<?php
-            include('45form3.php'); 
+            include('45form.php'); 
         ?>
     </div>
     <div id="toolsTab">
@@ -203,6 +206,7 @@ echo $picasaViewerButton;
  echo $copyRight;
  echo "<div align='center'>$gplButton</div>";
 ?>
+
 </body>
 </html>
 

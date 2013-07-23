@@ -125,7 +125,7 @@ echo "$gplButton $helpButton $picasaViewerButton $photoButton";
 <?php
 //include('Output.php');
 ?>
-<div id="outPutter" style="display: inherit;">
+<div id="outPutter" style="display: inherit;" class='ui-widget ui-widget-header ui-corner ui-corner-all'>
   <?php
 $showOut = $_GET['showOut'];
 //echo $showOut;
