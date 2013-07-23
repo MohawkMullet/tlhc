@@ -184,6 +184,9 @@ echo $helpButton;
 echo $abbrevsButton;
 echo $addCommsButton;
 echo $search2;
+echo $contactButton2;
+echo $photoButton;
+echo $picasaViewerButton; 
 ?>
 </span>
 

@@ -58,7 +58,6 @@ $templateName = $_POST['templateName'];
 </div>
 
 <p><?php include('right.php'); ?></p>
-
 <div class="demo-description">
 <p>A modal dialog prevents the user from interacting with the rest of the page until it is closed.</p>
 </div>

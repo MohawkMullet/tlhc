@@ -5,6 +5,7 @@
 echo $picButton;
 echo $helpButton;
 echo $imageTTButton;
+echo $photoButton;
 ?>
 </legend>
 <input class="ui-widget input" name="picasaImage" type="text" size="46"  tabindex="18" title="SEE THE DOCS ON  HOW TO USE THIS">
