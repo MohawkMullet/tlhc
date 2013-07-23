@@ -24,6 +24,8 @@ animatedcollapse.addDiv('inComs', 'fade=1,speed=400,persist=0')
 animatedcollapse.addDiv('inComs2', 'fade=1,speed=400,persist=0')
 animatedcollapse.addDiv('showComms', 'fade=1,height=595px,persist=0')
 animatedcollapse.addDiv('showComms2', 'fade=1,height=595px,persist=0')
+animatedcollapse.addDiv('picasaViewer', 'fade=1,height=595px,persist=0')
+
 
 
 animatedcollapse.ontoggle=function($, divobj, state){ //fires each time a DIV is expanded/contracted
@@ -109,25 +111,26 @@ echo $version;
 <span class="fg-toolbar ui-corner-all" style="font-size:14px; background: url(parts/jquery/jquery-ui/css/theme/images/ui-bg_highlight-hard_30_383838_1x100.png); display: inline; padding:.6em; position: relative; right: -150px; border: medium double #cccccc;">
 <?php
 echo $loadRight;
+echo $previewButton;
 echo "<span class='fg-toolbar fg-buttonset-multi' style='display: inline;'>";
 echo "$searchButton $picButton $search2 $abbrevsButton";
 echo "</span>";
-echo $previewButton;
+
 echo "<span class='fg-toolbar fg-buttonset-multi' style='display: inline;'>";
 echo "$addCommsButton $showCommsButton $addCommsButton2 $showCommsButton2";
 echo "</span>";
-echo "$gplButton $helpButton";
+echo "$gplButton $helpButton $picasaViewerButton $photoButton";
 ?>
 </span></span>
 <?php
-//include('outs2.php');
+//include('Output.php');
 ?>
 <div id="outPutter" style="display: inherit;">
   <?php
 $showOut = $_GET['showOut'];
-echo $showOut;
+//echo $showOut;
 if ( $showOut == "True" ){ 	
-	include('outs2.php');
+	include('Output.php');
 	} 
 	?>
 </div>
@@ -140,7 +143,7 @@ if ( $showOut == "True" ){
 </div>
 <div id="helpDocs" class="ui-corner-all ui-widget" style="width: 500px; background: #FFFFFF; padding: 10px; margin:25px; display: none;" align="center">
   <?php 
-//	include('docs/index.php'); 
+	include('docs/easyinstall.php'); 
 	?>
 </div>
 <div id="midComms2" class="ui-corner-all" style="width: 425px; display:none; margin:10px; position: relative; background:#ffffff;">
@@ -151,7 +154,14 @@ if ( $showOut == "True" ){
       
 <div id="picasaImages" style="width: 425px; display: none; float:left; margin:10px;" class="ui-corner-all">
 	<?php 
-	include('parts/picasaLogin.php'); 
+	include('parts/picasaLogin.php');
+//	include('parts/picasaViewer.php');
+	?>
+</div>
+<div id="picasaViewer" style="width: 435px; display: none; float:left; margin:10px;" class="ui-corner-all">
+	<?php 
+//	include('parts/picasaLogin.php');
+	include('picasaViewerMain.php');
 	?>
 </div>
 <div id="search2" style="width: 425px; display: none; float:left; margin:10px; background:#ffffff;" class="ui-corner-all">
@@ -170,6 +180,9 @@ if ( $showOut == "True" ){
 </div>
 <div id="showComms" style="display: none; float: left; margin:10px;" class="ui-corner-all">
 <iframe src='parts/midComms.php' height='580' width='425' scrolling="Auto" title='AddcommentsInside' name='addEm14' class="ui-widget ui-widget-content ui-corner-all" frameborder="0"></iframe>
+</div>
+<div id="picasaViewer" style="display: none; float: left; margin:10px;" class="ui-corner-all">
+<iframe src='parts/picasaViewer.php' height='580' width='425' scrolling="Auto" title='Choose your Photo' name='addEm15' class="ui-widget ui-widget-content ui-corner-all" frameborder="0"></iframe>
 </div>
 </div>
 </div>

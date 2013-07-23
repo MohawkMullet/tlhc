@@ -1,5 +1,6 @@
 
 		<div id="accordion">
+		
         			<div>
 
 				<h3> <a href="#">Auction Listing Preview</a>
@@ -7,7 +8,7 @@
 <div style="overflow-x: hidden; overflow-y:auto;">
 <div style="width:830px; height: 540px; background:#FFFFFF;" align="center" class="ui-corner-all"><?php
 $templateName = $_POST['templateName'];
-	echo $templateName;
+//	echo $templateName;
 	if ($templateName == "default") {
 		include('partsOut/preD.php');
 	}
@@ -64,7 +65,9 @@ $templateName = $_POST['templateName'];
 
 			<div>
 				<h3><a href="#">TLhC Tools</a></h3>
-				<div>Nam dui erat, auctor a, dignissim quis.</div>
+				<div>
+				<?php include('Output.php'); ?>
+				</div>
 			</div>
 		</div>
 

@@ -1,5 +1,5 @@
  <?php
- $version = "2.4.1"; // this is actuall the version of TLhC that The Creator Made.  Go Ahead and change this value when you change the code<div align="center"><img src=" http://i5.ebayimg.com/03/i/001/21/72/d5b0_1_bo.JPG"><br>
+ $version = "2.4.2"; // this is actuall the version of TLhC that The Creator Made.  Go Ahead and change this value when you change the code<div align="center"><img src=" http://i5.ebayimg.com/03/i/001/21/72/d5b0_1_bo.JPG"><br>
 /**
 * *******************************************************
 * STUFF FOR YOUR LISTINGS
@@ -39,11 +39,11 @@ $rssFeed = "http://rss.api.ebay.com/ws/rssapi?FeedName=StoreItems&siteId=0&langu
 *	see the documentation for help on stored coments
 */
 $user = "tlhcuser";
-$pass = "tlhcpass";
+//$pass = "tlhcpass";
 $db = "tlhc";
 $link = mysql_connect( "localhost", $user, $pass );
 if ( !$link )
-	die( "couldnt connect to the data base bioch" );
+	die( "couldnt connect to the data base bioch so what the fuck could be wrong now" );
 mysql_select_db( $db )
 	or die ( "couldng grab $db: ".mysql_error() );
 
@@ -86,7 +86,8 @@ $clearButton = "<button type='reset' class='fg-button fg-button-icon-right2 ui-s
 $loadRight = "<a href=\"right.php\" target=\"mainFrame\" class=\"fg-button fg-button-icon-solo ui-state-default ui-corner-all\" title='Reload this Page & Close All Windows'><span class=\"ui-icon ui-icon-arrowreturnthick-1-e\"></span>&nbsp;</a>";
 $helpButton = "<a href=\"javascript:animatedcollapse.toggle('helpDocs')\" target=\"mainFrame\" title='Load the Help Files' class=\"fg-button fg-button-icon-solo ui-state-default ui-corner-all\"><span class=\"ui-icon ui-icon-help\" title='Load the Help Files' ></span>&nbsp;</a>";
 //$searchButton = "<a href=\"javascript:animatedcollapse.toggle('search')\" target=\"mainFrame\" class=\"fg-button fg-button-icon-solo ui-state-default ui-corner-all\"><span class=\"ui-icon ui-icon-search\"></span>&nbsp;</a>";
-$picButton = "<a href=\"javascript:animatedcollapse.toggle('picasaImages')\" target=\"mainFrame\" class=\"fg-button fg-button-icon-solo ui-state-default ui-corner-all\"><span class=\"ui-icon ui-icon-image\"></span>&nbsp;</a>";
+$picButton = "<a href=\"javascript:animatedcollapse.toggle('picasaImages')\" target=\"mainFrame\" class=\"fg-button fg-button-icon-solo ui-state-default ui-corner-all\"><span class=\"ui-icon ui-icon-image\" title='Load Pictures' ></span>&nbsp;</a>";
+$picasaViewerButton = "<a href=\"javascript:animatedcollapse.toggle('picasaViewer')\" target=\"mainFrame\" class=\"fg-button fg-button-icon-solo ui-state-default ui-corner-all\"><span class=\"ui-icon ui-icon-image\"></span>&nbsp;</a>";
 $addCommsButton = "<a href=\"javascript:animatedcollapse.toggle('inComs')\" target=\"mainFrame\" class=\"fg-button fg-button-icon-solo ui-state-default ui-corner-all\" title='Add to the Stored Comments'><span class=\"ui-icon ui-icon-circle-plus\"></span>&nbsp;</a>";
 $addCommsButton2 = "<a href=\"javascript:animatedcollapse.toggle('inComs2')\" target=\"mainFrame\" class=\"fg-button fg-button-icon-solo ui-state-default ui-corner-all\" title='Add to the Stored Comments'><span class=\"ui-icon ui-icon-plus\"></span>&nbsp;</a>";
 $showCommsButton = "<a href=\"javascript:animatedcollapse.toggle('showComms')\" target=\"mainFrame\" class=\"fg-button fg-button-icon-solo ui-state-default ui-corner-all\" title='Add to the Stored Comments'><span class=\"ui-icon ui-icon-circle-zoomin\"></span>&nbsp;</a>";
@@ -104,7 +105,7 @@ $dialogAddButton = "<button  rel=\"partsIn/commsDialogAdd.php\" class='opendialo
 *	THESE ARE SOME GENERIC JQUERY UI BUTTONS WITHOUT LINKS SO THEY CAN BE USED AS TOOLTIPS
 *
 */
-$linkButton = "<a href='#' title='Load the Help Files' class='fg-button fg-button-icon-solo ui-state-default ui-corner-all'><span class='ui-icon ui-icon-link' title='Load the Help Files' ></span>&nbsp;</a>";
+$photoButton = "<a href='parts/picasaViewer.php' title='Load the Photos' target='mainFrame' class='fg-button fg-button-icon-solo ui-state-default ui-corner-all'><span class='ui-icon ui-icon-link' title='Load the Photos' ></span>Choose Picture</a>";
 $folderCButton = "<a href='#' title='Load the Help Files' class='fg-button fg-button-icon-solo ui-state-default ui-corner-all'><span class='ui-icon ui-icon-folder-collapsed' title='Load the Help Files' ></span>&nbsp;</a>";
 $folderOButton = "<a href='#' title='Load the Help Files' class='fg-button fg-button-icon-solo ui-state-default ui-corner-all'><span class='ui-icon ui-folder-open' title='Load the Help Files' ></span>&nbsp;</a>";
 $lightbulbButton = "<a href='#' title='Load the Help Files' class='fg-button fg-button-icon-solo ui-state-default ui-corner-all'><span class='ui-icon ui-icon-lightbulb' title='Load the Help Files' ></span>&nbsp;</a>";

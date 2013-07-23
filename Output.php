@@ -41,7 +41,7 @@
 </script>
 <?php
 $showOut = $_GET['showOut'];
-echo $showOut;
+//echo $showOut;
 ?>
 <div class="ui-widget-content ui-state-selected" style="width:650px; padding:8px; position: relative;" align="center">
 <div style="float:left; clear:right;"><form name="test2">
