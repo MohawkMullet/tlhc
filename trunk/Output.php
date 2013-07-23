@@ -43,16 +43,17 @@
 $showOut = $_GET['showOut'];
 //echo $showOut;
 ?>
+
 <div class="ui-widget-content ui-state-selected" style="width:650px; padding:8px; position: relative;" align="center">
 <div style="float:left; clear:right;"><form name="test2">
 <a href="javascript:selectAll('test2.select2')" class="fg-button fg-button-icon-right2 ui-state-default ui-corner-all">
 <span class="ui-icon ui-icon-circle-arrow-e"></span>Copy the Title&nbsp;&nbsp;</a>
 &nbsp;&nbsp;<input class="ui-widget input" name="select2" type="text" value="<?php include('partsOut/formOuts/titleOut.php'); ?>" size="55">
 </form></div>
-<form name="test"><div style="float:left; clear:none; margin-left:5px; margin-top:4px;">
+<form name="test"><div style="float:left; clear:none; margin-left:2px; margin-top:2px;">
 <a href="javascript:selectAll('test.select1')" class="fg-button fg-button-icon-left ui-state-default ui-corner-all" style="font-size:smaller;">
 <span class="ui-icon ui-icon-circle-arrow-s"></span>Copy the Code&nbsp;&nbsp;</a><br />
-</div><textarea class="ui-widget input" name="select1" cols="100" rows="4" wrap="VIRTUAL">
+</div><textarea class="ui-widget input" name="select1" cols="110" rows="2" wrap="VIRTUAL">
 <?php
 $templateName = $_POST['templateName'];
 	if ($templateName == "default") {
@@ -75,7 +76,7 @@ $templateName = $_POST['templateName'];
 </form>
 </div>
 
-<div style="width: 800; border: thick groove #660000;"><span class="ui-widget ui-widget-header ui-state-active ui-corner-all">Preview:</span>
+<div style="width: 800;" class='ui-widget ui-widget-content ui-corner ui-corner-all'>
 <?php
 	if ($templateName == "default") {
 		include('partsOut/preD.php');

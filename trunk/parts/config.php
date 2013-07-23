@@ -39,20 +39,21 @@ $rssFeed = "http://rss.api.ebay.com/ws/rssapi?FeedName=StoreItems&siteId=0&langu
 *	see the documentation for help on stored coments
 */
 $user = "tlhcuser";
-//$pass = "tlhcpass";
+$pass = "tlhcpass";
 $db = "tlhc";
 $link = mysql_connect( "localhost", $user, $pass );
 if ( !$link )
-	die( "couldnt connect to the data base bioch so what the fuck could be wrong now" );
+        die( "couldnt connect to the data base bioch" );
 mysql_select_db( $db )
-	or die ( "couldng grab $db: ".mysql_error() );
-
+        or die ( "couldng grab $db: ".mysql_error() );
 
 
 // ********************************************************
 // STUFF TO CUSTOMIZE YOUR OWN VERSION OF TLhC
 // ********************************************************
 
+//$mysql_id = mysql_connect('localhost', 'tlhcuser', 'tlhcpass');
+//mysql_select_db('tlhc', $mysql_id);
 
 
 // FAVICON GRAPHIC

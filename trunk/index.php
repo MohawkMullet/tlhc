@@ -20,7 +20,7 @@ echo $version;
 
 <frameset rows="*" cols="430,*" frameborder="no" border="0" framespacing="0">
 <frame src="tabs.php" name="leftFrame" scrolling="auto" noresize="noresize" bordercolor="#cccccc" id="leftFrame" title="leftFrame" border="0" framespacing="0" style="overflow-x:hidden; overflow-y:auto;" />
-    <frame src="preview.php" name="mainFrame" id="mainFrame" title="mainFrame" border="0" framespacing="0" />
+    <frame src="right.php" name="mainFrame" id="mainFrame" title="mainFrame" border="0" framespacing="0" />
   <frame src="UntitledFrame-1"><frame src="UntitledFrame-2"></frameset>
 </frameset>
 <noframes>
