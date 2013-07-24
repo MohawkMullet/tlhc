@@ -1,5 +1,5 @@
- <?php
- $version = "2.4.2"; // this is actuall the version of TLhC that The Creator Made.  Go Ahead and change this value when you change the code<div align="center"><img src=" http://i5.ebayimg.com/03/i/001/21/72/d5b0_1_bo.JPG"><br>
+<?php
+$version = "2.4.3"; // this is actuall the version of TLhC that The Creator Made.  Go Ahead and change this value when you change the code<div align="center"><img src=" http://i5.ebayimg.com/03/i/001/21/72/d5b0_1_bo.JPG"><br>
 /**
 * *******************************************************
 * STUFF FOR YOUR LISTINGS
@@ -38,14 +38,14 @@ $rssFeed = "http://rss.api.ebay.com/ws/rssapi?FeedName=StoreItems&siteId=0&langu
 *	add your database info here
 *	see the documentation for help on stored coments
 */
-$user = "tlhcuser";
-$pass = "tlhcpass";
+$user = "user";
+$pass = "pass";
 $db = "tlhc";
 $link = mysql_connect( "localhost", $user, $pass );
 if ( !$link )
-        die( "couldnt connect to the data base bioch" );
+	die( "couldnt connect to the data base bioch" );
 mysql_select_db( $db )
-        or die ( "couldng grab $db: ".mysql_error() );
+	or die ( "couldng grab $db: ".mysql_error() );
 
 
 // ********************************************************
@@ -106,7 +106,10 @@ $dialogAddButton = "<button  rel=\"partsIn/commsDialogAdd.php\" class='opendialo
 *	THESE ARE SOME GENERIC JQUERY UI BUTTONS WITHOUT LINKS SO THEY CAN BE USED AS TOOLTIPS
 *
 */
-$photoButton = "<a href='parts/picasaViewer.php' title='Load the Photos' target='mainFrame' class='fg-button fg-button-icon-solo ui-state-default ui-corner-all'><span class='ui-icon ui-icon-link' title='Load the Photos' ></span>Choose Picture</a>";
+$preStyle = "<a href=\"javascript:animatedcollapse.toggle('preStyle')\" target=\"mainFrame\" class=\"fg-button fg-button-icon-solo ui-state-default ui-corner-all\" title='Show the Style'><span class=\"ui-icon ui-icon-key\" title='Show the Style Seperately'></span>&nbsp;</a>";
+//$preStyle = "<a href='partsOut/sepStyle.php' title='Load the Photos' target='mainFrame' class='fg-button fg-button-icon-solo ui-state-default ui-corner-all'><span class='ui-icon ui-icon-link' title='Load the Photos' ></span>Choose Style</a>";
+$flickrButton = "<a href='parts/flickrViewer.php' title='Load the Photos' target='mainFrame' class='fg-button fg-button-icon-solo ui-state-default ui-corner-all'><span class='ui-icon ui-icon-lightbulb' title='Load the Photos' ></span>&nbsp;</a>";
+$photoButton = "<a href='parts/picasaViewer.php' title='Load the Photos' target='mainFrame' class='fg-button fg-button-icon-solo ui-state-default ui-corner-all'><span class='ui-icon ui-icon-newwin' title='Load the Photos' ></span>&nbsp;</a>";
 $folderCButton = "<a href='#' title='Load the Help Files' class='fg-button fg-button-icon-solo ui-state-default ui-corner-all'><span class='ui-icon ui-icon-folder-collapsed' title='Load the Help Files' ></span>&nbsp;</a>";
 $folderOButton = "<a href='#' title='Load the Help Files' class='fg-button fg-button-icon-solo ui-state-default ui-corner-all'><span class='ui-icon ui-folder-open' title='Load the Help Files' ></span>&nbsp;</a>";
 $lightbulbButton = "<a href='#' title='Load the Help Files' class='fg-button fg-button-icon-solo ui-state-default ui-corner-all'><span class='ui-icon ui-icon-lightbulb' title='Load the Help Files' ></span>&nbsp;</a>";

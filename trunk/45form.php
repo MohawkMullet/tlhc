@@ -6,6 +6,7 @@
 	* this document and all included in this package are licensed under the GPL
 	**/
 ?>
+<!-- <form action="partsOut/sepStyle.php" method="POST" name="basic" target="mainFrame" id="slapIt"> -->
 <form action="right.php?showOut=True" method="POST" name="basic" target="mainFrame" id="slapIt">
 <table width="410" id="recInput" style="margin-left:1px;">
 <tr>

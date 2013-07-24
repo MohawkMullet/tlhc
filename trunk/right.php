@@ -18,13 +18,15 @@ animatedcollapse.addDiv('picasaImages', 'fade=1,height=280px,persist=0')
 animatedcollapse.addDiv('licensegpl', 'fade=1,height=330px,persist=0')
 animatedcollapse.addDiv('search2', 'fade=1,height=220px,persist=0')
 animatedcollapse.addDiv('midComms2', 'fade=1,height=295px,persist=0')
-animatedcollapse.addDiv('helpDocs', 'fade=0,speed=400,persist=0')
+animatedcollapse.addDiv('helpDocs', 'fade=1,speed=400,persist=0')
 animatedcollapse.addDiv('outPutter', 'fade=1,speed=400,persist=0,hide=0')
 animatedcollapse.addDiv('inComs', 'fade=1,speed=400,persist=0')
 animatedcollapse.addDiv('inComs2', 'fade=1,speed=400,persist=0')
 animatedcollapse.addDiv('showComms', 'fade=1,height=595px,persist=0')
 animatedcollapse.addDiv('showComms2', 'fade=1,height=595px,persist=0')
 animatedcollapse.addDiv('picasaViewer', 'fade=1,height=595px,persist=0')
+animatedcollapse.addDiv('flickrViewer', 'fade=1,height=595px,persist=0')
+animatedcollapse.addDiv('preStyle', 'fade=1,height=95px,persist=0')
 
 
 
@@ -37,26 +39,7 @@ animatedcollapse.ontoggle=function($, divobj, state){ //fires each time a DIV is
 animatedcollapse.init()
 
 </script>
-<script type="text/javascript">
-			$(function(){
-				// Accordion
-				$("#accordion").accordion({ 
-				header: "h3",
-				autoHeight: true,
-				collapsible: true
-				 });
-			});
-		</script>
-<script type="text/javascript">
-			$(function(){
-				// Accordion
-				$("#accordion2").accordion({ 
-				header: "h3",
-				autoHeight: false,
-				collapsible: true
-				 });
-			});
-		</script>        
+       
 <script type="text/javascript">
 	$(function(){
 		//all hover and click logic for buttons
@@ -118,8 +101,8 @@ echo "</span>";
 
 echo "<span class='fg-toolbar fg-buttonset-multi' style='display: inline;'>";
 echo "$addCommsButton $showCommsButton $addCommsButton2 $showCommsButton2";
+echo "$gplButton $helpButton $picasaViewerButton $flickrButton $preStyle $photoButton";
 echo "</span>";
-echo "$gplButton $helpButton $picasaViewerButton $photoButton";
 ?>
 </span></span>
 <?php
@@ -140,8 +123,9 @@ if ( $showOut == "True" ){
   <?php 
 	include('license.php'); 
 	?>
+
 </div>
-<div id="helpDocs" class="ui-corner-all ui-widget" style="width: 500px; background: #FFFFFF; padding: 10px; margin:25px; display: none;" align="center">
+<div id="helpDocs" class="ui-corner-all ui-widget" style="width: 800px; background: #FFFFFF; padding: 10px; margin:25px; display: none;" align="center">
   <?php 
 	include('docs/easyinstall.php'); 
 	?>
@@ -151,17 +135,21 @@ if ( $showOut == "True" ){
 	include('partsOut/staticPages/commentkeyDefault.php'); 
 	?>
 </div>    
-      
+<div id="preStyle" class="ui-corner-all" style="width: 865px; display:none; margin:10px; position: relative; background:#ffffff;">
+  <?php 	
+	include('partsOut/sepStyle.php'); 
+	?>
+</div>    
 <div id="picasaImages" style="width: 425px; display: none; float:left; margin:10px;" class="ui-corner-all">
 	<?php 
 	include('parts/picasaLogin.php');
 //	include('parts/picasaViewer.php');
 	?>
 </div>
-<div id="picasaViewer" style="width: 435px; display: none; float:left; margin:10px;" class="ui-corner-all">
+<div id="flickrViewer" style="width: 235px; display: none; float:left; margin:10px;" class="ui-corner-all">
 	<?php 
-//	include('parts/picasaLogin.php');
-	include('picasaViewerMain.php');
+	include('parts/flickrViewer.php');
+//	include('picasaViewerMain.php');
 	?>
 </div>
 <div id="search2" style="width: 425px; display: none; float:left; margin:10px; background:#ffffff;" class="ui-corner-all">
@@ -187,3 +175,4 @@ if ( $showOut == "True" ){
 </div>
 </div>
 </div>
+

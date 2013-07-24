@@ -95,5 +95,6 @@ $templateName = $_POST['templateName'];
 	}		
 ?>
 </div>
+
 </body>
 </html>
