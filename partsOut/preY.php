@@ -4,6 +4,8 @@ if ($boxes2 != "") {
 include('styleY.php');
 }
 ?>
+
+
 <table align="center" cellspacing="6" class="whole" id="whole">
   <tr>
 	<td><table width="100%" border="0" cellpadding="0" cellspacing="0" id="header">

@@ -2,12 +2,7 @@
 <tr>
 <td align="left" valign="top" style="padding-top:20px">
 <div align="center">
-<!-- /*
-*
-*  Ok so I havent measured the size of what the image should be exactly but I will
-*  We will get some kind of fixed shit put in on the outpage
-*
-*/ -->
+
 <?php include('formOuts/imagePicasaOut2.php'); ?>
 </div>
 <br>
@@ -67,7 +62,4 @@ include("formOuts/songInfoOut.php");
 </td>
 </tr>
 </table>
-<?php 
-//include('../styleY.php');
-//include('../../parts/config.php'); 
-?>
+
