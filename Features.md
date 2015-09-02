@@ -1,0 +1,24 @@
+# TLhC Features #
+
+Features
+  * Config file & Documentation
+  * Research functions built in (Price lookups from multiple sites)
+  * Custom CSS styles included in your listing
+  * Show Latest Listings in item Description
+  * AJAX functions hold form data while switching tabs
+  * modules easily turned off or on for listings
+  * Show store categories
+  * Include Store Promotion Boxes
+  * Include subscription links (add to my yahoo, rss button, G+, etc)
+  * Reusable comments easily included in listings
+  * Offsite images can be included in listings (no need to pay eBay for extra images)
+  * Multiple templates for different looks to your auctions
+  * Add jQuery plugins. http://jQuery.com
+  * Uses jQuery UI
+  * Creates archive of each image and item details
+
+[ProjectHome](ProjectHome.md)
+
+WikiHome
+
+[TLhC](http://code.Google.com/p/tlhc)
