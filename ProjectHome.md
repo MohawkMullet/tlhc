@@ -15,7 +15,10 @@ TLhC is designed as a TurboLister addon product for <b>advanced computer users</
 TLhC can be used with or without TurboLister.
 
 TLhC runs on apache & mysql. <br>
-The software generates <b>consistent product listings*</b> html code suitable for pasting into ebay, turbolister, or other listing software.  Consistency facilitates brand awareness and professionalism when your buyers need to see you are a reliable and quality seller.
+The software generates <b>consistent product listings*</b>. The html code generated is suitable for pasting into Ebay, Etsy, TurboLister, Auctiva, or other listing software.  Consistency facilitates brand awareness and professionalism. Buyers see you are a reliable and quality seller when all of your listings follow the same
+easy to read and reliable format.  Each item will list the same information in the same place.  Providing a
+good experience for shoppers.  The comfort of knowing where to locate desired product descriptions is vital
+to return sales.  TLhC helps you promote your brand better than any other listing software available.  
 
 
 <b>*</b>TLhC was created to solve some of the problems TurboLister has.  Although <b>TurboLister is promoted</b> as able to create <b>"professional-looking listings"</b>. This is an area where TurboLister quickly falls behind.  Templates in TurboLister easily lose formatting and fall apart with the smallest of edits.  Editing the TurboLister HTML is a nightmare.  Templates don't stay formatted and I've spent far too many hours trying to fix the HTML output of TurbloLister to keep my Ebay listings looking consistent and professional.  
