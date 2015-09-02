@@ -9,7 +9,7 @@ TLhC "TurboLister HTML Cheater"
 
 <img src='https://lh5.googleusercontent.com/-K4BrXi0y4Xw/ScTQgpY-vpI/AAAAAAAAAZI/P9ip0uBNPVk/s512/TLhCv2.0.2.2009-02-05Input.png' />
 
-TLhC was created to solve some of the problems TurboLister has.  Although it's promoted as able to create "professional-looking listings". This is an area where TurboLister quickly falls behind.  Templates in TurboLister easily lose formatting and fall apart with the smallest of edits.  Editing the TurboLister HTML is a nightmare.  Templates don't stay formatted and I've spent far too many hours trying to fix the HTML output of TurbloLister to keep my Ebay listings looking consistent and professional.  
+TLhC was created to solve some of the problems TurboLister has.  Although <b>TurboLister is promoted</b> as able to create <b>"professional-looking listings"</b>. This is an area where TurboLister quickly falls behind.  Templates in TurboLister easily lose formatting and fall apart with the smallest of edits.  Editing the TurboLister HTML is a nightmare.  Templates don't stay formatted and I've spent far too many hours trying to fix the HTML output of TurbloLister to keep my Ebay listings looking consistent and professional.  
 
 
 Introduction
