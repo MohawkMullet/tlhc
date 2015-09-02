@@ -1,23 +1,42 @@
-Vote for TLhC
-#summary TurboLister HTML Cheater Project page
 
-
+TurboLister HTML Cheater coded by Damian Kelly https://github.com/MohawkMullet/tlhc
 
 <img src='https://lh3.googleusercontent.com/-vz_LalBnMbI/UdKUs-a1K4I/AAAAAAAAE50/1_I66n2_GrQ/s100/TLhClogo70x100.png' />
 
+TLhC "TurboLister HTML Cheater"
 
 
-TLhC
-
-TurboLister HTML Cheater
-
-coded by Damian Kelly http://code.google.com/p/tlhc
 
 <img src='https://lh5.googleusercontent.com/-K4BrXi0y4Xw/ScTQgpY-vpI/AAAAAAAAAZI/P9ip0uBNPVk/s512/TLhCv2.0.2.2009-02-05Input.png' />
 
+TLhC was created to solve some of the problems TurboLister has.  Although it's promoted as able to create "professional-looking listings". This is an area where TurboLister quickly falls behind.  Templates in TurboLister easily lose formatting and fall apart with the smallest of edits.  Editing the TurboLister HTML is a nightmare.  Templates don't stay formatted and I've spent far too many hours trying to fix the HTML output of TurbloLister to keep my Ebay listings looking consistent and professional.  
 
 
 Introduction
+
+TLhC is designed as a TurboLister addon product for <b>advanced computer users</b>.<br>
+TLhC can be used with or without TurboLister.
+
+TLhC runs on apache & mysql. <br>
+The software generates <b>consistent product listings</b> html code suitable for pasting into ebay, turbolister, or other listing software.  Consistency facilitates brand awareness and professionalism when your buyers need
+to see you are a quality seller.
+
+
+
+
+
+
+
+TLhC was designed for listing collectible items mostly rare and valued by collectors.  Explicit terminology is
+often used to describe the products description. Abbrieviations and certain nonmencature are used and known
+among collectors and sellers and can be easily communicated once learned.
+
+This software was designed for listing items where the strictest and most conservative language is used to 
+describe similar items.  Each and every detail from the packaging to the condition of each part of the object
+is observed and described when necessary.
+
+TLhC was designed to expertly allow the re-use of common descriptions for items in similar condition.  TLhC 
+is a form based product lister that outputs valid HTML for ebay.  
 
 TLhC (TurbloLister HTML Cheater) is an application designed to help easily produce consistent looking ebay listings for similar items where information is commonly reused.   TLhC combines a powerful database and professional looking templates to quickly create HTML code for auction listings.
 
@@ -200,8 +219,12 @@ DETAILED DESCRIPTION
 Unknown end tag for </a>
 
 <br>
+TLhC is GPLv3 open source software.  TLhC is free.
+
+TLhC is modular and can be customized.  Documentation is included and support is available.
 <br>
-Unknown end tag for </td><br>
+TLhC HTML generator for EBAY listings.
+Open Source ebay listing software.</td><br>
 <br>
 <br>
 <br>
