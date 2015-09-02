@@ -3,7 +3,7 @@ TurboLister HTML Cheater coded by Damian Kelly https://github.com/MohawkMullet/t
 
 <img src='https://lh3.googleusercontent.com/-vz_LalBnMbI/UdKUs-a1K4I/AAAAAAAAE50/1_I66n2_GrQ/s100/TLhClogo70x100.png' />
 
-TLhC "TurboLister HTML Cheater"
+TLhC "TurboLister HTML Cheater" <br>Cut And Paste Better HTML into eBay or TurboLister.  EASIER!
 
 
 
