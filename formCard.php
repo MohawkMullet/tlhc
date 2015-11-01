@@ -99,7 +99,10 @@ Inc.
 //								include("partsIn/components2.php");
 					?>
 					<!-- INNCLUDE THE FUCKING SUBMIT BUTTONS HERE -->
-                    <?php include('partsIn/submit.php'); ?>
+                    <?php
+						include('partsIn/songInfo.php');
+						include('partsIn/submit.php'); 
+					?>
 					
 </form>
 
