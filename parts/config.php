@@ -1,6 +1,6 @@
  <?php
- $version = "5.4.5+Cards Working"; // this is actuall the version of TLhC that The Creator Made.  Go Ahead and change this value when you change the code<div align="center"><img src=" http://i5.ebayimg.com/03/i/001/21/72/d5b0_1_bo.JPG"><br>
-$releaseDate ="Oct 30th 2015";
+ $version = "5.5.0 (code name: cards)"; // this is actuall the version of TLhC that The Creator Made.  Go Ahead and change this value when you change the code<div align="center"><img src=" http://i5.ebayimg.com/03/i/001/21/72/d5b0_1_bo.JPG"><br>
+$releaseDate ="Nov 1st 2015";
 /**
 * *******************************************************
 * STUFF FOR YOUR LISTINGS
@@ -83,9 +83,10 @@ $helpButton = "<a href=\"javascript:animatedcollapse.toggle('helpDocs')\" target
 //$searchButton = "<a href=\"javascript:animatedcollapse.toggle('search')\" target=\"mainFrame\" class=\"fg-button fg-button-icon-solo ui-state-default ui-corner-all\"><span class=\"ui-icon ui-icon-search\"></span>&nbsp;</a>";
 $picButton = "<a href=\"javascript:animatedcollapse.toggle('picasaImages')\" target=\"mainFrame\" class=\"fg-button fg-button-icon-solo ui-state-default ui-corner-all\"><span class=\"ui-icon ui-icon-image\"></span>&nbsp;</a>";
 $addCommsButton = "<a href=\"javascript:animatedcollapse.toggle('inComs')\" target=\"mainFrame\" class=\"fg-button fg-button-icon-solo ui-state-default ui-corner-all\" title='Add to the Stored Comments'><span class=\"ui-icon silk-icon-newspaper-add\"></span>&nbsp;</a>";
-$addCommsButton3 = "<a href=\"javascript:animatedcollapse.toggle('inComs3')\" target=\"mainFrame\" class=\"fg-button fg-button-icon-solo ui-state-default ui-corner-all\" title='Add to the Stored Comments'><span class=\"ui-icon silk-icon-award-star-add\"></span>&nbsp;</a>";
-$addCommsButton2 = "<a href=\"javascript:animatedcollapse.toggle('inComs2')\" target=\"mainFrame\" class=\"fg-button fg-button-icon-solo ui-state-default ui-corner-all\" title='Add to the Stored Comments'><span class=\"ui-icon silk-icon-basket-add\"></span>&nbsp;</a>";
-$addCommsButton4 = "<a href=\"javascript:animatedcollapse.toggle('inComs4')\" target=\"mainFrame\" class=\"fg-button fg-button-icon-solo ui-state-default ui-corner-all\" title='Add to the Cards Comments'><span class=\"ui-icon silk-icon-cd-add\"></span>&nbsp;</a>";
+$addCommsButton45s = "<a href=\"javascript:animatedcollapse.toggle('inComs')\" target=\"mainFrame\" class=\"fg-button fg-button-icon-solo ui-state-default ui-corner-all\" title='Add to the Stored Comments'><span class=\"ui-icon silk-icon-newspaper-add\"></span>&nbsp;</a>";
+$addCommsButtonSoldiers = "<a href=\"javascript:animatedcollapse.toggle('inComs3')\" target=\"mainFrame\" class=\"fg-button fg-button-icon-solo ui-state-default ui-corner-all\" title='Add to the Stored Comments'><span class=\"ui-icon silk-icon-award-star-add\"></span>&nbsp;</a>";
+$addCommsButtonTrains = "<a href=\"javascript:animatedcollapse.toggle('inComs2')\" target=\"mainFrame\" class=\"fg-button fg-button-icon-solo ui-state-default ui-corner-all\" title='Add to the Stored Comments'><span class=\"ui-icon silk-icon-basket-add\"></span>&nbsp;</a>";
+$addCommsButtonCards = "<a href=\"javascript:animatedcollapse.toggle('inComs4')\" target=\"mainFrame\" class=\"fg-button fg-button-icon-solo ui-state-default ui-corner-all\" title='Add to the Cards Comments'><span class=\"ui-icon silk-icon-cd-add\"></span>&nbsp;</a>";
 $showCommsButton = "<a href=\"javascript:animatedcollapse.toggle('showComms')\" target=\"mainFrame\" class=\"fg-button fg-button-icon-solo ui-state-default ui-corner-all\" title='Show the Stored Comments'><span class=\"ui-icon silk-icon-application-view-gallery\"></span>&nbsp;</a>";
 $showCommsButton2 = "<a href=\"javascript:animatedcollapse.toggle('showComms2')\" target=\"mainFrame\" class=\"fg-button fg-button-icon-solo ui-state-default ui-corner-all\" title='Show Soldier Comments'><span class=\"ui-icon silk-icon-application-view-detail\"></span>&nbsp;</a>";
 $showCommsButton3 = "<a href=\"javascript:animatedcollapse.toggle('showComms3')\" target=\"mainFrame\" class=\"fg-button fg-button-icon-solo ui-state-default ui-corner-all\" title='Show Trains Comments'><span class=\"ui-icon silk-icon-application-view-icons\"></span>&nbsp;</a>";
@@ -103,7 +104,7 @@ $dialogAddButton = "<button  rel=\"partsIn/commsDialogAdd.php\" class='opendialo
 *	THESE ARE SOME GENERIC JQUERY UI BUTTONS WITHOUT LINKS SO THEY CAN BE USED AS TOOLTIPS
 *
 */
-$linkButton = "<a href=\"#\" id=\"dialog_link77\" class=\"ui-state-default ui-corner-all\"><span class=\"ui-icon ui-icon-star\"></span></a>";
+$linkButton = "<button class=\"fg-button fg-button-icon-solo ui-state-default ui-corner-all\"><a href=\"javascript:animatedcollapse.toggle('inComs')\"?showComms=Trains\" id=\"dialog_link7722\" class=\"ui-state-default ui-corner-all\"><span class=\"ui-icon silk-icon-basket-add\"></span></a></button>";
 $folderCButton = "<a href='#' title='Load the Help Files' class='fg-button fg-button-icon-solo ui-state-default ui-corner-all'><span class='ui-icon ui-icon-folder-collapsed' title='Load the Help Files' ></span>&nbsp;</a>";
 $folderOButton = "<a href='#' title='Load the Help Files' class='fg-button fg-button-icon-solo ui-state-default ui-corner-all'><span class='ui-icon ui-folder-open' title='Load the Help Files' ></span>&nbsp;</a>";
 $lightbulbButton = "<a href='#' title='Load the Help Files' class='fg-button fg-button-icon-solo ui-state-default ui-corner-all'><span class='ui-icon ui-icon-lightbulb' title='Load the Help Files' ></span>&nbsp;</a>";

@@ -1,7 +1,6 @@
 <?php
 		include("config.php");
 ?>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="refresh" content="50">
@@ -11,8 +10,59 @@
 <script type="text/javascript" src="jq/jquery.js"></script>
 <script type="text/javascript" src="jq/animatedcollapse.js"></script>
 <script type="text/javascript" src="jq/jquery-ui.js"></script>
+<link href='jq/silk/jquery-silk-icons.css' rel='stylesheet' type='text/css'>
+<script type="text/javascript">
+animatedcollapse.addDiv('picasaImages', 'fade=1,height=280px,persist=0')
+animatedcollapse.addDiv('licensegpl', 'fade=1,height=330px,persist=0')
+animatedcollapse.addDiv('search2', 'fade=1,height=220px,persist=0')
+animatedcollapse.addDiv('midComms2', 'fade=1,height=295px,persist=0')
+animatedcollapse.addDiv('helpDocs', 'fade=0,speed=400,persist=0')
+animatedcollapse.addDiv('outPutter', 'fade=1,speed=400,persist=0,hide=0')
+animatedcollapse.addDiv('inComs', 'fade=1,speed=400,persist=0')
+animatedcollapse.addDiv('inComs2', 'fade=1,speed=400,persist=0')
+animatedcollapse.addDiv('inComs3', 'fade=1,speed=400,persist=0')
+animatedcollapse.addDiv('inComs4', 'fade=1,speed=400,persist=0')
+animatedcollapse.addDiv('showComms', 'fade=10,persist=0')
+animatedcollapse.addDiv('showComms2', 'fade=1,persist=0')
+animatedcollapse.addDiv('showComms3', 'fade=1,persist=0')
+animatedcollapse.addDiv('showComms4', 'fade=1,persist=0')
+
+
+animatedcollapse.ontoggle=function($, divobj, state){ //fires each time a DIV is expanded/contracted
+	//$: Access to jQuery
+	//divobj: DOM reference to DIV being expanded/ collapsed. Use "divobj.id" to get its ID
+	//state: "block" or "none", depending on state
+}
+
+animatedcollapse.init()
+
+</script>
+<script type="text/javascript">
+	$(function(){
+		//all hover and click logic for buttons
+		$(".fg-button:not(.ui-state-disabled)")
+		.hover(
+			function(){ 
+				$(this).addClass("ui-state-hover"); 
+			},
+			function(){ 
+				$(this).removeClass("ui-state-hover"); 
+			}
+		)
+		.mousedown(function(){
+				$(this).parents('.fg-buttonset-single:first').find(".fg-button.ui-state-active").removeClass("ui-state-active");
+				if( $(this).is('.ui-state-active.fg-button-toggleable, .fg-buttonset-multi .ui-state-active') ){ $(this).removeClass("ui-state-active"); }
+				else { $(this).addClass("ui-state-active"); }	
+		})
+		.mouseup(function(){
+			if(! $(this).is('.fg-button-toggleable, .fg-buttonset-single .fg-button,  .fg-buttonset-multi .fg-button') ){
+				$(this).removeClass("ui-state-active");
+			}
+		});
+	});
+</script>
 </head>
-<body>
+<body><?php $_GET['showComms'] = $showComms; ?>
 		<?php
 				function buildBox() {
 					global $tabAdd;
@@ -34,7 +84,8 @@
 		?>
 		<?php
 				$showComms = $_GET['showComms'];
-				echo "<div class='ui-state-default ui-dialog-header ui-corner-all' style='padding: 3px; margin: 3px; width: 250px;'>Comments for $showComms</div>";	
+				echo "<div class='ui-state-default ui-dialog-header ui-corner-all' style='padding: 3px; margin: 3px; width: 250px;'>Comments for $showComms</div>";
+				echo "showCommsButton$showComms";
 		?>
 		<div id="commentshower" class="ui-state-active ui-corner-all">
 			<div style="padding: 5px;">
@@ -106,7 +157,8 @@
 				<?php
 						if ( $showComms == "Trains" ) {
 						$tabAdd = "Trains";
-						echo "<div id=\"info309\" align=\"center\" class=\"ui-widget-content ui-corner-all\" style=\"width: 195px; padding:6px;\"><div class=\"ui-state-selcted ui-widget-header ui-corner-all\">Regular Comments</div></div>";
+						echo "<div id=\"info309\" align=\"center\" class=\"ui-widget-content ui-corner-all\" style=\"width: 195px; padding:6px;\"><div class=\"ui-state-selcted ui-widget-header ui-corner-all\">You A Bitchs $showCommsButton4 bitch</div></div>";
+						echo $showCommsButton4;
 						buildBox();
 						}
 				?>

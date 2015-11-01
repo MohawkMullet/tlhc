@@ -1,6 +1,7 @@
 <?php 
 include('parts/config.php');
 ?>
+<?php $_GET['showComms'] = $showComms; ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <head>
 <title>This is the Right Hand Page</title>
@@ -118,7 +119,29 @@ h3 {
     });
   });
   </script>
-
+  <script type="text/javascript">
+  $(function() {
+    $( "#dialog_bitcher2" ).dialog({
+      autoOpen: false,
+      modal: true,
+      maxHeight: 300,
+      width:500,
+      show: {
+        effect: "puff",
+        duration: 1000
+      },
+      hide: {
+        effect: "fold",
+        duration: 1000
+      }
+      
+    });
+ 
+    $( "#canOpener2" ).click(function() {
+      $( "#dialog_bitcher2" ).dialog( "open" );
+    });
+  });
+  </script>
 
 
 </head>
@@ -141,16 +164,23 @@ h3 {
 				echo "<span class='fg-toolbar fg-buttonset-multi' style='display: inline;'>";
 				echo "$addCommsButton $showCommsButton $addCommsButton2 $showCommsButton2 $addCommsButton4 $showCommsButton4 $addCommsButton3 $showCommsButton3";
 				echo "</span>";
-				echo "$gplButton $helpButton";
+				echo "$gplButton $helpButton $linkButton";
 				?>
 <button id="canOpener" class="ui-corner-all ui-state-default"><span class="ui-icon silk-icon-cog-delete"></span></button></span></span>
 		
 		<div id="dialog_bitcher" title="Show The GPL" style="display:none;">
 						  <?php
-		//					include('parts/leaveComments.php');
+						include('parts/research.php');
 							?>
 		</div>
 
+<button id="canOpener2" class="ui-corner-all ui-state-default"><span class="ui-icon silk-icon-cog-delete"></span></button></span></span>
+		
+		<div id="dialog_bitcher2" title="Show the start bitcher" style="display:none;">
+						  <?php
+						include('parts/midComms.php?showComms=Cards');
+							?>
+		</div>
 
 
 <div id="modules" class="ui-widget-content ui-corner-all">

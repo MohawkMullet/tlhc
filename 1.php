@@ -175,8 +175,8 @@ http://rss.api.ebay.com/ws/rssapi?FeedName=StoreItems&siteId=0&language=en-US&ou
 </table>
 <table width="840" border="0" align="center" cellpadding="0" cellspacing="0" id="components">
   <tr>
-    <td align="center" valign="top"></td>
-    <td width="500" valign="top">      </td>
+    <td align="center" valign="top">You bitch</td>
+    <td width="500" valign="top">you bitch      </td>
   </tr>
 </table>
 <br>
