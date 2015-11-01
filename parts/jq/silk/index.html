@@ -1,0 +1,3137 @@
+<!doctype html>
+<html>
+<!--
+ - Copyleft (c) 2012 Michael Bethencourt
+ - Licensed under the GPL 3.0 license.
+ - http://www.gnu.org/licenses/gpl-3.0-standalone.html
+ -->
+<head>
+<title>jQuery UI silk icons</title>
+<link href='http://fonts.googleapis.com/css?family=Gentium+Basic' rel='stylesheet' type='text/css'>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>
+<link href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/themes/base/jquery-ui.css' rel='stylesheet' type='text/css'>
+<link href='jquery-silk-icons.css' rel='stylesheet' type='text/css'>
+
+<style type="text/css">
+/* YUI RESET */
+/*
+Copyright (c) 2011, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.com/yui/license.html
+version: 2.9.0
+*/
+html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,select,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,button,caption,cite,code,dfn,em,input,optgroup,option,select,strong,textarea,th,var{font:inherit}del,ins{text-decoration:none}li{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:baseline}sub{vertical-align:baseline}legend{color:#000}
+
+/* YUI BASE */
+/*
+Copyright (c) 2011, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.com/yui/license.html
+version: 2.9.0
+*/
+body{margin:10px}h1{font-size:138.5%}h2{font-size:123.1%}h3{font-size:108%}h1,h2,h3{margin:1em 0}h1,h2,h3,h4,h5,h6,strong,dt{font-weight:bold}optgroup{font-weight:normal}abbr,acronym{border-bottom:1px dotted #000;cursor:help}em{font-style:italic}del{text-decoration:line-through}blockquote,ul,ol,dl{margin:1em}ol,ul,dl{margin-left:2em}ol{list-style:decimal outside}ul{list-style:disc outside}dl dd{margin-left:1em}th,td{border:1px solid #000;padding:.5em}th{font-weight:bold;text-align:center}caption{margin-bottom:.5em;text-align:center}sup{vertical-align:super}sub{vertical-align:sub}p,fieldset,table,pre{margin-bottom:1em}button,input[type="checkbox"],input[type="radio"],input[type="reset"],input[type="submit"]{padding:1px}img{-ms-interpolation-mode:bicubic}
+
+
+html { font-family: 'Gentium Basic', serif; color: #000; }
+
+h1 { font-size: 3.0em; }
+h2 { font-size: 1.8em; }
+
+a, h1, h2, h3 { color: #f60;  }
+
+p { max-width: 960px; }
+
+body { margin: 5% 5% 10% 10%; }
+
+pre { margin: 30px; color: #333; }
+
+table, td, tr {
+	border: 0;
+}
+
+td.label-code { font-family: monospace; font-size: 1.1em; }
+
+</style>
+
+<body>
+
+<script>
+	$(function() {
+		$('.a').button( {
+			icons: { 'primary': 'silk-icon-disk' },
+		});
+
+		$('.b').button( {
+			icons: { 
+				secondary: 'silk-icon-magnifier-zoom-in',
+				primary: 'silk-icon-eye'
+			},
+		});
+
+		$('.c').button( {
+			text: false,
+			icons: { 
+				primary: 'silk-icon-emoticon-evilgrin'
+			},
+		});
+	});
+</script>
+<h1>Silk icon set for the jQuery UI</h1>
+
+<p>jquery-silk-icons, CSS files for jQuery UI for silk-icons</p>
+<p>Just use <tt>silk-icon-[icon-name]</tt> in place of any normal jQuery UI
+icon you would use.</p>
+
+<p>The silk icons are in a single sprite so they load fast too.</p>
+
+<h3>License stuff</h3>
+<p>This was originally written for the <a href="http://leebre.org">Leebre</a> UI.</p>
+
+<p>The silk icon set is a awesome CC-BY web-friendly icon set made by Mark
+James, and can be found here: <a
+href="http://www.famfamfam.com/lab/icons/silk/">http://www.famfamfam.com/lab/icons/silk/</a></p>
+
+<p>This CSS was written by <a href="http://michaelb.org/">michaelb</a> and
+released under the GPL 3.0, based on <a
+href="http://code.google.com/p/silk-icons-css/">this CSS and image
+sprite</a> by Rob Richardson, also under the GPL 3.0.</p>
+
+<h3>Download</h3>
+<ul>
+<li><a href="jquery-silk-icons.css">CSS</a></li>
+<li><a href="silk-icons.png">Icons</a></li>
+<li><a href="http://bitbucket.org/michaelb/jquery-silk-icons/">BitBucket repo</a></li>
+</ul>
+
+
+<h2>Example buttons</h2>
+<button class="a">Save</button>
+
+<button class="b">Enhance!</button>
+
+<button class="c">Etc.</button>
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<h2>Fam Fam Fam Silk Icon Cheat Sheet</h2>
+
+<p>This is useful even for people not using this css, but just using silk,
+because it's a Ctrl+F searchable version of all the Fam Fam Fam Silk Icons.</p>
+
+
+
+
+<table>
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-accept" style="display: inline-block;"></span> </td>
+<td class="label-code"> .silk-icon-accept </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-accept" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-accept </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-anchor" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-anchor </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-application" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-application </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-application-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-application-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-application-cascade" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-application-cascade </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-application-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-application-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-application-double" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-application-double </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-application-edit" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-application-edit </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-application-error" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-application-error </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-application-form" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-application-form </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-application-form-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-application-form-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-application-form-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-application-form-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-application-form-edit" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-application-form-edit </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-application-form-magnify" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-application-form-magnify </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-application-get" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-application-get </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-application-go" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-application-go </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-application-home" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-application-home </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-application-key" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-application-key </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-application-lightning" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-application-lightning </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-application-link" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-application-link </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-application-osx" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-application-osx </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-application-osx-terminal" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-application-osx-terminal </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-application-put" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-application-put </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-application-side-boxes" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-application-side-boxes </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-application-side-contract" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-application-side-contract </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-application-side-expand" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-application-side-expand </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-application-side-list" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-application-side-list </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-application-side-tree" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-application-side-tree </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-application-split" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-application-split </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-application-tile-horizontal" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-application-tile-horizontal </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-application-tile-vertical" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-application-tile-vertical </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-application-view-columns" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-application-view-columns </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-application-view-detail" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-application-view-detail </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-application-view-gallery" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-application-view-gallery </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-application-view-icons" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-application-view-icons </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-application-view-list" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-application-view-list </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-application-view-tile" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-application-view-tile </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-application-xp" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-application-xp </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-application-xp-terminal" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-application-xp-terminal </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-arrow-branch" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-arrow-branch </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-arrow-divide" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-arrow-divide </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-arrow-down" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-arrow-down </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-arrow-in" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-arrow-in </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-arrow-in-out" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-arrow-in-out </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-arrow-join" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-arrow-join </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-arrow-left" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-arrow-left </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-arrow-merge" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-arrow-merge </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-arrow-out" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-arrow-out </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-arrow-redo" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-arrow-redo </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-arrow-refresh" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-arrow-refresh </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-arrow-refresh-small" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-arrow-refresh-small </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-arrow-right" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-arrow-right </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-arrow-rotate-anti-clockwise" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-arrow-rotate-anti-clockwise </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-arrow-rotate-clockwise" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-arrow-rotate-clockwise </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-arrow-switch" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-arrow-switch </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-arrow-turn-left" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-arrow-turn-left </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-arrow-turn-right" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-arrow-turn-right </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-arrow-undo" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-arrow-undo </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-arrow-up" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-arrow-up </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-asterisk-orange" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-asterisk-orange </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-asterisk-yellow" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-asterisk-yellow </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-attach" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-attach </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-award-star-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-award-star-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-award-star-bronze1" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-award-star-bronze1 </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-award-star-bronze2" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-award-star-bronze2 </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-award-star-bronze3" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-award-star-bronze3 </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-award-star-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-award-star-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-award-star-gold1" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-award-star-gold1 </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-award-star-gold2" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-award-star-gold2 </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-award-star-gold3" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-award-star-gold3 </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-award-star-silver1" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-award-star-silver1 </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-award-star-silver2" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-award-star-silver2 </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-award-star-silver3" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-award-star-silver3 </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-basket" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-basket </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-basket-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-basket-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-basket-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-basket-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-basket-edit" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-basket-edit </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-basket-error" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-basket-error </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-basket-go" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-basket-go </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-basket-put" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-basket-put </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-basket-remove" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-basket-remove </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-bell" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-bell </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-bell-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-bell-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-bell-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-bell-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-bell-error" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-bell-error </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-bell-go" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-bell-go </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-bell-link" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-bell-link </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-bin" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-bin </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-bin-closed" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-bin-closed </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-bin-empty" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-bin-empty </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-bomb" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-bomb </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-book" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-book </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-book-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-book-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-book-addresses" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-book-addresses </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-book-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-book-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-book-edit" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-book-edit </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-book-error" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-book-error </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-book-go" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-book-go </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-book-key" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-book-key </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-book-link" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-book-link </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-book-next" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-book-next </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-book-open" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-book-open </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-book-previous" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-book-previous </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-box" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-box </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-brick" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-brick </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-bricks" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-bricks </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-brick-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-brick-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-brick-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-brick-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-brick-edit" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-brick-edit </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-brick-error" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-brick-error </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-brick-go" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-brick-go </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-brick-link" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-brick-link </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-briefcase" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-briefcase </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-bug" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-bug </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-bug-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-bug-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-bug-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-bug-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-bug-edit" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-bug-edit </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-bug-error" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-bug-error </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-bug-go" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-bug-go </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-bug-link" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-bug-link </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-building" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-building </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-building-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-building-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-building-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-building-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-building-edit" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-building-edit </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-building-error" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-building-error </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-building-go" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-building-go </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-building-key" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-building-key </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-building-link" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-building-link </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-bullet-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-bullet-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-bullet-arrow-bottom" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-bullet-arrow-bottom </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-bullet-arrow-down" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-bullet-arrow-down </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-bullet-arrow-top" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-bullet-arrow-top </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-bullet-arrow-up" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-bullet-arrow-up </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-bullet-black" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-bullet-black </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-bullet-blue" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-bullet-blue </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-bullet-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-bullet-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-bullet-disk" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-bullet-disk </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-bullet-error" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-bullet-error </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-bullet-feed" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-bullet-feed </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-bullet-go" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-bullet-go </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-bullet-green" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-bullet-green </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-bullet-key" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-bullet-key </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-bullet-orange" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-bullet-orange </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-bullet-picture" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-bullet-picture </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-bullet-pink" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-bullet-pink </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-bullet-purple" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-bullet-purple </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-bullet-red" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-bullet-red </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-bullet-star" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-bullet-star </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-bullet-toggle-minus" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-bullet-toggle-minus </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-bullet-toggle-plus" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-bullet-toggle-plus </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-bullet-white" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-bullet-white </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-bullet-wrench" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-bullet-wrench </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-bullet-yellow" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-bullet-yellow </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-cake" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-cake </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-calculator" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-calculator </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-calculator-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-calculator-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-calculator-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-calculator-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-calculator-edit" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-calculator-edit </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-calculator-error" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-calculator-error </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-calculator-link" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-calculator-link </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-calendar" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-calendar </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-calendar-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-calendar-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-calendar-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-calendar-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-calendar-edit" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-calendar-edit </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-calendar-link" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-calendar-link </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-calendar-view-day" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-calendar-view-day </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-calendar-view-month" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-calendar-view-month </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-calendar-view-week" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-calendar-view-week </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-camera" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-camera </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-camera-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-camera-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-camera-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-camera-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-camera-edit" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-camera-edit </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-camera-error" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-camera-error </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-camera-go" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-camera-go </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-camera-link" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-camera-link </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-camera-small" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-camera-small </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-cancel" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-cancel </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-car" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-car </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-cart" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-cart </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-cart-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-cart-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-cart-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-cart-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-cart-edit" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-cart-edit </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-cart-error" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-cart-error </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-cart-go" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-cart-go </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-cart-put" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-cart-put </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-cart-remove" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-cart-remove </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-car-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-car-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-car-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-car-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-cd" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-cd </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-cd-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-cd-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-cd-burn" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-cd-burn </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-cd-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-cd-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-cd-edit" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-cd-edit </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-cd-eject" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-cd-eject </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-cd-go" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-cd-go </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-chart-bar" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-chart-bar </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-chart-bar-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-chart-bar-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-chart-bar-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-chart-bar-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-chart-bar-edit" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-chart-bar-edit </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-chart-bar-error" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-chart-bar-error </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-chart-bar-link" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-chart-bar-link </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-chart-curve" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-chart-curve </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-chart-curve-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-chart-curve-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-chart-curve-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-chart-curve-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-chart-curve-edit" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-chart-curve-edit </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-chart-curve-error" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-chart-curve-error </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-chart-curve-go" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-chart-curve-go </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-chart-curve-link" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-chart-curve-link </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-chart-line" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-chart-line </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-chart-line-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-chart-line-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-chart-line-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-chart-line-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-chart-line-edit" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-chart-line-edit </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-chart-line-error" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-chart-line-error </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-chart-line-link" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-chart-line-link </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-chart-organisation" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-chart-organisation </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-chart-organisation-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-chart-organisation-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-chart-organisation-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-chart-organisation-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-chart-pie" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-chart-pie </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-chart-pie-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-chart-pie-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-chart-pie-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-chart-pie-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-chart-pie-edit" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-chart-pie-edit </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-chart-pie-error" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-chart-pie-error </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-chart-pie-link" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-chart-pie-link </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-clock" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-clock </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-clock-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-clock-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-clock-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-clock-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-clock-edit" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-clock-edit </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-clock-error" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-clock-error </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-clock-go" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-clock-go </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-clock-link" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-clock-link </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-clock-pause" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-clock-pause </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-clock-play" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-clock-play </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-clock-red" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-clock-red </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-clock-stop" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-clock-stop </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-cog" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-cog </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-cog-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-cog-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-cog-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-cog-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-cog-edit" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-cog-edit </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-cog-error" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-cog-error </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-cog-go" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-cog-go </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-coins" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-coins </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-coins-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-coins-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-coins-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-coins-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-colors-watch" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-colors-watch </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-color-wheel" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-color-wheel </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-comment" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-comment </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-comments" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-comments </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-comments-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-comments-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-comments-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-comments-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-comment-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-comment-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-comment-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-comment-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-comment-edit" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-comment-edit </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-compress" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-compress </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-computer" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-computer </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-computer-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-computer-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-computer-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-computer-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-computer-edit" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-computer-edit </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-computer-error" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-computer-error </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-computer-go" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-computer-go </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-computer-key" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-computer-key </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-computer-link" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-computer-link </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-connect" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-connect </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-contrast" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-contrast </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-contrast-decrease" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-contrast-decrease </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-contrast-high" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-contrast-high </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-contrast-increase" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-contrast-increase </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-contrast-low" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-contrast-low </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-controller" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-controller </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-controller-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-controller-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-controller-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-controller-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-controller-error" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-controller-error </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-control-eject" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-control-eject </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-control-eject-blue" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-control-eject-blue </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-control-end" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-control-end </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-control-end-blue" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-control-end-blue </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-control-equalizer" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-control-equalizer </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-control-equalizer-blue" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-control-equalizer-blue </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-control-fastforward" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-control-fastforward </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-control-fastforward-blue" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-control-fastforward-blue </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-control-pause" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-control-pause </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-control-pause-blue" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-control-pause-blue </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-control-play" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-control-play </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-control-play-blue" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-control-play-blue </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-control-repeat" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-control-repeat </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-control-repeat-blue" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-control-repeat-blue </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-control-rewind" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-control-rewind </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-control-rewind-blue" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-control-rewind-blue </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-control-start" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-control-start </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-control-start-blue" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-control-start-blue </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-control-stop" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-control-stop </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-control-stop-blue" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-control-stop-blue </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-credit-cards" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-credit-cards </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-cross" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-cross </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-css" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-css </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-css-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-css-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-css-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-css-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-css-go" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-css-go </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-css-valid" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-css-valid </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-cup" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-cup </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-cup-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-cup-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-cup-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-cup-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-cup-edit" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-cup-edit </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-cup-error" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-cup-error </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-cup-go" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-cup-go </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-cup-key" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-cup-key </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-cup-link" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-cup-link </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-cursor" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-cursor </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-cut" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-cut </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-cut-red" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-cut-red </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-database" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-database </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-database-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-database-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-database-connect" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-database-connect </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-database-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-database-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-database-edit" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-database-edit </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-database-error" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-database-error </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-database-gear" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-database-gear </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-database-go" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-database-go </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-database-key" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-database-key </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-database-lightning" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-database-lightning </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-database-link" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-database-link </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-database-refresh" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-database-refresh </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-database-save" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-database-save </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-database-table" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-database-table </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-date" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-date </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-date-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-date-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-date-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-date-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-date-edit" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-date-edit </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-date-error" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-date-error </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-date-go" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-date-go </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-date-link" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-date-link </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-date-magnify" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-date-magnify </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-date-next" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-date-next </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-date-previous" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-date-previous </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-disconnect" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-disconnect </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-disk" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-disk </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-disk-multiple" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-disk-multiple </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-door" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-door </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-door-in" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-door-in </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-door-open" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-door-open </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-door-out" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-door-out </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-drink" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-drink </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-drink-empty" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-drink-empty </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-drive" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-drive </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-drive-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-drive-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-drive-burn" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-drive-burn </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-drive-cd" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-drive-cd </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-drive-cd-empty" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-drive-cd-empty </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-drive-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-drive-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-drive-disk" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-drive-disk </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-drive-edit" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-drive-edit </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-drive-error" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-drive-error </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-drive-go" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-drive-go </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-drive-key" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-drive-key </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-drive-link" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-drive-link </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-drive-magnify" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-drive-magnify </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-drive-network" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-drive-network </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-drive-rename" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-drive-rename </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-drive-user" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-drive-user </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-drive-web" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-drive-web </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-dvd" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-dvd </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-dvd-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-dvd-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-dvd-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-dvd-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-dvd-edit" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-dvd-edit </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-dvd-error" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-dvd-error </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-dvd-go" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-dvd-go </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-dvd-key" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-dvd-key </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-dvd-link" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-dvd-link </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-email" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-email </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-email-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-email-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-email-attach" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-email-attach </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-email-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-email-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-email-edit" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-email-edit </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-email-error" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-email-error </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-email-go" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-email-go </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-email-link" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-email-link </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-email-open" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-email-open </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-email-open-image" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-email-open-image </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-emoticon-evilgrin" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-emoticon-evilgrin </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-emoticon-grin" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-emoticon-grin </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-emoticon-happy" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-emoticon-happy </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-emoticon-smile" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-emoticon-smile </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-emoticon-surprised" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-emoticon-surprised </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-emoticon-tongue" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-emoticon-tongue </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-emoticon-unhappy" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-emoticon-unhappy </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-emoticon-waii" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-emoticon-waii </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-emoticon-wink" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-emoticon-wink </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-error" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-error </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-error-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-error-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-error-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-error-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-error-go" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-error-go </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-exclamation" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-exclamation </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-eye" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-eye </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-feed" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-feed </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-feed-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-feed-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-feed-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-feed-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-feed-disk" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-feed-disk </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-feed-edit" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-feed-edit </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-feed-error" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-feed-error </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-feed-go" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-feed-go </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-feed-key" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-feed-key </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-feed-link" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-feed-link </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-feed-magnify" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-feed-magnify </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-female" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-female </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-film" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-film </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-film-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-film-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-film-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-film-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-film-edit" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-film-edit </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-film-error" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-film-error </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-film-go" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-film-go </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-film-key" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-film-key </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-film-link" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-film-link </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-film-save" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-film-save </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-find" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-find </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-flag-blue" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-flag-blue </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-flag-green" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-flag-green </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-flag-orange" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-flag-orange </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-flag-pink" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-flag-pink </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-flag-purple" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-flag-purple </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-flag-red" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-flag-red </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-flag-yellow" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-flag-yellow </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-folder" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-folder </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-folder-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-folder-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-folder-bell" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-folder-bell </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-folder-brick" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-folder-brick </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-folder-bug" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-folder-bug </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-folder-camera" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-folder-camera </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-folder-database" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-folder-database </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-folder-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-folder-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-folder-edit" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-folder-edit </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-folder-error" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-folder-error </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-folder-explore" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-folder-explore </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-folder-feed" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-folder-feed </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-folder-find" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-folder-find </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-folder-go" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-folder-go </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-folder-heart" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-folder-heart </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-folder-image" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-folder-image </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-folder-key" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-folder-key </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-folder-lightbulb" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-folder-lightbulb </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-folder-link" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-folder-link </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-folder-magnify" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-folder-magnify </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-folder-page" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-folder-page </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-folder-page-white" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-folder-page-white </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-folder-palette" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-folder-palette </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-folder-picture" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-folder-picture </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-folder-star" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-folder-star </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-folder-table" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-folder-table </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-folder-user" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-folder-user </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-folder-wrench" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-folder-wrench </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-font" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-font </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-font-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-font-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-font-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-font-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-font-go" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-font-go </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-group" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-group </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-group-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-group-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-group-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-group-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-group-edit" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-group-edit </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-group-error" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-group-error </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-group-gear" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-group-gear </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-group-go" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-group-go </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-group-key" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-group-key </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-group-link" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-group-link </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-heart" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-heart </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-heart-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-heart-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-heart-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-heart-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-help" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-help </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-hourglass" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-hourglass </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-hourglass-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-hourglass-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-hourglass-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-hourglass-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-hourglass-go" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-hourglass-go </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-hourglass-link" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-hourglass-link </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-house" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-house </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-house-go" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-house-go </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-house-link" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-house-link </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-html" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-html </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-html-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-html-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-html-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-html-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-html-go" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-html-go </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-html-valid" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-html-valid </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-image" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-image </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-images" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-images </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-image-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-image-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-image-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-image-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-image-edit" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-image-edit </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-image-link" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-image-link </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-information" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-information </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-ipod" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-ipod </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-ipodcast" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-ipodcast </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-ipodcast-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-ipodcast-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-ipodcast-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-ipodcast-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-ipod-sound" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-ipod-sound </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-joystick" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-joystick </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-joystick-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-joystick-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-joystick-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-joystick-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-joystick-error" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-joystick-error </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-key" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-key </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-keyboard" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-keyboard </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-keyboard-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-keyboard-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-keyboard-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-keyboard-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-keyboard-magnify" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-keyboard-magnify </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-key-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-key-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-key-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-key-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-key-go" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-key-go </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-layers" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-layers </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-layout" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-layout </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-layout-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-layout-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-layout-content" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-layout-content </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-layout-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-layout-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-layout-edit" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-layout-edit </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-layout-error" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-layout-error </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-layout-header" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-layout-header </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-layout-link" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-layout-link </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-layout-sidebar" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-layout-sidebar </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-lightbulb" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-lightbulb </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-lightbulb-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-lightbulb-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-lightbulb-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-lightbulb-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-lightbulb-off" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-lightbulb-off </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-lightning" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-lightning </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-lightning-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-lightning-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-lightning-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-lightning-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-lightning-go" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-lightning-go </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-link" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-link </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-link-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-link-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-link-break" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-link-break </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-link-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-link-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-link-edit" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-link-edit </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-link-error" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-link-error </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-link-go" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-link-go </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-lock" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-lock </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-lock-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-lock-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-lock-break" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-lock-break </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-lock-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-lock-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-lock-edit" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-lock-edit </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-lock-go" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-lock-go </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-lock-open" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-lock-open </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-lorry" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-lorry </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-lorry-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-lorry-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-lorry-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-lorry-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-lorry-error" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-lorry-error </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-lorry-flatbed" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-lorry-flatbed </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-lorry-go" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-lorry-go </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-lorry-link" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-lorry-link </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-magifier-zoom-out" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-magifier-zoom-out </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-magnifier" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-magnifier </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-magnifier-zoom-in" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-magnifier-zoom-in </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-male" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-male </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-map" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-map </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-map-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-map-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-map-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-map-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-map-edit" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-map-edit </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-map-go" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-map-go </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-map-magnify" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-map-magnify </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-medal-bronze1" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-medal-bronze1 </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-medal-bronze2" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-medal-bronze2 </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-medal-bronze3" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-medal-bronze3 </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-medal-bronze-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-medal-bronze-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-medal-bronze-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-medal-bronze-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-medal-gold1" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-medal-gold1 </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-medal-gold2" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-medal-gold2 </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-medal-gold3" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-medal-gold3 </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-medal-gold-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-medal-gold-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-medal-gold-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-medal-gold-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-medal-silver1" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-medal-silver1 </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-medal-silver2" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-medal-silver2 </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-medal-silver3" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-medal-silver3 </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-medal-silver-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-medal-silver-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-medal-silver-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-medal-silver-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-money" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-money </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-money-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-money-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-money-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-money-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-money-dollar" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-money-dollar </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-money-euro" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-money-euro </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-money-pound" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-money-pound </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-money-yen" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-money-yen </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-monitor" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-monitor </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-monitor-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-monitor-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-monitor-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-monitor-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-monitor-edit" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-monitor-edit </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-monitor-error" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-monitor-error </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-monitor-go" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-monitor-go </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-monitor-lightning" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-monitor-lightning </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-monitor-link" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-monitor-link </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-mouse" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-mouse </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-mouse-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-mouse-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-mouse-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-mouse-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-mouse-error" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-mouse-error </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-music" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-music </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-new" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-new </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-newspaper" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-newspaper </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-newspaper-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-newspaper-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-newspaper-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-newspaper-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-newspaper-go" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-newspaper-go </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-newspaper-link" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-newspaper-link </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-note" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-note </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-note-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-note-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-note-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-note-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-note-edit" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-note-edit </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-note-error" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-note-error </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-note-go" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-note-go </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-overlays" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-overlays </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-package" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-package </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-package-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-package-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-package-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-package-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-package-go" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-package-go </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-package-green" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-package-green </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-package-link" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-package-link </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-attach" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-attach </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-code" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-code </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-copy" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-copy </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-edit" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-edit </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-error" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-error </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-excel" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-excel </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-find" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-find </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-gear" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-gear </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-go" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-go </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-green" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-green </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-key" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-key </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-lightning" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-lightning </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-link" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-link </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-paintbrush" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-paintbrush </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-paste" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-paste </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-red" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-red </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-refresh" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-refresh </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-save" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-save </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-white" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-white </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-white-acrobat" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-white-acrobat </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-white-actionscript" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-white-actionscript </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-white-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-white-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-white-c" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-white-c </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-white-camera" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-white-camera </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-white-cd" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-white-cd </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-white-code" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-white-code </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-white-code-red" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-white-code-red </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-white-coldfusion" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-white-coldfusion </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-white-compressed" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-white-compressed </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-white-copy" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-white-copy </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-white-cplusplus" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-white-cplusplus </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-white-csharp" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-white-csharp </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-white-cup" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-white-cup </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-white-database" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-white-database </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-white-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-white-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-white-dvd" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-white-dvd </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-white-edit" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-white-edit </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-white-error" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-white-error </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-white-excel" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-white-excel </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-white-find" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-white-find </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-white-flash" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-white-flash </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-white-freehand" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-white-freehand </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-white-gear" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-white-gear </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-white-get" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-white-get </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-white-go" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-white-go </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-white-h" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-white-h </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-white-horizontal" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-white-horizontal </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-white-key" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-white-key </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-white-lightning" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-white-lightning </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-white-link" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-white-link </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-white-magnify" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-white-magnify </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-white-medal" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-white-medal </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-white-office" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-white-office </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-white-paint" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-white-paint </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-white-paintbrush" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-white-paintbrush </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-white-paste" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-white-paste </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-white-php" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-white-php </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-white-picture" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-white-picture </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-white-powerpoint" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-white-powerpoint </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-white-put" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-white-put </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-white-ruby" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-white-ruby </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-white-stack" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-white-stack </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-white-star" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-white-star </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-white-swoosh" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-white-swoosh </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-white-text" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-white-text </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-white-text-width" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-white-text-width </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-white-tux" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-white-tux </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-white-vector" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-white-vector </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-white-visualstudio" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-white-visualstudio </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-white-width" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-white-width </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-white-word" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-white-word </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-white-world" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-white-world </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-white-wrench" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-white-wrench </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-white-zip" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-white-zip </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-word" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-word </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-page-world" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-page-world </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-paintbrush" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-paintbrush </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-paintcan" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-paintcan </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-palette" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-palette </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-paste-plain" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-paste-plain </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-paste-word" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-paste-word </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-pencil" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-pencil </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-pencil-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-pencil-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-pencil-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-pencil-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-pencil-go" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-pencil-go </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-phone" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-phone </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-phone-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-phone-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-phone-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-phone-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-phone-sound" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-phone-sound </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-photo" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-photo </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-photos" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-photos </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-photo-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-photo-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-photo-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-photo-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-photo-link" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-photo-link </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-picture" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-picture </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-pictures" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-pictures </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-picture-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-picture-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-picture-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-picture-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-picture-edit" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-picture-edit </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-picture-empty" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-picture-empty </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-picture-error" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-picture-error </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-picture-go" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-picture-go </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-picture-key" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-picture-key </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-picture-link" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-picture-link </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-picture-save" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-picture-save </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-pilcrow" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-pilcrow </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-pill" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-pill </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-pill-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-pill-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-pill-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-pill-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-pill-go" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-pill-go </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-plugin" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-plugin </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-plugin-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-plugin-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-plugin-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-plugin-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-plugin-disabled" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-plugin-disabled </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-plugin-edit" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-plugin-edit </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-plugin-error" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-plugin-error </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-plugin-go" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-plugin-go </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-plugin-link" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-plugin-link </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-printer" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-printer </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-printer-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-printer-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-printer-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-printer-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-printer-empty" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-printer-empty </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-printer-error" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-printer-error </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-rainbow" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-rainbow </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-report" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-report </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-report-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-report-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-report-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-report-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-report-disk" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-report-disk </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-report-edit" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-report-edit </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-report-go" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-report-go </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-report-key" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-report-key </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-report-link" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-report-link </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-report-magnify" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-report-magnify </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-report-picture" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-report-picture </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-report-user" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-report-user </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-report-word" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-report-word </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-result-set-first" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-result-set-first </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-result-set-last" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-result-set-last </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-result-set-next" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-result-set-next </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-result-set-previous" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-result-set-previous </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-rosette" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-rosette </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-rss" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-rss </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-rss-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-rss-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-rss-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-rss-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-rss-go" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-rss-go </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-rss-valid" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-rss-valid </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-ruby" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-ruby </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-ruby-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-ruby-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-ruby-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-ruby-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-ruby-gear" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-ruby-gear </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-ruby-get" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-ruby-get </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-ruby-go" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-ruby-go </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-ruby-key" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-ruby-key </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-ruby-link" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-ruby-link </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-ruby-put" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-ruby-put </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-script" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-script </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-script-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-script-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-script-code" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-script-code </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-script-code-red" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-script-code-red </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-script-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-script-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-script-edit" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-script-edit </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-script-error" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-script-error </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-script-gear" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-script-gear </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-script-go" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-script-go </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-script-key" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-script-key </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-script-lightning" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-script-lightning </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-script-link" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-script-link </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-script-palette" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-script-palette </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-script-save" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-script-save </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-server" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-server </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-server-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-server-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-server-chart" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-server-chart </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-server-compressed" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-server-compressed </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-server-connect" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-server-connect </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-server-database" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-server-database </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-server-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-server-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-server-edit" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-server-edit </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-server-error" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-server-error </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-server-go" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-server-go </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-server-key" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-server-key </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-server-lightning" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-server-lightning </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-server-link" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-server-link </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-server-uncompressed" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-server-uncompressed </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-shading" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-shading </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-shape-align-bottom" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-shape-align-bottom </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-shape-align-center" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-shape-align-center </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-shape-align-left" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-shape-align-left </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-shape-align-middle" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-shape-align-middle </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-shape-align-right" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-shape-align-right </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-shape-align-top" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-shape-align-top </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-shape-flip-horizontal" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-shape-flip-horizontal </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-shape-flip-vertical" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-shape-flip-vertical </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-shape-group" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-shape-group </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-shape-handles" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-shape-handles </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-shape-move-back" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-shape-move-back </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-shape-move-backwards" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-shape-move-backwards </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-shape-move-forwards" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-shape-move-forwards </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-shape-move-front" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-shape-move-front </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-shape-rotate-anti-clockwise" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-shape-rotate-anti-clockwise </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-shape-rotate-clockwise" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-shape-rotate-clockwise </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-shape-square" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-shape-square </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-shape-square-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-shape-square-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-shape-square-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-shape-square-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-shape-square-edit" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-shape-square-edit </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-shape-square-error" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-shape-square-error </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-shape-square-go" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-shape-square-go </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-shape-square-key" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-shape-square-key </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-shape-square-link" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-shape-square-link </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-shape-ungroup" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-shape-ungroup </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-shield" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-shield </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-shield-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-shield-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-shield-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-shield-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-shield-go" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-shield-go </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-sitemap" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-sitemap </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-sitemap-color" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-sitemap-color </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-sound" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-sound </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-sound-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-sound-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-sound-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-sound-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-sound-low" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-sound-low </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-sound-mute" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-sound-mute </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-sound-none" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-sound-none </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-spell-check" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-spell-check </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-sport8ball" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-sport8ball </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-sport-basketball" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-sport-basketball </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-sport-football" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-sport-football </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-sport-golf" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-sport-golf </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-sport-raquet" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-sport-raquet </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-sport-shuttle-cock" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-sport-shuttle-cock </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-sport-soccer" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-sport-soccer </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-sport-tennis" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-sport-tennis </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-star" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-star </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-status-away" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-status-away </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-status-busy" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-status-busy </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-status-off-line" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-status-off-line </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-status-online" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-status-online </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-stop" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-stop </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-style" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-style </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-style-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-style-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-style-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-style-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-style-edit" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-style-edit </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-style-go" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-style-go </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-sum" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-sum </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-tab" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-tab </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-table" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-table </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-table-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-table-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-table-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-table-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-table-edit" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-table-edit </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-table-error" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-table-error </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-table-gear" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-table-gear </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-table-go" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-table-go </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-table-key" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-table-key </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-table-lightning" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-table-lightning </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-table-link" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-table-link </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-table-multiple" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-table-multiple </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-table-refresh" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-table-refresh </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-table-relationship" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-table-relationship </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-table-row-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-table-row-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-table-row-insert" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-table-row-insert </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-table-save" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-table-save </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-table-sort" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-table-sort </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-tab-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-tab-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-tab-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-tab-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-tab-edit" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-tab-edit </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-tab-go" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-tab-go </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-tag" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-tag </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-tag-blue" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-tag-blue </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-tag-blue-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-tag-blue-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-tag-blue-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-tag-blue-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-tag-blue-edit" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-tag-blue-edit </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-tag-green" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-tag-green </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-tag-orange" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-tag-orange </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-tag-pink" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-tag-pink </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-tag-purple" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-tag-purple </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-tag-red" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-tag-red </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-tag-yellow" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-tag-yellow </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-telephone" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-telephone </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-telephone-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-telephone-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-telephone-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-telephone-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-telephone-edit" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-telephone-edit </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-telephone-error" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-telephone-error </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-telephone-go" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-telephone-go </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-telephone-key" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-telephone-key </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-telephone-link" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-telephone-link </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-television" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-television </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-television-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-television-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-television-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-television-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-textfield" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-textfield </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-textfield-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-textfield-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-textfield-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-textfield-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-textfield-key" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-textfield-key </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-textfield-rename" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-textfield-rename </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-text-align-center" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-text-align-center </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-text-align-justify" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-text-align-justify </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-text-align-left" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-text-align-left </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-text-align-right" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-text-align-right </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-text-all-caps" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-text-all-caps </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-text-bold" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-text-bold </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-text-columns" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-text-columns </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-text-dropcaps" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-text-dropcaps </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-text-heading1" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-text-heading1 </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-text-heading2" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-text-heading2 </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-text-heading3" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-text-heading3 </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-text-heading4" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-text-heading4 </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-text-heading5" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-text-heading5 </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-text-heading6" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-text-heading6 </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-text-horizontal-rule" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-text-horizontal-rule </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-text-indent" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-text-indent </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-text-indent-remove" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-text-indent-remove </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-text-italic" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-text-italic </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-text-kerning" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-text-kerning </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-text-letter-spacing" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-text-letter-spacing </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-text-letter-omega" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-text-letter-omega </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-text-line-spacing" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-text-line-spacing </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-text-list-bullets" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-text-list-bullets </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-text-list-numbers" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-text-list-numbers </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-text-lowercase" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-text-lowercase </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-text-padding-bottom" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-text-padding-bottom </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-text-padding-left" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-text-padding-left </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-text-padding-right" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-text-padding-right </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-text-padding-top" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-text-padding-top </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-text-replace" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-text-replace </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-text-signature" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-text-signature </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-text-smallcaps" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-text-smallcaps </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-text-strikethrough" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-text-strikethrough </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-text-subscript" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-text-subscript </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-text-superscript" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-text-superscript </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-text-under-line" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-text-under-line </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-text-uppercase" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-text-uppercase </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-thumb-down" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-thumb-down </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-thumb-up" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-thumb-up </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-tick" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-tick </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-time" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-time </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-time-linemarker" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-time-linemarker </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-time-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-time-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-time-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-time-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-time-go" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-time-go </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-transmit" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-transmit </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-transmit-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-transmit-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-transmit-blue" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-transmit-blue </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-transmit-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-transmit-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-transmit-edit" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-transmit-edit </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-transmit-error" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-transmit-error </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-transmit-go" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-transmit-go </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-tux" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-tux </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-user" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-user </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-user-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-user-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-user-comment" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-user-comment </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-user-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-user-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-user-edit" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-user-edit </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-user-female" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-user-female </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-user-go" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-user-go </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-user-gray" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-user-gray </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-user-green" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-user-green </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-user-orange" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-user-orange </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-user-red" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-user-red </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-user-suit" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-user-suit </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-v-card" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-v-card </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-v-card-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-v-card-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-v-card-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-v-card-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-v-card-edit" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-v-card-edit </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-vector" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-vector </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-vector-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-vector-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-vector-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-vector-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-wand" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-wand </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-weather-clouds" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-weather-clouds </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-weather-cloudy" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-weather-cloudy </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-weather-lightning" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-weather-lightning </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-weather-rain" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-weather-rain </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-weather-snow" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-weather-snow </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-weather-sun" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-weather-sun </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-webcam" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-webcam </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-webcam-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-webcam-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-webcam-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-webcam-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-webcam-error" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-webcam-error </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-world" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-world </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-world-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-world-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-world-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-world-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-world-edit" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-world-edit </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-world-go" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-world-go </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-world-link" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-world-link </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-wrench" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-wrench </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-wrench-orange" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-wrench-orange </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-xhtml" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-xhtml </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-xhtml-add" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-xhtml-add </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-xhtml-delete" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-xhtml-delete </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-xhtml-go" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-xhtml-go </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-xhtml-valid" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-xhtml-valid </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-zoom" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-zoom </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-zoom-in" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-zoom-in </td> </tr>
+
+<tr><td> <span class="ui-button-icon-primary ui-icon silk-icon-zoom-out" style="display: inline-block;">  </td>
+<td class="label-code"> .silk-icon-zoom-out </td> </tr>
+
+</table>
+</div>
+
+</body>
+</html>
+

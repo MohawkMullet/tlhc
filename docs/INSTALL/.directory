@@ -1,0 +1,6 @@
+[Dolphin]
+AdditionalInfo=3
+Timestamp=2015,10,5,17,49,31
+Version=3
+ViewMode=1
+VisibleRoles=CustomizedDetails,Details_text,Details_size,Details_date,Details_wordCount,Details_lineCount,Details_comment

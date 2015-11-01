@@ -1,0 +1,19 @@
+ 
+    TL HTML Cheater is Copyright 2008 Damian C. Kelly.  mohawkdigital@gmail.com
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation,  version 3 of the License, or any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+DO NOT USE THIS PROGRAM ON AN INTERNET FACING WEB SERVER.  This program was designed and built to be run on a webserver that does not face the outside world.  This software is not safe and should be considered dangerous.  Absolutely DO NOT place these scripts on a production machine.  Run this on your local box, but do not expose this outside of your lan.
+------------------------------------------------------------------------------------------------------
+
+See the readme file in the install folder until I do something about this.
