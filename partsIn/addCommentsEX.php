@@ -1,19 +1,14 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <?php 
 include('../parts/config.php'); 
 ?>
-
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>Updater In One</title>
 		<link type="text/css" href="../parts/style.css" rel="Stylesheet" />	
-
 		<link type="text/css" href="../parts/jq/jquery-ui.css" rel="Stylesheet" />	
 		<script type="text/javascript" src="../parts/jq/jquery.js"></script>
 		<script type="text/javascript" src="../parts/jq/jquery-ui.js"></script>
 		<link href='../parts/jq/silk/jquery-silk-icons.css' rel='stylesheet' type='text/css'>
-
 <script>
   $(document).ready(function(){
 		$( "input" ).addClass( "ui-corner-all" );
@@ -51,25 +46,21 @@ include('../parts/config.php');
 </script>
 <script type="text/javascript">
 $(document).ready(function(){
-						   
 	$(".pane .delete").click(function(){
 		$(this).parents(".pane").animate({ opacity: 'hide' }, "slow");
 	});
-
 });
 </script>
 <script type="text/javascript">
 $(document).ready(function() {
     $("input[name$='tabAdd']").click(function() {
         var test = $(this).val();
-
         $("div.desc").hide();
         $("#Cars" + test).show();
     });
 });
 </script>
 </head>
-
 <body>
 <?php
 /* grab the get variable and decide what to display */
@@ -87,9 +78,7 @@ $(document).ready(function() {
 		drawCardsform();
 	} 
 ?>
-
 <?php
-
 /**
 *
 * 	THE FUNCTION FOR THE INPUT FORMS
@@ -118,7 +107,7 @@ function drawSoldierForm() {
 	global $subButton;
 	global $clearButton;
 	$fvalue = array('SolPaint', 'SolMisc');
-	echo "<div class='ui-state-default ui-widget-header ui-corner-all pane style100' style='padding: 6px;'> Add Comments to the Soldier Databases<a href=\"javascript:animatedcollapse.toggle('inComs2')\" class=\"fg-button fg-button-icon-solo delete\" title=\"Close this section\" style=\"float:right; clear:none; display:inline;\"><span class=\"ui-icon ui-icon-close\"></span>&nbsp;</a></div>";		
+	echo "<div class='ui-state-default ui-widget-header ui-corner-all pane style100' style='padding: 6px;'> Add Comments to the Soldier Databases<a href=\"javascript:animatedcollapse.toggle('inComs2')\" class=\"fg-button fg-button-icon-solo delete\" title=\"Close this section\" style=\"float:right; clear:none; display:inline;\"><span class=\"ui-icon silk-icon-page-white-magnify\"></span>&nbsp;</a></div>";		
 	echo "<form method='POST' name='comAdd' id='comAdd' class='st1'>";
 	echo "<fieldset><legend>Category</legend>";
 	foreach ($fvalue as $f) {
@@ -143,7 +132,6 @@ function drawTrainsForm() {
 	echo "<input name='comValue' type='text' size='32' onfocus=\"if(this.value=='Enter A New Comment')this.value='';\" value=\"Enter A New Comment\" class='ui-corner-all st0'>";
 	echo "$subButton $clearButton";
 	echo "</form>";
-
 }
 function drawCardsForm() {
 	global $subButton;
@@ -159,14 +147,8 @@ function drawCardsForm() {
 	echo "<input name='comValue' type='text' size='32' onfocus=\"if(this.value=='Enter A New Comment')this.value='';\" value=\"Enter A New Comment\" class='ui-corner-all st0'>";
 	echo "$subButton $clearButton";
 	echo "</form>";
-
 }
-/**
-*	alright.  we're done drawing these incredibly dumb forms.  fuck you jquery UI.  i wasted hours trying to stylize these scripts
-*/
 ?>
-
-
 <?php
 /**
 *
@@ -190,9 +172,7 @@ function buildBox() {
 	{
     echo "    <option value='{$data['value']}'>{$data['value']}</option>";
 	}
-	echo "</select>";
-	  
-//	echo "<br><br>Press the &nbsp;<button onclick='location.reload()' disabled class='fg-button fg-button-icon-right2 ui-state-default ui-corner-all' style='font-size:smaller;'><span class='ui-icon ui-icon-refresh' style='font-size:smaller;'></span>Refresh</button>&nbsp; button to the left <-- to LOAD your new comment.";
+	echo "</select>";  
 	echo "</div>";	
 }
 ?>
@@ -204,15 +184,10 @@ function buildBox() {
 $tabAdd = $_POST['tabAdd'];
 if (empty($tabAdd)) 
       $errors["comValue"] = "Choose A Category!";
-//if (empty($_POST["comValue"])) 
-//      $infos = "$highBeg Add an Entry $highEnd2";
-
 if ($_POST['comValue'] == "Enter A New Comment")
 	$errors['comValue'] = "You've Got To Type In A Comment";
   if (count($errors))
   {
-//	  echo "<div class=\"ui-widget-content\" style='width: 450px; padding: 6px;'>";	  
-	  echo $infos;
 	  echo "<div style='position: relative; float:left; clear:both; top:10px;' class='pane'>$errorIcon";
 	  echo "$errors[comValue]<br>";
 	  echo "$errorIconEnd";
