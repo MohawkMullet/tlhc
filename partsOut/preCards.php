@@ -14,8 +14,8 @@
 	?>
 <table width="840" border="0" align="center" cellpadding="0" cellspacing="0" id="components">
   <tr>
-    <td align="center" valign="top"></td>
-    <td width="500" valign="top">
+    <td align="center" valign="top">Not sure whats here</td>
+    <td width="500" valign="top">Nor here
 </td>
   </tr>
 </table>

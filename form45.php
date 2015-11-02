@@ -9,12 +9,10 @@
 <table width="410" id="recInput" style="margin-left:1px;">
 <tr>
 		<td>
-<?php
-//	include('parts/menuBar.php');
-?>
+
 <fieldset class="pane">
 <div align="left">
-  <legend title="Choose a theme for the new listing"><a href="#" class="fg-button fg-button-icon-solo delete" title="Close this section"><span class="ui-icon ui-icon-close"></span>&nbsp;</a>Listing Theme&nbsp;<a href="docs/templateDesign.php" target="mainFrame" class="fg-button fg-button-icon-solo ui-state-default ui-corner-all" title="Change the Listing Design and Style"><span class="ui-icon ui-icon-key"></span>&nbsp;</a></legend>
+  <legend title="Choose a theme for the new listing"><a href="#" class="fg-button fg-button-icon-solo delete" title="Close this section"><span class="ui-icon silk-icon-bomb"></span>&nbsp;</a>Listing Theme&nbsp;<a href="docs/templateDesign.php" target="mainFrame" class="fg-button fg-button-icon-solo ui-state-default ui-corner-all" title="Change the Listing Design and Style"><span class="ui-icon ui-icon-key"></span>&nbsp;</a></legend>
 </div>
 <label><input class="ui-widget input" name="templateName" type="radio" value="default"/>Old</label>
     <label><input class="ui-widget input" name="templateName" type="radio" value="yellow" />Yellow & Orange</label>   
