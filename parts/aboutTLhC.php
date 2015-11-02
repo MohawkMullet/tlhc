@@ -16,24 +16,14 @@ echo $version;
 echo $loadRight;
 echo "<span class='fg-toolbar fg-buttonset-multi' style='display: inline;'>";
 
-echo $searchButton;
-echo $picButton;
-echo $search2;
 
-echo $abbrevsButton;
+
 echo "</span>";
-echo $previewButton;
 echo "<span class='fg-toolbar fg-buttonset-multi' style='display: inline;'>";
-echo $addCommsButton;
-echo $showCommsButton;
-echo $addCommsButton2;
-echo $showCommsButton2;
+
 
 echo "</span>";
-echo $gplButton;
-echo $helpButton;
-echo $contactButton;
-echo $flagButton;
+
 echo "</span>";
 ?>
 </span>

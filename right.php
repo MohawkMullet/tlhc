@@ -1,10 +1,12 @@
 <?php 
 include('parts/config.php');
 ?>
-<?php $_GET['showComms'] = $showComms; ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php 
+		$_GET['showComms'] = $showComms; 
+		echo "you a bitch $showComms";		
+?>
 <head>
-<title>This is the Right Hand Page</title>
+<title>Yeah I'm Right You Bitch</title>
 <link type="text/css" rel="stylesheet" href="parts/jq/jquery-ui.css">
 <link type="text/css" rel="stylesheet" href="parts/style.css">
 <script type="text/javascript" src="parts/jq/jquery.js"></script>
@@ -14,10 +16,10 @@ include('parts/config.php');
 
 <script type="text/javascript">
 
-animatedcollapse.addDiv('picasaImages', 'fade=1,height=280px,persist=0')
-animatedcollapse.addDiv('licensegpl', 'fade=1,height=330px,persist=0')
-animatedcollapse.addDiv('search2', 'fade=1,height=220px,persist=0')
-animatedcollapse.addDiv('midComms2', 'fade=1,height=295px,persist=0')
+animatedcollapse.addDiv('picasaImages', 'fade=1,speed=10000,persist=0')
+animatedcollapse.addDiv('licensegpl', 'fade=1,persist=0')
+animatedcollapse.addDiv('search2', 'fade=1,persist=0')
+animatedcollapse.addDiv('midComms2', 'fade=1,persist=0')
 animatedcollapse.addDiv('helpDocs', 'fade=0,speed=400,persist=0')
 animatedcollapse.addDiv('outPutter', 'fade=1,speed=400,persist=0,hide=0')
 animatedcollapse.addDiv('inComs', 'fade=1,speed=400,persist=0')
@@ -83,19 +85,6 @@ animatedcollapse.init()
 		});
 	});
 </script>
-<style type="text/css">
-#rightBody {
-	position:static;
-	left:8px;
-	top:8px;
-	width:100%;
-	z-index:2;
-}
-h3 {
-	font-size: 12px;
-}
-</style>
-
   <script type="text/javascript">
   $(function() {
     $( "#dialog_bitcher" ).dialog({
@@ -111,9 +100,7 @@ h3 {
         effect: "fold",
         duration: 1000
       }
-      
     });
- 
     $( "#canOpener" ).click(function() {
       $( "#dialog_bitcher" ).dialog( "open" );
     });
@@ -121,53 +108,45 @@ h3 {
   </script>
   <script type="text/javascript">
   $(function() {
-    $( "#dialog_bitcher2" ).dialog({
+    $( "#comAdder" ).dialog({
       autoOpen: false,
       modal: true,
       maxHeight: 300,
       width:500,
       show: {
         effect: "puff",
-        duration: 1000
+        duration: 10000
       },
       hide: {
         effect: "fold",
-        duration: 1000
+        duration: 10000
       }
-      
     });
- 
     $( "#canOpener2" ).click(function() {
-      $( "#dialog_bitcher2" ).dialog( "open" );
+      $( "#comAdder" ).dialog( "open" );
     });
   });
   </script>
-
-
 </head>
-
 <body class="ui-widget-content ui-corner-all">
-
 <div class="ui-widget ui-widget-content ui-corner-all" id="mainShit">
-
 				<span class="ui-widget-header ui-helper-reset ui-corner-all" style="padding:6px 6px 6px 25px; display:block; font-size:16px; margin-right:15pz;">Welcome to TLhC
 				<?php
-				echo $version;
+					echo $version;
 				?>
 				<span class="fg-toolbar ui-corner-all" style="font-size:14px; background: url(parts/jq/images/ui-bg_diamond-ripple_90_6e6f6f_22x22.png); display: inline; padding:.6em; position: relative; right: -150px; border: medium double #cccccc;">
 				<?php
-				echo $loadRight;
-				echo "<span class='fg-toolbar fg-buttonset-multi' style='display: inline;'>";
-				echo "$searchButton $picButton $search2 $abbrevsButton";
-				echo "</span>";
-				echo $previewButton;
-				echo "<span class='fg-toolbar fg-buttonset-multi' style='display: inline;'>";
-				echo "$addCommsButton $showCommsButton $addCommsButton2 $showCommsButton2 $addCommsButton4 $showCommsButton4 $addCommsButton3 $showCommsButton3";
-				echo "</span>";
-				echo "$gplButton $helpButton $linkButton";
+					echo $loadRight;
+					echo "<span class='fg-toolbar fg-buttonset-multi' style='display: inline;'>";
+					echo "$searchButton $picButton $search2 $abbrevsButton";
+					echo "</span>";
+					echo $previewButton;
+					echo "<span class='fg-toolbar fg-buttonset-multi' style='display: inline;'>";
+					echo "$addCommsButton $showCommsButton $addCommsButton2 $showCommsButton2 $addCommsButton4 $showCommsButton4 $addCommsButton3 $showCommsButton3";
+					echo "</span>";
+					echo "$gplButton $helpButton $linkButton";
 				?>
 <button id="canOpener" class="ui-corner-all ui-state-default"><span class="ui-icon silk-icon-cog-delete"></span></button></span></span>
-		
 		<div id="dialog_bitcher" title="Show The GPL" style="display:none;">
 						  <?php
 						include('parts/research.php');
@@ -176,9 +155,9 @@ h3 {
 
 <button id="canOpener2" class="ui-corner-all ui-state-default"><span class="ui-icon silk-icon-cog-delete"></span></button></span></span>
 		
-		<div id="dialog_bitcher2" title="Show the start bitcher" style="display:none;">
+		<div id="comAdder" title="Show the start bitcher" style="display:none;">
 						  <?php
-						include('parts/midComms.php?showComms=Cards');
+//						include('partsIn/addCommentsEX.php');
 							?>
 		</div>
 
@@ -198,9 +177,9 @@ h3 {
 					?>
 				</div>
 				
-				<div id="midComms2" class="ui-widget-header ui-corner-all" style="width: 425px; display:none; margin:5px; padding:0 3px 3px 0; position: relative; background:#ffffff;">
+				<div id="midComms2" class="ui-widget-header ui-corner-all" style="width: 80%; display:none; margin:5px; padding:0 3px 3px 0; position: relative; background:#ffffff;">
 				  <?php 	
-				//	include('partsOut/staticPages/commentkeyDefault.php'); 
+					include('partsOut/staticPages/commentkeyDefault.php'); 
 					?>
 				</div>    
 					  

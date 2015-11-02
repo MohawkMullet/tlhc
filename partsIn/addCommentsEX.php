@@ -103,7 +103,7 @@ function draw45form() {
 	global $subButton;
 	global $clearButton;
 	$fvalue = array('Vinyl', 'Label', 'Sleeve', 'Promo', 'Misc');
-	echo "<div class='ui-state-default ui-widget-header ui-corner-all pane style100' style='padding: 6px;'> Add Comments to the 45 Database<a style='float:right; clear:none;' href=\"#\" class=\"fg-button fg-button-icon-solo delete\" title=\"Close this section\"><span class=\"ui-icon ui-icon-close\"></span>&nbsp;</a></div>";	
+	echo "<div class='ui-state-default ui-widget-header ui-corner-all pane style100' style='padding: 6px;'> Add Comments to the 45s<a style='float:right; clear:none; padding:5px; margin-bottom:10px;' href=\"#\" class=\"fg-button ui-corner-all fg-button-icon-solo delete\" title=\"Close this section\"><span class=\"ui-icon ui-corner-all silk-icon-bomb\"></span>&nbsp;</a></div>";	
 	echo "<form method='POST' name='comAdd' id='comAdd' class='st1'>";
 	echo "<fieldset><legend>Category</legend>";
 	foreach ($fvalue as $f) {
@@ -165,17 +165,7 @@ function drawCardsForm() {
 *	alright.  we're done drawing these incredibly dumb forms.  fuck you jquery UI.  i wasted hours trying to stylize these scripts
 */
 ?>
-<?php
-/**
-*
-* 	DECIDE WHICH FUCKING FORM TO DRAW BASED ON THE INPUT
-*	WE EITHER DRAW THE SOLDIER FORM OR THE 45 FORM or the Trains Form
-*	SO IF WE CATCH THE Get Variable ie Trains COMING ACROSS THE PAGE WE KNOW WHAT TO DO
-*
-*/
 
-
-?>
 
 <?php
 /**
