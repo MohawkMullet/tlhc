@@ -116,12 +116,12 @@ $(document).ready(function(){
 <body>
 <div id="tabs">
     <ul>        
-        <li><a href="#toolsTab" class="fg-button fg-button-icon-right">TLhC&nbsp;&nbsp;<span class="ui-icon ui-icon-wrench"></span></a></li>    
-        <li><a href="#cardInput" class="fg-button fg-button-icon-right">Cards&nbsp;&nbsp;<span class="ui-icon ui-icon-person"></span></a></li>    
-        <li><a href="#soldierInput" class="fg-button fg-button-icon-right">Soldiers&nbsp;&nbsp;<span class="ui-icon ui-icon-person"></span></a></li>    
-        <li><a href="#trainInput" class="fg-button fg-button-icon-right">Trains&nbsp;&nbsp;<span class="ui-icon ui-icon-person"></span></a></li>    
-        <li><a href="#45input" class="fg-button fg-button-icon-right">45's&nbsp;&nbsp;<span class="ui-icon ui-icon-volume-on"></span></a></li>
-        <li><a href="#lastTab" class="fg-button fg-button-icon-right">About&nbsp;&nbsp;<span class="ui-icon ui-icon-help"></span></a></li>
+        <li><a href="#toolsTab" class="fg-button fg-button-icon-right tooltip" title="Main Title Page for TLhC">TLhC&nbsp;&nbsp;<span class="ui-icon silk-icon-computer-key"></span>&nbsp;</a></li>    
+        <li><a href="#cardInput" class="fg-button fg-button-icon-right tooltip" title="Input Form for Computer Cards">Cards&nbsp;&nbsp;<span class="ui-icon silk-icon-door-in"></span>&nbsp;</a></li>    
+        <li><a href="#soldierInput" class="fg-button fg-button-icon-right tooltip">Toys&nbsp;&nbsp;<span class="ui-icon silk-icon-html-go"></span>&nbsp;</a></li>    
+        <li><a href="#trainInput" class="fg-button fg-button-icon-right tooltip">Trains&nbsp;&nbsp;<span class="ui-icon silk-icon-layout-header"></span>&nbsp;</a></li>    
+        <li><a href="#45input" class="fg-button fg-button-icon-right">45's&nbsp;&nbsp;<span class="ui-icon silk-icon-lightbulb"></span>&nbsp;</a></li>
+        <li><a href="#lastTab" class="fg-button fg-button-icon-right tooltip" title="About this Software?">About&nbsp;&nbsp;<span class="ui-icon silk-icon-world-go"></span>&nbsp;</a></li>
   </ul>
     <div id="soldierInput">
 		<?php

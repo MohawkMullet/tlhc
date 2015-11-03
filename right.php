@@ -135,50 +135,31 @@ animatedcollapse.init()
 </head>
 <body class="ui-widget-content ui-corner-all">
 <div class="ui-widget ui-widget-content ui-corner-all" id="mainShit">
-				<span class="ui-widget-header ui-helper-reset ui-corner-all" style="padding:6px 6px 6px 25px; display:block; font-size:16px; margin-right:15pz;">Welcome to TLhC
-						<?php
-							echo $version;
-						?>
-						<span class="fg-toolbar ui-corner-all" style="font-size:14px; background: url(parts/jq/images/ui-bg_diamond-ripple_90_6e6f6f_22x22.png); display: inline; padding:.6em; position: relative; right: -150px; border: medium double #cccccc;">
-						<?php
-							echo $loadRight;
-							echo "<span class='fg-toolbar fg-buttonset-multi' style='display: inline;'>";
-							echo "$searchButton $picButton $search2 $abbrevsButton";
-							echo "</span>";
-							echo $previewButton;
-							echo "<span class='fg-toolbar fg-buttonset-multi' style='display: inline;'>";
-							echo "$addCommsButton45s $showCommsButton $addCommsButtonSoldiers $showCommsButton2 $addCommsButtonCards $showCommsButton4 $addCommsButtonTrains $showCommsButton3";
-							echo "</span>";
-							echo "$gplButton $helpButton";
-						?>
-						<button id="canOpener2" class="ui-corner-all ui-state-default tooltip" title="Open up a popup box for something" style="height:25px; position:relative;"><span class="ui-icon silk-icon-weather-lightning"></span></button>
-						<button id="canOpener" class="ui-corner-all ui-state-default tooltip" title="Pop open a new box"><span class="ui-icon silk-icon-cog-delete"></span></button>
-						</span><!-- END INNER BORDER SPAN -->
-				</span><!-- END BUTTON BAR SPAN -->
-
+<?php include('toolBar.php'); ?>
+<!-- DIVS FOR POPUP DIALOGS -->
 		<div id="dialog_bitcher" title="Show The GPL" style="display:none;">
 						  <?php
-						include('parts/research.php');
+//								include('parts/research.php');
 							?>
+				  <?php 
+							include('license.html'); 
+					?>							
 		</div>
 		<div id="comAdder" title="Show the Comment Adder Form" style="display:none;">
 				<iframe id="comAdderIframe" src="partsIn/addCommentsEX.php" width="460" height="290" allowtransparency="1" sandbox="allow-forms allow-scripts" frameborder="0" class="ui-state-active ui-corner-all"></iframe>
 		</div>
+<!-- END DIALOG POPUP DIVS -->
 
+<div id="modules" class="ui-state-active ui-corner-all" style="margin:5px; padding:0 3px 3px 0;">
 
-<div id="modules" class="ui-widget-content ui-corner-all">
-
-				<div id="licensegpl" class="ui-corner-all ui-widget-header" style="margin:5px; padding:0 3px 3px 0; display: none;">
+				<div id="licensegpl" class="ui-widget-header ui-corner-all" style="width: 95%; display:none; margin:5px; padding:0 3px 3px 0; position: relative; background:#ffffff;">
 				  <?php 
 					include('license.html'); 
 					?>
 				</div>
 				
-				<div id="helpDocs" class="ui-widget-highlight" style="background: #FFFFFF; padding:0 3px 3px 0; margin-top:25px; margin-left:25px; margin-right:25px; margin-bottom:25px; display: none;">
-				<?php //echo $linkButton; ?>				
-				<?php 
-	//				include('docs/index.php'); 
-					?>
+				<div id="helpDocs" class="ui-state-highlight ui-corner-all" style="padding:0 3px 3px 0; margin-top:25px; margin-left:25px; margin-right:25px; margin-bottom:25px; display: none;">
+							<iframe src='docs/index.php' width="100%" height="720px" scrolling="Auto" title='Add comment sInside' name='helpDocus' class="ui-widget ui-widget-content ui-corner-all" frameborder="0"></iframe>
 				</div>
 				
 				<div id="midComms2" class="ui-widget-header ui-corner-all" style="width: 80%; display:none; margin:5px; padding:0 3px 3px 0; position: relative; background:#ffffff;">
@@ -199,50 +180,51 @@ animatedcollapse.init()
 					?>
 				</div>
 				
-<div id="inComs" style="display: none; float:left; clear:none; margin:5px; padding:0 3px 3px 0;" class="ui-widget-header ui-corner-all">
-		<iframe src='partsIn/addCommentsEX.php?showComms=45s' height='230' width='425' scrolling="Auto" title='Add comment sInside' name='addEm1' class="ui-widget ui-widget-content ui-corner-all" frameborder="0"></iframe>
-</div>
-
-<div id="inComs2" style="display: none; float:left; clear:none; margin:5px; padding:0 3px 3px 0;" class="ui-widget-header ui-corner-all">
-		<iframe src='partsIn/addCommentsEX.php?showComms=Soldiers' height='230' width='425' scrolling="Auto" title='Add Bullshit' name='addEm12' class="ui-widget ui-widget-content ui-corner-all" frameborder="0"></iframe>
-</div>
-
-<div id="inComs3" style="display: none; float:left; clear:none; margin:5px; padding:0 3px 3px 0;" class="ui-widget-header ui-corner-all">
-		<iframe src='partsIn/addCommentsEX.php?showComms=Trains' height='230' width='425' scrolling="Auto" title='Add comments Inside' name='addEm12b' class="ui-widget ui-widget-content ui-corner-all" frameborder="0"></iframe>
-</div>
-
-<div id="inComs4" style="display: none; float:left; clear:none; margin:5px; padding:0 3px 3px 0;" class="ui-widget-header ui-corner-all">
-		<iframe src='partsIn/addCommentsEX.php?showComms=Cards' height='230' width='425' scrolling="Auto" title='Add comments Inside' name='addEm16b' class="ui-widget ui-widget-content ui-corner-all" frameborder="0"></iframe>
-</div>
-
-<div id="showComms2" style="display: none; float:left; clear:none; margin:5px; padding:0 3px 3px 0;" class="ui-widget-header ui-corner-all">
-		<iframe src='parts/midComms.php?showComms=Soldiers' height='425' width='425' scrolling="Auto" title='Add comments Inside' name='addEm13' class="ui-widget ui-widget-content ui-corner-all" frameborder="0"></iframe>
-</div>
-
-<div id="showComms3" style="display: none; float:left; clear:none; margin:5px; padding:0 3px 3px 0;" class="ui-widget-header ui-corner-all">
-		<iframe src='parts/midComms.php?showComms=Trains' height='425' width='425' scrolling="Auto" title='Show Comments' name='addEm13b' class="ui-widget ui-widget-content ui-corner-all" frameborder="0"></iframe>
-</div>
-
-<div id="showComms" style="display: none; float: left;  clear:none; margin:5px; padding:0 3px 3px 0;" class="ui-widget-header ui-corner-all">
-		<iframe src='parts/midComms.php?showComms=45s' height='425' width='425' scrolling="Auto" title='Show Some Shit' name='addEm14' class="ui-widget ui-widget-content ui-corner-all" frameborder="0"></iframe>
-</div>
-
-<div id="showComms4" style="display: none; float:left; clear:none; margin:5px; padding:0 3px 3px 0;" class="ui-widget-header ui-corner-all">
-		<iframe src='parts/midComms.php?showComms=Cards' height='425' width='425' scrolling="Auto" title='Show Comments' name='addEm16b' class="ui-widget ui-widget-content ui-corner-all" frameborder="0"></iframe>
-</div>
+					<div id="inComs" style="display: none; float:left; clear:none; margin:5px; padding:0 3px 3px 0;" class="ui-widget-header ui-corner-all">
+							<iframe src='partsIn/addCommentsEX.php?showComms=45s' height='230' width='425' scrolling="Auto" title='Add comment sInside' name='addEm1' class="ui-widget ui-widget-content ui-corner-all" frameborder="0"></iframe>
+					</div>
+					
+					<div id="inComs2" style="display: none; float:left; clear:none; margin:5px; padding:0 3px 3px 0;" class="ui-widget-header ui-corner-all">
+							<iframe src='partsIn/addCommentsEX.php?showComms=Soldiers' height='230' width='425' scrolling="Auto" title='Add Bullshit' name='addEm12' class="ui-widget ui-widget-content ui-corner-all" frameborder="0"></iframe>
+					</div>
+					
+					<div id="inComs3" style="display: none; float:left; clear:none; margin:5px; padding:0 3px 3px 0;" class="ui-widget-header ui-corner-all">
+							<iframe src='partsIn/addCommentsEX.php?showComms=Trains' height='230' width='425' scrolling="Auto" title='Add comments Inside' name='addEm12b' class="ui-widget ui-widget-content ui-corner-all" frameborder="0"></iframe>
+					</div>
+					
+					<div id="inComs4" style="display: none; float:left; clear:none; margin:5px; padding:0 3px 3px 0;" class="ui-widget-header ui-corner-all">
+							<iframe src='partsIn/addCommentsEX.php?showComms=Cards' height='230' width='425' scrolling="Auto" title='Add comments Inside' name='addEm16b' class="ui-widget ui-widget-content ui-corner-all" frameborder="0"></iframe>
+					</div>
+					
+					<div id="showComms2" style="display: none; float:left; clear:none; margin:5px; padding:0 3px 3px 0;" class="ui-widget-header ui-corner-all">
+							<iframe src='parts/midComms.php?showComms=Soldiers' height='425' width='425' scrolling="Auto" title='Add comments Inside' name='addEm13' class="ui-widget ui-widget-content ui-corner-all" frameborder="0"></iframe>
+					</div>
+					
+					<div id="showComms3" style="display: none; float:left; clear:none; margin:5px; padding:0 3px 3px 0;" class="ui-widget-header ui-corner-all">
+							<iframe src='parts/midComms.php?showComms=Trains' height='425' width='425' scrolling="Auto" title='Show Comments' name='addEm13b' class="ui-widget ui-widget-content ui-corner-all" frameborder="0"></iframe>
+					</div>
+					
+					<div id="showComms" style="display: none; float: left;  clear:none; margin:5px; padding:0 3px 3px 0;" class="ui-widget-header ui-corner-all">
+							<iframe src='parts/midComms.php?showComms=45s' height='425' width='425' scrolling="Auto" title='Show Some Shit' name='addEm14' class="ui-widget ui-widget-content ui-corner-all" frameborder="0"></iframe>
+					</div>
+					
+					<div id="showComms4" style="display: none; float:left; clear:none; margin:5px; padding:0 3px 3px 0;" class="ui-widget-header ui-corner-all">
+							<iframe src='parts/midComms.php?showComms=Cards' height='425' width='425' scrolling="Auto" title='Show Comments' name='addEm16b' class="ui-widget ui-widget-content ui-corner-all" frameborder="0"></iframe>
+					</div>
 
 			<div id="outPutter" style="clear:both; float:left;">
 		  <?php  	
 					$showOut = $_GET['showOut'];
-					if ( $showOut == "True" ){ 	
+//					if ( $showOut == "True" ){ 	
 						include('outputs.php');
-						} 
+//						} 
 	//					echo $showOut; 
 				?>
 			</div>
 </div><!-- END OF MODULES DIV -->
 
 </div><!-- END OF MAIN SHIT DIV -->
-
+</body>
+</html>
 
 
