@@ -7,10 +7,18 @@
 <meta http-equiv="refresh" content="50">
 <title>The Stored Comments</title>
 <link type="text/css" rel="stylesheet" href="jq/jquery-ui.css" />
+<link type="text/css" rel="stylesheet" href="jq/tooltipster-master/css/tooltipster.css">
+<script type="text/javascript" src="jq/tooltipster-master/js/jquery.tooltipster.js"></script>
+<link href='jq/silk/jquery-silk-icons.css' rel='stylesheet' type='text/css'>
 <link type="text/css" rel="stylesheet" href="style.css" />
 <script type="text/javascript" src="jq/jquery.js"></script>
 <script type="text/javascript" src="jq/animatedcollapse.js"></script>
 <script type="text/javascript" src="jq/jquery-ui.js"></script>
+      <script>
+        $(document).ready(function() {
+            $('.tooltip').tooltipster();
+        });
+    </script>
 </head>
 <body>
 		<?php
@@ -34,7 +42,7 @@
 		?>
 		<?php
 				$showComms = $_GET['showComms'];
-				echo "<div class='ui-state-default ui-dialog-header ui-corner-all' style='padding: 3px; margin: 3px; width: 250px;'>Comments for $showComms</div>";	
+				echo "<div class='ui-state-default ui-dialog-header ui-corner-all' style='padding: 3px; margin: 3px; width: 250px;'>Comments for $showComms<span class='ui-icon silk-icon-script-add' style='display:inline-block;'></span></div>";	
 		?>
 		<div id="commentshower" class="ui-state-active ui-corner-all">
 			<div style="padding: 5px;">

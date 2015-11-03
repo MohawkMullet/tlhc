@@ -8,7 +8,7 @@
           <?php
 echo $version;
 ?>    </span>
-          <img src="images/TLhClogoSmaller.png" width="53" height="75"></p>
+          <img src="images/TLhClogoSmaller.png" width="53" height="75" class="tooltip" title="TurboLister HTML Cheater"></p>
       <p><a href="docs/index.php" target="mainFrame">DOCUMENTATION</a></p>
       <p>Check for <a href="https://github.com/MohawkMullet/tlhc" target="_blank">Updates</a></p>
 <span class="fg-toolbar ui-corner-all" style="font-size:14px; background:#cccccc; display: inline; padding:.6em; border: medium double #FFFFFF;">

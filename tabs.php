@@ -5,11 +5,12 @@
 ?>
 <link rel="shortcut icon" href="images/favicon.ico">
 <link href="parts/style.css" rel="stylesheet" type="text/css" />
-
+<link type="text/css" rel="stylesheet" href="parts/jq/tooltipster-master/css/tooltipster.css">
 <link type="text/css" href="parts/jq/jquery-ui.css" rel="Stylesheet" />
 <script type="text/javascript" src="parts/jq/jquery.js"></script>
 <script type="text/javascript" src="parts/jq/jquery.maxlength-1.0.2.js"></script>
 <script type="text/javascript" src="parts/jq/jquery-ui.js"></script>
+<script type="text/javascript" src="parts/jq/tooltipster-master/js/jquery.tooltipster.js"></script>
 <link href='parts/jq/silk/jquery-silk-icons.css' rel='stylesheet' type='text/css'>
 
   <script>
@@ -106,7 +107,11 @@ $(document).ready(function(){
 
 });
 </script>
-
+    <script>
+        $(document).ready(function() {
+            $('.tooltip').tooltipster();
+        });
+    </script>
 </head>
 <body>
 <div id="tabs">

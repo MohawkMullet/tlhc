@@ -305,8 +305,12 @@ cursor:help;
 	clear: none;
 	float: left;
 	height: 50px;
-	width: 180px;
+	width: 240px;
 	font-variant: small-caps;
 	text-transform: capitalize;
 	left: 25px;
+	font-size: 36px;
+	color: #CC0000;
+	font-weight: bolder;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
 }

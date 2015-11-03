@@ -3,17 +3,17 @@ include('parts/config.php');
 ?>
 <?php 
 		$_GET['showComms'] = $showComms; 
-		echo "you a bitch $showComms";		
 ?>
 <head>
 <title>Yeah I'm Right You Bitch</title>
 <link type="text/css" rel="stylesheet" href="parts/jq/jquery-ui.css">
 <link type="text/css" rel="stylesheet" href="parts/style.css">
+<link type="text/css" rel="stylesheet" href="parts/jq/tooltipster-master/css/tooltipster.css">
+<link href='parts/jq/silk/jquery-silk-icons.css' rel='stylesheet' type='text/css'>
 <script type="text/javascript" src="parts/jq/jquery.js"></script>
 <script type="text/javascript" src="parts/jq/animatedcollapse.js"></script>
+<script type="text/javascript" src="parts/jq/tooltipster-master/js/jquery.tooltipster.js"></script>
 <script type="text/javascript" src="parts/jq/jquery-ui.js"></script>
-<link href='parts/jq/silk/jquery-silk-icons.css' rel='stylesheet' type='text/css'>
-
 <script type="text/javascript">
 
 animatedcollapse.addDiv('picasaImages', 'fade=1,speed=10000,persist=0')
@@ -115,11 +115,11 @@ animatedcollapse.init()
       width:500,
       show: {
         effect: "puff",
-        duration: 10000
+        duration: 1000
       },
       hide: {
         effect: "fold",
-        duration: 10000
+        duration: 1000
       }
     });
     $( "#canOpener2" ).click(function() {
@@ -127,38 +127,42 @@ animatedcollapse.init()
     });
   });
   </script>
+      <script>
+        $(document).ready(function() {
+            $('.tooltip').tooltipster();
+        });
+    </script>
 </head>
 <body class="ui-widget-content ui-corner-all">
 <div class="ui-widget ui-widget-content ui-corner-all" id="mainShit">
 				<span class="ui-widget-header ui-helper-reset ui-corner-all" style="padding:6px 6px 6px 25px; display:block; font-size:16px; margin-right:15pz;">Welcome to TLhC
-				<?php
-					echo $version;
-				?>
-				<span class="fg-toolbar ui-corner-all" style="font-size:14px; background: url(parts/jq/images/ui-bg_diamond-ripple_90_6e6f6f_22x22.png); display: inline; padding:.6em; position: relative; right: -150px; border: medium double #cccccc;">
-				<?php
-					echo $loadRight;
-					echo "<span class='fg-toolbar fg-buttonset-multi' style='display: inline;'>";
-					echo "$searchButton $picButton $search2 $abbrevsButton";
-					echo "</span>";
-					echo $previewButton;
-					echo "<span class='fg-toolbar fg-buttonset-multi' style='display: inline;'>";
-					echo "$addCommsButton $showCommsButton $addCommsButton2 $showCommsButton2 $addCommsButton4 $showCommsButton4 $addCommsButton3 $showCommsButton3";
-					echo "</span>";
-					echo "$gplButton $helpButton $linkButton";
-				?>
-<button id="canOpener" class="ui-corner-all ui-state-default"><span class="ui-icon silk-icon-cog-delete"></span></button></span></span>
+						<?php
+							echo $version;
+						?>
+						<span class="fg-toolbar ui-corner-all" style="font-size:14px; background: url(parts/jq/images/ui-bg_diamond-ripple_90_6e6f6f_22x22.png); display: inline; padding:.6em; position: relative; right: -150px; border: medium double #cccccc;">
+						<?php
+							echo $loadRight;
+							echo "<span class='fg-toolbar fg-buttonset-multi' style='display: inline;'>";
+							echo "$searchButton $picButton $search2 $abbrevsButton";
+							echo "</span>";
+							echo $previewButton;
+							echo "<span class='fg-toolbar fg-buttonset-multi' style='display: inline;'>";
+							echo "$addCommsButton45s $showCommsButton $addCommsButtonSoldiers $showCommsButton2 $addCommsButtonCards $showCommsButton4 $addCommsButtonTrains $showCommsButton3";
+							echo "</span>";
+							echo "$gplButton $helpButton";
+						?>
+						<button id="canOpener2" class="ui-corner-all ui-state-default tooltip" title="Open up a popup box for something" style="height:25px; position:relative;"><span class="ui-icon silk-icon-weather-lightning"></span></button>
+						<button id="canOpener" class="ui-corner-all ui-state-default tooltip" title="Pop open a new box"><span class="ui-icon silk-icon-cog-delete"></span></button>
+						</span><!-- END INNER BORDER SPAN -->
+				</span><!-- END BUTTON BAR SPAN -->
+
 		<div id="dialog_bitcher" title="Show The GPL" style="display:none;">
 						  <?php
 						include('parts/research.php');
 							?>
 		</div>
-
-<button id="canOpener2" class="ui-corner-all ui-state-default"><span class="ui-icon silk-icon-cog-delete"></span></button></span></span>
-		
-		<div id="comAdder" title="Show the start bitcher" style="display:none;">
-						  <?php
-//						include('partsIn/addCommentsEX.php');
-							?>
+		<div id="comAdder" title="Show the Comment Adder Form" style="display:none;">
+				<iframe id="comAdderIframe" src="partsIn/addCommentsEX.php" width="460" height="290" allowtransparency="1" sandbox="allow-forms allow-scripts" frameborder="0" class="ui-state-active ui-corner-all"></iframe>
 		</div>
 
 

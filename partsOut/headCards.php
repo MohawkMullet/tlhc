@@ -1,6 +1,6 @@
 <table width="840px" align="center" border="0" cellpadding="0" cellspacing="0" id="header">
         <tr>
-          <td width="35%"><img src="http://lh3.ggpht.com/_W_e1PG0tXUk/SYBSHgvoG0I/AAAAAAAAAsc/Usqa091OFfg/s800/wfFont1.jpg" width="287" height="120" title="HepVinyl.com Rare 45's, LP's & Plenty of Common Onese Too!"></td>
+          <td width="35%"><img src="https://lh3.googleusercontent.com/-MNabKULLBwo/VjbvAVyGx1I/AAAAAAAAXbY/S6lEU-cQsmA/s2048-Ic42/pic_skyline_p.psd333.png" width="200" height="134" title="Pueblo CO Online Sales Company LLC" style="float:left; clear:none; margin-left:30px;"></td>
           <td width="65%" align="right" valign="bottom" bgcolor="#FFFFFF"> <div></div>          
             <table border="0" align="right" cellpadding="0" cellspacing="0">
           <tr><td><table cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" align="center" style="border: #FFFFFF 1px solid;" width="100%"><tr><td width="100%"><table cellspacing="0" cellpadding="0" border="0" align="right" width="100%">

@@ -944,6 +944,7 @@ body .ui-tooltip {
 .ui-widget-content .ui-state-error-text,
 .ui-widget-header .ui-state-error-text {
 	color: #111111;
+	font-size: 24px;
 }
 .ui-priority-primary,
 .ui-widget-content .ui-priority-primary,
