@@ -6,19 +6,12 @@
 	**/
 ?>
 <form action="right.php?showOut=True" method="POST" name="basic" target="mainFrame" id="slapIt">
+ <input type="hidden" name= "itemType" value="45s">
 <table width="410" id="recInput" style="margin-left:1px;">
 <tr>
 		<td>
 
-<fieldset class="pane">
-<div align="left">
-  <legend title="Choose a theme for the new listing"><a href="#" class="fg-button fg-button-icon-solo delete" title="Close this section"><span class="ui-icon silk-icon-bomb"></span>&nbsp;</a>Listing Theme&nbsp;<a href="docs/templateDesign.php" target="mainFrame" class="fg-button fg-button-icon-solo ui-state-default ui-corner-all" title="Change the Listing Design and Style"><span class="ui-icon ui-icon-key"></span>&nbsp;</a></legend>
-</div>
-<label><input class="ui-widget input" name="templateName" type="radio" value="default"/>Old</label>
-    <label><input class="ui-widget input" name="templateName" type="radio" value="yellow" />Yellow & Orange</label>   
-<label><input class="ui-widget input" name="templateName" type="radio" value="blue" />Blue</label>
-    <label><input class="ui-widget input" name="templateName" type="radio" value="orange" checked/>Green & Blue</label>
-</fieldset>
+<?php include('partsIn/themeChooser.php'); ?>
 <?php
 	include('partsIn/performerTitle2.php');
 	include('partsIn/sideAb2.php');

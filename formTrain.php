@@ -14,6 +14,7 @@ $tabName = "trainsTab";
 </script>
 
 <form name="tForm" method="post" action="right.php?showOut=True" target="mainFrame" title="trainForm">
+ <input type="hidden" name= "itemType" value="trains">
 <input type="hidden" name= "templateName" value="trains">
 <input type="hidden" name= "boxes2" value="boxes2">
 <?php // include('partsIn/themeIn.php'); ?>

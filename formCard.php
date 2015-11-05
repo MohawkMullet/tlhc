@@ -18,9 +18,9 @@ $tabName = "cardsTab";
 <input type="hidden" name= "boxes5" value="boxes5">
 <input type="hidden" name= "boxes2" value="styleSheet">
 
-<?php // include('partsIn/themeIn.php'); ?>
+<?php  include('partsIn/themeChooser.php'); ?>
 					<fieldset>
-							<legend>Title:</legend>
+							<legend>Ebay Listing Title:</legend>
 									<input name="tTitle" type="text" id="tTitle" size="32" />
 					</fieldset>
 					<fieldset>
@@ -83,13 +83,13 @@ Inc.
 					<legend>
 					Stored Comments:&nbsp;&nbsp;
 					<span class="fg-toolbar">
-					<a href='parts/midComms.php?showOut=Trains' target='mainFrame' class='fg-button fg-button-icon-left ui-state-default ui-corner-all' title="show all comments">
-					<span class='ui-icon ui-icon-document'>
+					<a href='parts/midComms.php?showComms=Cards' target='mainFrame' class='fg-button fg-button-icon-left ui-state-default ui-corner-all tooltip' title="Show all card comments" style="padding:3px; margin:4px; height:20px;">
+					<span class='ui-icon silk-icon-tag-blue'>
 					</span>All</a>
-					<a href="partsIn/addCommentsEX.php?showOut=Trains" target="mainFrame" class="fg-button fg-button-icon-solo ui-state-default ui-corner-all" title="ADD COMMENTS">
-					<span class="ui-icon ui-icon-circle-plus"></span>&nbsp;
-					</a><a href="docs/reusableComms.php#adding" target="mainFrame" class="fg-button fg-button-icon-solo ui-state-default ui-corner-all"><span class="ui-icon ui-icon-help">
-					</span>&nbsp;</a></span>
+					<a href="partsIn/addCommentsEX.php?showOut=Trains" target="mainFrame" class="fg-button fg-button-icon-solo ui-state-default ui-corner-all tooltip" title="ADD COMMENTS">
+					<span class="ui-icon silk-icon-tag-orange"></span>&nbsp;
+					</a><a href="docs/reusableComms.php" target="mainFrame" class="fg-button fg-button-icon-solo ui-state-default ui-corner-all tooltip"><span class="ui-icon silk-icon-tag-purple">
+					</span>&nbsp;&nbsp;</a></span>
 					</legend>
 							<?php
 								include('partsIn/reusableCommsCards.php');

@@ -8,41 +8,50 @@
 <title>The Stored Comments</title>
 <link type="text/css" rel="stylesheet" href="jq/jquery-ui.css" />
 <link type="text/css" rel="stylesheet" href="jq/tooltipster-master/css/tooltipster.css">
-<script type="text/javascript" src="jq/tooltipster-master/js/jquery.tooltipster.js"></script>
 <link href='jq/silk/jquery-silk-icons.css' rel='stylesheet' type='text/css'>
 <link type="text/css" rel="stylesheet" href="style.css" />
 <script type="text/javascript" src="jq/jquery.js"></script>
 <script type="text/javascript" src="jq/animatedcollapse.js"></script>
 <script type="text/javascript" src="jq/jquery-ui.js"></script>
+<script type="text/javascript" src="jq/tooltipster-master/js/jquery.tooltipster.js"></script>
       <script>
         $(document).ready(function() {
             $('.tooltip').tooltipster();
         });
     </script>
+<script>
+function myTest() {
+    document.getElementById("fakeButton").style.color = "red";
+}
+</script>
+
 </head>
 <body>
 		<?php
+//				$search_query=mysqli_query($link, $query);
 				function buildBox() {
 					global $tabAdd;
+					global $link;
 					$selectorName = "$tabAdd"."Selector"."[]";
-					$query = mysql_query(
+					$search_sql = 
 						"SELECT `id`, 
 								`value`,
 								`name`
 						FROM `comms$tabAdd`
 						ORDER BY `id` ASC"
-					);
-						echo "<select class='ui-widget input' name='$selectorName' size='8' multiple id='$tabAdd' style='width:320px;'>";
-						while ($data = mysql_fetch_array($query, MYSQL_ASSOC))
+					;
+					$search_query=mysqli_query($link, $search_sql);
+						echo "<select class='ui-widget input ui-corner-all' name='$selectorName' size='8' multiple id='$tabAdd' style='width:320px;'>";
+						while ($data = mysqli_fetch_array($query, MYSQLI_ASSOC))
 					{
-						echo "    <option value='{$data['value']}'>{$data['value']}</option>";
+						echo "    <option value='{$data['value']}' class='ui-corner-all tooltip' title='There is no possible way for you to delete these'>{$data['value']}</option>";
 					}
 						echo "</select>";
 				}
 		?>
 		<?php
 				$showComms = $_GET['showComms'];
-				echo "<div class='ui-state-default ui-dialog-header ui-corner-all' style='padding: 3px; margin: 3px; width: 250px;'>Comments for $showComms<span class='ui-icon silk-icon-script-add' style='display:inline-block;'></span></div>";	
+				echo "<div class='ui-state-default ui-dialog-header ui-corner-all tooltip' title='sheesh nothing' style='padding: 3px; margin: 3px; width: 250px;'>Comments for $showComms<button onclick=\"myTest()\" id='fakeButton' 'class='ui-state-selected ui-corner-all' style='margin-left:14px;'>Yo<span class='ui-icon silk-icon-script-add tooltip' title='functionless icon' style='display:inline-block;'></span></button></div>";	
 		?>
 		<div id="commentshower" class="ui-state-active ui-corner-all">
 			<div style="padding: 5px;">

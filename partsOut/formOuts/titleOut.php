@@ -10,6 +10,6 @@ echo $listingMast;
 $tTitle = $_POST['tTitle'];
 $tTitle =  ucwords(strtoupper($tTitle));
 $brand = $_POST['brand'];
-$trainMast = "$brand <br />$tTitle";
+$trainMast = "$brand $tTitle";
 echo $trainMast;
 ?>

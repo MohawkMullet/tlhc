@@ -24,7 +24,7 @@
 
 <div id="youBitch" style="width: 500px; position:relative;">            
 
-<?php   include('footO.php'); ?>
+<?php //  include('footO.php'); ?>
 </div></td>
   </tr>
 </table>

@@ -7,6 +7,16 @@
 
 <body>
 <h1>What's New:<img name="holder" src="" width="32" height="32" alt="" style="background-color: #009966"></h1>
+<h4>November 2015:</h4>
+<p>Added new FORM to sell computer components.</p>
+<p>Added new FORM field TYPE.</p>
+<ul>
+  <li>this is so that all forms can use the templates defined.</li>
+<li>some work ahead for this feature. </li>
+</ul>
+<p>working on ways to add the html output to the database like I used to have in earlier versions. (you'd have to look back into the 2.? days).... And i'm not sure that was full html outputs it may have jsut been the</p>
+<p>form elements put into seperate database fields.</p>
+<p>Trying to let all TYPES  </p>
 <h4>Repository Moved to GitHub (Sept 2015)</h4>
 <pre>Link to new <a href="https://github.com/MohawkMullet/tlhc">downloads </a></pre>
 <h4>Version 5.0.4a (beta) 2015-09-20</h4>

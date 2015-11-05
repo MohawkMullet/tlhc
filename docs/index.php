@@ -29,11 +29,11 @@ a {
 <head>
 <?php
 include('../parts/config.php');
-echo "<base href=\"docs/\">";
+echo "<base href=\"../docs/\">";
 
 ?>
 <title>Start Here</title>
-<link href="../parts/style.css" rel="stylesheet" type="text/css">
+<link href="/cards/parts/style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -48,7 +48,7 @@ echo "$version";
   <h4><a href="../license.php">License</a></h4>
   <p>Features</p>
   <h3><a href="why.php">Why</a></h3>
-  <h3><a href="new.php">What's New<img src="images/news.gif" width="40" height="38"></a></h3>
+  <h3><a href="new.php">What's New<img src="../images/news.gif" width="40" height="38"></a></h3>
   <h3><a href="basicOperation.php">How It Works</a></h3>
 </blockquote>
 <div class="ui-widget-header ui-corner-all ui-state-active">

@@ -7,15 +7,17 @@
 <link href="parts/style.css" rel="stylesheet" type="text/css" />
 <link type="text/css" rel="stylesheet" href="parts/jq/tooltipster-master/css/tooltipster.css">
 <link type="text/css" href="parts/jq/jquery-ui.css" rel="Stylesheet" />
+<link href='parts/jq/silk/jquery-silk-icons.css' rel='stylesheet' type='text/css'>
+
 <script type="text/javascript" src="parts/jq/jquery.js"></script>
 <script type="text/javascript" src="parts/jq/jquery.maxlength-1.0.2.js"></script>
 <script type="text/javascript" src="parts/jq/jquery-ui.js"></script>
 <script type="text/javascript" src="parts/jq/tooltipster-master/js/jquery.tooltipster.js"></script>
-<link href='parts/jq/silk/jquery-silk-icons.css' rel='stylesheet' type='text/css'>
 
   <script>
   $(document).ready(function(){
     $("#tabs").tabs();
+			deselectable: true
   });
   </script>
   <script type="text/javascript">
@@ -112,6 +114,13 @@ $(document).ready(function(){
             $('.tooltip').tooltipster();
         });
     </script>
+    <script>
+        $(document).ready(function() {
+            $('#tt-gb').tooltipster({
+                content: $('<span><img src="images/green125.png" /></span>')
+            });
+        });
+    </script>
 </head>
 <body>
 <div id="tabs">
@@ -136,7 +145,7 @@ $(document).ready(function(){
     </div>  
 	    <div id="cardInput">
 		<?php
-           include('formCard.php'); 
+           include('formCard2.php'); 
         ?>
     </div> 
     <div id="45input">

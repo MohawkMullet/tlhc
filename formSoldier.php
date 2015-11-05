@@ -6,6 +6,8 @@
 	**/
 ?>
 <form action="right.php?showOut=True" method="POST" name="formSoldier" target="mainFrame" id="soldierForms">
+ <input type="hidden" name= "itemType" value="soldiers">
+
 <table width="400" id="recInput" style="margin-left:1px;">
 <tr>
 		<td>

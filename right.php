@@ -217,6 +217,7 @@ animatedcollapse.init()
 					$showOut = $_GET['showOut'];
 //					if ( $showOut == "True" ){ 	
 						include('outputs.php');
+						include('copyPaste2.php');
 //						} 
 	//					echo $showOut; 
 				?>

@@ -1,6 +1,13 @@
  <?php
- $version = "5.5.2"; // this is actuall the version of TLhC that The Creator Made.  Go Ahead and change this value when you change the code<div align="center"><img src=" http://i5.ebayimg.com/03/i/001/21/72/d5b0_1_bo.JPG"><br>
-$releaseDate ="Nov 2nd 2015";
+/*  $link = mysqli_connect('mysql.hostinger.co.uk','u378891030_tlhcu','tlhcpass420'); 
+if (!$link) { 
+    die('??? CANNOT CONNECT ??? to the database at mohawk.hol.es: ' . mysqli_error()); 
+mysqli_select_db( $db )
+	or die ( "couldng grab $db: ".mysqli_error() );
+}  */
+//echo 'Connection OK'; 
+ $version = "5.5.3"; // this is actuall the version of TLhC that The Creator Made.  Go Ahead and change this value when you change the code<div align="center"><img src=" http://i5.ebayimg.com/03/i/001/21/72/d5b0_1_bo.JPG"><br>
+$releaseDate ="Nov 3rd 2015";
 /**
 * *******************************************************
 * STUFF FOR YOUR LISTINGS
@@ -25,14 +32,7 @@ $rssFeed = "http://rss.api.ebay.com/ws/rssapi?FeedName=StoreItems&siteId=0&langu
 // PICASA IMAGES LOGIN INFO
 $picasaUser = "mohawkdigital";
 $picasaPass	= "";
-/* FORMTOOLS BALONEY */
-//$fields = ft_api_init_form_page(1, "initialize");
-/**
-*   MySQL DATABASE INFO
-*	IF YOU ARE USING STORE COMMENTS
-*	add your database info here
-*	see the documentation for help on stored coments
-*/
+
 $user = "tlhcuser";
 $pass = "tlhcpass";
 $db = "tlhc";
