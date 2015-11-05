@@ -13,6 +13,7 @@
 <ul>
   <li>this is so that all forms can use the templates defined.</li>
 <li>some work ahead for this feature. </li>
+<li>need new function to grab itemType and templateName before it outputs the preview and HTML </li>
 </ul>
 <p>working on ways to add the html output to the database like I used to have in earlier versions. (you'd have to look back into the 2.? days).... And i'm not sure that was full html outputs it may have jsut been the</p>
 <p>form elements put into seperate database fields.</p>

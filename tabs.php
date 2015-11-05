@@ -116,8 +116,14 @@ $(document).ready(function(){
     </script>
     <script>
         $(document).ready(function() {
-            $('#tt-gb').tooltipster({
+            $('#tTipBG').tooltipster({
                 content: $('<span><img src="images/green125.png" /></span>')
+            });
+            $('#tTipDefaultOld').tooltipster({
+                content: $('<span><img src="images/defaultThemePreviewThumb.png" /></span>')
+            });
+            $('#tTipYO').tooltipster({
+                content: $('<span><img src="images/ywNor125.png" /></span>')
             });
         });
     </script>

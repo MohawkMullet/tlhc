@@ -34,7 +34,7 @@
 <ol>
   <li> grab your rss link to your clipboard.  open up the file <span class="style3">partsOut/.newListingsDefault.php</span></li>
   <li>scroll down and decide how many items you want to display by changing the number </li>
-  <li>open up the file<span class="style3"> partsOut/preD.php</span>    include the following code: </li>
+  <li>open up the file<span class="style3"> partsOut/preDefault.php</span>    include the following code: </li>
 </ol>
 <p class="style1">&lt;?php<br>
  	 	$boxes200 = $_POST[&quot;boxes200&quot;];<br>

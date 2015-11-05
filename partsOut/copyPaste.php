@@ -38,13 +38,13 @@
 								$templateName = $_POST['templateName'];
 //									echo $templateName;
 									if ($templateName == "default") {
-										include('partsOut/preD.php');
+										include('partsOut/preDefault.php');
 									}
-									if ($templateName == "blue") {
-										include('partsOut/preB.php');
+									if ($templateName == "blueOld") {
+										include('partsOut/preBlueOld.php');
 									}
-									if ($templateName == "orange") {
-										include('partsOut/preO.php');
+									if ($templateName == "blueGreen") {
+										include('partsOut/preBlueGreen.php');
 									}
 									if ($templateName == "yellow") {
 										include('partsOut/preY.php');
