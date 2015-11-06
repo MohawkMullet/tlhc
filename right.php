@@ -127,17 +127,14 @@ animatedcollapse.init()
     });
   });
   </script>
-      <script>
-        $(document).ready(function() {
-            $('.tooltip').tooltipster();
-        });
-    </script>
+
 </head>
 <body class="ui-widget-content ui-corner-all">
+<?php require('parts/accept.php'); ?>
 <div class="ui-widget ui-widget-content ui-corner-all" id="mainShit">
 <?php include('toolBar.php'); ?>
 <!-- DIVS FOR POPUP DIALOGS -->
-		<div id="dialog_bitcher" title="Show The GPL" style="display:none;">
+		<div id="dialog_bitcher" title="Oh no! This is free software! Have fun!" style="display:none;">
 						  <?php
 //								include('parts/research.php');
 							?>
@@ -146,8 +143,14 @@ animatedcollapse.init()
 					?>							
 		</div>
 		<div id="comAdder" title="Show the Comment Adder Form" style="display:none;">
-				<iframe id="comAdderIframe" src="partsIn/addCommentsEX.php" width="460" height="290" allowtransparency="1" sandbox="allow-forms allow-scripts" frameborder="0" class="ui-state-active ui-corner-all"></iframe>
-		</div>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="tooltip">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="6P54D8ZRC8TP2">
+<input type="image" class="tooltip" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" title="Donate to the Developer">
+<img alt="Help your friendly TLhC Developer!" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" class="tooltip">
+</form>
+<!-- 				<iframe id="comAdderIframe" src="partsIn/addCommentsEX.php" width="460" height="290" allowtransparency="1" sandbox="allow-forms allow-scripts" frameborder="0" class="ui-state-active ui-corner-all"></iframe>
+ -->		</div>
 <!-- END DIALOG POPUP DIVS -->
 
 <div id="modules" class="ui-state-active ui-corner-all" style="margin:5px; padding:0 3px 3px 0;">
@@ -217,7 +220,7 @@ animatedcollapse.init()
 					$showOut = $_GET['showOut'];
 //					if ( $showOut == "True" ){ 	
 						include('outputs.php');
-						include('copyPaste2.php');
+//						include('copyPaste2.php');
 //						} 
 	//					echo $showOut; 
 				?>
@@ -225,6 +228,11 @@ animatedcollapse.init()
 </div><!-- END OF MODULES DIV -->
 
 </div><!-- END OF MAIN SHIT DIV -->
+      <script>
+        $(document).ready(function() {
+            $('.tooltip').tooltipster();
+        });
+    </script>
 </body>
 </html>
 

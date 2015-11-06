@@ -13,11 +13,11 @@ $tabName = "trainsTab";
   });
 </script>
 
-<form name="tForm" method="post" action="right.php?showOut=True" target="mainFrame" title="trainForm">
+<form name="tForm" method="post" action="right.php?showOut=True" target="mainFrame" title="trainForm" class="tooltip">
  <input type="hidden" name= "itemType" value="trains">
 <input type="hidden" name= "templateName" value="trains">
 <input type="hidden" name= "boxes2" value="boxes2">
-<?php // include('partsIn/themeIn.php'); ?>
+<?php // include('partsIn/themeChooser.php'); ?>
 					<fieldset>
 							<legend>Title:</legend>
 									<input name="tTitle" type="text" id="tTitle" size="32" />
@@ -59,30 +59,13 @@ $tabName = "trainsTab";
 					  		<input type="text" name="kind">
 					</fieldset>
 					
-					<p>Item Condition:</p>
-					<p>
-					  <label>
-					  <input type="checkbox" name="origBox" value="origBox">
-					  Original Box</label>
-Inc.					  
-<label>
-					  <input type="checkbox" name="origIns" value="origIns">
-					  Original Instruction Sheet </label>
-					</p>
-					<fieldset>
-					  		<legend>Condition</legend>
-								<select name="quality" class="ui-corner-all">
-                                  <option value="A">New - Never Used</option>
-                                  <option value="B">Used - Like New</option>
-                                  <option value="C">Used - Some wear and tear</option>
-                                  <option value="D">Used - Undesirable (for spare parts)</option>
-                                </select>
-					</fieldset>
 
-					<fieldset>
-							<legend>Main Image<?php echo $loadRight; ?></legend>
-									<input name="picasaImage" type="text" id="picasaImage" size="32" />
-					</fieldset>
+<?php 
+include('partsIn/condition.php'); 
+include('partsIn/mainImage.php');
+?>
+
+
 					<!-- TOSS IN THE MOTHERFUCKING REUSABLE COMMENTS HERE
 					STUPID MOTHERFUCKING TABS WIDGETS DON'T FUCKING PLAY WELL WITH OTHER SETS OF TABS.
 					THE MOST FRUSTRATING BULLSHIT EVER. -->

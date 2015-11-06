@@ -120,10 +120,10 @@ $(document).ready(function(){
                 content: $('<span><img src="images/green125.png" /></span>')
             });
             $('#tTipDefaultOld').tooltipster({
-                content: $('<span><img src="images/defaultThemePreviewThumb.png" /></span>')
+                content: $('<span><img src="images/themePreviewDefaultOldThumb.png" /></span>')
             });
             $('#tTipYO').tooltipster({
-                content: $('<span><img src="images/ywNor125.png" /></span>')
+                content: $('<span><img src="images/yell125.png" /></span>')
             });
         });
     </script>

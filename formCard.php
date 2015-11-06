@@ -61,16 +61,8 @@ Inc.
 					  <input type="checkbox" name="origIns" value="origIns">
 					  Original Instruction Sheet </label>
 					</p>
-					<fieldset>
-					  		<legend>Condition</legend>
-								<select name="condition" class="ui-corner-all">
-                                  <option value="">Choose Condition</option>
-                                  <option value="New - Never Used">New - Never Used</option>
-                                  <option value="Used - Like New">Used - Like New</option>
-                                  <option value="Used - Some wear and tear">Used - Some wear and tear</option>
-                                  <option value="Used - Undesirable (for spare parts)">Used - Undesirable (for spare parts)</option>
-                                </select>
-					</fieldset>
+<?php include('partsIn/condition.php'); ?>
+
 
 					<fieldset>
 							<legend>Main Image<?php echo $loadRight; ?></legend>
