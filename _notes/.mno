@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="MM_Form1" value="grade" />
+	<infoitem key="MM_Form_Count" value="16" />
+	<infoitem key="MM_Form2" value="templateName" />
+	<infoitem key="MM_Form3" value="boxes5" />
+	<infoitem key="MM_Form4" value="boxes2" />
+	<infoitem key="MM_Form5" value="tTitle" />
+	<infoitem key="MM_Form6" value="brand" />
+	<infoitem key="MM_Form7" value="itemNum" />
+	<infoitem key="MM_Form8" value="mfg" />
+	<infoitem key="MM_Form9" value="upc" />
+	<infoitem key="MM_Form10" value="railLine" />
+	<infoitem key="MM_Form11" value="kind" />
+	<infoitem key="MM_Form12" value="origBox" />
+	<infoitem key="MM_Form13" value="origins" />
+	<infoitem key="MM_Form14" value="condition" />
+	<infoitem key="MM_Form15" value="picasaImage" />
+	<infoitem key="MM_Form16" value="itemType" />
+</info>

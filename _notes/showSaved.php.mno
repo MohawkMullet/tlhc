@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_showSaved" value="name:body;datatype:blob" />
+	<infoitem key="UD_showSavedseeWhatseeWhat" value="name:body;datatype:blob" />
+	<infoitem key="UD_freak" value="name:id;datatype:int,name:value;datatype:string,name:name;datatype:string" />
+	<infoitem key="UD_vinylComms" value="name:id;datatype:int,name:value;datatype:string,name:name;datatype:string" />
+</info>
